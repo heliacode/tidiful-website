@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Homepage - English -->
+  <url>
+    <loc>https://tidiful.com/</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/?lang=en-US"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/?lang=fr-FR"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/?lang=de-DE"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/?lang=el-GR"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/"/>
+  </url>
+
+  <!-- Pricing Page - English -->
+  <url>
+    <loc>https://tidiful.com/pricing.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/pricing.html?lang=en-US"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/pricing.html?lang=fr-FR"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/pricing.html?lang=de-DE"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/pricing.html?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/pricing.html?lang=el-GR"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/pricing.html"/>
+  </url>
+
+  <!-- Blog Main Page - English -->
+  <url>
+    <loc>https://tidiful.com/blog/blogs.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/blogs.html?lang=en-US"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/blogs.html?lang=fr-FR"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/blogs.html?lang=de-DE"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/blogs.html?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/blogs.html?lang=el-GR"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/blogs.html"/>
+  </url>
+
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://tidiful.com/blog/posts/postexample0.html</loc>
+    <lastmod>2023-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/posts/postexample0.html?lang=en-US"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/posts/postexample0.html?lang=fr-FR"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/posts/postexample0.html?lang=de-DE"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/posts/postexample0.html?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/posts/postexample0.html?lang=el-GR"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/posts/postexample0.html"/>
+  </url>
+
+  <url>
+    <loc>https://tidiful.com/blog/posts/reddit-knowledge-work.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/posts/reddit-knowledge-work.html?lang=en-US"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/posts/reddit-knowledge-work.html?lang=fr-FR"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/posts/reddit-knowledge-work.html?lang=de-DE"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/posts/reddit-knowledge-work.html?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/posts/reddit-knowledge-work.html?lang=el-GR"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/posts/reddit-knowledge-work.html"/>
+  </url>
+
+</urlset>

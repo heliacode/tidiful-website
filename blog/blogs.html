@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-838XD1M1EQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-838XD1M1EQ');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TidiFul Blog - Latest News & Updates</title>
@@ -37,6 +46,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="../assets/js/i18n.js"></script>
     <script>
         tailwind.config = {
             darkMode: 'class',
@@ -108,17 +118,25 @@
                     <span class="text-xl font-bold text-gray-100">TidiFul</span>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="../index.html" class="text-gray-300 hover:text-emerald-400 transition-colors">Home</a>
-                    <a href="#" class="text-gray-300 hover:text-emerald-400 transition-colors">Features</a>
-                    <a href="../pricing.html" class="text-gray-300 hover:text-emerald-400 transition-colors">Pricing</a>
-                    <a href="blogs.html" class="text-emerald-400 font-medium">Blog</a>
-                    <a href="#" class="text-gray-300 hover:text-emerald-400 transition-colors">Contact</a>
+                    <a href="../index.html" class="text-gray-300 hover:text-emerald-400 transition-colors" data-i18n="nav.home">Home</a>
+                    <a href="#" class="text-gray-300 hover:text-emerald-400 transition-colors" data-i18n="nav.features">Features</a>
+                    <a href="../pricing.html" class="text-gray-300 hover:text-emerald-400 transition-colors" data-i18n="nav.pricing">Pricing</a>
+                    <a href="blogs.html" class="text-emerald-400 font-medium" data-i18n="nav.blog">Blog</a>
+                    <a href="#" class="text-gray-300 hover:text-emerald-400 transition-colors" data-i18n="nav.contact">Contact</a>
                 </div>
                 <div class="flex items-center space-x-4">
-                    <button class="px-4 py-2 rounded-lg bg-gray-700 hover:bg-gray-600 transition-colors text-gray-100">
+                    <!-- Language Switcher -->
+                    <select id="language-switcher" class="px-4 py-2 bg-gray-800 border border-gray-600 rounded-lg text-gray-100 text-sm focus:outline-none focus:border-emerald-400 hover:bg-gray-700 transition-all duration-200 cursor-pointer">
+                        <option value="en-US">🇺🇸 English</option>
+                        <option value="fr-FR">🇫🇷 Français</option>
+                        <option value="de-DE">🇩🇪 Deutsch</option>
+                        <option value="es-ES">🇪🇸 Español</option>
+                        <option value="el-GR">🇬🇷 Ελληνικά</option>
+                    </select>
+                    <button class="px-4 py-2 rounded-lg bg-gray-700 hover:bg-gray-600 transition-colors text-gray-100" data-i18n="nav.signIn">
                         Sign In
                     </button>
-                    <button class="px-4 py-2 rounded-lg border border-emerald-500 text-emerald-400 hover:bg-emerald-900 transition-colors">
+                    <button class="px-4 py-2 rounded-lg border border-emerald-500 text-emerald-400 hover:bg-emerald-900 transition-colors" data-i18n="nav.signUp">
                         Sign Up
                     </button>
                 </div>
@@ -130,10 +148,10 @@
     <section class="py-16 bg-gray-900">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto text-center">
-                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-100">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-100" data-i18n-html="blog.title">
                     TidiFul <span class="text-emerald-400">Blog</span>
                 </h1>
-                <p class="text-xl text-gray-300">
+                <p class="text-xl text-gray-300" data-i18n="blog.subtitle">
                     Stay updated with the latest news, features, and insights about document processing and AI technology.
                 </p>
             </div>
@@ -147,7 +165,7 @@
                 <!-- Loading State -->
                 <div id="loading" class="text-center py-12">
                     <div class="loading-spinner w-8 h-8 border-4 border-emerald-400 border-t-transparent rounded-full mx-auto mb-4"></div>
-                    <p class="text-gray-400">Loading blog posts...</p>
+                    <p class="text-gray-400" data-i18n="blog.loading">Loading blog posts...</p>
                 </div>
 
                 <!-- Error State -->
@@ -155,8 +173,8 @@
                     <div class="w-16 h-16 bg-red-900 rounded-full flex items-center justify-center mx-auto mb-4">
                         <i data-feather="alert-circle" class="w-8 h-8 text-red-400"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2 text-gray-100">Unable to load blog posts</h3>
-                    <p class="text-gray-400">Please try refreshing the page or check back later.</p>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-100" data-i18n="blog.error">Unable to load blog posts</h3>
+                    <p class="text-gray-400" data-i18n="blog.errorSubtitle">Please try refreshing the page or check back later.</p>
                 </div>
 
                 <!-- Empty State -->
@@ -164,8 +182,8 @@
                     <div class="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center mx-auto mb-4">
                         <i data-feather="file-text" class="w-8 h-8 text-gray-400"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2 text-gray-100">No blog posts yet</h3>
-                    <p class="text-gray-400">Check back soon for our latest updates and insights.</p>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-100" data-i18n="blog.empty">No blog posts yet</h3>
+                    <p class="text-gray-400" data-i18n="blog.emptySubtitle">Check back soon for our latest updates and insights.</p>
                 </div>
 
                 <!-- Blog Posts Container -->
@@ -185,38 +203,38 @@
                         <img src="../assets/images/leaf_png_128x128.png" alt="TidiFul" class="w-8 h-8">
                         <span class="text-xl font-bold text-gray-100">TidiFul</span>
                     </div>
-                    <p class="text-gray-400">Transforming documents into structured data with AI-powered precision.</p>
+                    <p class="text-gray-400" data-i18n="footer.tagline">Transforming documents into structured data with AI-powered precision.</p>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Product</h4>
+                    <h4 class="text-lg font-semibold mb-4" data-i18n="footer.product">Product</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Features</a></li>
-                        <li><a href="../pricing.html" class="text-gray-400 hover:text-emerald-400 transition-colors">Pricing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors" data-i18n="nav.features">Features</a></li>
+                        <li><a href="../pricing.html" class="text-gray-400 hover:text-emerald-400 transition-colors" data-i18n="nav.pricing">Pricing</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Integrations</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Resources</h4>
+                    <h4 class="text-lg font-semibold mb-4" data-i18n="footer.resources">Resources</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Documentation</a></li>
-                        <li><a href="blogs.html" class="text-gray-400 hover:text-emerald-400 transition-colors">Blog</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Case Studies</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Support</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors" data-i18n="footer.documentation">Documentation</a></li>
+                        <li><a href="blogs.html" class="text-gray-400 hover:text-emerald-400 transition-colors" data-i18n="nav.blog">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors" data-i18n="footer.caseStudies">Case Studies</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors" data-i18n="footer.support">Support</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <h4 class="text-lg font-semibold mb-4" data-i18n="footer.company">Company</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">About</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Careers</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Contact</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Legal</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors" data-i18n="footer.about">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors" data-i18n="footer.careers">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors" data-i18n="nav.contact">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors" data-i18n="footer.legal">Legal</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500">© 2023 TidiFul. All rights reserved.</p>
+                <p class="text-gray-500" data-i18n="footer.copyright">© 2023 TidiFul. All rights reserved.</p>
                 <div class="flex space-x-4 mt-4 md:mt-0">
                     <a href="#" class="text-gray-500 hover:text-emerald-400 transition-colors">
                         <i data-feather="twitter" class="w-5 h-5"></i>

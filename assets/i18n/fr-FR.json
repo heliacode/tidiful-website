@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "title": "TidiFul - Convertir les Factures en Données Structurées",
+    "description": "Convertissez instantanément les factures PDF, reçus et documents en JSON ou CSV propre et structuré avec notre moteur d'extraction alimenté par l'IA.",
+    "keywords": "traitement de documents, IA, extraction PDF, traitement de factures, automatisation, TidiFul"
+  },
+  "nav": {
+    "home": "Accueil",
+    "features": "Fonctionnalités",
+    "pricing": "Tarifs",
+    "blog": "Blog",
+    "contact": "Contact",
+    "signIn": "Se connecter",
+    "signUp": "S'inscrire"
+  },
+  "hero": {
+    "title": "Transformez les Factures en <span class=\"text-emerald-400\">Données Structurées</span>",
+    "subtitle": "Convertissez instantanément les factures PDF, reçus et documents en JSON ou CSV propre et structuré avec notre moteur d'extraction alimenté par l'IA.",
+    "uploadTitle": "Essayez maintenant - Téléchargez votre PDF",
+    "dragDrop": "Glissez-déposez votre PDF ici",
+    "or": "ou",
+    "browseFiles": "Parcourir les fichiers",
+    "supportedFormats": "Supporte les factures et reçus PDF",
+    "privacyNote": "Tout le traitement se fait en mémoire - aucune donnée n'est stockée ou conservée pour une sécurité et confidentialité maximales",
+    "processing": "Traitement de votre document...",
+    "extractedData": "Données Extraites",
+    "jsonOutput": "Sortie JSON",
+    "tableView": "Vue Tableau",
+    "processAnother": "Traiter un Autre Document"
+  },
+  "features": {
+    "title": "Pourquoi Choisir <span class=\"text-emerald-400\">TidiFul</span> ?",
+    "lightningFast": {
+      "title": "Ultra Rapide",
+      "description": "Traitez les documents en quelques secondes avec notre moteur IA optimisé, pas en heures de travail manuel."
+    },
+    "multipleFormats": {
+      "title": "Formats Multiples",
+      "description": "Exportez vers JSON, CSV, XML, ou intégrez directement avec vos systèmes existants via API."
+    },
+    "securePrivate": {
+      "title": "Sécurisé et Privé",
+      "description": "Vos documents sont traités de manière sécurisée et ne sont jamais stockés sur nos serveurs sans permission."
+    }
+  },
+  "reviews": {
+    "title": "Ce que Disent nos <span class=\"text-emerald-400\">Clients</span>",
+    "sarah": {
+      "name": "Sarah Chen",
+      "role": "Analyste Financière",
+      "quote": "TidiFul a fait économiser des heures de saisie manuelle à notre équipe comptable. La précision est impressionnante et la vitesse de traitement est incroyable !"
+    },
+    "marcus": {
+      "name": "Marcus Rodriguez",
+      "role": "Responsable Opérations",
+      "quote": "L'intégration API s'est faite sans problème avec nos systèmes existants. Nous traitons des centaines de factures quotidiennement et TidiFul s'en charge sans effort."
+    },
+    "emily": {
+      "name": "Emily Thompson",
+      "role": "Fondatrice de Startup",
+      "quote": "En tant que petite entreprise, TidiFul nous donne des capacités de traitement de documents de niveau entreprise à un prix abordable. Un changement de jeu !"
+    }
+  },
+  "cta": {
+    "title": "Prêt à rationaliser votre traitement de documents ?",
+    "subtitle": "Rejoignez des milliers d'entreprises qui utilisent TidiFul pour automatiser leurs flux de travail d'extraction de données.",
+    "button": "Commencer l'Essai Gratuit"
+  },
+  "footer": {
+    "tagline": "Transformer les documents en données structurées avec une précision alimentée par l'IA.",
+    "product": "Produit",
+    "resources": "Ressources",
+    "company": "Entreprise",
+    "documentation": "Documentation",
+    "caseStudies": "Études de Cas",
+    "support": "Support",
+    "about": "À Propos",
+    "careers": "Carrières",
+    "legal": "Légal",
+    "copyright": "© 2023 TidiFul. Tous droits réservés."
+  },
+  "pricing": {
+    "title": "Tarification Simple et Transparente <span class=\"text-emerald-400\">Prix</span>",
+    "subtitle": "Choisissez le plan qui correspond à vos besoins de traitement de documents. Tous les plans incluent notre ensemble complet de fonctionnalités.",
+    "starter": {
+      "name": "Débutant",
+      "price": "9€",
+      "period": "/mois",
+      "pages": "200",
+      "pagesText": "pages par mois",
+      "features": [
+        "PDF vers JSON/CSV",
+        "Support de Base",
+        "Rapports par Email"
+      ],
+      "button": "Commencer"
+    },
+    "professional": {
+      "name": "Professionnel",
+      "badge": "LE PLUS POPULAIRE",
+      "price": "29€",
+      "period": "/mois",
+      "pages": "5000",
+      "pagesText": "pages par mois",
+      "features": [
+        "Toutes les fonctionnalités Débutant",
+        "Support Prioritaire",
+        "Accès API",
+        "Exports Personnalisés"
+      ],
+      "button": "Commencer"
+    },
+    "enterprise": {
+      "name": "Entreprise",
+      "price": "Personnalisé",
+      "pages": "Illimité",
+      "pagesText": "pages",
+      "features": [
+        "Toutes les fonctionnalités Professionnel",
+        "Support Dédié",
+        "Intégrations Personnalisées",
+        "Options Sur Site"
+      ],
+      "button": "Contacter les Ventes"
+    },
+    "faq": {
+      "title": "Questions Fréquemment Posées",
+      "pageCount": {
+        "question": "Qu'est-ce qui compte comme une \"page\" ?",
+        "answer": "Chaque page PDF traitée compte comme une page. Les documents multi-pages utiliseront plusieurs pages de votre allocation mensuelle."
+      },
+      "changePlans": {
+        "question": "Puis-je changer de plan à tout moment ?",
+        "answer": "Oui, vous pouvez mettre à niveau ou rétrograder votre plan à tout moment. Les changements prennent effet immédiatement."
+      },
+      "freeTrial": {
+        "question": "Y a-t-il un essai gratuit ?",
+        "answer": "Oui ! Tous les nouveaux utilisateurs reçoivent 50 pages gratuites pour tester notre service avant de s'engager sur un plan payant."
+      }
+    }
+  },
+  "blog": {
+    "title": "Blog <span class=\"text-emerald-400\">TidiFul</span>",
+    "subtitle": "Restez informé des dernières nouvelles, fonctionnalités et insights sur le traitement de documents et la technologie IA.",
+    "loading": "Chargement des articles de blog...",
+    "error": "Impossible de charger les articles de blog",
+    "errorSubtitle": "Veuillez essayer de rafraîchir la page ou revenir plus tard.",
+    "empty": "Aucun article de blog pour le moment",
+    "emptySubtitle": "Revenez bientôt pour nos dernières mises à jour et insights.",
+    "readMore": "Lire la suite",
+    "readTime": "5 min de lecture",
+    "backToBlog": "Retour au Blog"
+  },
+  "language": {
+    "select": "Sélectionner la Langue",
+    "current": "Langue Actuelle"
+  }
+}

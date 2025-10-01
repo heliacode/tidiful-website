@@ -1,13 +1,94 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-838XD1M1EQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-838XD1M1EQ');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TidiFul - Convert Invoices to Structured Data</title>
-<link rel="icon" type="image/png" href="assets/images/leaf_png_128x128.png">
+    <meta name="description" content="Instantly convert PDF invoices, receipts, and documents into clean, structured JSON or CSV with our AI-powered extraction engine. Free trial available.">
+    <meta name="keywords" content="document processing, AI, PDF extraction, invoice processing, automation, TidiFul, OCR, data extraction, invoice automation, receipt processing">
+    <meta name="author" content="TidiFul">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="en-US">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="TidiFul - Convert Invoices to Structured Data">
+    <meta property="og:description" content="Instantly convert PDF invoices, receipts, and documents into clean, structured JSON or CSV with our AI-powered extraction engine.">
+    <meta property="og:url" content="https://tidiful.com/">
+    <meta property="og:site_name" content="TidiFul">
+    <meta property="og:image" content="https://tidiful.com/assets/images/tidiful_logo.png">
+    <meta property="og:image:width" content="1215">
+    <meta property="og:image:height" content="449">
+    <meta property="og:image:alt" content="TidiFul Logo - AI Document Processing">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="TidiFul - Convert Invoices to Structured Data">
+    <meta property="twitter:description" content="Instantly convert PDF invoices, receipts, and documents into clean, structured JSON or CSV with our AI-powered extraction engine.">
+    <meta property="twitter:image" content="https://tidiful.com/assets/images/tidiful_logo.png">
+    <meta property="twitter:image:alt" content="TidiFul Logo - AI Document Processing">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://tidiful.com/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/leaf_png_128x128.png">
+    <link rel="apple-touch-icon" href="assets/images/leaf_png_256x256.png">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "TidiFul",
+        "description": "AI-powered document processing platform that converts PDF invoices, receipts, and documents into structured data formats like JSON and CSV.",
+        "url": "https://tidiful.com",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "offers": {
+            "@type": "Offer",
+            "price": "9",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "9",
+                "priceCurrency": "USD",
+                "unitText": "MONTH"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "TidiFul",
+            "url": "https://tidiful.com",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://tidiful.com/assets/images/tidiful_logo.png"
+            }
+        },
+        "featureList": [
+            "PDF to JSON conversion",
+            "PDF to CSV conversion", 
+            "AI-powered extraction",
+            "Invoice processing",
+            "Receipt processing",
+            "Document automation"
+        ]
+    }
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="assets/js/i18n.js"></script>
     <script>
         tailwind.config = {
             darkMode: 'class',
@@ -76,16 +157,24 @@
                     <span class="text-xl font-bold text-gray-100">TidiFul</span>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#" class="text-gray-300 hover:text-emerald-400 transition-colors">Features</a>
-                    <a href="pricing.html" class="text-gray-300 hover:text-emerald-400 transition-colors">Pricing</a>
-                    <a href="blog/blogs.html" class="text-gray-300 hover:text-emerald-400 transition-colors">Blog</a>
-                    <a href="#" class="text-gray-300 hover:text-emerald-400 transition-colors">Contact</a>
+                    <a href="#" class="text-gray-300 hover:text-emerald-400 transition-colors" data-i18n="nav.features">Features</a>
+                    <a href="pricing.html" class="text-gray-300 hover:text-emerald-400 transition-colors" data-i18n="nav.pricing">Pricing</a>
+                    <a href="blog/blogs.html" class="text-gray-300 hover:text-emerald-400 transition-colors" data-i18n="nav.blog">Blog</a>
+                    <a href="#" class="text-gray-300 hover:text-emerald-400 transition-colors" data-i18n="nav.contact">Contact</a>
                 </div>
-<div class="flex items-center space-x-4">
-                    <button class="px-4 py-2 rounded-lg bg-gray-700 hover:bg-gray-600 transition-colors text-gray-100">
+                <div class="flex items-center space-x-4">
+                    <!-- Language Switcher -->
+                    <select id="language-switcher" class="px-4 py-2 bg-gray-800 border border-gray-600 rounded-lg text-gray-100 text-sm focus:outline-none focus:border-emerald-400 hover:bg-gray-700 transition-all duration-200 cursor-pointer">
+                        <option value="en-US">🇺🇸 English</option>
+                        <option value="fr-FR">🇫🇷 Français</option>
+                        <option value="de-DE">🇩🇪 Deutsch</option>
+                        <option value="es-ES">🇪🇸 Español</option>
+                        <option value="el-GR">🇬🇷 Ελληνικά</option>
+                    </select>
+                    <button class="px-4 py-2 rounded-lg bg-gray-700 hover:bg-gray-600 transition-colors text-gray-100" data-i18n="nav.signIn">
                         Sign In
                     </button>
-                    <button class="px-4 py-2 rounded-lg border border-emerald-500 text-emerald-400 hover:bg-emerald-900 transition-colors">
+                    <button class="px-4 py-2 rounded-lg border border-emerald-500 text-emerald-400 hover:bg-emerald-900 transition-colors" data-i18n="nav.signUp">
                         Sign Up
                     </button>
                 </div>
@@ -99,15 +188,15 @@
                     <div class="mb-4">
                         <img src="assets/images/tidiful_logo.png" alt="TidiFul" class="h-40 md:h-48 lg:h-56 w-auto mx-auto">
                     </div>
-                    <h1 class="text-4xl md:text-6xl font-bold mb-6 text-gray-100">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 text-gray-100" data-i18n-html="hero.title">
                     Transform Invoices into <span class="text-emerald-400">Structured Data</span>
                 </h1>
-                <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto">
+                <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto" data-i18n="hero.subtitle">
 Instantly convert PDF invoices, receipts, and documents into clean, structured JSON or CSV with our AI-powered extraction engine.
                 </p>
 <!-- Demo Section -->
                 <div class="bg-gray-800 backdrop-blur-md rounded-2xl p-6 md:p-8 shadow-2xl">
-<h2 class="text-2xl font-semibold mb-6 text-gray-100">Try it now - Upload your PDF</h2>
+                    <h2 class="text-2xl font-semibold mb-6 text-gray-100" data-i18n="hero.uploadTitle">Try it now - Upload your PDF</h2>
                     <div id="upload-area" class="upload-area border-2 border-dashed border-gray-600 rounded-xl p-8 text-center cursor-pointer transition-all">
                         <div class="mb-4 relative">
                             <i data-feather="upload-cloud" class="w-12 h-12 mx-auto text-emerald-400"></i>
@@ -115,14 +204,14 @@ Instantly convert PDF invoices, receipts, and documents into clean, structured J
                                 <i data-feather="mouse-pointer" class="w-10 h-10 text-emerald-400"></i>
                             </div>
                         </div>
-<p class="text-lg mb-2 text-gray-200">Drag & drop your PDF here!</p>
-                        <p class="text-gray-400 mb-4">or</p>
+                        <p class="text-lg mb-2 text-gray-200" data-i18n="hero.dragDrop">Drag & drop your PDF here!</p>
+                        <p class="text-gray-400 mb-4" data-i18n="hero.or">or</p>
                         <input type="file" id="file-input" class="hidden" accept=".pdf">
-                        <label for="file-input" class="inline-block px-6 py-3 bg-gray-700 hover:bg-gray-600 rounded-lg cursor-pointer transition-colors text-gray-100">
+                        <label for="file-input" class="inline-block px-6 py-3 bg-gray-700 hover:bg-gray-600 rounded-lg cursor-pointer transition-colors text-gray-100" data-i18n="hero.browseFiles">
                             Browse Files
                         </label>
-                        <p class="text-sm text-gray-400 mt-4">Supports PDF invoices and receipts</p>
-                        <p class="text-xs text-gray-500 mt-2">All processing happens in memory - no data is stored or preserved for maximum security and privacy</p>
+                        <p class="text-sm text-gray-400 mt-4" data-i18n="hero.supportedFormats">Supports PDF invoices and receipts</p>
+                        <p class="text-xs text-gray-500 mt-2" data-i18n="hero.privacyNote">All processing happens in memory - no data is stored or preserved for maximum security and privacy</p>
 </div>
 <div id="processing" class="hidden mt-8 text-center">
                         <div class="inline-flex items-center justify-center space-x-2">
@@ -130,14 +219,14 @@ Instantly convert PDF invoices, receipts, and documents into clean, structured J
                             <div class="w-4 h-4 bg-emerald-400 rounded-full animate-bounce" style="animation-delay: 0.1s"></div>
                             <div class="w-4 h-4 bg-emerald-400 rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
                         </div>
-                        <p class="mt-4 text-emerald-400">Processing your document...</p>
+                        <p class="mt-4 text-emerald-400" data-i18n="hero.processing">Processing your document...</p>
                     </div>
                     <div id="results" class="hidden mt-8">
-                        <h3 class="text-xl font-semibold mb-4 text-gray-100">Extracted Data</h3>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-100" data-i18n="hero.extractedData">Extracted Data</h3>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div class="result-card bg-gray-800 p-5 rounded-xl">
                                 <div class="flex items-center justify-between mb-4">
-                                    <h4 class="font-medium">JSON Output</h4>
+                                    <h4 class="font-medium" data-i18n="hero.jsonOutput">JSON Output</h4>
                                     <button class="text-cyan-400 hover:text-cyan-300">
                                         <i data-feather="copy" class="w-4 h-4"></i>
                                     </button>
@@ -174,7 +263,7 @@ Instantly convert PDF invoices, receipts, and documents into clean, structured J
                             
                             <div class="result-card bg-gray-800 p-5 rounded-xl">
                                 <div class="flex items-center justify-between mb-4">
-                                    <h4 class="font-medium">Table View</h4>
+                                    <h4 class="font-medium" data-i18n="hero.tableView">Table View</h4>
                                     <button class="text-emerald-400 hover:text-emerald-300">
                                         <i data-feather="download" class="w-4 h-4"></i>
                                     </button>
@@ -214,7 +303,7 @@ Instantly convert PDF invoices, receipts, and documents into clean, structured J
                             </div>
                         </div>
                         <div class="mt-6 flex justify-center">
-                            <button id="reset-button" class="px-6 py-2 border border-gray-600 rounded-lg hover:bg-gray-800 transition-colors text-gray-200">
+                            <button id="reset-button" class="px-6 py-2 border border-gray-600 rounded-lg hover:bg-gray-800 transition-colors text-gray-200" data-i18n="hero.processAnother">
                                 Process Another Document
                             </button>
                         </div>
@@ -226,28 +315,28 @@ Instantly convert PDF invoices, receipts, and documents into clean, structured J
     <!-- Features Section -->
     <section class="py-16 bg-gray-900">
 <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Why Choose <span class="text-emerald-400">TidiFul</span>?</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-i18n-html="features.title">Why Choose <span class="text-emerald-400">TidiFul</span>?</h2>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-gray-800 p-6 rounded-2xl backdrop-blur-sm">
 <div class="w-12 h-12 rounded-lg bg-emerald-900 flex items-center justify-center mb-4">
                         <i data-feather="zap" class="w-6 h-6 text-emerald-400"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3">Lightning Fast</h3>
-                    <p class="text-gray-300">Process documents in seconds with our optimized AI engine, not hours of manual work.</p>
+                    <h3 class="text-xl font-semibold mb-3" data-i18n="features.lightningFast.title">Lightning Fast</h3>
+                    <p class="text-gray-300" data-i18n="features.lightningFast.description">Process documents in seconds with our optimized AI engine, not hours of manual work.</p>
                 </div>
                 <div class="bg-gray-800 p-6 rounded-2xl backdrop-blur-sm">
 <div class="w-12 h-12 rounded-lg bg-cyan-900 flex items-center justify-center mb-4">
                         <i data-feather="layers" class="w-6 h-6 text-cyan-400"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3">Multiple Formats</h3>
-                    <p class="text-gray-300">Export to JSON, CSV, XML, or directly integrate with your existing systems via API.</p>
+                    <h3 class="text-xl font-semibold mb-3" data-i18n="features.multipleFormats.title">Multiple Formats</h3>
+                    <p class="text-gray-300" data-i18n="features.multipleFormats.description">Export to JSON, CSV, XML, or directly integrate with your existing systems via API.</p>
                 </div>
                 <div class="bg-gray-800 p-6 rounded-2xl backdrop-blur-sm">
 <div class="w-12 h-12 rounded-lg bg-emerald-900 flex items-center justify-center mb-4">
                         <i data-feather="shield" class="w-6 h-6 text-emerald-400"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3">Secure & Private</h3>
-                    <p class="text-gray-300">Your documents are processed securely and never stored on our servers without permission.</p>
+                    <h3 class="text-xl font-semibold mb-3" data-i18n="features.securePrivate.title">Secure & Private</h3>
+                    <p class="text-gray-300" data-i18n="features.securePrivate.description">Your documents are processed securely and never stored on our servers without permission.</p>
                 </div>
             </div>
         </div>
@@ -255,7 +344,7 @@ Instantly convert PDF invoices, receipts, and documents into clean, structured J
     <!-- Reviews Section -->
     <section class="py-16 bg-gray-900">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-100">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-100" data-i18n-html="reviews.title">
                 What Our <span class="text-emerald-400">Customers</span> Say
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -266,8 +355,8 @@ Instantly convert PDF invoices, receipts, and documents into clean, structured J
                             <span class="text-white font-semibold text-sm">SC</span>
                         </div>
                         <div>
-                            <h4 class="font-semibold text-gray-100">Sarah Chen</h4>
-                            <p class="text-emerald-400 text-sm">Financial Analyst</p>
+                            <h4 class="font-semibold text-gray-100" data-i18n="reviews.sarah.name">Sarah Chen</h4>
+                            <p class="text-emerald-400 text-sm" data-i18n="reviews.sarah.role">Financial Analyst</p>
                         </div>
                     </div>
                     <div class="flex mb-3">
@@ -277,7 +366,7 @@ Instantly convert PDF invoices, receipts, and documents into clean, structured J
                         <i data-feather="star" class="w-4 h-4 text-yellow-400 fill-current"></i>
                         <i data-feather="star" class="w-4 h-4 text-yellow-400 fill-current"></i>
                     </div>
-                    <p class="text-gray-300">"TidiFul has saved our accounting team hours of manual data entry. The accuracy is impressive and the processing speed is incredible!"</p>
+                    <p class="text-gray-300" data-i18n="reviews.sarah.quote">"TidiFul has saved our accounting team hours of manual data entry. The accuracy is impressive and the processing speed is incredible!"</p>
                 </div>
 
                 <!-- Review 2 -->
@@ -287,8 +376,8 @@ Instantly convert PDF invoices, receipts, and documents into clean, structured J
                             <span class="text-white font-semibold text-sm">MR</span>
                         </div>
                         <div>
-                            <h4 class="font-semibold text-gray-100">Marcus Rodriguez</h4>
-                            <p class="text-emerald-400 text-sm">Operations Manager</p>
+                            <h4 class="font-semibold text-gray-100" data-i18n="reviews.marcus.name">Marcus Rodriguez</h4>
+                            <p class="text-emerald-400 text-sm" data-i18n="reviews.marcus.role">Operations Manager</p>
                         </div>
                     </div>
                     <div class="flex mb-3">
@@ -298,7 +387,7 @@ Instantly convert PDF invoices, receipts, and documents into clean, structured J
                         <i data-feather="star" class="w-4 h-4 text-yellow-400 fill-current"></i>
                         <i data-feather="star" class="w-4 h-4 text-yellow-400 fill-current"></i>
                     </div>
-                    <p class="text-gray-300">"The API integration was seamless with our existing systems. We process hundreds of invoices daily and TidiFul handles it effortlessly."</p>
+                    <p class="text-gray-300" data-i18n="reviews.marcus.quote">"The API integration was seamless with our existing systems. We process hundreds of invoices daily and TidiFul handles it effortlessly."</p>
                 </div>
 
                 <!-- Review 3 -->
@@ -308,8 +397,8 @@ Instantly convert PDF invoices, receipts, and documents into clean, structured J
                             <span class="text-white font-semibold text-sm">ET</span>
                         </div>
                         <div>
-                            <h4 class="font-semibold text-gray-100">Emily Thompson</h4>
-                            <p class="text-emerald-400 text-sm">Startup Founder</p>
+                            <h4 class="font-semibold text-gray-100" data-i18n="reviews.emily.name">Emily Thompson</h4>
+                            <p class="text-emerald-400 text-sm" data-i18n="reviews.emily.role">Startup Founder</p>
                         </div>
                     </div>
                     <div class="flex mb-3">
@@ -319,7 +408,7 @@ Instantly convert PDF invoices, receipts, and documents into clean, structured J
                         <i data-feather="star" class="w-4 h-4 text-yellow-400 fill-current"></i>
                         <i data-feather="star" class="w-4 h-4 text-yellow-400 fill-current"></i>
                     </div>
-                    <p class="text-gray-300">"As a small business, TidiFul gives us enterprise-level document processing capabilities at an affordable price. Game changer!"</p>
+                    <p class="text-gray-300" data-i18n="reviews.emily.quote">"As a small business, TidiFul gives us enterprise-level document processing capabilities at an affordable price. Game changer!"</p>
                 </div>
             </div>
         </div>
@@ -329,10 +418,10 @@ Instantly convert PDF invoices, receipts, and documents into clean, structured J
     <section class="py-16 bg-gray-900">
 <div class="container mx-auto px-4">
             <div class="max-w-3xl mx-auto text-center bg-gray-800 backdrop-blur-md rounded-2xl p-8 md:p-12">
-<h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-100">Ready to streamline your document processing?</h2>
-                <p class="text-xl text-gray-300 mb-8">Join thousands of businesses that use TidiFul to automate their data extraction workflows.</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-100" data-i18n="cta.title">Ready to streamline your document processing?</h2>
+                <p class="text-xl text-gray-300 mb-8" data-i18n="cta.subtitle">Join thousands of businesses that use TidiFul to automate their data extraction workflows.</p>
                 <div class="flex justify-center">
-                    <button class="px-8 py-3 bg-emerald-600 hover:bg-emerald-500 rounded-lg text-lg font-medium transition-colors text-white">
+                    <button class="px-8 py-3 bg-emerald-600 hover:bg-emerald-500 rounded-lg text-lg font-medium transition-colors text-white" data-i18n="cta.button">
                         Start Free Trial
                     </button>
                 </div>
@@ -347,40 +436,40 @@ Instantly convert PDF invoices, receipts, and documents into clean, structured J
                     <div class="flex items-center space-x-2 mb-4">
                         <img src="assets/images/tidiful_logo.png" alt="TidiFul" class="h-8 w-auto">
                     </div>
-                    <p class="text-gray-400">Transforming documents into structured data with AI-powered precision.</p>
+                    <p class="text-gray-400" data-i18n="footer.tagline">Transforming documents into structured data with AI-powered precision.</p>
                 </div>
 <div>
-                    <h4 class="text-lg font-semibold mb-4">Product</h4>
+                    <h4 class="text-lg font-semibold mb-4" data-i18n="footer.product">Product</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Features</a></li>
-                        <li><a href="pricing.html" class="text-gray-400 hover:text-emerald-400 transition-colors">Pricing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors" data-i18n="nav.features">Features</a></li>
+                        <li><a href="pricing.html" class="text-gray-400 hover:text-emerald-400 transition-colors" data-i18n="nav.pricing">Pricing</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Integrations</a></li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Resources</h4>
+                    <h4 class="text-lg font-semibold mb-4" data-i18n="footer.resources">Resources</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Documentation</a></li>
-                        <li><a href="blog/blogs.html" class="text-gray-400 hover:text-emerald-400 transition-colors">Blog</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Case Studies</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Support</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors" data-i18n="footer.documentation">Documentation</a></li>
+                        <li><a href="blog/blogs.html" class="text-gray-400 hover:text-emerald-400 transition-colors" data-i18n="nav.blog">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors" data-i18n="footer.caseStudies">Case Studies</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors" data-i18n="footer.support">Support</a></li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <h4 class="text-lg font-semibold mb-4" data-i18n="footer.company">Company</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">About</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Careers</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Contact</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Legal</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors" data-i18n="footer.about">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors" data-i18n="footer.careers">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors" data-i18n="nav.contact">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors" data-i18n="footer.legal">Legal</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500">© 2023 TidiFul. All rights reserved.</p>
+                <p class="text-gray-500" data-i18n="footer.copyright">© 2023 TidiFul. All rights reserved.</p>
 <div class="flex space-x-4 mt-4 md:mt-0">
                     <a href="#" class="text-gray-500 hover:text-emerald-400 transition-colors">
                         <i data-feather="twitter" class="w-5 h-5"></i>
