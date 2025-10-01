@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TidiFul Pricing - Simple, Transparent Pricing</title>
+    <link rel="icon" type="image/png" href="assets/images/leaf_png_128x128.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            200: '#a7f3d0',
+                            300: '#6ee7b7',
+                            400: '#34d399',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                        },
+                        secondary: {
+                            50: '#ecfeff',
+                            100: '#cffafe',
+                            200: '#a5f3fc',
+                            300: '#67e8f9',
+                            400: '#22d3ee',
+                            500: '#06b6d4',
+                            600: '#0891b2',
+                            700: '#0e7490',
+                            800: '#155e75',
+                            900: '#164e63',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: #161616;
+        }
+        .popular-plan {
+            position: relative;
+            border: 2px solid #10b981;
+            transform: scale(1.05);
+        }
+        .popular-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #10b981;
+            color: white;
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .pricing-card {
+            transition: all 0.3s ease;
+        }
+        .pricing-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        .popular-plan:hover {
+            transform: scale(1.05) translateY(-4px);
+        }
+    </style>
+</head>
+<body class="min-h-screen text-gray-100 antialiased">
+    <!-- Navigation -->
+    <nav class="border-b border-gray-700 bg-gray-900 backdrop-blur-sm">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <img src="assets/images/leaf_png_128x128.png" alt="TidiFul" class="w-8 h-8">
+                    <span class="text-xl font-bold text-gray-100">TidiFul</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-300 hover:text-emerald-400 transition-colors">Home</a>
+                    <a href="#" class="text-gray-300 hover:text-emerald-400 transition-colors">Features</a>
+                    <a href="pricing.html" class="text-emerald-400 font-medium">Pricing</a>
+                    <a href="blog/blogs.html" class="text-gray-300 hover:text-emerald-400 transition-colors">Blog</a>
+                    <a href="#" class="text-gray-300 hover:text-emerald-400 transition-colors">API</a>
+                    <a href="#" class="text-gray-300 hover:text-emerald-400 transition-colors">Contact</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="px-4 py-2 rounded-lg bg-gray-700 hover:bg-gray-600 transition-colors text-gray-100">
+                        Sign In
+                    </button>
+                    <button class="px-4 py-2 rounded-lg border border-emerald-500 text-emerald-400 hover:bg-emerald-900 transition-colors">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Pricing Section -->
+    <section class="py-16 md:py-24 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-100">
+                    Simple, Transparent <span class="text-emerald-400">Pricing</span>
+                </h1>
+                <p class="text-xl text-gray-300">
+                    Choose the plan that fits your document processing needs. All plans include our full feature set.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Starter Plan -->
+                <div class="pricing-card bg-gray-800 rounded-2xl p-8 text-center">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-100">Starter</h3>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold text-emerald-400">$9</span>
+                        <span class="text-gray-400">/month</span>
+                    </div>
+                    <div class="mb-8">
+                        <span class="text-2xl font-bold text-gray-100">200</span>
+                        <span class="text-gray-400">pages per month</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center justify-center">
+                            <i data-feather="check" class="w-5 h-5 text-emerald-400 mr-2"></i>
+                            <span class="text-gray-300">PDF to JSON/CSV</span>
+                        </li>
+                        <li class="flex items-center justify-center">
+                            <i data-feather="check" class="w-5 h-5 text-emerald-400 mr-2"></i>
+                            <span class="text-gray-300">Basic Support</span>
+                        </li>
+                        <li class="flex items-center justify-center">
+                            <i data-feather="check" class="w-5 h-5 text-emerald-400 mr-2"></i>
+                            <span class="text-gray-300">Email Reports</span>
+                        </li>
+                    </ul>
+                    <button class="w-full py-3 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors text-gray-100">
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Professional Plan (Popular) -->
+                <div class="pricing-card popular-plan bg-gray-800 rounded-2xl p-8 text-center">
+                    <div class="popular-badge">MOST POPULAR</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-100">Professional</h3>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold text-emerald-400">$29</span>
+                        <span class="text-gray-400">/month</span>
+                    </div>
+                    <div class="mb-8">
+                        <span class="text-2xl font-bold text-gray-100">5000</span>
+                        <span class="text-gray-400">pages per month</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center justify-center">
+                            <i data-feather="check" class="w-5 h-5 text-emerald-400 mr-2"></i>
+                            <span class="text-gray-300">All Starter features</span>
+                        </li>
+                        <li class="flex items-center justify-center">
+                            <i data-feather="check" class="w-5 h-5 text-emerald-400 mr-2"></i>
+                            <span class="text-gray-300">Priority Support</span>
+                        </li>
+                        <li class="flex items-center justify-center">
+                            <i data-feather="check" class="w-5 h-5 text-emerald-400 mr-2"></i>
+                            <span class="text-gray-300">API Access</span>
+                        </li>
+                        <li class="flex items-center justify-center">
+                            <i data-feather="check" class="w-5 h-5 text-emerald-400 mr-2"></i>
+                            <span class="text-gray-300">Custom Exports</span>
+                        </li>
+                    </ul>
+                    <button class="w-full py-3 bg-emerald-600 hover:bg-emerald-500 rounded-lg transition-colors text-white">
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card bg-gray-800 rounded-2xl p-8 text-center">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-100">Enterprise</h3>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold text-emerald-400">Custom</span>
+                    </div>
+                    <div class="mb-8">
+                        <span class="text-2xl font-bold text-gray-100">Unlimited</span>
+                        <span class="text-gray-400">pages</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center justify-center">
+                            <i data-feather="check" class="w-5 h-5 text-emerald-400 mr-2"></i>
+                            <span class="text-gray-300">All Professional features</span>
+                        </li>
+                        <li class="flex items-center justify-center">
+                            <i data-feather="check" class="w-5 h-5 text-emerald-400 mr-2"></i>
+                            <span class="text-gray-300">Dedicated Support</span>
+                        </li>
+                        <li class="flex items-center justify-center">
+                            <i data-feather="check" class="w-5 h-5 text-emerald-400 mr-2"></i>
+                            <span class="text-gray-300">Custom Integrations</span>
+                        </li>
+                        <li class="flex items-center justify-center">
+                            <i data-feather="check" class="w-5 h-5 text-emerald-400 mr-2"></i>
+                            <span class="text-gray-300">On-premise Options</span>
+                        </li>
+                    </ul>
+                    <button class="w-full py-3 border border-emerald-500 text-emerald-400 hover:bg-emerald-900 rounded-lg transition-colors">
+                        Contact Sales
+                    </button>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="max-w-4xl mx-auto mt-20">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-100">Frequently Asked Questions</h2>
+                <div class="space-y-6">
+                    <div class="bg-gray-800 rounded-xl p-6">
+                        <h3 class="text-lg font-semibold mb-2 text-gray-100">What counts as a "page"?</h3>
+                        <p class="text-gray-300">Each PDF page processed counts as one page. Multi-page documents will use multiple pages from your monthly allowance.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl p-6">
+                        <h3 class="text-lg font-semibold mb-2 text-gray-100">Can I change plans anytime?</h3>
+                        <p class="text-gray-300">Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl p-6">
+                        <h3 class="text-lg font-semibold mb-2 text-gray-100">Is there a free trial?</h3>
+                        <p class="text-gray-300">Yes! All new users get 50 free pages to test our service before committing to a paid plan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="assets/images/leaf_png_128x128.png" alt="TidiFul" class="w-8 h-8">
+                        <span class="text-xl font-bold text-gray-100">TidiFul</span>
+                    </div>
+                    <p class="text-gray-400">Transforming documents into structured data with AI-powered precision.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Product</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Features</a></li>
+                        <li><a href="pricing.html" class="text-gray-400 hover:text-emerald-400 transition-colors">Pricing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">API</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Integrations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Documentation</a></li>
+                        <li><a href="blog/blogs.html" class="text-gray-400 hover:text-emerald-400 transition-colors">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Case Studies</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Legal</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500">© 2023 TidiFul. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-500 hover:text-emerald-400 transition-colors">
+                        <i data-feather="twitter" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-emerald-400 transition-colors">
+                        <i data-feather="linkedin" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-emerald-400 transition-colors">
+                        <i data-feather="github" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize Feather Icons
+            feather.replace();
+        });
+    </script>
+</body>
+</html>

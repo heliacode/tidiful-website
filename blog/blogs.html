@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TidiFul Blog - Latest News & Updates</title>
+    <meta name="description" content="Stay updated with the latest news, features, and insights about document processing and AI technology from TidiFul.">
+    <meta name="keywords" content="document processing, AI, PDF extraction, invoice processing, automation, TidiFul">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="TidiFul Blog - Latest News & Updates">
+    <meta property="og:description" content="Stay updated with the latest news, features, and insights about document processing and AI technology from TidiFul.">
+    <meta property="og:url" content="https://tidiful.com/blog/blogs.html">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="TidiFul Blog - Latest News & Updates">
+    <meta property="twitter:description" content="Stay updated with the latest news, features, and insights about document processing and AI technology from TidiFul.">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "TidiFul Blog",
+        "description": "Latest news, features, and insights about document processing and AI technology",
+        "url": "https://tidiful.com/blog/blogs.html",
+        "publisher": {
+            "@type": "Organization",
+            "name": "TidiFul",
+            "url": "https://tidiful.com"
+        }
+    }
+    </script>
+    <link rel="icon" type="image/png" href="../assets/images/leaf_png_128x128.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            200: '#a7f3d0',
+                            300: '#6ee7b7',
+                            400: '#34d399',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                        },
+                        secondary: {
+                            50: '#ecfeff',
+                            100: '#cffafe',
+                            200: '#a5f3fc',
+                            300: '#67e8f9',
+                            400: '#22d3ee',
+                            500: '#06b6d4',
+                            600: '#0891b2',
+                            700: '#0e7490',
+                            800: '#155e75',
+                            900: '#164e63',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: #161616;
+        }
+        .blog-card {
+            transition: all 0.3s ease;
+        }
+        .blog-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        .line-clamp-3 {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .loading-spinner {
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="min-h-screen text-gray-100 antialiased">
+    <!-- Navigation -->
+    <nav class="border-b border-gray-700 bg-gray-900 backdrop-blur-sm">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <img src="../assets/images/leaf_png_128x128.png" alt="TidiFul" class="w-8 h-8">
+                    <span class="text-xl font-bold text-gray-100">TidiFul</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../index.html" class="text-gray-300 hover:text-emerald-400 transition-colors">Home</a>
+                    <a href="#" class="text-gray-300 hover:text-emerald-400 transition-colors">Features</a>
+                    <a href="../pricing.html" class="text-gray-300 hover:text-emerald-400 transition-colors">Pricing</a>
+                    <a href="blogs.html" class="text-emerald-400 font-medium">Blog</a>
+                    <a href="#" class="text-gray-300 hover:text-emerald-400 transition-colors">Contact</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="px-4 py-2 rounded-lg bg-gray-700 hover:bg-gray-600 transition-colors text-gray-100">
+                        Sign In
+                    </button>
+                    <button class="px-4 py-2 rounded-lg border border-emerald-500 text-emerald-400 hover:bg-emerald-900 transition-colors">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <section class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-100">
+                    TidiFul <span class="text-emerald-400">Blog</span>
+                </h1>
+                <p class="text-xl text-gray-300">
+                    Stay updated with the latest news, features, and insights about document processing and AI technology.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Section -->
+    <section class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <!-- Loading State -->
+                <div id="loading" class="text-center py-12">
+                    <div class="loading-spinner w-8 h-8 border-4 border-emerald-400 border-t-transparent rounded-full mx-auto mb-4"></div>
+                    <p class="text-gray-400">Loading blog posts...</p>
+                </div>
+
+                <!-- Error State -->
+                <div id="error" class="hidden text-center py-12">
+                    <div class="w-16 h-16 bg-red-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="alert-circle" class="w-8 h-8 text-red-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-100">Unable to load blog posts</h3>
+                    <p class="text-gray-400">Please try refreshing the page or check back later.</p>
+                </div>
+
+                <!-- Empty State -->
+                <div id="empty" class="hidden text-center py-12">
+                    <div class="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="file-text" class="w-8 h-8 text-gray-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-100">No blog posts yet</h3>
+                    <p class="text-gray-400">Check back soon for our latest updates and insights.</p>
+                </div>
+
+                <!-- Blog Posts Container -->
+                <div id="blog-posts" class="space-y-8">
+                    <!-- Posts will be dynamically loaded here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="../assets/images/leaf_png_128x128.png" alt="TidiFul" class="w-8 h-8">
+                        <span class="text-xl font-bold text-gray-100">TidiFul</span>
+                    </div>
+                    <p class="text-gray-400">Transforming documents into structured data with AI-powered precision.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Product</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Features</a></li>
+                        <li><a href="../pricing.html" class="text-gray-400 hover:text-emerald-400 transition-colors">Pricing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Integrations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Documentation</a></li>
+                        <li><a href="blogs.html" class="text-gray-400 hover:text-emerald-400 transition-colors">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Case Studies</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Legal</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500">© 2023 TidiFul. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-500 hover:text-emerald-400 transition-colors">
+                        <i data-feather="twitter" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-emerald-400 transition-colors">
+                        <i data-feather="linkedin" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-emerald-400 transition-colors">
+                        <i data-feather="github" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize Feather Icons
+            feather.replace();
+            
+            // Load blog posts
+            loadBlogPosts();
+        });
+
+        async function loadBlogPosts() {
+            const loadingEl = document.getElementById('loading');
+            const errorEl = document.getElementById('error');
+            const emptyEl = document.getElementById('empty');
+            const postsContainer = document.getElementById('blog-posts');
+
+            try {
+                // Get list of post files
+                const posts = await getPostFiles();
+                
+                if (posts.length === 0) {
+                    loadingEl.classList.add('hidden');
+                    emptyEl.classList.remove('hidden');
+                    return;
+                }
+
+                // Sort posts by date (newest first)
+                posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+                // Load each post
+                const postElements = [];
+                for (const post of posts) {
+                    try {
+                        const postContent = await loadPostContent(post.filename);
+                        const postElement = createPostElement(post, postContent);
+                        postElements.push(postElement);
+                    } catch (err) {
+                        console.warn(`Failed to load post ${post.filename}:`, err);
+                    }
+                }
+
+                // Display posts
+                if (postElements.length > 0) {
+                    postsContainer.innerHTML = '';
+                    postElements.forEach(element => postsContainer.appendChild(element));
+                    loadingEl.classList.add('hidden');
+                } else {
+                    loadingEl.classList.add('hidden');
+                    emptyEl.classList.remove('hidden');
+                }
+
+            } catch (error) {
+                console.error('Error loading blog posts:', error);
+                loadingEl.classList.add('hidden');
+                errorEl.classList.remove('hidden');
+            }
+        }
+
+        async function getPostFiles() {
+            // Try to fetch a posts manifest file first
+            try {
+                const response = await fetch('posts/manifest.json');
+                if (response.ok) {
+                    const manifest = await response.json();
+                    return manifest.posts;
+                }
+            } catch (error) {
+                console.log('No manifest file found, using fallback');
+            }
+            
+            // Fallback: try to discover posts by attempting to load common filenames
+            const commonPosts = [
+                'postexample0.html',
+                'reddit-knowledge-work.html',
+                'template.html'
+                // Add new post filenames here when you create them
+            ];
+            
+            const discoveredPosts = [];
+            
+            for (const filename of commonPosts) {
+                try {
+                    const response = await fetch(`posts/${filename}`);
+                    if (response.ok) {
+                        const html = await response.text();
+                        const parser = new DOMParser();
+                        const doc = parser.parseFromString(html, 'text/html');
+                        
+                        const title = doc.querySelector('title')?.textContent || 'Untitled';
+                        const date = doc.querySelector('meta[name="date"]')?.getAttribute('content') || new Date().toISOString().split('T')[0];
+                        const excerpt = doc.querySelector('meta[name="excerpt"]')?.getAttribute('content') || 'No excerpt available';
+                        
+                        discoveredPosts.push({
+                            filename,
+                            date,
+                            title: title.replace(' - TidiFul Blog', ''),
+                            excerpt
+                        });
+                    }
+                } catch (error) {
+                    console.log(`Could not load ${filename}`);
+                }
+            }
+            
+            return discoveredPosts;
+        }
+
+        async function loadPostContent(filename) {
+            try {
+                const response = await fetch(`posts/${filename}`);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const html = await response.text();
+                
+                // Extract metadata and content from the HTML
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                return {
+                    title: doc.querySelector('title')?.textContent || 'Untitled',
+                    content: doc.querySelector('main')?.innerHTML || doc.body.innerHTML,
+                    date: doc.querySelector('meta[name="date"]')?.getAttribute('content') || new Date().toISOString().split('T')[0],
+                    excerpt: doc.querySelector('meta[name="excerpt"]')?.getAttribute('content') || 'No excerpt available'
+                };
+            } catch (error) {
+                console.error(`Error loading post ${filename}:`, error);
+                throw error;
+            }
+        }
+
+        function createPostElement(post, content) {
+            const postDiv = document.createElement('div');
+            postDiv.className = 'blog-card bg-gray-800 rounded-2xl p-6';
+            
+            // Extract excerpt from content or use meta excerpt
+            const excerpt = content.excerpt || extractExcerpt(content.content);
+            
+            postDiv.innerHTML = `
+                <div class="flex items-start space-x-4 mb-6">
+                    <img src="../assets/images/leaf_png_256x256.png" alt="TidiFul" class="w-12 h-12 rounded-lg flex-shrink-0">
+                    <div class="flex-1 min-w-0">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <span class="text-sm text-gray-400">${formatDate(post.date)}</span>
+                            <span class="text-xs text-gray-500">•</span>
+                            <span class="text-sm text-emerald-400">TidiFul</span>
+                        </div>
+                        <h2 class="text-xl font-semibold text-gray-100 mb-3 leading-tight">${post.title}</h2>
+                        <p class="text-gray-300 text-sm leading-relaxed line-clamp-3">${excerpt}</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between pt-4 border-t border-gray-700">
+                    <a href="posts/${post.filename}" class="inline-flex items-center text-emerald-400 hover:text-emerald-300 transition-colors text-sm font-medium">
+                        Read more
+                        <i data-feather="arrow-right" class="w-4 h-4 ml-1"></i>
+                    </a>
+                    <div class="flex items-center space-x-2 text-xs text-gray-500">
+                        <i data-feather="clock" class="w-3 h-3"></i>
+                        <span>5 min read</span>
+                    </div>
+                </div>
+            `;
+            
+            // Re-initialize feather icons for this element
+            feather.replace(postDiv);
+            
+            return postDiv;
+        }
+
+        function extractExcerpt(content) {
+            // Remove HTML tags and extract first 150 characters
+            const textContent = content.replace(/<[^>]*>/g, '').trim();
+            return textContent.length > 150 ? textContent.substring(0, 150) + '...' : textContent;
+        }
+
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            return date.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+        }
+    </script>
+</body>
+</html>
+

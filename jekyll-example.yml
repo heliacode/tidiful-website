@@ -1,0 +1,17 @@
+# Jekyll Configuration Example
+# _config.yml
+
+title: TidiFul Blog
+description: Document processing insights and automation tips
+baseurl: ""
+url: "https://tidiful.com"
+
+# Jekyll will automatically discover posts in _posts/ folder
+# Posts should be named: YYYY-MM-DD-title.md
+
+collections:
+  posts:
+    output: true
+    permalink: /blog/:name/
+
+# This would automatically generate your blog listing
