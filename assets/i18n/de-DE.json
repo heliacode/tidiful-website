@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "title": "TidiFul - Rechnungen in Strukturierte Daten Konvertieren",
+    "description": "Konvertieren Sie PDF-Rechnungen, Belege und Dokumente sofort in saubere, strukturierte JSON- oder CSV-Dateien mit unserer KI-gestützten Extraktions-Engine.",
+    "keywords": "Dokumentenverarbeitung, KI, PDF-Extraktion, Rechnungsverarbeitung, Automatisierung, TidiFul"
+  },
+  "nav": {
+    "home": "Startseite",
+    "features": "Funktionen",
+    "pricing": "Preise",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "signIn": "Anmelden",
+    "signUp": "Registrieren"
+  },
+  "hero": {
+    "title": "Rechnungen in <span class=\"text-emerald-400\">Strukturierte Daten</span> Transformieren",
+    "subtitle": "Konvertieren Sie PDF-Rechnungen, Belege und Dokumente sofort in saubere, strukturierte JSON- oder CSV-Dateien mit unserer KI-gestützten Extraktions-Engine.",
+    "uploadTitle": "Jetzt Testen - PDF Hochladen",
+    "dragDrop": "PDF hier hineinziehen und ablegen",
+    "or": "oder",
+    "browseFiles": "Dateien Durchsuchen",
+    "supportedFormats": "Unterstützt PDF-Rechnungen und Belege",
+    "privacyNote": "Alle Verarbeitung erfolgt im Speicher - keine Daten werden gespeichert oder aufbewahrt für maximale Sicherheit und Privatsphäre",
+    "processing": "Ihr Dokument wird verarbeitet...",
+    "extractedData": "Extrahierte Daten",
+    "jsonOutput": "JSON-Ausgabe",
+    "tableView": "Tabellenansicht",
+    "processAnother": "Weiteres Dokument Verarbeiten"
+  },
+  "features": {
+    "title": "Warum <span class=\"text-emerald-400\">TidiFul</span> Wählen?",
+    "lightningFast": {
+      "title": "Blitzschnell",
+      "description": "Verarbeiten Sie Dokumente in Sekunden mit unserer optimierten KI-Engine, nicht in Stunden manueller Arbeit."
+    },
+    "multipleFormats": {
+      "title": "Mehrere Formate",
+      "description": "Exportieren Sie nach JSON, CSV, XML oder integrieren Sie direkt mit Ihren bestehenden Systemen über API."
+    },
+    "securePrivate": {
+      "title": "Sicher & Privat",
+      "description": "Ihre Dokumente werden sicher verarbeitet und niemals ohne Erlaubnis auf unseren Servern gespeichert."
+    }
+  },
+  "reviews": {
+    "title": "Was Unsere <span class=\"text-emerald-400\">Kunden</span> Sagen",
+    "sarah": {
+      "name": "Sarah Chen",
+      "role": "Finanzanalystin",
+      "quote": "TidiFul hat unserem Buchhaltungsteam Stunden manueller Dateneingabe erspart. Die Genauigkeit ist beeindruckend und die Verarbeitungsgeschwindigkeit ist unglaublich!"
+    },
+    "marcus": {
+      "name": "Marcus Rodriguez",
+      "role": "Operationsmanager",
+      "quote": "Die API-Integration war nahtlos mit unseren bestehenden Systemen. Wir verarbeiten täglich Hunderte von Rechnungen und TidiFul bewältigt es mühelos."
+    },
+    "emily": {
+      "name": "Emily Thompson",
+      "role": "Startup-Gründerin",
+      "quote": "Als kleines Unternehmen gibt uns TidiFul Unternehmens-Level-Dokumentenverarbeitungsfähigkeiten zu einem erschwinglichen Preis. Ein Wendepunkt!"
+    }
+  },
+  "cta": {
+    "title": "Bereit, Ihre Dokumentenverarbeitung zu optimieren?",
+    "subtitle": "Schließen Sie sich Tausenden von Unternehmen an, die TidiFul verwenden, um ihre Datenextraktions-Workflows zu automatisieren.",
+    "button": "Kostenlose Testversion Starten"
+  },
+  "footer": {
+    "tagline": "Dokumente mit KI-gestützter Präzision in strukturierte Daten transformieren.",
+    "product": "Produkt",
+    "resources": "Ressourcen",
+    "company": "Unternehmen",
+    "documentation": "Dokumentation",
+    "caseStudies": "Fallstudien",
+    "support": "Support",
+    "about": "Über Uns",
+    "careers": "Karrieren",
+    "legal": "Rechtliches",
+    "copyright": "© 2023 TidiFul. Alle Rechte vorbehalten."
+  },
+  "pricing": {
+    "title": "Einfache, Transparente <span class=\"text-emerald-400\">Preise</span>",
+    "subtitle": "Wählen Sie den Plan, der Ihren Dokumentenverarbeitungsbedürfnissen entspricht. Alle Pläne enthalten unseren vollständigen Funktionsumfang.",
+    "starter": {
+      "name": "Starter",
+      "price": "9€",
+      "period": "/Monat",
+      "pages": "200",
+      "pagesText": "Seiten pro Monat",
+      "features": [
+        "PDF zu JSON/CSV",
+        "Grundlegender Support",
+        "E-Mail-Berichte"
+      ],
+      "button": "Loslegen"
+    },
+    "professional": {
+      "name": "Professional",
+      "badge": "AM BELIEBTESTEN",
+      "price": "29€",
+      "period": "/Monat",
+      "pages": "5000",
+      "pagesText": "Seiten pro Monat",
+      "features": [
+        "Alle Starter-Funktionen",
+        "Prioritäts-Support",
+        "API-Zugang",
+        "Benutzerdefinierte Exporte"
+      ],
+      "button": "Loslegen"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "price": "Individuell",
+      "pages": "Unbegrenzt",
+      "pagesText": "Seiten",
+      "features": [
+        "Alle Professional-Funktionen",
+        "Dedizierter Support",
+        "Benutzerdefinierte Integrationen",
+        "On-Premise-Optionen"
+      ],
+      "button": "Vertrieb Kontaktieren"
+    },
+    "faq": {
+      "title": "Häufig Gestellte Fragen",
+      "pageCount": {
+        "question": "Was zählt als eine \"Seite\"?",
+        "answer": "Jede verarbeitete PDF-Seite zählt als eine Seite. Mehrseitige Dokumente verwenden mehrere Seiten aus Ihrer monatlichen Zuteilung."
+      },
+      "changePlans": {
+        "question": "Kann ich Pläne jederzeit ändern?",
+        "answer": "Ja, Sie können Ihren Plan jederzeit upgraden oder downgraden. Änderungen treten sofort in Kraft."
+      },
+      "freeTrial": {
+        "question": "Gibt es eine kostenlose Testversion?",
+        "answer": "Ja! Alle neuen Benutzer erhalten 50 kostenlose Seiten, um unseren Service zu testen, bevor sie sich für einen kostenpflichtigen Plan entscheiden."
+      }
+    }
+  },
+  "blog": {
+    "title": "TidiFul <span class=\"text-emerald-400\">Blog</span>",
+    "subtitle": "Bleiben Sie auf dem Laufenden mit den neuesten Nachrichten, Funktionen und Einblicken über Dokumentenverarbeitung und KI-Technologie.",
+    "loading": "Blog-Beiträge werden geladen...",
+    "error": "Blog-Beiträge konnten nicht geladen werden",
+    "errorSubtitle": "Bitte versuchen Sie, die Seite zu aktualisieren oder schauen Sie später wieder vorbei.",
+    "empty": "Noch keine Blog-Beiträge",
+    "emptySubtitle": "Schauen Sie bald wieder vorbei für unsere neuesten Updates und Einblicke.",
+    "readMore": "Weiterlesen",
+    "readTime": "5 Min. Lesezeit",
+    "backToBlog": "Zurück zum Blog"
+  },
+  "language": {
+    "select": "Sprache Auswählen",
+    "current": "Aktuelle Sprache"
+  }
+}

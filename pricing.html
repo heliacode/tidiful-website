@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-838XD1M1EQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-838XD1M1EQ');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TidiFul Pricing - Simple, Transparent Pricing</title>
@@ -8,6 +17,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="assets/js/i18n.js"></script>
     <script>
         tailwind.config = {
             darkMode: 'class',
@@ -88,18 +98,25 @@
                     <span class="text-xl font-bold text-gray-100">TidiFul</span>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-300 hover:text-emerald-400 transition-colors">Home</a>
-                    <a href="#" class="text-gray-300 hover:text-emerald-400 transition-colors">Features</a>
-                    <a href="pricing.html" class="text-emerald-400 font-medium">Pricing</a>
-                    <a href="blog/blogs.html" class="text-gray-300 hover:text-emerald-400 transition-colors">Blog</a>
-                    <a href="#" class="text-gray-300 hover:text-emerald-400 transition-colors">API</a>
-                    <a href="#" class="text-gray-300 hover:text-emerald-400 transition-colors">Contact</a>
+                    <a href="index.html" class="text-gray-300 hover:text-emerald-400 transition-colors" data-i18n="nav.home">Home</a>
+                    <a href="#" class="text-gray-300 hover:text-emerald-400 transition-colors" data-i18n="nav.features">Features</a>
+                    <a href="pricing.html" class="text-emerald-400 font-medium" data-i18n="nav.pricing">Pricing</a>
+                    <a href="blog/blogs.html" class="text-gray-300 hover:text-emerald-400 transition-colors" data-i18n="nav.blog">Blog</a>
+                    <a href="#" class="text-gray-300 hover:text-emerald-400 transition-colors" data-i18n="nav.contact">Contact</a>
                 </div>
                 <div class="flex items-center space-x-4">
-                    <button class="px-4 py-2 rounded-lg bg-gray-700 hover:bg-gray-600 transition-colors text-gray-100">
+                    <!-- Language Switcher -->
+                    <select id="language-switcher" class="px-4 py-2 bg-gray-800 border border-gray-600 rounded-lg text-gray-100 text-sm focus:outline-none focus:border-emerald-400 hover:bg-gray-700 transition-all duration-200 cursor-pointer">
+                        <option value="en-US">🇺🇸 English</option>
+                        <option value="fr-FR">🇫🇷 Français</option>
+                        <option value="de-DE">🇩🇪 Deutsch</option>
+                        <option value="es-ES">🇪🇸 Español</option>
+                        <option value="el-GR">🇬🇷 Ελληνικά</option>
+                    </select>
+                    <button class="px-4 py-2 rounded-lg bg-gray-700 hover:bg-gray-600 transition-colors text-gray-100" data-i18n="nav.signIn">
                         Sign In
                     </button>
-                    <button class="px-4 py-2 rounded-lg border border-emerald-500 text-emerald-400 hover:bg-emerald-900 transition-colors">
+                    <button class="px-4 py-2 rounded-lg border border-emerald-500 text-emerald-400 hover:bg-emerald-900 transition-colors" data-i18n="nav.signUp">
                         Sign Up
                     </button>
                 </div>
@@ -111,10 +128,10 @@
     <section class="py-16 md:py-24 bg-gray-900">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto text-center mb-16">
-                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-100">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-100" data-i18n-html="pricing.title">
                     Simple, Transparent <span class="text-emerald-400">Pricing</span>
                 </h1>
-                <p class="text-xl text-gray-300">
+                <p class="text-xl text-gray-300" data-i18n="pricing.subtitle">
                     Choose the plan that fits your document processing needs. All plans include our full feature set.
                 </p>
             </div>
@@ -122,98 +139,98 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 <!-- Starter Plan -->
                 <div class="pricing-card bg-gray-800 rounded-2xl p-8 text-center">
-                    <h3 class="text-2xl font-semibold mb-4 text-gray-100">Starter</h3>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-100" data-i18n="pricing.starter.name">Starter</h3>
                     <div class="mb-6">
-                        <span class="text-4xl font-bold text-emerald-400">$9</span>
-                        <span class="text-gray-400">/month</span>
+                        <span class="text-4xl font-bold text-emerald-400" data-i18n="pricing.starter.price">$9</span>
+                        <span class="text-gray-400" data-i18n="pricing.starter.period">/month</span>
                     </div>
                     <div class="mb-8">
-                        <span class="text-2xl font-bold text-gray-100">200</span>
-                        <span class="text-gray-400">pages per month</span>
+                        <span class="text-2xl font-bold text-gray-100" data-i18n="pricing.starter.pages">200</span>
+                        <span class="text-gray-400" data-i18n="pricing.starter.pagesText">pages per month</span>
                     </div>
                     <ul class="space-y-3 mb-8">
                         <li class="flex items-center justify-center">
                             <i data-feather="check" class="w-5 h-5 text-emerald-400 mr-2"></i>
-                            <span class="text-gray-300">PDF to JSON/CSV</span>
+                            <span class="text-gray-300" data-i18n="pricing.starter.features.0">PDF to JSON/CSV</span>
                         </li>
                         <li class="flex items-center justify-center">
                             <i data-feather="check" class="w-5 h-5 text-emerald-400 mr-2"></i>
-                            <span class="text-gray-300">Basic Support</span>
+                            <span class="text-gray-300" data-i18n="pricing.starter.features.1">Basic Support</span>
                         </li>
                         <li class="flex items-center justify-center">
                             <i data-feather="check" class="w-5 h-5 text-emerald-400 mr-2"></i>
-                            <span class="text-gray-300">Email Reports</span>
+                            <span class="text-gray-300" data-i18n="pricing.starter.features.2">Email Reports</span>
                         </li>
                     </ul>
-                    <button class="w-full py-3 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors text-gray-100">
+                    <button class="w-full py-3 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors text-gray-100" data-i18n="pricing.starter.button">
                         Get Started
                     </button>
                 </div>
 
                 <!-- Professional Plan (Popular) -->
                 <div class="pricing-card popular-plan bg-gray-800 rounded-2xl p-8 text-center">
-                    <div class="popular-badge">MOST POPULAR</div>
-                    <h3 class="text-2xl font-semibold mb-4 text-gray-100">Professional</h3>
+                    <div class="popular-badge" data-i18n="pricing.professional.badge">MOST POPULAR</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-100" data-i18n="pricing.professional.name">Professional</h3>
                     <div class="mb-6">
-                        <span class="text-4xl font-bold text-emerald-400">$29</span>
-                        <span class="text-gray-400">/month</span>
+                        <span class="text-4xl font-bold text-emerald-400" data-i18n="pricing.professional.price">$29</span>
+                        <span class="text-gray-400" data-i18n="pricing.professional.period">/month</span>
                     </div>
                     <div class="mb-8">
-                        <span class="text-2xl font-bold text-gray-100">5000</span>
-                        <span class="text-gray-400">pages per month</span>
+                        <span class="text-2xl font-bold text-gray-100" data-i18n="pricing.professional.pages">5000</span>
+                        <span class="text-gray-400" data-i18n="pricing.professional.pagesText">pages per month</span>
                     </div>
                     <ul class="space-y-3 mb-8">
                         <li class="flex items-center justify-center">
                             <i data-feather="check" class="w-5 h-5 text-emerald-400 mr-2"></i>
-                            <span class="text-gray-300">All Starter features</span>
+                            <span class="text-gray-300" data-i18n="pricing.professional.features.0">All Starter features</span>
                         </li>
                         <li class="flex items-center justify-center">
                             <i data-feather="check" class="w-5 h-5 text-emerald-400 mr-2"></i>
-                            <span class="text-gray-300">Priority Support</span>
+                            <span class="text-gray-300" data-i18n="pricing.professional.features.1">Priority Support</span>
                         </li>
                         <li class="flex items-center justify-center">
                             <i data-feather="check" class="w-5 h-5 text-emerald-400 mr-2"></i>
-                            <span class="text-gray-300">API Access</span>
+                            <span class="text-gray-300" data-i18n="pricing.professional.features.2">API Access</span>
                         </li>
                         <li class="flex items-center justify-center">
                             <i data-feather="check" class="w-5 h-5 text-emerald-400 mr-2"></i>
-                            <span class="text-gray-300">Custom Exports</span>
+                            <span class="text-gray-300" data-i18n="pricing.professional.features.3">Custom Exports</span>
                         </li>
                     </ul>
-                    <button class="w-full py-3 bg-emerald-600 hover:bg-emerald-500 rounded-lg transition-colors text-white">
+                    <button class="w-full py-3 bg-emerald-600 hover:bg-emerald-500 rounded-lg transition-colors text-white" data-i18n="pricing.professional.button">
                         Get Started
                     </button>
                 </div>
 
                 <!-- Enterprise Plan -->
                 <div class="pricing-card bg-gray-800 rounded-2xl p-8 text-center">
-                    <h3 class="text-2xl font-semibold mb-4 text-gray-100">Enterprise</h3>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-100" data-i18n="pricing.enterprise.name">Enterprise</h3>
                     <div class="mb-6">
-                        <span class="text-4xl font-bold text-emerald-400">Custom</span>
+                        <span class="text-4xl font-bold text-emerald-400" data-i18n="pricing.enterprise.price">Custom</span>
                     </div>
                     <div class="mb-8">
-                        <span class="text-2xl font-bold text-gray-100">Unlimited</span>
-                        <span class="text-gray-400">pages</span>
+                        <span class="text-2xl font-bold text-gray-100" data-i18n="pricing.enterprise.pages">Unlimited</span>
+                        <span class="text-gray-400" data-i18n="pricing.enterprise.pagesText">pages</span>
                     </div>
                     <ul class="space-y-3 mb-8">
                         <li class="flex items-center justify-center">
                             <i data-feather="check" class="w-5 h-5 text-emerald-400 mr-2"></i>
-                            <span class="text-gray-300">All Professional features</span>
+                            <span class="text-gray-300" data-i18n="pricing.enterprise.features.0">All Professional features</span>
                         </li>
                         <li class="flex items-center justify-center">
                             <i data-feather="check" class="w-5 h-5 text-emerald-400 mr-2"></i>
-                            <span class="text-gray-300">Dedicated Support</span>
+                            <span class="text-gray-300" data-i18n="pricing.enterprise.features.1">Dedicated Support</span>
                         </li>
                         <li class="flex items-center justify-center">
                             <i data-feather="check" class="w-5 h-5 text-emerald-400 mr-2"></i>
-                            <span class="text-gray-300">Custom Integrations</span>
+                            <span class="text-gray-300" data-i18n="pricing.enterprise.features.2">Custom Integrations</span>
                         </li>
                         <li class="flex items-center justify-center">
                             <i data-feather="check" class="w-5 h-5 text-emerald-400 mr-2"></i>
-                            <span class="text-gray-300">On-premise Options</span>
+                            <span class="text-gray-300" data-i18n="pricing.enterprise.features.3">On-premise Options</span>
                         </li>
                     </ul>
-                    <button class="w-full py-3 border border-emerald-500 text-emerald-400 hover:bg-emerald-900 rounded-lg transition-colors">
+                    <button class="w-full py-3 border border-emerald-500 text-emerald-400 hover:bg-emerald-900 rounded-lg transition-colors" data-i18n="pricing.enterprise.button">
                         Contact Sales
                     </button>
                 </div>
@@ -221,19 +238,19 @@
 
             <!-- FAQ Section -->
             <div class="max-w-4xl mx-auto mt-20">
-                <h2 class="text-3xl font-bold text-center mb-12 text-gray-100">Frequently Asked Questions</h2>
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-100" data-i18n="pricing.faq.title">Frequently Asked Questions</h2>
                 <div class="space-y-6">
                     <div class="bg-gray-800 rounded-xl p-6">
-                        <h3 class="text-lg font-semibold mb-2 text-gray-100">What counts as a "page"?</h3>
-                        <p class="text-gray-300">Each PDF page processed counts as one page. Multi-page documents will use multiple pages from your monthly allowance.</p>
+                        <h3 class="text-lg font-semibold mb-2 text-gray-100" data-i18n="pricing.faq.pageCount.question">What counts as a "page"?</h3>
+                        <p class="text-gray-300" data-i18n="pricing.faq.pageCount.answer">Each PDF page processed counts as one page. Multi-page documents will use multiple pages from your monthly allowance.</p>
                     </div>
                     <div class="bg-gray-800 rounded-xl p-6">
-                        <h3 class="text-lg font-semibold mb-2 text-gray-100">Can I change plans anytime?</h3>
-                        <p class="text-gray-300">Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately.</p>
+                        <h3 class="text-lg font-semibold mb-2 text-gray-100" data-i18n="pricing.faq.changePlans.question">Can I change plans anytime?</h3>
+                        <p class="text-gray-300" data-i18n="pricing.faq.changePlans.answer">Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately.</p>
                     </div>
                     <div class="bg-gray-800 rounded-xl p-6">
-                        <h3 class="text-lg font-semibold mb-2 text-gray-100">Is there a free trial?</h3>
-                        <p class="text-gray-300">Yes! All new users get 50 free pages to test our service before committing to a paid plan.</p>
+                        <h3 class="text-lg font-semibold mb-2 text-gray-100" data-i18n="pricing.faq.freeTrial.question">Is there a free trial?</h3>
+                        <p class="text-gray-300" data-i18n="pricing.faq.freeTrial.answer">Yes! All new users get 50 free pages to test our service before committing to a paid plan.</p>
                     </div>
                 </div>
             </div>
@@ -249,39 +266,39 @@
                         <img src="assets/images/leaf_png_128x128.png" alt="TidiFul" class="w-8 h-8">
                         <span class="text-xl font-bold text-gray-100">TidiFul</span>
                     </div>
-                    <p class="text-gray-400">Transforming documents into structured data with AI-powered precision.</p>
+                    <p class="text-gray-400" data-i18n="footer.tagline">Transforming documents into structured data with AI-powered precision.</p>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Product</h4>
+                    <h4 class="text-lg font-semibold mb-4" data-i18n="footer.product">Product</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Features</a></li>
-                        <li><a href="pricing.html" class="text-gray-400 hover:text-emerald-400 transition-colors">Pricing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors" data-i18n="nav.features">Features</a></li>
+                        <li><a href="pricing.html" class="text-gray-400 hover:text-emerald-400 transition-colors" data-i18n="nav.pricing">Pricing</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">API</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Integrations</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Resources</h4>
+                    <h4 class="text-lg font-semibold mb-4" data-i18n="footer.resources">Resources</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Documentation</a></li>
-                        <li><a href="blog/blogs.html" class="text-gray-400 hover:text-emerald-400 transition-colors">Blog</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Case Studies</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Support</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors" data-i18n="footer.documentation">Documentation</a></li>
+                        <li><a href="blog/blogs.html" class="text-gray-400 hover:text-emerald-400 transition-colors" data-i18n="nav.blog">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors" data-i18n="footer.caseStudies">Case Studies</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors" data-i18n="footer.support">Support</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <h4 class="text-lg font-semibold mb-4" data-i18n="footer.company">Company</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">About</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Careers</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Contact</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors">Legal</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors" data-i18n="footer.about">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors" data-i18n="footer.careers">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors" data-i18n="nav.contact">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400 transition-colors" data-i18n="footer.legal">Legal</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500">© 2023 TidiFul. All rights reserved.</p>
+                <p class="text-gray-500" data-i18n="footer.copyright">© 2023 TidiFul. All rights reserved.</p>
                 <div class="flex space-x-4 mt-4 md:mt-0">
                     <a href="#" class="text-gray-500 hover:text-emerald-400 transition-colors">
                         <i data-feather="twitter" class="w-5 h-5"></i>
