@@ -48,19 +48,49 @@
     "processAnother": "Process Another Document"
   },
   "features": {
-    "title": "Why Choose <span class=\"text-emerald-400\">TidiFul</span>?",
-    "lightningFast": {
-      "title": "Lightning Fast",
-      "description": "Process documents in seconds with our optimized AI engine, not hours of manual work."
-    },
-    "multipleFormats": {
-      "title": "Multiple Formats", 
-      "description": "Export to JSON, CSV, XML, or directly integrate with your existing systems via API."
-    },
-    "securePrivate": {
-      "title": "Secure & Private",
-      "description": "Your documents are processed securely and never stored on our servers without permission."
-    }
+    "page_title": "Powerful <span class=\"text-emerald-400\">Features</span> for Modern Business",
+    "page_subtitle": "Discovery how TidiFul transforms your document workflow with cutting-edge AI technology",
+    "hero_cta": "Explore Our Features",
+    "security_title": "Ultimate Security & Privacy",
+    "security_description": "Your data's safety is our top priority. TidiFul operates in a highly secure environment where your documents are processed and never stored. We adhere to strict data protection protocols, including GDPR compliance, ensuring that once your data is extracted and delivered, no trace remains on our servers.",
+    "security_feature1": "Zero data retention post-processing",
+    "security_feature2": "End-to-end encryption for all transfers",
+    "security_feature3": "GDPR compliant data handling", 
+    "security_feature4": "Regular security audits and updates",
+    "format_title": "Universal Format Conversion",
+    "format_description": "Say goodbye to manual data entry. TidiFul takes your images or PDF files and transforms them into the formats you need most: CSV, XLSX, JSON, DOCX, XML, and more. Seamlessly integrate your invoice data into your accounting software, CRM, or spreadsheets.",
+    "format_feature1": "Convert PDFs & images to structured data",
+    "format_feature2": "Supports CSV, XLSX, JSON, DOCX, XML",
+    "format_feature3": "Effortless integration with your existing apps",
+    "format_feature4": "Customizable output for specific needs",
+    "ai_title": "Advanced AI for Unmatched Accuracy", 
+    "ai_description": "Powered by the most sophisticated AI models, TidiFul ensures an accuracy rate you can rely on. Our intelligent algorithms are specifically trained to handle the complexities of business documents, from diverse layouts to handwritten notes. PDF files, regardless of their structure, pose no challenge for our AI.",
+    "ai_feature1": "99%+ extraction accuracy",
+    "ai_feature2": "Handles complex layouts and handwritten text",
+    "ai_feature3": "Continuously learning and improving AI models", 
+    "ai_feature4": "Robust against common document variations",
+    "business_title": "Crafted for Your Business Reality",
+    "business_description": "TidiFul is more than just an AI tool; it's a data transformation partner. We don't just spit out data; we refine what you have into the most beautiful, actionable form. Our AI is meticulously trained on a vast array of business documents to understand your industry nuances.",
+    "business_feature1": "AI trained specifically on business documents",
+    "business_feature2": "Transforms raw data into actionable insights",
+    "business_feature3": "Customizable to fit unique business workflows",
+    "business_feature4": "Designed to enhance operational efficiency",
+    "multilingual_title": "Multilingual Intelligence",
+    "multilingual_description": "In today's global economy, language should never be a barrier to data extraction. TidiFul is built with multilingual support from the ground up, understanding and processing documents in English, French, German, Spanish, Greek, and many more languages.",
+    "multilingual_feature1": "Supports English, French, German, Spanish, Greek",
+    "multilingual_feature2": "Automatically detects document language",
+    "multilingual_feature3": "Expandable to support additional languages",
+    "multilingual_feature4": "Ensures global business compatibility",
+    "performance_title": "Lightning-Fast Processing",
+    "performance_description": "Time is money, and TidiFul saves you both. Our optimized processing engine delivers structured data from your documents in mere seconds. Experience an average processing time of 3-5 seconds per document, allowing your team to focus on high-value tasks.",
+    "performance_feature1": "Average 3-5 seconds per document",
+    "performance_feature2": "High-throughput processing for bulk uploads",
+    "performance_feature3": "Reduces manual data entry time by up to 90%",
+    "performance_feature4": "Instant access to structured data",
+    "cta_title": "Ready to Transform Your Data?",
+    "cta_subtitle": "Join thousands of businesses leveraging TidiFul for smarter document processing.",
+    "cta_start": "Start Free Trial",
+    "cta_contact": "Contact Sales"
   },
   "reviews": {
     "title": "What Our <span class=\"text-emerald-400\">Customers</span> Say",
