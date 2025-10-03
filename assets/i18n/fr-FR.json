@@ -13,6 +13,25 @@
     "signIn": "Se connecter",
     "signUp": "S'inscrire"
   },
+  "login": {
+    "welcome_back": "Bon retour",
+    "sign_in_subtitle": "Connectez-vous à votre compte pour continuer à traiter des documents",
+    "with_google": "Se connecter avec Google",
+    "or": "ou",
+    "email_placeholder": "Entrez votre adresse e-mail",
+    "continue": "Continuer",
+    "no_account": "Vous n'avez pas de compte ?",
+    "start_trial": "Commencer votre essai gratuit",
+    "back_home": "Retour à l'accueil",
+    "features_title": "TidiFul arrive au niveau suivant !",
+    "features_subtitle": "Maîtrisez le traitement de documents IA avec nos dernières fonctionnalités. OCR avancé, extraction de données structurées et automatisation intelligente.",
+    "easy_to_use": "Facile à utiliser",
+    "all_formats": "Tous les formats de données",
+    "security_first": "Sécurité avant tout",
+    "affordable_pricing": "Tarifs abordables",
+    "get_started": "Prêt à commencer ?",
+    "try_free_trial": "Essai gratuit"
+  },
   "hero": {
     "title": "Transformez les Factures en <span class=\"text-emerald-400\">Données Structurées</span>",
     "subtitle": "Convertissez instantanément les factures PDF, reçus et documents en JSON ou CSV propre et structuré avec notre moteur d'extraction alimenté par l'IA.",

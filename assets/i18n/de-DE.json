@@ -13,6 +13,25 @@
     "signIn": "Anmelden",
     "signUp": "Registrieren"
   },
+  "login": {
+    "welcome_back": "Willkommen zurück",
+    "sign_in_subtitle": "Melden Sie sich in Ihrem Konto an, um mit der Dokumentenverarbeitung fortzufahren",
+    "with_google": "Mit Google anmelden",
+    "or": "oder",
+    "email_placeholder": "Geben Sie Ihre E-Mail-Adresse ein",
+    "continue": "Weiter",
+    "no_account": "Sie haben kein Konto?",
+    "start_trial": "Kostenlosen Test starten",
+    "back_home": "Zurück zur Startseite",
+    "features_title": "TidiFul kommt auf das nächste Level!",
+    "features_subtitle": "Meistern Sie KI-Dokumentenverarbeitung mit unseren neuesten Funktionen. Erweiterte OCR, strukturierte Datenextraktion und intelligente Automatisierung.",
+    "easy_to_use": "Einfach zu verwenden",
+    "all_formats": "Alle Datenformate",
+    "security_first": "Sicherheit zuerst",
+    "affordable_pricing": "Erschwingliche Preise",
+    "get_started": "Bereit anzufangen?",
+    "try_free_trial": "Kostenlosen Test versuchen"
+  },
   "hero": {
     "title": "Rechnungen in <span class=\"text-emerald-400\">Strukturierte Daten</span> Transformieren",
     "subtitle": "Konvertieren Sie PDF-Rechnungen, Belege und Dokumente sofort in saubere, strukturierte JSON- oder CSV-Dateien mit unserer KI-gestützten Extraktions-Engine.",

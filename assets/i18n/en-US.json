@@ -13,6 +13,25 @@
     "signIn": "Sign In",
     "signUp": "Sign Up"
   },
+  "login": {
+    "welcome_back": "Welcome back",
+    "sign_in_subtitle": "Sign in to your account to continue processing documents",
+    "with_google": "Sign in with Google",
+    "or": "or",
+    "email_placeholder": "Enter your email address",
+    "continue": "Continue",
+    "no_account": "Don't have an account?",
+    "start_trial": "Start your free trial",
+    "back_home": "Back to Home",
+    "features_title": "TidiFul is coming to the next level!",
+    "features_subtitle": "Master AI document processing with our latest features. Advanced OCR, structured data extraction, and intelligent automation.",
+    "easy_to_use": "Easy to Use",
+    "all_formats": "All Data Formats",
+    "security_first": "Security First",
+    "affordable_pricing": "Affordable Pricing",
+    "get_started": "Ready to get started?",
+    "try_free_trial": "Try Free Trial"
+  },
   "hero": {
     "title": "Transform Invoices into <span class=\"text-emerald-400\">Structured Data</span>",
     "subtitle": "Instantly convert PDF invoices, receipts, and documents into clean, structured JSON or CSV with our AI-powered extraction engine.",

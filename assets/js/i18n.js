@@ -77,20 +77,29 @@ class I18n {
         // Update document language
         document.documentElement.lang = this.currentLanguage;
 
-        // Translate elements with data-i18n attribute
-        document.querySelectorAll('[data-i18n]').forEach(element => {
-            const key = element.getAttribute('data-i18n');
-            const translation = this.getTranslation(key);
-            if (translation) {
-                if (element.tagName === 'INPUT' && element.type === 'text') {
-                    element.placeholder = translation;
-                } else if (element.tagName === 'TITLE') {
-                    element.textContent = translation;
-                } else {
-                    element.textContent = translation;
-                }
-            }
-        });
+                // Translate elements with data-i18n attribute
+                document.querySelectorAll('[data-i18n]').forEach(element => {
+                    const key = element.getAttribute('data-i18n');
+                    const translation = this.getTranslation(key);
+                    if (translation) {
+                        if (element.tagName === 'INPUT' && element.type === 'text') {
+                            element.placeholder = translation;
+                        } else if (element.tagName === 'TITLE') {
+                            element.textContent = translation;
+                        } else {
+                            element.textContent = translation;
+                        }
+                    }
+                });
+
+                // Translate placeholder attributes
+                document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+                    const key = element.getAttribute('data-i18n-placeholder');
+                    const translation = this.getTranslation(key);
+                    if (translation) {
+                        element.placeholder = translation;
+                    }
+                });
 
         // Translate elements with data-i18n-html attribute (for HTML content)
         document.querySelectorAll('[data-i18n-html]').forEach(element => {
