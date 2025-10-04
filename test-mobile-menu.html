@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Menu Test - TidiFul</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: #161616;
+        }
+    </style>
+</head>
+<body class="min-h-screen text-gray-100 antialiased">
+    <!-- Navigation -->
+    <nav class="border-b border-gray-700 bg-gray-900 backdrop-blur-sm">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <img src="assets/images/leaf_png_128x128.png" alt="TidiFul" class="w-8 h-8">
+                    <span class="text-xl font-bold text-gray-100">TidiFul</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-300 hover:text-emerald-400 transition-colors">Home</a>
+                    <a href="features.html" class="text-gray-300 hover:text-emerald-400 transition-colors">Features</a>
+                    <a href="pricing.html" class="text-gray-300 hover:text-emerald-400 transition-colors">Pricing</a>
+                    <a href="blog/blogs.html" class="text-gray-300 hover:text-emerald-400 transition-colors">Blog</a>
+                    <a href="#" class="text-gray-300 hover:text-emerald-400 transition-colors">Contact</a>
+                </div>
+                
+                <!-- Desktop Actions -->
+                <div class="hidden lg:flex items-center space-x-4">
+                    <select id="language-switcher" class="bg-gray-800 text-gray-300 border border-gray-700 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                        <option value="en-US">🇺🇸 English</option>
+                        <option value="fr-FR">🇫🇷 Français</option>
+                        <option value="de-DE">🇩🇪 Deutsch</option>
+                        <option value="es-ES">🇪🇸 Español</option>
+                        <option value="el-GR">🇬🇷 Ελληνικά</option>
+                    </select>
+                    <a href="login.html" class="px-4 py-2 rounded-lg border border-emerald-500 text-emerald-400 hover:bg-emerald-900 transition-colors">
+                        Create Account / Login
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="lg:hidden p-2 rounded-lg text-gray-300 hover:text-emerald-400 hover:bg-gray-800 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu Overlay -->
+            <div id="mobile-menu" class="lg:hidden hidden fixed inset-0 z-50 bg-gray-900 bg-opacity-50 backdrop-blur-sm">
+                <div class="flex flex-col h-full">
+                    <!-- Mobile Menu Header -->
+                    <div class="flex items-center justify-between p-4 border-b border-gray-700">
+                        <div class="flex items-center space-x-2">
+                            <img src="assets/images/leaf_png_128x128.png" alt="TidiFul" class="w-8 h-8">
+                            <span class="text-xl font-bold text-gray-100">TidiFul</span>
+                        </div>
+                        <button id="mobile-menu-close" class="p-2 rounded-lg text-gray-300 hover:text-emerald-400 hover:bg-gray-800 transition-colors">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <!-- Mobile Navigation Links -->
+                    <div class="flex-1 px-4 py-6">
+                        <nav class="space-y-4">
+                            <a href="index.html" class="block px-4 py-3 text-lg text-gray-300 hover:text-emerald-400 hover:bg-gray-800 rounded-lg transition-colors">Home</a>
+                            <a href="features.html" class="block px-4 py-3 text-lg text-gray-300 hover:text-emerald-400 hover:bg-gray-800 rounded-lg transition-colors">Features</a>
+                            <a href="pricing.html" class="block px-4 py-3 text-lg text-gray-300 hover:text-emerald-400 hover:bg-gray-800 rounded-lg transition-colors">Pricing</a>
+                            <a href="blog/blogs.html" class="block px-4 py-3 text-lg text-gray-300 hover:text-emerald-400 hover:bg-gray-800 rounded-lg transition-colors">Blog</a>
+                            <a href="#" class="block px-4 py-3 text-lg text-gray-300 hover:text-emerald-400 hover:bg-gray-800 rounded-lg transition-colors">Contact</a>
+                        </nav>
+                    </div>
+                    
+                    <!-- Mobile Actions -->
+                    <div class="px-4 py-6 border-t border-gray-700 space-y-4">
+                        <select id="mobile-language-switcher" class="w-full bg-gray-800 text-gray-300 border border-gray-700 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                            <option value="en-US">🇺🇸 English</option>
+                            <option value="fr-FR">🇫🇷 Français</option>
+                            <option value="de-DE">🇩🇪 Deutsch</option>
+                            <option value="es-ES">🇪🇸 Español</option>
+                            <option value="el-GR">🇬🇷 Ελληνικά</option>
+                        </select>
+                        <a href="login.html" class="block w-full text-center px-4 py-3 rounded-lg border border-emerald-500 text-emerald-400 hover:bg-emerald-900 transition-colors">
+                            Create Account / Login
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Test Content -->
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-4">Mobile Menu Test</h1>
+        <p class="text-gray-300 mb-4">This page tests the responsive mobile menu functionality.</p>
+        
+        <div class="bg-gray-800 p-6 rounded-lg">
+            <h2 class="text-xl font-semibold mb-4">Test Instructions:</h2>
+            <ol class="list-decimal list-inside space-y-2 text-gray-300">
+                <li>Resize your browser window to be narrow (less than 1024px wide)</li>
+                <li>You should see a hamburger menu button (☰) instead of the full navigation</li>
+                <li>Click the hamburger button to open the mobile menu</li>
+                <li>Test closing the menu by:
+                    <ul class="list-disc list-inside ml-4 mt-2 space-y-1">
+                        <li>Clicking the X button</li>
+                        <li>Clicking outside the menu</li>
+                        <li>Pressing the Escape key</li>
+                        <li>Clicking on any navigation link</li>
+                    </ul>
+                </li>
+                <li>Resize back to desktop width to see the full navigation</li>
+            </ol>
+        </div>
+        
+        <div class="mt-8 bg-emerald-900 bg-opacity-20 p-6 rounded-lg border border-emerald-500">
+            <h3 class="text-lg font-semibold text-emerald-400 mb-2">✅ Mobile Menu Features:</h3>
+            <ul class="list-disc list-inside space-y-1 text-gray-300">
+                <li>Responsive breakpoint at lg (1024px)</li>
+                <li>Full-screen overlay on mobile</li>
+                <li>Smooth animations and transitions</li>
+                <li>Keyboard accessibility (Escape key)</li>
+                <li>Touch-friendly interface</li>
+                <li>Prevents background scrolling when open</li>
+                <li>Consistent styling with the main site</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeMobileMenu();
+        });
+        
+        // Mobile Menu Functionality
+        function initializeMobileMenu() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuClose = document.getElementById('mobile-menu-close');
+            
+            if (mobileMenuButton && mobileMenu && mobileMenuClose) {
+                // Open mobile menu
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+                });
+                
+                // Close mobile menu
+                const closeMenu = () => {
+                    mobileMenu.classList.add('hidden');
+                    document.body.style.overflow = ''; // Restore scrolling
+                };
+                
+                mobileMenuClose.addEventListener('click', closeMenu);
+                
+                // Close menu when clicking on overlay
+                mobileMenu.addEventListener('click', (e) => {
+                    if (e.target === mobileMenu) {
+                        closeMenu();
+                    }
+                });
+                
+                // Close menu when pressing Escape key
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+                        closeMenu();
+                    }
+                });
+                
+                // Close menu when clicking on navigation links
+                const mobileNavLinks = mobileMenu.querySelectorAll('nav a');
+                mobileNavLinks.forEach(link => {
+                    link.addEventListener('click', closeMenu);
+                });
+            }
+        }
+    </script>
+</body>
+</html>
