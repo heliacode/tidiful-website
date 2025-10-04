@@ -11,7 +11,8 @@
     "blog": "Blog",
     "contact": "Contact",
     "signIn": "Sign In",
-    "signUp": "Sign Up"
+    "signUp": "Sign Up",
+    "createAccountLogin": "Create Account / Login"
   },
   "login": {
     "welcome_back": "Welcome back",
@@ -231,5 +232,56 @@
   "language": {
     "select": "Select Language",
     "current": "Current Language"
+  },
+  "about": {
+    "title": "About <span class=\"text-gradient\">TidiFul</span>",
+    "subtitle": "TidiFul was born from a simple idea: technology should make life easier, not more complicated.",
+    "story": {
+      "title": "Our <span class=\"text-emerald-400\">Story</span>",
+      "paragraph1": "TidiFul was born from a simple idea: <strong class=\"text-emerald-400\">technology should make life easier, not more complicated.</strong>",
+      "paragraph2": "Created by <a href=\"https://heliacode.com\" target=\"_blank\" class=\"text-emerald-400 hover:text-emerald-300 transition-colors\">HeliaCode.com</a> and its founder <strong class=\"text-gray-100\">Mathieu Drimonakos</strong>, TidiFul reflects more than <strong class=\"text-emerald-400\">20 years of experience</strong> in the software industry.",
+      "paragraph3": "Over two decades, Mathieu has built tools that help people work smarter, from the creative worlds of gaming to the high-tech environments of enterprise software. His focus has always been the same: <strong class=\"text-gray-100\">empower people through simplicity.</strong>",
+      "experience": "20+ Years",
+      "experienceDescription": "Of software development experience"
+    },
+    "philosophy": {
+      "title": "Our <span class=\"text-emerald-400\">Philosophy</span>",
+      "description": "At TidiFul, we believe clarity is power. Too many online tools overwhelm users with clutter and complexity. We wanted to change that. Every feature of TidiFul is designed to help you achieve more in fewer steps, with clean interfaces, purposeful design, and an experience that just feels right.",
+      "clarity": {
+        "title": "Clarity is Power",
+        "description": "We believe that clear, intuitive interfaces empower users to achieve more with less effort."
+      },
+      "design": {
+        "title": "Purposeful Design", 
+        "description": "Every feature is designed to help you achieve more in fewer steps, with clean interfaces that feel right."
+      },
+      "team": {
+        "title": "Team Excellence",
+        "description": "Behind TidiFul stands the talented HeliaCode team, building reliable, elegant software together."
+      }
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "Turn messy data into meaningful results, with tools that stay out of your way.",
+      "subtitle": "That is the spirit of TidiFul: thoughtful technology that feels effortless. We hope you will find it as enjoyable to use as we have found it rewarding to create."
+    },
+    "team": {
+      "title": "Meet the <span class=\"text-emerald-400\">Team</span>",
+      "mathieu": {
+        "name": "Mathieu Drimonakos",
+        "role": "Founder & Lead Developer",
+        "description": "20+ years of software development experience, from gaming to enterprise software."
+      },
+      "heliacode": {
+        "name": "HeliaCode Team",
+        "role": "Development Team", 
+        "description": "Talented developers crafting reliable, elegant software with attention to detail."
+      }
+    },
+    "cta": {
+      "title": "Ready to Experience <span class=\"text-emerald-400\">Thoughtful Technology</span>?",
+      "subtitle": "Join thousands of businesses that trust TidiFul to transform their document processing workflows.",
+      "button": "Get Started Today"
+    }
   }
 }
