@@ -16,6 +16,7 @@ class HeaderComponent {
                             <a href="#" class="text-gray-300 hover:text-emerald-400 transition-colors">Features</a>
                             <a href="{{PRICING_PATH}}" class="text-gray-300 hover:text-emerald-400 transition-colors">Pricing</a>
                             <a href="{{BLOG_PATH}}" class="{{BLOG_ACTIVE}}">Blog</a>
+                            <a href="{{ABOUT_PATH}}" class="text-gray-300 hover:text-emerald-400 transition-colors">About</a>
                             <a href="#" class="text-gray-300 hover:text-emerald-400 transition-colors">Contact</a>
                         </div>
                         
@@ -66,6 +67,7 @@ class HeaderComponent {
                             <a href="#" class="block px-4 py-2 text-lg text-gray-300 hover:text-emerald-400 hover:bg-gray-800 rounded-lg transition-colors">Features</a>
                             <a href="{{PRICING_PATH}}" class="block px-4 py-2 text-lg text-gray-300 hover:text-emerald-400 hover:bg-gray-800 rounded-lg transition-colors">Pricing</a>
                             <a href="{{BLOG_PATH}}" class="block px-4 py-2 text-lg {{BLOG_ACTIVE_MOBILE}} hover:bg-gray-800 rounded-lg transition-colors">Blog</a>
+                            <a href="{{ABOUT_PATH}}" class="block px-4 py-2 text-lg text-gray-300 hover:text-emerald-400 hover:bg-gray-800 rounded-lg transition-colors">About</a>
                             <a href="#" class="block px-4 py-2 text-lg text-gray-300 hover:text-emerald-400 hover:bg-gray-800 rounded-lg transition-colors">Contact</a>
                         </nav>
                     </div>
@@ -98,6 +100,7 @@ class HeaderComponent {
         html = html.replace('{{HOME_PATH}}', paths.homePath);
         html = html.replace('{{PRICING_PATH}}', paths.pricingPath);
         html = html.replace('{{BLOG_PATH}}', paths.blogPath);
+        html = html.replace('{{ABOUT_PATH}}', paths.aboutPath);
         html = html.replace('{{LOGIN_PATH}}', paths.loginPath);
         html = html.replace('{{BLOG_ACTIVE}}', currentPage === 'blog' ? 'text-emerald-400 font-medium' : 'text-gray-300 hover:text-emerald-400 transition-colors');
         html = html.replace('{{BLOG_ACTIVE_MOBILE}}', currentPage === 'blog' ? 'text-emerald-400 font-medium' : 'text-gray-300 hover:text-emerald-400');
@@ -114,6 +117,7 @@ class HeaderComponent {
             homePath: `${depth}index.html`,
             pricingPath: `${depth}pricing.html`,
             blogPath: `${depth}blog/blogs.html`,
+            aboutPath: `${depth}about.html`,
             loginPath: `${depth}login.html`
         };
     }
