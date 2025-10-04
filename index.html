@@ -85,6 +85,97 @@
         ]
     }
     </script>
+    
+    <!-- Organization Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "TidiFul",
+        "url": "https://tidiful.com",
+        "logo": "https://tidiful.com/assets/images/tidiful_logo.png",
+        "description": "AI-powered document processing platform that converts PDF invoices, receipts, and documents into structured data formats.",
+        "foundingDate": "2023",
+        "founder": {
+            "@type": "Person",
+            "name": "Mathieu Drimonakos",
+            "jobTitle": "Founder & Lead Developer",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "HeliaCode.com"
+            }
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "info@heliacode.com",
+            "contactType": "customer service"
+        },
+        "sameAs": [
+            "https://heliacode.com"
+        ],
+        "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "USD",
+            "lowPrice": "9",
+            "highPrice": "29",
+            "offerCount": "3"
+        },
+        "areaServed": "Worldwide",
+        "serviceType": "Document Processing Software",
+        "applicationCategory": "BusinessApplication"
+    }
+    </script>
+    
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is TidiFul and how does it work?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "TidiFul is an AI-powered document processing platform that converts PDF invoices, receipts, and documents into structured data formats like JSON and CSV. It uses advanced AI technology to automatically detect and extract data with 99%+ accuracy, processing documents in seconds."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What file formats does TidiFul support?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "TidiFul supports PDF invoices, receipts, and documents. Output formats include JSON, CSV, XML, and XLSX. The platform can handle both text-based and scanned PDFs using OCR technology."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is TidiFul secure for processing sensitive business documents?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, TidiFul prioritizes security with end-to-end encryption, zero data retention policy, and GDPR compliance. Documents are processed securely and automatically deleted after conversion for maximum privacy."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How much does TidiFul cost?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "TidiFul offers three pricing tiers: Starter at $9/month (200 pages), Professional at $29/month (5000 pages), and Enterprise with custom pricing for unlimited pages. All plans include our full feature set."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How accurate is TidiFul's AI document processing?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "TidiFul achieves 99%+ accuracy in document processing, handling complex layouts, handwritten text, and various document formats. The AI technology continuously improves through machine learning."
+                }
+            }
+        ]
+    }
+    </script>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>

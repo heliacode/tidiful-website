@@ -1,0 +1,34 @@
+{
+  "keywords": [
+    "PDF to CSV",
+    "PDF to CSV converter",
+    "convert PDF to CSV", 
+    "PDF CSV conversion",
+    "document processing AI",
+    "invoice automation",
+    "AI document processing",
+    "PDF to JSON converter",
+    "invoice processing software",
+    "document automation platform",
+    "TidiFul",
+    "HeliaCode"
+  ],
+  "platforms": {
+    "chatgpt": "OpenAI ChatGPT",
+    "claude": "Anthropic Claude",
+    "perplexity": "Perplexity AI", 
+    "bard": "Google Bard",
+    "bing_chat": "Microsoft Bing Chat",
+    "voice_search": "Voice Search Assistants"
+  },
+  "monitoring": {
+    "frequency": "weekly",
+    "alert_threshold": 5.0,
+    "success_threshold": 7.0
+  },
+  "notifications": {
+    "email": "info@heliacode.com",
+    "slack_webhook": null,
+    "discord_webhook": null
+  }
+}
