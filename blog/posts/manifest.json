@@ -1,17 +1,20 @@
 {
   "posts": [
     {
-      "filename": "postexample0.html",
-      "date": "2023-12-01",
-      "title": "Welcome to TidiFul Blog",
-      "excerpt": "Our first blog post introducing TidiFul and our mission to revolutionize document processing with AI."
+      "filename": "pdf-to-csv-complete-guide.html",
+      "title": "How to Convert PDF to CSV: The Complete Guide for Business Professionals",
+      "date": "2025-01-15",
+      "excerpt": "Learn how to convert PDF to CSV efficiently with this complete guide. Discover tools, best practices, and step-by-step methods to extract data from PDF to CSV and see how Tidiful simplifies the process for business professionals.",
+      "url": "posts/pdf-to-csv-complete-guide.html"
     },
     {
-      "filename": "reddit-knowledge-work.html",
+      "filename": "what-is-pdf-to-csv-conversion.html", 
+      "title": "What is PDF to CSV Conversion? Complete Guide for Business Professionals",
       "date": "2025-01-15",
-      "title": "What Reddit Taught Us About Modern Knowledge Work",
-      "excerpt": "From Reddit threads to real-world workflows: learn the durable systems and automation patterns that actually improve knowledge work."
+      "excerpt": "Learn what PDF to CSV conversion is, how it works, and why businesses need it. Discover the best tools, methods, and benefits of converting PDF documents to structured CSV data.",
+      "url": "posts/what-is-pdf-to-csv-conversion.html"
     }
-    // Add new posts here when you create them
-  ]
+  ],
+  "lastUpdated": "2025-01-15T00:00:00Z",
+  "totalPosts": 2
 }
