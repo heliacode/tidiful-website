@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is PDF to CSV conversion?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PDF to CSV conversion is the process of transforming data stored in a PDF file into a Comma-Separated Values (CSV) file format. This allows businesses to extract structured data from invoices, receipts, and reports for analysis and automation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does TidiFul's AI document processing work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TidiFul uses advanced AI technology to automatically detect and extract data from PDF documents. The system recognizes tables, text fields, and structured information, then converts it into clean JSON or CSV formats with 99%+ accuracy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is TidiFul secure for processing sensitive documents?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, TidiFul prioritizes security with end-to-end encryption, zero data retention policy, and GDPR compliance. Documents are processed securely and automatically deleted after conversion."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What file formats does TidiFul support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TidiFul supports PDF invoices, receipts, and documents. Output formats include JSON, CSV, XML, and XLSX. The platform can handle both text-based and scanned PDFs using OCR technology."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does TidiFul cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TidiFul offers three pricing tiers: Starter at $9/month (200 pages), Professional at $29/month (5000 pages), and Enterprise with custom pricing for unlimited pages. All plans include our full feature set."
+      }
+    }
+  ]
+}

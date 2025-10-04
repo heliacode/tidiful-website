@@ -1,0 +1,36 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "TidiFul",
+  "url": "https://tidiful.com",
+  "logo": "https://tidiful.com/assets/images/tidiful_logo.png",
+  "description": "AI-powered document processing platform that converts PDF invoices, receipts, and documents into structured data formats.",
+  "foundingDate": "2023",
+  "founder": {
+    "@type": "Person",
+    "name": "Mathieu Drimonakos",
+    "jobTitle": "Founder & Lead Developer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "HeliaCode.com"
+    }
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "info@heliacode.com",
+    "contactType": "customer service"
+  },
+  "sameAs": [
+    "https://heliacode.com"
+  ],
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "USD",
+    "lowPrice": "9",
+    "highPrice": "29",
+    "offerCount": "3"
+  },
+  "areaServed": "Worldwide",
+  "serviceType": "Document Processing Software",
+  "applicationCategory": "BusinessApplication"
+}
