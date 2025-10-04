@@ -1,0 +1,139 @@
+name: Automated Blog Management
+
+on:
+  # Run when blog posts are added or modified
+  push:
+    paths:
+      - 'blog/posts/*.html'
+      - 'blog/posts/manifest.json'
+  
+  # Allow manual triggering
+  workflow_dispatch:
+    inputs:
+      action:
+        description: 'Blog automation action to run'
+        required: true
+        default: 'full'
+        type: choice
+        options:
+        - full
+        - manifest
+        - static
+        - update
+        - discover
+
+jobs:
+  blog-automation:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        
+    - name: Run Blog Automation
+      run: |
+        echo "Starting automated blog management..."
+        python blog_automation.py --action ${{ github.event.inputs.action || 'full' }}
+        
+    - name: Check for Changes
+      id: changes
+      run: |
+        if git diff --quiet; then
+          echo "changed=false" >> $GITHUB_OUTPUT
+        else
+          echo "changed=true" >> $GITHUB_OUTPUT
+        fi
+        
+    - name: Commit Changes
+      if: steps.changes.outputs.changed == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git commit -m "🤖 Automated blog management: Updated manifest, static posts, and sitemap"
+        
+    - name: Push Changes
+      if: steps.changes.outputs.changed == 'true'
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
+        
+    - name: Generate Blog Report
+      run: |
+        echo "Generating blog management report..."
+        python blog_automation.py --action discover > blog_report.txt
+        echo "" >> blog_report.txt
+        echo "Generated: $(date)" >> blog_report.txt
+        
+    - name: Upload Blog Report
+      uses: actions/upload-artifact@v4
+      with:
+        name: blog-management-report-${{ github.run_number }}
+        path: blog_report.txt
+        retention-days: 7
+
+  blog-seo-check:
+    runs-on: ubuntu-latest
+    needs: blog-automation
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: SEO Validation
+      run: |
+        echo "Running blog SEO validation..."
+        
+        # Check if manifest exists and is valid
+        if [ -f "blog/posts/manifest.json" ]; then
+          echo "[OK] Manifest file exists"
+          python -c "import json; json.load(open('blog/posts/manifest.json')); print('[OK] Manifest is valid JSON')"
+        else
+          echo "[ERROR] Manifest file missing"
+          exit 1
+        fi
+        
+        # Check if static posts exist
+        static_count=$(find blog/static -name "*.html" | wc -l)
+        echo "[INFO] Found $static_count static blog posts"
+        
+        # Check if sitemap contains blog posts
+        if grep -q "blog/posts" sitemap.xml; then
+          echo "[OK] Sitemap contains blog posts"
+        else
+          echo "[ERROR] Sitemap missing blog posts"
+          exit 1
+        fi
+        
+        echo "[SUCCESS] Blog SEO validation passed!"
+        
+    - name: Create Summary
+      run: |
+        echo "# Blog Management Summary" > summary.md
+        echo "" >> summary.md
+        echo "**Date**: $(date)" >> summary.md
+        echo "**Action**: ${{ github.event.inputs.action || 'full' }}" >> summary.md
+        echo "" >> summary.md
+        echo "## Files Updated" >> summary.md
+        echo "- blog/posts/manifest.json" >> summary.md
+        echo "- blog/static/*.html" >> summary.md
+        echo "- blog/blogs.html" >> summary.md
+        echo "- sitemap.xml" >> summary.md
+        echo "" >> summary.md
+        echo "## Next Steps" >> summary.md
+        echo "- Blog posts are now automatically discoverable" >> summary.md
+        echo "- Static versions generated for SEO" >> summary.md
+        echo "- Sitemap updated for search engines" >> summary.md
+        
+    - name: Upload Summary
+      uses: actions/upload-artifact@v4
+      with:
+        name: blog-summary-${{ github.run_number }}
+        path: summary.md
+        retention-days: 7

@@ -86,64 +86,64 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/blogs.html"/>
   </url>
 
+  
+  
+  
   <!-- Blog Posts -->
 
-  <!-- PDF to CSV Guide Blog Post - English -->
+  <!-- How to Convert PDF to CSV: The Complete Guide for Business Professionals Blog Post - English -->
   <url>
-    <loc>https://tidiful.com/blog/posts/pdf-to-csv-complete-guide.html</loc>
+    <loc>blog/https://tidiful.com/blog/posts/pdf-to-csv-complete-guide.html</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/posts/pdf-to-csv-complete-guide.html?lang=en-US"/>
-    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/posts/pdf-to-csv-complete-guide.html?lang=fr-FR"/>
-    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/posts/pdf-to-csv-complete-guide.html?lang=de-DE"/>
-    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/posts/pdf-to-csv-complete-guide.html?lang=es-ES"/>
-    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/posts/pdf-to-csv-complete-guide.html?lang=el-GR"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/posts/pdf-to-csv-complete-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="blog/https://tidiful.com/blog/posts/pdf-to-csv-complete-guide.html?lang=en-US"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="blog/https://tidiful.com/blog/posts/pdf-to-csv-complete-guide.html?lang=fr-FR"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="blog/https://tidiful.com/blog/posts/pdf-to-csv-complete-guide.html?lang=de-DE"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="blog/https://tidiful.com/blog/posts/pdf-to-csv-complete-guide.html?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="el-GR" href="blog/https://tidiful.com/blog/posts/pdf-to-csv-complete-guide.html?lang=el-GR"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="blog/https://tidiful.com/blog/posts/pdf-to-csv-complete-guide.html"/>
   </url>
 
-  <!-- What is PDF to CSV Blog Post - English -->
+  <!-- How to Convert PDF to CSV: The Complete Guide for Business Professionals Static - English -->
   <url>
-    <loc>https://tidiful.com/blog/posts/what-is-pdf-to-csv-conversion.html</loc>
+    <loc>blog/https://tidiful.com/blog/static/pdf-to-csv-complete-guide.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="blog/https://tidiful.com/blog/static/pdf-to-csv-complete-guide.html?lang=en-US"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="blog/https://tidiful.com/blog/static/pdf-to-csv-complete-guide.html?lang=fr-FR"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="blog/https://tidiful.com/blog/static/pdf-to-csv-complete-guide.html?lang=de-DE"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="blog/https://tidiful.com/blog/static/pdf-to-csv-complete-guide.html?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="el-GR" href="blog/https://tidiful.com/blog/static/pdf-to-csv-complete-guide.html?lang=el-GR"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="blog/https://tidiful.com/blog/static/pdf-to-csv-complete-guide.html"/>
+  </url>
+  <!-- What is PDF to CSV Conversion? Complete Guide for Business Professionals Blog Post - English -->
+  <url>
+    <loc>blog/https://tidiful.com/blog/posts/what-is-pdf-to-csv-conversion.html</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/posts/what-is-pdf-to-csv-conversion.html?lang=en-US"/>
-    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/posts/what-is-pdf-to-csv-conversion.html?lang=fr-FR"/>
-    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/posts/what-is-pdf-to-csv-conversion.html?lang=de-DE"/>
-    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/posts/what-is-pdf-to-csv-conversion.html?lang=es-ES"/>
-    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/posts/what-is-pdf-to-csv-conversion.html?lang=el-GR"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/posts/what-is-pdf-to-csv-conversion.html"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="blog/https://tidiful.com/blog/posts/what-is-pdf-to-csv-conversion.html?lang=en-US"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="blog/https://tidiful.com/blog/posts/what-is-pdf-to-csv-conversion.html?lang=fr-FR"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="blog/https://tidiful.com/blog/posts/what-is-pdf-to-csv-conversion.html?lang=de-DE"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="blog/https://tidiful.com/blog/posts/what-is-pdf-to-csv-conversion.html?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="el-GR" href="blog/https://tidiful.com/blog/posts/what-is-pdf-to-csv-conversion.html?lang=el-GR"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="blog/https://tidiful.com/blog/posts/what-is-pdf-to-csv-conversion.html"/>
   </url>
 
-  <!-- Static Blog Posts -->
-  
-  <!-- PDF to CSV Guide Static - English -->
+  <!-- What is PDF to CSV Conversion? Complete Guide for Business Professionals Static - English -->
   <url>
-    <loc>https://tidiful.com/blog/static/pdf-to-csv-complete-guide.html</loc>
+    <loc>blog/https://tidiful.com/blog/static/what-is-pdf-to-csv-conversion.html</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/static/pdf-to-csv-complete-guide.html?lang=en-US"/>
-    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/static/pdf-to-csv-complete-guide.html?lang=fr-FR"/>
-    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/static/pdf-to-csv-complete-guide.html?lang=de-DE"/>
-    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/static/pdf-to-csv-complete-guide.html?lang=es-ES"/>
-    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/static/pdf-to-csv-complete-guide.html?lang=el-GR"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/static/pdf-to-csv-complete-guide.html"/>
-  </url>
-
-  <!-- What is PDF to CSV Static - English -->
-  <url>
-    <loc>https://tidiful.com/blog/static/what-is-pdf-to-csv-conversion.html</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/static/what-is-pdf-to-csv-conversion.html?lang=en-US"/>
-    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/static/what-is-pdf-to-csv-conversion.html?lang=fr-FR"/>
-    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/static/what-is-pdf-to-csv-conversion.html?lang=de-DE"/>
-    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/static/what-is-pdf-to-csv-conversion.html?lang=es-ES"/>
-    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/static/what-is-pdf-to-csv-conversion.html?lang=el-GR"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/static/what-is-pdf-to-csv-conversion.html"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="blog/https://tidiful.com/blog/static/what-is-pdf-to-csv-conversion.html?lang=en-US"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="blog/https://tidiful.com/blog/static/what-is-pdf-to-csv-conversion.html?lang=fr-FR"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="blog/https://tidiful.com/blog/static/what-is-pdf-to-csv-conversion.html?lang=de-DE"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="blog/https://tidiful.com/blog/static/what-is-pdf-to-csv-conversion.html?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="el-GR" href="blog/https://tidiful.com/blog/static/what-is-pdf-to-csv-conversion.html?lang=el-GR"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="blog/https://tidiful.com/blog/static/what-is-pdf-to-csv-conversion.html"/>
   </url>
 
 </urlset>
