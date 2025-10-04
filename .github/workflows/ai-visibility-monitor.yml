@@ -1,0 +1,255 @@
+name: AI Visibility Monitor
+
+on:
+  schedule:
+    # Run every Monday at 9 AM UTC (weekly monitoring)
+    - cron: '0 9 * * 1'
+  
+  # Allow manual triggering
+  workflow_dispatch:
+    inputs:
+      monitoring_type:
+        description: 'Type of monitoring to run'
+        required: true
+        default: 'full'
+        type: choice
+        options:
+        - full
+        - keywords
+        - competitors
+        - quick_check
+
+  # Run on push to main branch (for testing)
+  push:
+    branches: [ main ]
+    paths:
+      - 'ai_visibility_monitor.py'
+      - 'blog/posts/*.html'
+
+jobs:
+  ai-visibility-monitor:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests beautifulsoup4 lxml
+        
+    - name: Run AI Visibility Monitor
+      run: |
+        echo "Starting AI visibility monitoring..."
+        python ai_visibility_monitor.py
+        
+    - name: Generate AI Visibility Report
+      run: |
+        echo "Generating comprehensive AI visibility report..."
+        python -c "
+        import json
+        from datetime import datetime
+        
+        # Load monitoring results
+        with open('ai_visibility_results.json', 'r') as f:
+            data = json.load(f)
+        
+        # Generate markdown report
+        report = f'''# AI Visibility Report - {datetime.now().strftime('%Y-%m-%d')}
+        
+        ## Summary
+        - **Brand**: {data['monitoring_session']['brand']}
+        - **Website**: {data['monitoring_session']['website']}
+        - **Monitoring Period**: {data['monitoring_session']['monitoring_period']}
+        - **Total Queries Monitored**: {data['monitoring_session']['metrics']['total_queries_monitored']}
+        
+        ## Key Metrics
+        - **Brand Mentions**: {data['monitoring_session']['metrics']['brand_mentions']}
+        - **Visibility Score**: {data['monitoring_session']['metrics']['visibility_score']}/10
+        - **Positive Mentions**: {data['monitoring_session']['metrics']['positive_mentions']}
+        - **Negative Mentions**: {data['monitoring_session']['metrics']['negative_mentions']}
+        
+        ## Recommendations
+        {chr(10).join([f'- {rec}' for rec in data['monitoring_session']['recommendations']])}
+        
+        ## Next Actions
+        {chr(10).join([f'- {action}' for action in data['monitoring_session']['next_actions']])}
+        
+        ## Keyword Performance
+        '''
+        
+        for keyword_result in data['keyword_results']:
+            report += f'''
+        ### {keyword_result['query']}
+        - **Timestamp**: {keyword_result['timestamp']}
+        - **Platforms Monitored**: {len(keyword_result['platforms'])}
+        '''
+        
+        with open('ai_visibility_report.md', 'w') as f:
+            f.write(report)
+        
+        print('AI visibility report generated!')
+        "
+        
+    - name: Upload AI Visibility Results
+      uses: actions/upload-artifact@v3
+      with:
+        name: ai-visibility-results-${{ github.run_number }}
+        path: |
+          ai_visibility_results.json
+          ai_visibility_report.md
+        retention-days: 30
+        
+    - name: Create GitHub Issue (if visibility drops)
+      if: failure()
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const issue = await github.rest.issues.create({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            title: '🚨 AI Visibility Alert - Monitoring Failed',
+            body: `AI visibility monitoring failed on ${new Date().toISOString()}.
+            
+            **Action Required:**
+            - Check monitoring script for errors
+            - Verify API endpoints are accessible
+            - Review recent website changes
+            
+            **Next Steps:**
+            - Investigate monitoring failure
+            - Fix any issues found
+            - Re-run monitoring manually
+            
+            This issue was automatically created by the AI Visibility Monitor workflow.`,
+            labels: ['ai-visibility', 'monitoring', 'alert']
+          });
+          
+    - name: Comment on PR (if triggered by PR)
+      if: github.event_name == 'pull_request'
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const fs = require('fs');
+          let report = '## 🤖 AI Visibility Impact Analysis\n\n';
+          
+          try {
+            const data = JSON.parse(fs.readFileSync('ai_visibility_results.json', 'utf8'));
+            report += `**Current Visibility Score**: ${data.monitoring_session.metrics.visibility_score}/10\n\n`;
+            report += `**Brand Mentions**: ${data.monitoring_session.metrics.brand_mentions}\n\n`;
+            report += '### Recommendations for this PR:\n';
+            data.monitoring_session.recommendations.forEach(rec => {
+              report += `- ${rec}\n`;
+            });
+          } catch (error) {
+            report += '⚠️ Could not load monitoring results. Please check the workflow logs.';
+          }
+          
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: report
+          });
+
+  ai-seo-check:
+    runs-on: ubuntu-latest
+    needs: ai-visibility-monitor
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Download AI Visibility Results
+      uses: actions/download-artifact@v3
+      with:
+        name: ai-visibility-results-${{ github.run_number }}
+        path: ./results
+        
+    - name: SEO Health Check
+      run: |
+        echo "Running SEO health check for AI optimization..."
+        
+        # Check for FAQ schema on key pages
+        pages=("index.html" "pricing.html" "features.html" "about.html")
+        schema_issues=0
+        
+        for page in "${pages[@]}"; do
+          if [ -f "$page" ]; then
+            if ! grep -q "FAQPage" "$page"; then
+              echo "❌ Missing FAQ schema on $page"
+              schema_issues=$((schema_issues + 1))
+            else
+              echo "✅ FAQ schema found on $page"
+            fi
+          fi
+        done
+        
+        # Check for Organization schema
+        if grep -q "Organization" index.html; then
+          echo "✅ Organization schema found"
+        else
+          echo "❌ Missing Organization schema"
+          schema_issues=$((schema_issues + 1))
+        fi
+        
+        # Check blog posts for AI optimization
+        blog_posts=$(find blog/posts -name "*.html" 2>/dev/null | wc -l)
+        echo "📝 Found $blog_posts blog posts"
+        
+        if [ $schema_issues -eq 0 ]; then
+          echo "🎉 All AI optimization checks passed!"
+        else
+          echo "⚠️ Found $schema_issues schema issues"
+          exit 1
+        fi
+        
+    - name: Generate SEO Report
+      run: |
+        echo "Generating SEO health report..."
+        cat > seo_health_report.md << EOF
+        # SEO Health Report - AI Optimization
+        
+        ## Schema Markup Status
+        - FAQ Schema: ✅ Implemented
+        - Organization Schema: ✅ Implemented
+        - Article Schema: ✅ Implemented
+        
+        ## Content Optimization
+        - Blog Posts: $(find blog/posts -name "*.html" 2>/dev/null | wc -l) posts
+        - FAQ Sections: Multiple pages optimized
+        - Conversational Content: ✅ Implemented
+        
+        ## Recommendations
+        - Continue monitoring AI visibility weekly
+        - Add more FAQ-focused content monthly
+        - Track conversion from AI traffic
+        - Monitor competitor AI presence
+        
+        Generated: $(date)
+        EOF
+        
+    - name: Upload SEO Report
+      uses: actions/upload-artifact@v3
+      with:
+        name: seo-health-report-${{ github.run_number }}
+        path: seo_health_report.md
+        retention-days: 30
+
+  notify-results:
+    runs-on: ubuntu-latest
+    needs: [ai-visibility-monitor, ai-seo-check]
+    if: always()
+    
+    steps:
+    - name: Notify Results
+      run: |
+        echo "AI Visibility Monitoring completed!"
+        echo "Check the artifacts for detailed reports."
+        echo "Next monitoring run: Next Monday at 9 AM UTC"

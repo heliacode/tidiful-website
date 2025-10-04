@@ -47,6 +47,96 @@
     }
     </script>
     
+    <!-- Organization Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "TidiFul",
+        "url": "https://tidiful.com",
+        "logo": "https://tidiful.com/assets/images/tidiful_logo.png",
+        "description": "AI-powered document processing platform that converts PDF invoices, receipts, and documents into structured data formats.",
+        "foundingDate": "2023",
+        "founder": {
+            "@type": "Person",
+            "name": "Mathieu Drimonakos",
+            "jobTitle": "Founder & Lead Developer",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "HeliaCode.com"
+            }
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "info@heliacode.com",
+            "contactType": "customer service"
+        },
+        "sameAs": [
+            "https://heliacode.com"
+        ],
+        "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "USD",
+            "lowPrice": "9",
+            "highPrice": "29",
+            "offerCount": "3"
+        },
+        "areaServed": "Worldwide",
+        "serviceType": "Document Processing Software",
+        "applicationCategory": "BusinessApplication"
+    }
+    </script>
+    
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What counts as a page in TidiFul pricing?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Each PDF page processed counts as one page. Multi-page documents will use multiple pages from your monthly allowance. For example, a 3-page invoice uses 3 pages from your plan."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I change my TidiFul plan anytime?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately, and you'll be charged or credited proportionally for the remaining billing period."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is there a free trial for TidiFul?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! All new users get 50 free pages to test our service before committing to a paid plan. This allows you to experience TidiFul's accuracy and speed risk-free."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What's included in the Enterprise plan?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The Enterprise plan includes unlimited pages, all Professional features, dedicated support, custom integrations, and on-premise options. Pricing is customized based on your specific needs."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do TidiFul plans include API access?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "API access is included in the Professional plan ($29/month) and Enterprise plans. The Starter plan focuses on web-based processing with basic features."
+                }
+            }
+        ]
+    }
+    </script>
+    
     <link rel="icon" type="image/png" href="assets/images/leaf_png_128x128.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>

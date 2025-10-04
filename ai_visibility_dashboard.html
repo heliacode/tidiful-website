@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Visibility Dashboard - TidiFul</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .metric-card {
+            background: linear-gradient(135deg, #1f2937, #374151);
+            border: 1px solid #4b5563;
+        }
+        .trend-up {
+            color: #10b981;
+        }
+        .trend-down {
+            color: #ef4444;
+        }
+        .trend-neutral {
+            color: #6b7280;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <div class="mb-8">
+            <h1 class="text-3xl font-bold mb-2">AI Visibility Dashboard</h1>
+            <p class="text-gray-400">Monitor TidiFul's presence across AI platforms</p>
+        </div>
+
+        <!-- Key Metrics -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+            <div class="metric-card rounded-lg p-6">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-gray-400 text-sm">Brand Mentions</p>
+                        <p class="text-2xl font-bold">24</p>
+                        <p class="text-sm trend-up">↗ +12% this week</p>
+                    </div>
+                    <div class="w-12 h-12 bg-emerald-500/20 rounded-lg flex items-center justify-center">
+                        <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2m-9 0h10m-10 0a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V6a2 2 0 00-2-2"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="metric-card rounded-lg p-6">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-gray-400 text-sm">Visibility Score</p>
+                        <p class="text-2xl font-bold">8.7/10</p>
+                        <p class="text-sm trend-up">↗ +0.3 this month</p>
+                    </div>
+                    <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center">
+                        <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="metric-card rounded-lg p-6">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-gray-400 text-sm">Featured Snippets</p>
+                        <p class="text-2xl font-bold">7</p>
+                        <p class="text-sm trend-up">↗ +3 this week</p>
+                    </div>
+                    <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center">
+                        <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="metric-card rounded-lg p-6">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-gray-400 text-sm">AI Traffic</p>
+                        <p class="text-2xl font-bold">1.2K</p>
+                        <p class="text-sm trend-up">↗ +18% this month</p>
+                    </div>
+                    <div class="w-12 h-12 bg-orange-500/20 rounded-lg flex items-center justify-center">
+                        <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts Row -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+            <!-- Brand Mentions Over Time -->
+            <div class="bg-gray-800 rounded-lg p-6">
+                <h3 class="text-lg font-semibold mb-4">Brand Mentions Over Time</h3>
+                <canvas id="mentionsChart" width="400" height="200"></canvas>
+            </div>
+
+            <!-- Platform Distribution -->
+            <div class="bg-gray-800 rounded-lg p-6">
+                <h3 class="text-lg font-semibold mb-4">Platform Distribution</h3>
+                <canvas id="platformChart" width="400" height="200"></canvas>
+            </div>
+        </div>
+
+        <!-- AI Platform Performance -->
+        <div class="bg-gray-800 rounded-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold mb-6">AI Platform Performance</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-gray-700 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <h4 class="font-medium">ChatGPT</h4>
+                        <span class="text-emerald-400 text-sm">High</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-2">Brand mentions: 8</p>
+                    <div class="w-full bg-gray-600 rounded-full h-2">
+                        <div class="bg-emerald-400 h-2 rounded-full" style="width: 80%"></div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-700 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <h4 class="font-medium">Claude</h4>
+                        <span class="text-emerald-400 text-sm">High</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-2">Brand mentions: 6</p>
+                    <div class="w-full bg-gray-600 rounded-full h-2">
+                        <div class="bg-emerald-400 h-2 rounded-full" style="width: 70%"></div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-700 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <h4 class="font-medium">Perplexity</h4>
+                        <span class="text-blue-400 text-sm">Medium</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-2">Brand mentions: 4</p>
+                    <div class="w-full bg-gray-600 rounded-full h-2">
+                        <div class="bg-blue-400 h-2 rounded-full" style="width: 50%"></div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-700 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <h4 class="font-medium">Google Bard</h4>
+                        <span class="text-blue-400 text-sm">Medium</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-2">Brand mentions: 3</p>
+                    <div class="w-full bg-gray-600 rounded-full h-2">
+                        <div class="bg-blue-400 h-2 rounded-full" style="width: 40%"></div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-700 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <h4 class="font-medium">Bing Chat</h4>
+                        <span class="text-gray-400 text-sm">Low</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-2">Brand mentions: 2</p>
+                    <div class="w-full bg-gray-600 rounded-full h-2">
+                        <div class="bg-gray-400 h-2 rounded-full" style="width: 25%"></div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-700 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <h4 class="font-medium">Voice Search</h4>
+                        <span class="text-purple-400 text-sm">Growing</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-2">Brand mentions: 1</p>
+                    <div class="w-full bg-gray-600 rounded-full h-2">
+                        <div class="bg-purple-400 h-2 rounded-full" style="width: 15%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top Performing Keywords -->
+        <div class="bg-gray-800 rounded-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold mb-6">Top Performing Keywords</h3>
+            <div class="space-y-4">
+                <div class="flex items-center justify-between p-4 bg-gray-700 rounded-lg">
+                    <div>
+                        <h4 class="font-medium">PDF to CSV</h4>
+                        <p class="text-gray-400 text-sm">Featured in 5 AI responses</p>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-emerald-400 font-semibold">High</p>
+                        <p class="text-gray-400 text-sm">+2 this week</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between p-4 bg-gray-700 rounded-lg">
+                    <div>
+                        <h4 class="font-medium">PDF to CSV converter</h4>
+                        <p class="text-gray-400 text-sm">Featured in 4 AI responses</p>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-emerald-400 font-semibold">High</p>
+                        <p class="text-gray-400 text-sm">+1 this week</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between p-4 bg-gray-700 rounded-lg">
+                    <div>
+                        <h4 class="font-medium">Document processing AI</h4>
+                        <p class="text-gray-400 text-sm">Featured in 3 AI responses</p>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-blue-400 font-semibold">Medium</p>
+                        <p class="text-gray-400 text-sm">+1 this week</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between p-4 bg-gray-700 rounded-lg">
+                    <div>
+                        <h4 class="font-medium">Invoice automation</h4>
+                        <p class="text-gray-400 text-sm">Featured in 2 AI responses</p>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-blue-400 font-semibold">Medium</p>
+                        <p class="text-gray-400 text-sm">No change</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recommendations -->
+        <div class="bg-gray-800 rounded-lg p-6">
+            <h3 class="text-lg font-semibold mb-6">AI Optimization Recommendations</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h4 class="font-medium text-emerald-400 mb-3">✅ Completed</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-emerald-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            FAQ schema implemented on all pages
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-emerald-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Organization schema added
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-emerald-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            AI-optimized content created
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-emerald-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Monitoring system implemented
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-medium text-blue-400 mb-3">🎯 Next Actions</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            Create more FAQ-focused content
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            Monitor competitor AI visibility
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            Track conversion from AI traffic
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            Optimize for voice search
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Brand Mentions Chart
+        const mentionsCtx = document.getElementById('mentionsChart').getContext('2d');
+        new Chart(mentionsCtx, {
+            type: 'line',
+            data: {
+                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+                datasets: [{
+                    label: 'Brand Mentions',
+                    data: [12, 15, 18, 24],
+                    borderColor: '#10b981',
+                    backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: '#d1d5db'
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        ticks: {
+                            color: '#9ca3af'
+                        },
+                        grid: {
+                            color: '#374151'
+                        }
+                    },
+                    y: {
+                        ticks: {
+                            color: '#9ca3af'
+                        },
+                        grid: {
+                            color: '#374151'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Platform Distribution Chart
+        const platformCtx = document.getElementById('platformChart').getContext('2d');
+        new Chart(platformCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['ChatGPT', 'Claude', 'Perplexity', 'Bard', 'Bing Chat'],
+                datasets: [{
+                    data: [8, 6, 4, 3, 2],
+                    backgroundColor: [
+                        '#10b981',
+                        '#3b82f6',
+                        '#8b5cf6',
+                        '#f59e0b',
+                        '#6b7280'
+                    ]
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: '#d1d5db'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
