@@ -98,7 +98,7 @@ jobs:
         "
         
     - name: Upload AI Visibility Results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: ai-visibility-results-${{ github.run_number }}
         path: |
@@ -167,7 +167,7 @@ jobs:
       uses: actions/checkout@v4
       
     - name: Download AI Visibility Results
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: ai-visibility-results-${{ github.run_number }}
         path: ./results
@@ -236,7 +236,7 @@ jobs:
         EOF
         
     - name: Upload SEO Report
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: seo-health-report-${{ github.run_number }}
         path: seo_health_report.md
