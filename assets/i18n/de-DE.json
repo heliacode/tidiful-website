@@ -11,7 +11,8 @@
     "blog": "Blog",
     "contact": "Kontakt",
     "signIn": "Anmelden",
-    "signUp": "Registrieren"
+    "signUp": "Registrieren",
+    "createAccountLogin": "Konto erstellen / Anmelden"
   },
   "login": {
     "welcome_back": "Willkommen zurück",

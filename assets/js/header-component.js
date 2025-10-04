@@ -28,9 +28,9 @@ class HeaderComponent {
                                 <option value="es-ES">🇪🇸 Español</option>
                                 <option value="el-GR">🇬🇷 Ελληνικά</option>
                             </select>
-                            <a href="{{LOGIN_PATH}}" class="px-4 py-2 rounded-lg border border-emerald-500 text-emerald-400 hover:bg-emerald-900 transition-colors">
-                                Create Account / Login
-                            </a>
+                                <a href="{{LOGIN_PATH}}" class="px-4 py-2 rounded-lg border border-emerald-500 text-emerald-400 hover:bg-emerald-900 transition-colors" data-i18n="nav.createAccountLogin">
+                                    Create Account / Login
+                                </a>
                         </div>
                         
                         <!-- Mobile Menu Button -->
@@ -79,9 +79,9 @@ class HeaderComponent {
                             <option value="es-ES">🇪🇸 Español</option>
                             <option value="el-GR">🇬🇷 Ελληνικά</option>
                         </select>
-                        <a href="{{LOGIN_PATH}}" class="block w-full text-center px-4 py-2 rounded-lg border border-emerald-500 text-emerald-400 hover:bg-emerald-900 transition-colors">
-                            Create Account / Login
-                        </a>
+                            <a href="{{LOGIN_PATH}}" class="block w-full text-center px-4 py-2 rounded-lg border border-emerald-500 text-emerald-400 hover:bg-emerald-900 transition-colors" data-i18n="nav.createAccountLogin">
+                                Create Account / Login
+                            </a>
                     </div>
                 </div>
             </div>

@@ -13,6 +13,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TidiFul Pricing - Simple, Transparent Pricing</title>
+    <meta name="description" content="Simple, transparent pricing for TidiFul's AI document processing. Start with a free trial. Convert PDF invoices to structured data for just $9/month.">
+    <meta name="keywords" content="document processing pricing, AI invoice processing cost, PDF extraction pricing, TidiFul pricing, document automation pricing">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tidiful.com/pricing.html">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "TidiFul Document Processing",
+        "description": "AI-powered document processing platform that converts PDF invoices, receipts, and documents into structured data formats.",
+        "brand": {
+            "@type": "Brand",
+            "name": "TidiFul"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "9",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "9",
+                "priceCurrency": "USD",
+                "unitText": "MONTH"
+            },
+            "availability": "https://schema.org/InStock",
+            "url": "https://tidiful.com/pricing.html"
+        },
+        "category": "Software",
+        "applicationCategory": "BusinessApplication"
+    }
+    </script>
+    
     <link rel="icon" type="image/png" href="assets/images/leaf_png_128x128.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
@@ -90,7 +124,7 @@
 </head>
 <body class="min-h-screen text-gray-100 antialiased">
     <!-- Navigation -->
-    <nav class="border-b border-gray-700 bg-gray-900 backdrop-blur-sm">
+    <nav class="border-b border-gray-700 bg-gray-900 backdrop-blur-sm relative z-10">
         <div class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
                 <a href="index.html" class="flex items-center space-x-2 hover:opacity-80 transition-opacity">
@@ -116,9 +150,9 @@
                         <option value="es-ES">🇪🇸 Español</option>
                         <option value="el-GR">🇬🇷 Ελληνικά</option>
                     </select>
-                    <a href="login.html" class="px-4 py-2 rounded-lg border border-emerald-500 text-emerald-400 hover:bg-emerald-900 transition-colors">
-                        Create Account / Login
-                    </a>
+                        <a href="login.html" class="px-4 py-2 rounded-lg border border-emerald-500 text-emerald-400 hover:bg-emerald-900 transition-colors" data-i18n="nav.createAccountLogin">
+                            Create Account / Login
+                        </a>
                 </div>
                 
                 <!-- Mobile Menu Button -->
@@ -130,7 +164,7 @@
             </div>
             
     <!-- Mobile Menu Overlay - Compact height -->
-    <div id="mobile-menu" class="lg:hidden hidden fixed inset-x-0 top-0 z-50 bg-gray-800 border-b border-gray-600">
+    <div id="mobile-menu" class="lg:hidden hidden fixed inset-x-0 top-0 z-[100] bg-gray-800 border-b border-gray-600">
         <div class="flex flex-col w-full">
             <!-- Mobile Menu Header -->
             <div class="flex items-center justify-between p-4 border-b border-gray-700">
@@ -165,9 +199,9 @@
                     <option value="es-ES">🇪🇸 Español</option>
                     <option value="el-GR">🇬🇷 Ελληνικά</option>
                 </select>
-                <a href="login.html" class="block w-full text-center px-4 py-2 rounded-lg border border-emerald-500 text-emerald-400 hover:bg-emerald-900 transition-colors">
-                    Create Account / Login
-                </a>
+                    <a href="login.html" class="block w-full text-center px-4 py-2 rounded-lg border border-emerald-500 text-emerald-400 hover:bg-emerald-900 transition-colors" data-i18n="nav.createAccountLogin">
+                        Create Account / Login
+                    </a>
             </div>
         </div>
     </div>
@@ -188,7 +222,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 <!-- Starter Plan -->
-                <div class="pricing-card bg-gray-800 rounded-2xl p-8 text-center">
+                <div class="pricing-card bg-gray-800 rounded-2xl p-8 text-center flex flex-col">
                     <h3 class="text-2xl font-semibold mb-4 text-gray-100" data-i18n="pricing.starter.name">Starter</h3>
                     <div class="mb-6">
                         <span class="text-4xl font-bold text-emerald-400" data-i18n="pricing.starter.price">$9</span>
@@ -212,13 +246,13 @@
                             <span class="text-gray-300" data-i18n="pricing.starter.features.2">Email Reports</span>
                         </li>
                     </ul>
-                    <button class="w-full py-3 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors text-gray-100" data-i18n="pricing.starter.button">
+                    <button class="w-full py-3 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors text-gray-100 mt-auto" data-i18n="pricing.starter.button">
                         Get Started
                     </button>
                 </div>
 
                 <!-- Professional Plan (Popular) -->
-                <div class="pricing-card popular-plan bg-gray-800 rounded-2xl p-8 text-center">
+                <div class="pricing-card popular-plan bg-gray-800 rounded-2xl p-8 text-center flex flex-col">
                     <div class="popular-badge" data-i18n="pricing.professional.badge">MOST POPULAR</div>
                     <h3 class="text-2xl font-semibold mb-4 text-gray-100" data-i18n="pricing.professional.name">Professional</h3>
                     <div class="mb-6">
@@ -247,13 +281,13 @@
                             <span class="text-gray-300" data-i18n="pricing.professional.features.3">Custom Exports</span>
                         </li>
                     </ul>
-                    <button class="w-full py-3 bg-emerald-600 hover:bg-emerald-500 rounded-lg transition-colors text-white" data-i18n="pricing.professional.button">
+                    <button class="w-full py-3 bg-emerald-600 hover:bg-emerald-500 rounded-lg transition-colors text-white mt-auto" data-i18n="pricing.professional.button">
                         Get Started
                     </button>
                 </div>
 
                 <!-- Enterprise Plan -->
-                <div class="pricing-card bg-gray-800 rounded-2xl p-8 text-center">
+                <div class="pricing-card bg-gray-800 rounded-2xl p-8 text-center flex flex-col">
                     <h3 class="text-2xl font-semibold mb-4 text-gray-100" data-i18n="pricing.enterprise.name">Enterprise</h3>
                     <div class="mb-6">
                         <span class="text-4xl font-bold text-emerald-400" data-i18n="pricing.enterprise.price">Custom</span>
@@ -280,9 +314,9 @@
                             <span class="text-gray-300" data-i18n="pricing.enterprise.features.3">On-premise Options</span>
                         </li>
                     </ul>
-                    <button class="w-full py-3 border border-emerald-500 text-emerald-400 hover:bg-emerald-900 rounded-lg transition-colors" data-i18n="pricing.enterprise.button">
+                    <a href="mailto:info@heliacode.com?subject=I wish to learn more about enterprise pricing" class="w-full py-3 border border-emerald-500 text-emerald-400 hover:bg-emerald-900 rounded-lg transition-colors mt-auto inline-block text-center" data-i18n="pricing.enterprise.button">
                         Contact Sales
-                    </button>
+                    </a>
                 </div>
             </div>
 
