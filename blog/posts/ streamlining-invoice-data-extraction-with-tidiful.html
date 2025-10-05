@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-838XD1M1EQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-838XD1M1EQ');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamlining Invoice Data Extraction with Tidiful - TidiFul Blog</title>
+    <meta name="description" content="Learn how Tidiful can transform your invoice and PDF data extraction workflow with accurate OCR, robust data validation, and seamless integration into your back-office systems." />
+    <meta name="keywords" content="document processing, OCR, invoice parsing, data extraction, workflow automation, ERP integration, data quality, no-code automation" />
+    <meta name="author" content="TidiFul Team">
+    <meta name="date" content="2025-10-05">
+    <meta name="excerpt" content="A practical guide to streamline invoice and PDF data extraction with Tidiful, covering common pain points, ROI considerations, and actionable steps to automate your workflow." />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tidiful.com/blog/posts/streamlining-invoice-data-extraction-with-tidiful.html">
+    <meta property="og:title" content="Streamlining Invoice Data Extraction with Tidiful - TidiFul Blog">
+    <meta property="og:description" content="A practical guide to streamline invoice and PDF data extraction with Tidiful, covering common pain points, ROI considerations, and actionable steps to automate your workflow.">
+    <meta property="og:image" content="https://tidiful.com/assets/images/tidiful_logo.png">
+    <meta property="article:published_time" content="2025-10-05T00:00:00Z">
+    <meta property="article:author" content="TidiFul Team">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tidiful.com/blog/posts/streamlining-invoice-data-extraction-with-tidiful.html">
+    <meta property="twitter:title" content="Streamlining Invoice Data Extraction with Tidiful - TidiFul Blog">
+    <meta property="twitter:description" content="A practical guide to streamline invoice and PDF data extraction with Tidiful, covering common pain points, ROI considerations, and actionable steps to automate your workflow.">
+    <meta property="twitter:image" content="https://tidiful.com/assets/images/tidiful_logo.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://tidiful.com/blog/posts/streamlining-invoice-data-extraction-with-tidiful.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../../assets/images/leaf_png_128x128.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            200: '#a7f3d0',
+                            300: '#6ee7b7',
+                            400: '#34d399',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                        },
+                        secondary: {
+                            50: '#ecfeff',
+                            100: '#cffafe',
+                            200: '#a5f3fc',
+                            300: '#67e8f9',
+                            400: '#22d3ee',
+                            500: '#06b6d4',
+                            600: '#0891b2',
+                            700: '#0e7490',
+                            800: '#155e75',
+                            900: '#164e63',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <style>
+        body { background: #111; color: #e5e7eb; }
+        .prose { color: #e5e7eb; }
+        .prose h1, .prose h2, .prose h3 { color: #10b981; }
+        .prose h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .prose h2 { font-size: 1.8rem; margin-top: 2rem; margin-bottom: 1rem; }
+        .prose h3 { font-size: 1.4rem; margin-top: 1.5rem; margin-bottom: 0.8rem; }
+        .prose p { margin-bottom: 1.2rem; font-size: 1.1rem; }
+        .prose ul, .prose ol { margin-bottom: 1.2rem; padding-left: 2rem; }
+        .prose li { margin-bottom: 0.5rem; }
+        .prose code { background: #374151; padding: 2px 6px; border-radius: 4px; font-family: 'Monaco', 'Consolas', monospace; }
+        .prose a { color: #10b981; }
+        .highlight { background: #0a4038; padding: 20px; border-radius: 8px; border-left: 4px solid #10b981; margin: 20px 0; }
+    </style>
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Streamlining Invoice Data Extraction with Tidiful",
+        "description": "A practical guide to streamline invoice and PDF data extraction with Tidiful, covering common pain points, ROI considerations, and actionable steps to automate your workflow.",
+        "image": "https://tidiful.com/assets/images/tidiful_logo.png",
+        "author": {
+            "@type": "Organization",
+            "name": "TidiFul Team"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "TidiFul",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://tidiful.com/assets/images/tidiful_logo.png"
+            }
+        },
+        "datePublished": "2025-10-05T00:00:00Z",
+        "dateModified": "2025-10-05T00:00:00Z"
+    }
+    </script>
+</head>
+<body class="min-h-screen text-gray-100 antialiased">
+    <!-- Navigation -->
+    <nav class="border-b border-gray-700 bg-gray-900 backdrop-blur-sm">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="../../index.html" class="flex items-center space-x-2 hover:opacity-80 transition-opacity">
+                    <img src="../../assets/images/leaf_png_128x128.png" alt="TidiFul leaf logo - AI document processing brand" class="h-8 w-auto">
+                    <span class="text-xl font-bold text-gray-100">TidiFul</span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <div id="desktop-nav" class="hidden lg:flex items-center space-x-8">
+                    <a href="../../index.html" class="text-gray-300 hover:text-emerald-400 transition-colors">Home</a>
+                    <a href="../../features.html" class="text-gray-300 hover:text-emerald-400 transition-colors">Features</a>
+                    <a href="../../pricing.html" class="text-gray-300 hover:text-emerald-400 transition-colors">Pricing</a>
+                    <a href="../blogs.html" class="text-emerald-400 font-medium">Blog</a>
+                    <a href="../../about.html" class="text-gray-300 hover:text-emerald-400 transition-colors">About</a>
+                    <a href="../../contact.html" class="text-gray-300 hover:text-emerald-400 transition-colors">Contact</a>
+                </div>
+                
+                <!-- Desktop Actions -->
+                <div id="desktop-actions" class="hidden lg:flex items-center space-x-4">
+                    <!-- Language Switcher -->
+                    <select id="language-switcher" class="px-4 py-2 bg-gray-800 border border-gray-600 rounded-lg text-gray-100 text-sm focus:outline-none focus:border-emerald-400 hover:bg-gray-700 transition-all duration-200 cursor-pointer">
+                        <option value="en-US">🇺🇸 English</option>
+                        <option value="fr-FR">🇫🇷 Français</option>
+                        <option value="de-DE">🇩🇪 Deutsch</option>
+                        <option value="es-ES">🇪🇸 Español</option>
+                        <option value="el-GR">🇬🇷 Ελληνικά</option>
+                    </select>
+                    <a href="../../login.html" class="px-4 py-2 rounded-lg border border-emerald-500 text-emerald-400 hover:bg-emerald-900 transition-colors" data-i18n="nav.createAccountLogin">
+                        Create Account / Login
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="p-2 rounded-lg text-gray-300 hover:text-emerald-400 hover:bg-gray-800 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="hidden fixed inset-x-0 top-0 z-50 bg-gray-800 border-b border-gray-600">
+        <div class="flex flex-col w-full">
+            <!-- Mobile Menu Header -->
+            <div class="flex items-center justify-between p-4 border-b border-gray-700">
+                <a href="../../index.html" class="flex items-center space-x-2 hover:opacity-80 transition-opacity">
+                    <img src="../../assets/images/leaf_png_128x128.png" alt="TidiFul leaf logo - AI document processing brand" class="h-8 w-auto">
+                    <span class="text-xl font-bold text-gray-100">TidiFul</span>
+                </a>
+                <button id="mobile-menu-close" class="p-2 rounded-lg text-gray-300 hover:text-emerald-400 hover:bg-gray-800 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation Links -->
+            <div class="px-4 py-2">
+                <nav class="space-y-2">
+                    <a href="../../index.html" class="block px-4 py-2 text-lg text-gray-300 hover:text-emerald-400 hover:bg-gray-800 rounded-lg transition-colors">Home</a>
+                    <a href="../../features.html" class="block px-4 py-2 text-lg text-gray-300 hover:text-emerald-400 hover:bg-gray-800 rounded-lg transition-colors">Features</a>
+                    <a href="../../pricing.html" class="block px-4 py-2 text-lg text-gray-300 hover:text-emerald-400 hover:bg-gray-800 rounded-lg transition-colors">Pricing</a>
+                    <a href="../blogs.html" class="block px-4 py-2 text-lg text-emerald-400 hover:text-emerald-300 hover:bg-gray-800 rounded-lg transition-colors">Blog</a>
+                    <a href="../../about.html" class="block px-4 py-2 text-lg text-gray-300 hover:text-emerald-400 hover:bg-gray-800 rounded-lg transition-colors">About</a>
+                    <a href="../../contact.html" class="block px-4 py-2 text-lg text-gray-300 hover:text-emerald-400 hover:bg-gray-800 rounded-lg transition-colors">Contact</a>
+                </nav>
+            </div>
+            
+            <!-- Mobile Actions -->
+            <div class="px-4 py-2 border-t border-gray-700 space-y-2">
+                <select id="mobile-language-switcher" class="w-full bg-gray-800 text-gray-300 border border-gray-700 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                    <option value="en-US">🇺🇸 English</option>
+                    <option value="fr-FR">🇫🇷 Français</option>
+                    <option value="de-DE">🇩🇪 Deutsch</option>
+                    <option value="es-ES">🇪🇸 Español</option>
+                    <option value="el-GR">🇬🇷 Ελληνικά</option>
+                </select>
+                <a href="../../login.html" class="block w-full px-4 py-2 text-center rounded-lg border border-emerald-500 text-emerald-400 hover:bg-emerald-900 transition-colors">Create Account / Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <article class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gray-800 rounded-2xl p-8 md:p-12">
+                    <div class="mb-8">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 rounded-full bg-emerald-500 flex items-center justify-center mr-4">
+                                <i data-feather="calendar" class="w-5 h-5 text-white"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400">October 5, 2025</p>
+                                <h1 class="text-3xl md:text-4xl font-bold text-gray-100">Streamlining Invoice Data Extraction with Tidiful</h1>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="prose prose-lg max-w-none">
+                        <p>Across modern teams, invoices, purchase orders, and other business documents arrive in a variety of formats. Manual data entry slows operations, introduces errors, and increases the cost of back-office work. Organizations seek an automation-first approach that can scale with growth, maintain data quality, and integrate seamlessly with their existing software stack. Tidiful offers a practical path to turning documents into structured, usable data with confidence. This post distills common challenges, how Tidiful addresses them, and practical steps you can take to upgrade your workflow today.</p>
+                        
+                        <h2>Key capabilities that drive real value</h2>
+                        <ol>
+                            <li>Accurate data capture from invoices and PDFs using advanced OCR and document-aware templates.</li>
+                            <li>Robust data validation and enrichment to ensure field-level accuracy, reducing downstream corrections.</li>
+                            <li>Seamless integration with ERP and accounting systems, enabling direct export to CSV, XLSX, or live ERP sync.</li>
+                            <li>Production-ready workflows with governance, role-based access, and audit trails for compliance.</li>
+                            <li>Flexible deployment paths, including no-code configuration for rapid production rollout and easy maintenance.</li>
+                        </ol>
+                        
+                        <p>What these capabilities deliver is a dependable, scalable workflow that turns the bottleneck of data entry into a managed, measurable process. You can move from manual, error-prone data capture to a repeatable, auditable pipeline that fuels reporting, forecasting, and automation across departments.</p>
+                        
+                        <h2>Industry pain points and how Tidiful helps</h2>
+                        <p>Different teams share a core set of needs when dealing with documents and data:</p>
+                        <div class="highlight">
+                            <strong>Highlight:</strong> Accurate data extraction reduces rework and speeds up close cycles across finance, operations, and customer success.
+                        </div>
+                        <div class="highlight">
+                            <strong>Highlight:</strong> Validations and governance ensure data integrity from source to destination, preventing errors downstream.
+                        </div>
+                        <div class="highlight">
+                            <strong>Highlight:</strong> Simple, scalable integration enables you to connect documents to your accounting, ERP, or BI tools without heavy custom development.
+                        </div>
+                        
+                        <h3>Domain-focused insights</h3>
+                        <ul>
+                            <li><strong>SaaS teams:</strong> ROI pressure and a need for practical, revenue-focused automation. Tidiful provides an ROI calculator and templates to quantify savings and justify automation projects.</li>
+                            <li><strong>Accounting and finance:</strong> Data security, compliance, and governance. Tidiful includes secure data handling, audit trails, and access controls for regulated environments.</li>
+                            <li><strong>Ecommerce and Shopify:</strong> Consolidated data views for invoices, orders, and vendor data. Tidiful streamlines cross-functional reporting and reduces manual reconciliation.</li>
+                            <li><strong>Marketing and NoCode:</strong> Production-ready data flows from prototype to production with minimal coding, enabling rapid experimentation without sacrificing governance.</li>
+                        </ul>
+                        
+                        <p>To help teams plan and measure impact, Tidiful offers a practical 8-week content calendar and a library of gated resources designed to educate and accelerate results. These assets help finance, ops, and product teams explore how automation affects ROI, reliability, and speed to value.</p>
+                        
+                        <h2>ROI and success metrics you can track</h2>
+                        <p>Quantifying the value of document automation is essential for prioritization and governance. Consider tracking these metrics:</p>
+                        <ul>
+                            <li>Time saved per processed document (minutes or hours).</li>
+                            <li>Data accuracy rate at capture (percent of fields correctly extracted on first pass).</li>
+                            <li>Cycle time from document receipt to ready-for-processing data.</li>
+                            <li>Reduction in manual corrections and rework costs.</li>
+                            <li>Speed to value for new suppliers, formats, or regions.</li>
+                        </ul>
+                        
+                        <p>With Tidiful, you can establish a baseline, implement improvements, and then monitor progress over time with dashboards and automated reports. The result is a more predictable, scalable workflow where data quality drives better business decisions.</p>
+                        
+                        <h2>8-week content calendar and gated resources</h2>
+                        <p>Plan and publish value-focused content to educate your audience while generating qualified interest. A sample calendar includes topics like:</p>
+                        <ul>
+                            <li>Week 1: From Manual Data Entry to Automated Invoices: ROI Calculator for OCR/Data Extraction (Format: calculator + explainer post).</li>
+                            <li>Week 2: Agency-First Path to SaaS: How Systematizing Services Can Lead to a Scalable Product (Format: long-form guide with mini-case).</li>
+                            <li>Week 3: Security & Compliance for Document Parsing: How to Protect Data in OCR Pipelines (Format: checklist + quick wins).</li>
+                            <li>Week 4: Integrations Deep Dive: QuickBooks/Xero with Invoice Parsing (Format: how-to + code snippets).</li>
+                            <li>Week 5: SMB Case Study: Time Savings from Automated Data Capture (Format: 1–2 micro-case studies).</li>
+                            <li>Week 6: ROI of OCR Accuracy vs Speed: Metrics that Matter (Format: data-driven infographic).</li>
+                            <li>Week 7: No-Code to Production: Best Practices for vibe-coded Apps in Production (Format: synthesis of NoCode threads).</li>
+                            <li>Week 8: Primer for Finance Ops Leaders: 3 Retailers’ ROI on Automated Invoices (Format: industry snapshot).</li>
+                        </ul>
+                        
+                        <p>Gated resources you can offer to captivate and convert include an ROI calculator for invoice data extraction, a field-by-field data extraction checklist, a template-mapping guide from invoices to CSV/XLSX, and a vendor due-diligence checklist for OCR integration. These assets help buyers quantify impact, reduce risk, and accelerate implementation.</p>
+                        
+                        <h2>Stories you might hear (anonymized)</h2>
+                        <ul>
+                            <li>“One customer told me my product saved two hours of work every day.”</li>
+                            <li>“SaaS is pay-to-play; without a big marketing budget, you’re dead.”</li>
+                            <li>“Agencies can become products; build internal tools, then SaaS.”</li>
+                            <li>“The turning point can come with one more week of effort.”</li>
+                        </ul>
+                        
+                        <h2>How to get started with Tidiful</h2>
+                        <ol>
+                            <li>Map your data fields: Identify the exact invoice and document attributes you need (dates, line items, totals, vendor IDs, tax details, etc.).</li>
+                            <li>Connect sources: Import PDFs and email attachments, compatible with multiple formats and layouts.</li>
+                            <li>Define validation rules: Create cross-field checks to prevent common errors (amount mismatches, tax misstatements, missing vendor data).</li>
+                            <li>Integrate destinations: Export to CSV/XLSX or push data directly into your ERP/accounting system with secure connectors.</li>
+                            <li>Monitor and iterate: Use dashboards to watch accuracy, throughput, and error rates, then tune templates and rules as documents evolve.</li>
+                        </ol>
+                        
+                        <p>Ready to optimize your document workflow? Explore Tidiful’s pricing and start a free trial to see tangible improvements in days, not weeks.</p>
+                    </div>
+                    
+                    <div class="mt-12 pt-8 border-t border-gray-700">
+                        <a href="../../pricing.html" class="inline-flex items-center text-emerald-400 hover:text-emerald-300 transition-colors">
+                            <i data-feather="arrow-right" class="w-4 h-4 mr-2"></i>
+                            View Pricing and Start Your Free Trial
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="../../assets/images/leaf_png_128x128.png" alt="TidiFul leaf logo - AI document processing brand" class="w-8 h-8">
+                        <span class="text-xl font-bold text-gray-100">TidiFul</span>
+                    </div>
+                    <p class="text-gray-400">Transforming documents into structured data with AI-powered precision.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Product</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../../features.html" class="text-gray-400 hover:text-emerald-400 transition-colors">Features</a></li>
+                        <li><a href="../../pricing.html" class="text-gray-400 hover:text-emerald-400 transition-colors">Pricing</a></li>
+                        <li><a href="../../about.html" class="text-gray-400 hover:text-emerald-400 transition-colors">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../blogs.html" class="text-gray-400 hover:text-emerald-400 transition-colors">Blog</a></li>
+                        <li><a href="../../contact.html" class="text-gray-400 hover:text-emerald-400 transition-colors">Contact</a></li>
+                        <li><a href="../../eula.html" class="text-gray-400 hover:text-emerald-400 transition-colors">EULA</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../../about.html" class="text-gray-400 hover:text-emerald-400 transition-colors">About</a></li>
+                        <li><a href="../../contact.html" class="text-gray-400 hover:text-emerald-400 transition-colors">Contact</a></li>
+                        <li><a href="../../eula.html" class="text-gray-400 hover:text-emerald-400 transition-colors">Legal</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500">© 2025 TidiFul. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Notice -->
+    <div id="cookie-notice" class="fixed bottom-0 left-0 right-0 bg-gray-800 border-t border-gray-700 p-4 z-50 transform translate-y-full transition-transform duration-300">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0">
+                <div class="flex-1 text-center md:text-left">
+                    <p class="text-gray-300 text-sm">
+                        We use cookies to improve your experience and analyze site usage. By continuing to use our site, you consent to our use of cookies.
+                        <a href="../../eula.html" class="text-emerald-400 hover:text-emerald-300 underline ml-1">Learn more</a>
+                    </p>
+                </div>
+                <div class="flex space-x-3">
+                    <button id="cookie-decline" class="px-4 py-2 text-sm text-gray-400 hover:text-gray-300 transition-colors">Decline</button>
+                    <button id="cookie-accept" class="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm rounded-lg transition-colors">Accept All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../assets/js/i18n.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize Feather Icons
+            feather.replace();
+            // Initialize header/navigation behavior
+            initializeResponsiveHeader();
+            // Initialize mobile menu
+            initializeMobileMenu();
+            // Initialize language switcher
+            initializeLanguageSwitcher();
+        });
+
+        function initializeResponsiveHeader() {
+            const desktopNav = document.getElementById('desktop-nav');
+            const desktopActions = document.getElementById('desktop-actions');
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            function checkHeaderOverflow() {
+                const nav = document.querySelector('nav');
+                const navWidth = nav.offsetWidth;
+                const logoWidth = nav.querySelector('a').offsetWidth;
+                const desktopNavWidth = desktopNav ? desktopNav.offsetWidth : 0;
+                const desktopActionsWidth = desktopActions ? desktopActions.offsetWidth : 0;
+                const mobileButtonWidth = mobileMenuButton.offsetWidth;
+                const totalContentWidth = logoWidth + desktopNavWidth + desktopActionsWidth + mobileButtonWidth + 64;
+                if (totalContentWidth > navWidth || window.innerWidth < 1024) {
+                    if (desktopNav) desktopNav.classList.add('hidden');
+                    if (desktopActions) desktopActions.classList.add('hidden');
+                    mobileMenuButton.classList.remove('hidden');
+                } else {
+                    if (desktopNav) desktopNav.classList.remove('hidden');
+                    if (desktopActions) desktopActions.classList.remove('hidden');
+                    mobileMenuButton.classList.add('hidden');
+                }
+            }
+            checkHeaderOverflow();
+            window.addEventListener('resize', checkHeaderOverflow);
+            const languageSwitcher = document.getElementById('language-switcher');
+            if (languageSwitcher) {
+                languageSwitcher.addEventListener('change', () => {
+                    setTimeout(checkHeaderOverflow, 100);
+                });
+            }
+            document.addEventListener('i18n-loaded', checkHeaderOverflow);
+        }
+
+        function initializeMobileMenu() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuClose = document.getElementById('mobile-menu-close');
+            if (mobileMenuButton && mobileMenu && mobileMenuClose) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                });
+                const closeMenu = () => {
+                    mobileMenu.classList.add('hidden');
+                    document.body.style.overflow = '';
+                };
+                mobileMenuClose.addEventListener('click', closeMenu);
+                mobileMenu.addEventListener('click', (e) => { if (e.target === mobileMenu) closeMenu(); });
+                document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !mobileMenu.classList.contains('hidden')) closeMenu(); });
+                const mobileNavLinks = mobileMenu.querySelectorAll('nav a');
+                mobileNavLinks.forEach(link => link.addEventListener('click', closeMenu));
+            }
+        }
+
+        function initializeLanguageSwitcher() {
+            const languageSwitcher = document.getElementById('language-switcher');
+            const mobileLanguageSwitcher = document.getElementById('mobile-language-switcher');
+            if (languageSwitcher) {
+                languageSwitcher.addEventListener('change', function() {
+                    const selectedLanguage = this.value;
+                    if (typeof loadLanguage === 'function') { loadLanguage(selectedLanguage); }
+                });
+            }
+            if (mobileLanguageSwitcher) {
+                mobileLanguageSwitcher.addEventListener('change', function() {
+                    const selectedLanguage = this.value;
+                    if (typeof loadLanguage === 'function') { loadLanguage(selectedLanguage); }
+                });
+            }
+        }
+
+        // Cookie Management
+        document.addEventListener('DOMContentLoaded', function() {
+            const cookieNotice = document.getElementById('cookie-notice');
+            const acceptBtn = document.getElementById('cookie-accept');
+            const declineBtn = document.getElementById('cookie-decline');
+            const cookieChoice = localStorage.getItem('tidiful-cookie-choice');
+            if (!cookieChoice) {
+                setTimeout(() => { cookieNotice.classList.remove('translate-y-full'); }, 1000);
+            } else if (cookieChoice === 'declined') {
+                window['ga-disable-G-838XD1M1EQ'] = true;
+            }
+            acceptBtn && acceptBtn.addEventListener('click', function() {
+                localStorage.setItem('tidiful-cookie-choice', 'accepted');
+                cookieNotice.classList.add('translate-y-full');
+                window['ga-disable-G-838XD1M1EQ'] = false;
+                if (typeof gtag !== 'undefined') { gtag('consent', 'update', { 'analytics_storage': 'granted' }); }
+            });
+            declineBtn && declineBtn.addEventListener('click', function() {
+                localStorage.setItem('tidiful-cookie-choice', 'declined');
+                cookieNotice.classList.add('translate-y-full');
+                window['ga-disable-G-838XD1M1EQ'] = true;
+                if (typeof gtag !== 'undefined') { gtag('consent', 'update', { 'analytics_storage': 'denied' }); }
+            });
+        });
+    </script>
+</body>
+</html>
