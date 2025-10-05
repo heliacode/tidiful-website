@@ -179,6 +179,12 @@
     "eula": "EULA",
     "copyright": "© 2023 TidiFul. Todos los derechos reservados."
   },
+  "cookies": {
+    "message": "Utilizamos cookies para mejorar su experiencia y analizar el uso del sitio. Al continuar usando nuestro sitio, acepta nuestro uso de cookies.",
+    "learnMore": "Saber más",
+    "accept": "Aceptar todo",
+    "decline": "Rechazar"
+  },
   "pricing": {
     "title": "Precios Simples y Transparentes <span class=\"text-emerald-400\">Precios</span>",
     "subtitle": "Elige el plan que se ajuste a tus necesidades de procesamiento de documentos. Todos los planes incluyen nuestro conjunto completo de características.",

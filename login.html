@@ -327,9 +327,7 @@
                     <span class="text-gray-400 text-xs md:text-sm">© 2025 TidiFul. All rights reserved.</span>
                 </div>
                 <div class="flex space-x-3 md:space-x-4 flex-wrap justify-center">
-                    <a href="#" class="text-gray-500 hover:text-emerald-400 transition-colors text-xs md:text-sm">Privacy Policy</a>
-                    <a href="#" class="text-gray-500 hover:text-emerald-400 transition-colors text-xs md:text-sm">Terms of Service</a>
-                    <a href="#" class="text-gray-500 hover:text-emerald-400 transition-colors text-xs md:text-sm">Support</a>
+                    <a href="eula.html" class="text-gray-500 hover:text-emerald-400 transition-colors text-xs md:text-sm">EULA</a>
                 </div>
             </div>
         </div>
@@ -394,6 +392,78 @@
                 });
             }
         }
+    </script>
+
+    <!-- Cookie Notice -->
+    <div id="cookie-notice" class="fixed bottom-0 left-0 right-0 bg-gray-800 border-t border-gray-700 p-4 z-50 transform translate-y-full transition-transform duration-300">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0">
+                <div class="flex-1 text-center md:text-left">
+                    <p class="text-gray-300 text-sm">
+                        <span data-i18n="cookies.message">We use cookies to improve your experience and analyze site usage. By continuing to use our site, you consent to our use of cookies.</span>
+                        <a href="eula.html" class="text-emerald-400 hover:text-emerald-300 underline ml-1" data-i18n="cookies.learnMore">Learn more</a>
+                    </p>
+                </div>
+                <div class="flex space-x-3">
+                    <button id="cookie-decline" class="px-4 py-2 text-sm text-gray-400 hover:text-gray-300 transition-colors" data-i18n="cookies.decline">Decline</button>
+                    <button id="cookie-accept" class="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm rounded-lg transition-colors" data-i18n="cookies.accept">Accept All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Cookie Management
+        document.addEventListener('DOMContentLoaded', function() {
+            const cookieNotice = document.getElementById('cookie-notice');
+            const acceptBtn = document.getElementById('cookie-accept');
+            const declineBtn = document.getElementById('cookie-decline');
+            
+            // Check if user has already made a choice
+            const cookieChoice = localStorage.getItem('tidiful-cookie-choice');
+            
+            if (!cookieChoice) {
+                // Show cookie notice after a short delay
+                setTimeout(() => {
+                    cookieNotice.classList.remove('translate-y-full');
+                }, 1000);
+            } else if (cookieChoice === 'declined') {
+                // Disable Google Analytics if user declined
+                window['ga-disable-G-838XD1M1EQ'] = true;
+            }
+            
+            // Accept cookies
+            acceptBtn.addEventListener('click', function() {
+                localStorage.setItem('tidiful-cookie-choice', 'accepted');
+                cookieNotice.classList.add('translate-y-full');
+                
+                // Enable Google Analytics
+                window['ga-disable-G-838XD1M1EQ'] = false;
+                
+                // Re-initialize GA if it was disabled
+                if (typeof gtag !== 'undefined') {
+                    gtag('consent', 'update', {
+                        'analytics_storage': 'granted'
+                    });
+                }
+            });
+            
+            // Decline cookies
+            declineBtn.addEventListener('click', function() {
+                localStorage.setItem('tidiful-cookie-choice', 'declined');
+                cookieNotice.classList.add('translate-y-full');
+                
+                // Disable Google Analytics
+                window['ga-disable-G-838XD1M1EQ'] = true;
+                
+                // Update GA consent
+                if (typeof gtag !== 'undefined') {
+                    gtag('consent', 'update', {
+                        'analytics_storage': 'denied'
+                    });
+                }
+            });
+        });
     </script>
 </body>
 </html>

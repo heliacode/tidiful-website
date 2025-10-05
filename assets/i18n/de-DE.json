@@ -179,6 +179,12 @@
     "eula": "EULA",
     "copyright": "© 2023 TidiFul. Alle Rechte vorbehalten."
   },
+  "cookies": {
+    "message": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern und die Nutzung der Website zu analysieren. Durch die weitere Nutzung unserer Website stimmen Sie der Verwendung von Cookies zu.",
+    "learnMore": "Mehr erfahren",
+    "accept": "Alle akzeptieren",
+    "decline": "Ablehnen"
+  },
   "pricing": {
     "title": "Einfache, Transparente <span class=\"text-emerald-400\">Preise</span>",
     "subtitle": "Wählen Sie den Plan, der Ihren Dokumentenverarbeitungsbedürfnissen entspricht. Alle Pläne enthalten unseren vollständigen Funktionsumfang.",

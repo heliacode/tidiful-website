@@ -179,6 +179,12 @@
     "eula": "CLUF",
     "copyright": "© 2023 TidiFul. Tous droits réservés."
   },
+  "cookies": {
+    "message": "Nous utilisons des cookies pour améliorer votre expérience et analyser l'utilisation du site. En continuant à utiliser notre site, vous acceptez notre utilisation des cookies.",
+    "learnMore": "En savoir plus",
+    "accept": "Tout accepter",
+    "decline": "Refuser"
+  },
   "pricing": {
     "title": "Tarification Simple et Transparente <span class=\"text-emerald-400\">Prix</span>",
     "subtitle": "Choisissez le plan qui correspond à vos besoins de traitement de documents. Tous les plans incluent notre ensemble complet de fonctionnalités.",
