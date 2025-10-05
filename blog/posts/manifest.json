@@ -1,11 +1,11 @@
 {
   "posts": [
     {
-      "filename": "how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html",
-      "title": "How to Scan PDF Documents Like a Pro: A Complete Guide for Business Professionals",
-      "date": "2025-06-15",
-      "excerpt": "Learn how to scan PDF documents efficiently and accurately. Discover the best tools, workflows, and automation methods to turn paper documents into searchable, structured PDFs using TidiFul.",
-      "url": "blog/posts/how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html"
+      "filename": "invoice-to-excel-complete-guide.html",
+      "title": "Invoice to Excel: Complete Guide for Business Professionals",
+      "date": "2025-10-28",
+      "excerpt": "Learn how to convert invoices to Excel format efficiently. Complete guide covering manual methods, automated solutions, and best practices for invoice to Excel conversion.",
+      "url": "blog/posts/invoice-to-excel-complete-guide.html"
     },
     {
       "filename": "pdf-to-csv-complete-guide.html",
@@ -22,13 +22,13 @@
       "url": "blog/posts/what-is-pdf-to-csv-conversion.html"
     },
     {
-      "filename": "invoice-to-excel-complete-guide.html",
-      "title": "Invoice to Excel: Complete Guide for Business Professionals",
-      "date": "2025-10-28",
-      "excerpt": "Learn how to efficiently convert invoices to Excel format using both manual methods and automated solutions. Complete guide covering everything you need to know about invoice to Excel conversion.",
-      "url": "blog/posts/invoice-to-excel-complete-guide.html"
+      "filename": "how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html",
+      "title": "How to Scan PDF Documents Like a Pro: A Complete Guide for Business Professionals",
+      "date": "2025-06-15",
+      "excerpt": "Learn how to scan PDF documents efficiently and accurately. Discover the best tools, workflows, and automation methods to turn paper documents into searchable, structured PDFs using TidiFul.",
+      "url": "blog/posts/how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html"
     }
   ],
-  "lastUpdated": "2025-10-28T16:45:00.000000",
+  "lastUpdated": "2025-10-05T23:06:40.605851",
   "totalPosts": 4
 }
