@@ -9,6 +9,7 @@
     "features": "Funktionen",
     "pricing": "Preise",
     "blog": "Blog",
+    "about": "Über uns",
     "contact": "Kontakt",
     "signIn": "Anmelden",
     "signUp": "Registrieren",
@@ -232,5 +233,133 @@
   "language": {
     "select": "Sprache Auswählen",
     "current": "Aktuelle Sprache"
+  },
+  "eula": {
+    "title": "Endbenutzer-Lizenzvereinbarung",
+    "breadcrumb": "EULA",
+    "lastUpdated": "Zuletzt aktualisiert: 15. Januar 2025",
+    "version": "Version 1.0",
+    "intro": "Diese Endbenutzer-Lizenzvereinbarung (\"EULA\") regelt Ihre Nutzung von TidiFuls KI-gestützten Dokumentenverarbeitungsdiensten. Durch die Nutzung unserer Dienste stimmen Sie zu, an diese Bedingungen gebunden zu sein.",
+    "section1": {
+      "title": "1. Annahme der Bedingungen",
+      "content1": "Durch den Zugriff auf oder die Nutzung von TidiFuls Diensten bestätigen Sie, dass Sie diese EULA und unsere Datenschutzrichtlinie gelesen, verstanden haben und zustimmen, an sie gebunden zu sein. Wenn Sie diesen Bedingungen nicht zustimmen, dürfen Sie unsere Dienste nicht nutzen.",
+      "content2": "Diese Vereinbarung ist ein rechtlich bindender Vertrag zwischen Ihnen (\"Benutzer\" oder \"Sie\") und TidiFul (\"Unternehmen\", \"wir\", \"uns\" oder \"unser\"). Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern, und Ihre fortgesetzte Nutzung unserer Dienste stellt die Annahme aller Änderungen dar."
+    },
+    "section2": {
+      "title": "2. Dienstbeschreibung",
+      "content1": "TidiFul bietet KI-gestützte Dokumentenverarbeitungsdienste an, die PDF-Dokumente in strukturierte Datenformate einschließlich JSON, CSV, XML und XLSX konvertieren. Unsere Dienste umfassen:",
+      "list1": "Automatisierte Dokumentenanalyse und Datenextraktion",
+      "list2": "Multi-Format-Ausgabegenerierung",
+      "list3": "API-Zugang für die Integration mit Drittsystemen",
+      "list4": "Sichere cloudbasierte Verarbeitung",
+      "list5": "Mehrsprachige Dokumentenunterstützung"
+    },
+    "section3": {
+      "title": "3. Benutzerverantwortlichkeiten und Akzeptable Nutzung",
+      "subtitle1": "3.1 Gesetzliche Nutzung",
+      "content1": "Sie stimmen zu, TidiFuls Dienste nur für rechtmäßige Zwecke und in Übereinstimmung mit geltenden Gesetzen und Vorschriften zu nutzen. Sie sind dafür verantwortlich, sicherzustellen, dass alle von Ihnen verarbeiteten Dokumente allen geltenden Gesetzen entsprechen, einschließlich, aber nicht beschränkt auf Datenschutz-, Privatsphäre- und geistige Eigentumsgesetze.",
+      "subtitle2": "3.2 Verbotene Aktivitäten",
+      "content2": "Sie dürfen unsere Dienste nicht nutzen, um:",
+      "list1": "Dokumente mit illegalen, schädlichen oder bösartigen Inhalten zu verarbeiten",
+      "list2": "Geltende Gesetze oder Vorschriften zu verletzen",
+      "list3": "Geistige Eigentumsrechte zu verletzen",
+      "list4": "Unsere Systeme zu reverse-engineern oder zu kompromittieren",
+      "list5": "Unsere Dienste für Zwecke zu nutzen, die unsere Systeme beschädigen oder beeinträchtigen könnten",
+      "list6": "Ihre Kontozugangsdaten mit unbefugten Parteien zu teilen"
+    },
+    "section4": {
+      "title": "4. Datenschutz und Privatsphäre (DSGVO-Konformität)",
+      "subtitle1": "4.1 Datenverarbeitung",
+      "content1": "TidiFul verarbeitet personenbezogene Daten in Übereinstimmung mit der Datenschutz-Grundverordnung (DSGVO) und anderen geltenden Datenschutzgesetzen. Wir fungieren als Datenverarbeiter bei der Verarbeitung Ihrer Dokumente, und Sie bleiben der Datenverantwortliche.",
+      "subtitle2": "4.2 Datensicherheit",
+      "content2": "Wir implementieren angemessene technische und organisatorische Maßnahmen zum Schutz Ihrer Daten, einschließlich:",
+      "list1": "Ende-zu-Ende-Verschlüsselung für Datenübertragung und -speicherung",
+      "list2": "Sichere Rechenzentren mit physischen und logischen Zugangskontrollen",
+      "list3": "Regelmäßige Sicherheitsaudits und Schwachstellenbewertungen",
+      "list4": "Mitarbeiterschulungen zu Datenschutz und Sicherheit",
+      "list5": "Incident-Response-Verfahren für Datenverletzungen",
+      "subtitle3": "4.3 Datenspeicherung",
+      "content3": "Wir folgen einer Null-Speicherungsrichtlinie für verarbeitete Dokumente. Dokumente werden automatisch aus unseren Systemen gelöscht, sobald die Verarbeitung abgeschlossen ist, es sei denn, Sie fordern ausdrücklich eine erweiterte Speicherung an.",
+      "subtitle4": "4.4 Ihre Rechte",
+      "content4": "Unter der DSGVO haben Sie folgende Rechte bezüglich Ihrer personenbezogenen Daten:",
+      "list6": "Recht auf Zugang zu Ihren personenbezogenen Daten",
+      "list7": "Recht auf Berichtigung ungenauer Daten",
+      "list8": "Recht auf Löschung (\"Recht auf Vergessenwerden\")",
+      "list9": "Recht auf Einschränkung der Verarbeitung",
+      "list10": "Recht auf Datenübertragbarkeit",
+      "list11": "Recht auf Widerspruch gegen die Verarbeitung",
+      "list12": "Recht auf Widerruf der Einwilligung"
+    },
+    "section5": {
+      "title": "5. Geistige Eigentumsrechte",
+      "subtitle1": "5.1 TidiFuls Geistiges Eigentum",
+      "content1": "Alle Rechte, Titel und Interessen an TidiFuls Diensten, einschließlich aller geistigen Eigentumsrechte, verbleiben bei TidiFul. Dies umfasst, aber ist nicht beschränkt auf Software, Algorithmen, Benutzeroberflächen, Dokumentation und Marken.",
+      "subtitle2": "5.2 Ihr Inhalt",
+      "content2": "Sie behalten alle Rechte an den Dokumenten und Daten, die Sie in unsere Dienste hochladen. Durch die Nutzung unserer Dienste gewähren Sie uns eine begrenzte, nicht-exklusive Lizenz zur Verarbeitung Ihrer Dokumente ausschließlich zum Zweck der Bereitstellung unserer Dienste für Sie."
+    },
+    "section6": {
+      "title": "6. Dienstverfügbarkeit und Einschränkungen",
+      "subtitle1": "6.1 Dienstverfügbarkeit",
+      "content1": "Wir bemühen uns, hohe Dienstverfügbarkeit aufrechtzuerhalten, können aber keine unterbrechungsfreie Verfügbarkeit garantieren. Wir können Wartungsarbeiten, Updates oder Änderungen durchführen, die die Dienstverfügbarkeit vorübergehend beeinträchtigen.",
+      "subtitle2": "6.2 Verarbeitungslimits",
+      "content2": "Ihre Nutzung unserer Dienste unterliegt den in Ihrem Abonnementplan angegebenen Limits. Diese Limits können die Anzahl der verarbeiteten Dokumente, Dateigrößenbeschränkungen und API-Aufruflimits umfassen."
+    },
+    "section7": {
+      "title": "7. Zahlungsbedingungen",
+      "content1": "Zahlungsbedingungen werden durch Ihre Abonnementvereinbarung geregelt. Alle Gebühren sind nicht erstattungsfähig, sofern nicht anders angegeben. Wir behalten uns das Recht vor, unsere Preise mit 30 Tagen Vorlaufzeit für bestehende Kunden zu ändern."
+    },
+    "section8": {
+      "title": "8. Haftungsbeschränkung",
+      "content1": "Im gesetzlich zulässigen Umfang haftet TidiFul nicht für indirekte, zufällige, besondere, Folgeschäden oder Strafschäden, einschließlich, aber nicht beschränkt auf Verlust von Gewinnen, Daten oder Geschäftsmöglichkeiten.",
+      "content2": "Unsere Gesamthaftung für Ansprüche, die aus dieser Vereinbarung entstehen oder damit zusammenhängen, darf den Betrag nicht überschreiten, den Sie in den 12 Monaten vor dem Anspruch für unsere Dienste gezahlt haben."
+    },
+    "section9": {
+      "title": "9. Entschädigung",
+      "content1": "Sie stimmen zu, TidiFul von allen Ansprüchen, Schäden oder Ausgaben freizustellen, die aus Ihrer Nutzung unserer Dienste, Verletzung dieser Vereinbarung oder Verletzung von Drittrechten entstehen."
+    },
+    "section10": {
+      "title": "10. Kündigung",
+      "subtitle1": "10.1 Kündigung durch Sie",
+      "content1": "Sie können Ihr Konto jederzeit durch Kontaktaufnahme mit unserem Support-Team kündigen. Bei Kündigung endet Ihr Zugang zu unseren Diensten sofort.",
+      "subtitle2": "10.2 Kündigung durch uns",
+      "content2": "Wir können Ihr Konto sofort kündigen oder sperren, wenn Sie diese Vereinbarung verletzen oder sich an Aktivitäten beteiligen, die wir als schädlich für unsere Dienste oder andere Benutzer erachten."
+    },
+    "section11": {
+      "title": "11. Anwendbares Recht und Streitbeilegung",
+      "content1": "Diese Vereinbarung wird nach den Gesetzen von [Gerichtsbarkeit] geregelt und ausgelegt. Alle Streitigkeiten aus dieser Vereinbarung werden durch verbindliche Schiedsverfahren nach den Regeln von [Schiedsorganisation] beigelegt."
+    },
+    "section12": {
+      "title": "12. Kontaktinformationen",
+      "content1": "Wenn Sie Fragen zu dieser EULA haben oder Ihre Rechte unter der DSGVO ausüben müssen, kontaktieren Sie uns bitte:",
+      "list1": "E-Mail: legal@tidiful.com",
+      "list2": "Datenschutzbeauftragter: dpo@tidiful.com",
+      "list3": "Allgemeiner Support: support@tidiful.com"
+    },
+    "important": {
+      "title": "Wichtiger Hinweis",
+      "content": "Diese EULA ist ab dem Datum Ihrer Annahme wirksam. Durch die Nutzung von TidiFuls Diensten bestätigen Sie, dass Sie diese Vereinbarung gelesen und verstanden haben und zustimmen, an ihre Bedingungen gebunden zu sein.",
+      "lastUpdated": "Zuletzt aktualisiert: 15. Januar 2025"
+    }
+  },
+  "footer": {
+    "tagline": "Dokumente mit KI-gestützter Präzision in strukturierte Daten verwandeln.",
+    "product": "Produkt",
+    "legal": "Rechtliches",
+    "eula": "EULA",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen",
+    "gdpr": "DSGVO",
+    "copyright": "© 2025 TidiFul. Alle Rechte vorbehalten.",
+    "integrations": "Integrationen",
+    "resources": "Ressourcen",
+    "documentation": "Dokumentation",
+    "caseStudies": "Fallstudien",
+    "support": "Support",
+    "company": "Unternehmen",
+    "about": "Über uns",
+    "careers": "Karriere",
+    "apiDocs": "API-Dokumentation",
+    "helpCenter": "Hilfezentrum",
+    "statusPage": "Status-Seite"
   }
 }

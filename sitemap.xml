@@ -58,6 +58,20 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/about.html"/>
   </url>
 
+  <!-- EULA Page - English -->
+  <url>
+    <loc>https://tidiful.com/eula.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/eula.html?lang=en-US"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/eula.html?lang=fr-FR"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/eula.html?lang=de-DE"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/eula.html?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/eula.html?lang=el-GR"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/eula.html"/>
+  </url>
+
   <!-- Login Page - English -->
   <url>
     <loc>https://tidiful.com/login.html</loc>

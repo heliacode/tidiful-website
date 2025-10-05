@@ -188,9 +188,16 @@ class I18n {
     // Update language switcher
     updateLanguageSwitcher() {
         const switcher = document.getElementById('language-switcher');
+        const mobileSwitcher = document.getElementById('mobile-language-switcher');
+        
         if (switcher) {
             const currentLang = this.currentLanguage;
             switcher.value = currentLang;
+        }
+        
+        if (mobileSwitcher) {
+            const currentLang = this.currentLanguage;
+            mobileSwitcher.value = currentLang;
         }
     }
 
@@ -240,8 +247,16 @@ document.addEventListener('DOMContentLoaded', async function() {
     
     // Add language switcher event listener
     const switcher = document.getElementById('language-switcher');
+    const mobileSwitcher = document.getElementById('mobile-language-switcher');
+    
     if (switcher) {
         switcher.addEventListener('change', function() {
+            window.i18n.changeLanguage(this.value);
+        });
+    }
+    
+    if (mobileSwitcher) {
+        mobileSwitcher.addEventListener('change', function() {
             window.i18n.changeLanguage(this.value);
         });
     }

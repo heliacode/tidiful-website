@@ -9,6 +9,7 @@
     "features": "Features", 
     "pricing": "Pricing",
     "blog": "Blog",
+    "about": "About",
     "contact": "Contact",
     "signIn": "Sign In",
     "signUp": "Sign Up",
@@ -283,5 +284,133 @@
       "subtitle": "Join thousands of businesses that trust TidiFul to transform their document processing workflows.",
       "button": "Get Started Today"
     }
+  },
+  "eula": {
+    "title": "End User License Agreement",
+    "breadcrumb": "EULA",
+    "lastUpdated": "Last updated: January 15, 2025",
+    "version": "Version 1.0",
+    "intro": "This End User License Agreement (\"EULA\") governs your use of TidiFul's AI-powered document processing services. By using our services, you agree to be bound by these terms.",
+    "section1": {
+      "title": "1. Acceptance of Terms",
+      "content1": "By accessing or using TidiFul's services, you acknowledge that you have read, understood, and agree to be bound by this EULA and our Privacy Policy. If you do not agree to these terms, you may not use our services.",
+      "content2": "This agreement is a legally binding contract between you (\"User\" or \"you\") and TidiFul (\"Company,\" \"we,\" \"us,\" or \"our\"). We reserve the right to modify these terms at any time, and your continued use of our services constitutes acceptance of any changes."
+    },
+    "section2": {
+      "title": "2. Service Description",
+      "content1": "TidiFul provides AI-powered document processing services that convert PDF documents into structured data formats including JSON, CSV, XML, and XLSX. Our services include:",
+      "list1": "Automated document analysis and data extraction",
+      "list2": "Multi-format output generation",
+      "list3": "API access for integration with third-party systems",
+      "list4": "Secure cloud-based processing",
+      "list5": "Multilingual document support"
+    },
+    "section3": {
+      "title": "3. User Responsibilities and Acceptable Use",
+      "subtitle1": "3.1 Lawful Use",
+      "content1": "You agree to use TidiFul's services only for lawful purposes and in accordance with applicable laws and regulations. You are responsible for ensuring that any documents you process comply with all applicable laws, including but not limited to data protection, privacy, and intellectual property laws.",
+      "subtitle2": "3.2 Prohibited Activities",
+      "content2": "You may not use our services to:",
+      "list1": "Process documents containing illegal, harmful, or malicious content",
+      "list2": "Violate any applicable laws or regulations",
+      "list3": "Infringe upon intellectual property rights",
+      "list4": "Attempt to reverse engineer or compromise our systems",
+      "list5": "Use our services for any purpose that could damage or impair our systems",
+      "list6": "Share your account credentials with unauthorized parties"
+    },
+    "section4": {
+      "title": "4. Data Protection and Privacy (GDPR Compliance)",
+      "subtitle1": "4.1 Data Processing",
+      "content1": "TidiFul processes personal data in accordance with the General Data Protection Regulation (GDPR) and other applicable data protection laws. We act as a data processor when processing your documents, and you remain the data controller.",
+      "subtitle2": "4.2 Data Security",
+      "content2": "We implement appropriate technical and organizational measures to protect your data, including:",
+      "list1": "End-to-end encryption for data transmission and storage",
+      "list2": "Secure data centers with physical and logical access controls",
+      "list3": "Regular security audits and vulnerability assessments",
+      "list4": "Employee training on data protection and security",
+      "list5": "Incident response procedures for data breaches",
+      "subtitle3": "4.3 Data Retention",
+      "content3": "We follow a zero-retention policy for processed documents. Documents are automatically deleted from our systems immediately after processing is complete, unless you explicitly request extended storage.",
+      "subtitle4": "4.4 Your Rights",
+      "content4": "Under GDPR, you have the following rights regarding your personal data:",
+      "list6": "Right to access your personal data",
+      "list7": "Right to rectification of inaccurate data",
+      "list8": "Right to erasure (\"right to be forgotten\")",
+      "list9": "Right to restrict processing",
+      "list10": "Right to data portability",
+      "list11": "Right to object to processing",
+      "list12": "Right to withdraw consent"
+    },
+    "section5": {
+      "title": "5. Intellectual Property Rights",
+      "subtitle1": "5.1 TidiFul's Intellectual Property",
+      "content1": "All rights, title, and interest in and to TidiFul's services, including all intellectual property rights, remain with TidiFul. This includes but is not limited to software, algorithms, user interfaces, documentation, and trademarks.",
+      "subtitle2": "5.2 Your Content",
+      "content2": "You retain all rights to the documents and data you upload to our services. By using our services, you grant us a limited, non-exclusive license to process your documents solely for the purpose of providing our services to you."
+    },
+    "section6": {
+      "title": "6. Service Availability and Limitations",
+      "subtitle1": "6.1 Service Availability",
+      "content1": "We strive to maintain high service availability but cannot guarantee uninterrupted access. We may perform maintenance, updates, or modifications that temporarily affect service availability.",
+      "subtitle2": "6.2 Processing Limits",
+      "content2": "Your use of our services is subject to the limits specified in your subscription plan. These limits may include the number of documents processed, file size restrictions, and API call limits."
+    },
+    "section7": {
+      "title": "7. Payment Terms",
+      "content1": "Payment terms are governed by your subscription agreement. All fees are non-refundable unless otherwise specified. We reserve the right to change our pricing with 30 days' notice to existing customers."
+    },
+    "section8": {
+      "title": "8. Limitation of Liability",
+      "content1": "To the maximum extent permitted by law, TidiFul shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, or business opportunities.",
+      "content2": "Our total liability for any claims arising from or related to this agreement shall not exceed the amount you paid for our services in the 12 months preceding the claim."
+    },
+    "section9": {
+      "title": "9. Indemnification",
+      "content1": "You agree to indemnify and hold harmless TidiFul from any claims, damages, or expenses arising from your use of our services, violation of this agreement, or infringement of any third-party rights."
+    },
+    "section10": {
+      "title": "10. Termination",
+      "subtitle1": "10.1 Termination by You",
+      "content1": "You may terminate your account at any time by contacting our support team. Upon termination, your access to our services will cease immediately.",
+      "subtitle2": "10.2 Termination by Us",
+      "content2": "We may terminate or suspend your account immediately if you violate this agreement or engage in activities that we determine to be harmful to our services or other users."
+    },
+    "section11": {
+      "title": "11. Governing Law and Dispute Resolution",
+      "content1": "This agreement shall be governed by and construed in accordance with the laws of [Jurisdiction]. Any disputes arising from this agreement shall be resolved through binding arbitration in accordance with the rules of [Arbitration Organization]."
+    },
+    "section12": {
+      "title": "12. Contact Information",
+      "content1": "If you have any questions about this EULA or need to exercise your rights under GDPR, please contact us:",
+      "list1": "Email: legal@tidiful.com",
+      "list2": "Data Protection Officer: dpo@tidiful.com",
+      "list3": "General Support: support@tidiful.com"
+    },
+    "important": {
+      "title": "Important Notice",
+      "content": "This EULA is effective as of the date of your acceptance. By using TidiFul's services, you acknowledge that you have read and understood this agreement and agree to be bound by its terms.",
+      "lastUpdated": "Last updated: January 15, 2025"
+    }
+  },
+  "footer": {
+    "tagline": "Transforming documents into structured data with AI-powered precision.",
+    "product": "Product",
+    "legal": "Legal",
+    "eula": "EULA",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "gdpr": "GDPR",
+    "copyright": "© 2025 TidiFul. All rights reserved.",
+    "integrations": "Integrations",
+    "resources": "Resources",
+    "documentation": "Documentation",
+    "caseStudies": "Case Studies",
+    "support": "Support",
+    "company": "Company",
+    "about": "About",
+    "careers": "Careers",
+    "apiDocs": "API Docs",
+    "helpCenter": "Help Center",
+    "statusPage": "Status Page"
   }
 }
