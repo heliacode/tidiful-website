@@ -50,6 +50,19 @@
     "processAnother": "Process Another Document"
   },
   "features": {
+    "title": "Why Choose <span class=\"text-emerald-400\">TidiFul</span>?",
+    "lightningFast": {
+      "title": "Lightning Fast",
+      "description": "Process documents in seconds with our optimized AI engine, not hours of manual work."
+    },
+    "multipleFormats": {
+      "title": "Multiple Formats", 
+      "description": "Export to JSON, CSV, XML, or directly integrate with your existing systems via API."
+    },
+    "securePrivate": {
+      "title": "Secure & Private",
+      "description": "Your documents are processed securely and never stored on our servers without permission."
+    },
     "page_title": "Powerful <span class=\"text-emerald-400\">Features</span> for Modern Business",
     "page_subtitle": "Discovery how TidiFul transforms your document workflow with cutting-edge AI technology",
     "hero_cta": "Explore Our Features",
@@ -156,6 +169,14 @@
     "about": "About",
     "careers": "Careers",
     "legal": "Legal",
+    "integrations": "Integrations",
+    "apiDocs": "API Docs",
+    "helpCenter": "Help Center",
+    "statusPage": "Status Page",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "gdpr": "GDPR",
+    "eula": "EULA",
     "copyright": "© 2023 TidiFul. All rights reserved."
   },
   "pricing": {

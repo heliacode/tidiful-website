@@ -50,6 +50,19 @@
     "processAnother": "Weiteres Dokument Verarbeiten"
   },
   "features": {
+    "title": "Warum <span class=\"text-emerald-400\">TidiFul</span> wählen?",
+    "lightningFast": {
+      "title": "Blitzschnell",
+      "description": "Verarbeiten Sie Dokumente in Sekunden mit unserer optimierten KI-Engine, nicht stundenlang manuell."
+    },
+    "multipleFormats": {
+      "title": "Mehrere Formate", 
+      "description": "Exportieren Sie nach JSON, CSV, XML oder integrieren Sie direkt mit Ihren bestehenden Systemen über API."
+    },
+    "securePrivate": {
+      "title": "Sicher & Privat",
+      "description": "Ihre Dokumente werden sicher verarbeitet und niemals ohne Erlaubnis auf unseren Servern gespeichert."
+    },
     "page_title": "Leistungsstarke <span class=\"text-emerald-400\">Funktionen</span> für das Moderne Unternehmen",
     "page_subtitle": "Entdecken Sie, wie TidiFul Ihre Dokumentarbeitsabläufe mit modernster KI-Technologie transformiert",
     "hero_cta": "Unsere Funktionen Erforschen",
@@ -156,6 +169,14 @@
     "about": "Über Uns",
     "careers": "Karrieren",
     "legal": "Rechtliches",
+    "integrations": "Integrationen",
+    "apiDocs": "API-Dokumentation",
+    "helpCenter": "Hilfezentrum",
+    "statusPage": "Status-Seite",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen",
+    "gdpr": "DSGVO",
+    "eula": "EULA",
     "copyright": "© 2023 TidiFul. Alle Rechte vorbehalten."
   },
   "pricing": {
