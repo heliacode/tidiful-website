@@ -382,5 +382,56 @@
     "apiDocs": "Docs API",
     "helpCenter": "Centro de Ayuda",
     "statusPage": "Página de Estado"
+  },
+  "contact": {
+    "title": "¿Quieres <span class=\"text-emerald-400\">ponerte en contacto</span>?",
+    "subtitle": "Ya sea para una pregunta técnica o para colaborar con TidiFul, ¡nos encantaría saber de ti!",
+    "getInTouch": "Ponerse en Contacto",
+    "getInTouchDescription": "Envíanos un email y te responderemos lo antes posible. ¡Estamos aquí para ayudar!",
+    "emailButton": "info@heliacode.com",
+    "technicalQuestions": {
+      "title": "Preguntas Técnicas",
+      "description": "¿Necesitas ayuda con TidiFul? ¿Tienes preguntas sobre nuestra API o integración? Estamos aquí para ayudarte a tener éxito."
+    },
+    "collaboration": {
+      "title": "Colaboración",
+      "description": "¿Interesado en asociarte con nosotros o tienes una propuesta comercial? Nos encantaría explorar oportunidades juntos."
+    },
+    "feedback": {
+      "title": "Comentarios e Ideas",
+      "description": "¿Tienes sugerencias para mejorar TidiFul? Valoramos tu opinión y siempre buscamos hacer nuestra plataforma mejor."
+    },
+    "responseTime": {
+      "title": "Respuesta Rápida",
+      "description": "Normalmente respondemos a todos los emails dentro de <span class=\"text-emerald-400 font-semibold\">24 horas</span> durante días laborables.",
+      "responseTime": "Tiempo de Respuesta",
+      "responseRate": "Tasa de Respuesta",
+      "emailSupport": "Soporte por Email"
+    },
+    "otherWays": {
+      "title": "Otras Formas de <span class=\"text-emerald-400\">Conectarse</span>",
+      "subtitle": "Aunque el email es nuestro método preferido, aquí hay otras formas de mantenerse conectado con TidiFul.",
+      "heliacode": {
+        "title": "Visita HeliaCode",
+        "description": "Aprende más sobre el equipo detrás de TidiFul y explora nuestros otros proyectos.",
+        "button": "Visitar Sitio Web"
+      },
+      "documentation": {
+        "title": "Documentación",
+        "description": "Revisa nuestras guías completas y documentación API para detalles técnicos.",
+        "button": "Leer Documentación"
+      },
+      "community": {
+        "title": "Comunidad",
+        "description": "Únete a nuestras discusiones comunitarias y obtén ayuda de otros usuarios de TidiFul.",
+        "button": "Unirse a la Comunidad"
+      }
+    },
+    "cta": {
+      "title": "¿Listo para <span class=\"text-emerald-400\">Empezar</span>?",
+      "subtitle": "¡No esperes! Comienza a procesar tus documentos con TidiFul hoy y experimenta el poder de la extracción de datos impulsada por IA.",
+      "startTrial": "Comenzar Prueba Gratuita",
+      "sendEmail": "Enviarnos un Email"
+    }
   }
 }

@@ -382,5 +382,56 @@
     "apiDocs": "API-Dokumentation",
     "helpCenter": "Hilfezentrum",
     "statusPage": "Status-Seite"
+  },
+  "contact": {
+    "title": "Möchten Sie <span class=\"text-emerald-400\">Kontakt aufnehmen</span>?",
+    "subtitle": "Ob für eine technische Frage oder um mit TidiFul zusammenzuarbeiten, wir würden gerne von Ihnen hören!",
+    "getInTouch": "Kontakt aufnehmen",
+    "getInTouchDescription": "Senden Sie uns eine E-Mail und wir werden Ihnen so schnell wie möglich antworten. Wir sind hier, um zu helfen!",
+    "emailButton": "info@heliacode.com",
+    "technicalQuestions": {
+      "title": "Technische Fragen",
+      "description": "Brauchen Sie Hilfe mit TidiFul? Haben Sie Fragen zu unserer API oder Integration? Wir sind hier, um Ihnen zum Erfolg zu verhelfen."
+    },
+    "collaboration": {
+      "title": "Zusammenarbeit",
+      "description": "Interessiert an einer Partnerschaft mit uns oder haben Sie einen Geschäftsvorschlag? Wir würden gerne Möglichkeiten zusammen erkunden."
+    },
+    "feedback": {
+      "title": "Feedback & Ideen",
+      "description": "Haben Sie Vorschläge zur Verbesserung von TidiFul? Wir schätzen Ihr Feedback und suchen immer nach Wegen, unsere Plattform zu verbessern."
+    },
+    "responseTime": {
+      "title": "Schnelle Antwort",
+      "description": "Wir antworten normalerweise auf alle E-Mails innerhalb von <span class=\"text-emerald-400 font-semibold\">24 Stunden</span> an Werktagen.",
+      "responseTime": "Antwortzeit",
+      "responseRate": "Antwortrate",
+      "emailSupport": "E-Mail-Support"
+    },
+    "otherWays": {
+      "title": "Andere Wege zur <span class=\"text-emerald-400\">Verbindung</span>",
+      "subtitle": "Obwohl E-Mail unsere bevorzugte Methode ist, gibt es hier andere Wege, mit TidiFul verbunden zu bleiben.",
+      "heliacode": {
+        "title": "Besuchen Sie HeliaCode",
+        "description": "Erfahren Sie mehr über das Team hinter TidiFul und erkunden Sie unsere anderen Projekte.",
+        "button": "Website besuchen"
+      },
+      "documentation": {
+        "title": "Dokumentation",
+        "description": "Schauen Sie sich unsere umfassenden Anleitungen und API-Dokumentation für technische Details an.",
+        "button": "Dokumentation lesen"
+      },
+      "community": {
+        "title": "Community",
+        "description": "Treten Sie unseren Community-Diskussionen bei und erhalten Sie Hilfe von anderen TidiFul-Benutzern.",
+        "button": "Community beitreten"
+      }
+    },
+    "cta": {
+      "title": "Bereit <span class=\"text-emerald-400\">loszulegen</span>?",
+      "subtitle": "Warten Sie nicht! Beginnen Sie heute mit der Verarbeitung Ihrer Dokumente mit TidiFul und erleben Sie die Kraft der KI-gestützten Datenextraktion.",
+      "startTrial": "Kostenlose Testversion starten",
+      "sendEmail": "Senden Sie uns eine E-Mail"
+    }
   }
 }
