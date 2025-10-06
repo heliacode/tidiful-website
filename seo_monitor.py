@@ -17,7 +17,6 @@ class SEOMonitor:
             "/",
             "/pricing.html", 
             "/blog/blogs.html",
-            "/blog/posts/postexample0.html",
             "/blog/posts/reddit-knowledge-work.html"
         ]
         self.languages = ["en-US", "fr-FR", "de-DE", "es-ES", "el-GR"]

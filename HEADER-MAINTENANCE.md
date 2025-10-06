@@ -9,7 +9,6 @@ I've manually updated all current pages to use the unified "Create Account / Log
 - ✅ `index.html` - Updated
 - ✅ `pricing.html` - Updated  
 - ✅ `blog/blogs.html` - Updated
-- ✅ `blog/posts/postexample0.html` - Updated
 - ✅ `blog/posts/template.html` - Updated
 - ✅ `blog/posts/reddit-knowledge-work.html` - Updated
 
