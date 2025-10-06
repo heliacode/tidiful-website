@@ -213,17 +213,17 @@
                 </a>
                 
                 <!-- Desktop Navigation -->
-                <div class="hidden lg:flex items-center space-x-8">
+                <div id="desktop-nav" class="hidden lg:flex items-center space-x-8">
                     <a href="index.html" class="text-gray-300 hover:text-emerald-400 transition-colors" data-i18n="nav.home">Home</a>
                     <a href="features.html" class="text-emerald-400 font-medium" data-i18n="nav.features">Features</a>
                     <a href="pricing.html" class="text-gray-300 hover:text-emerald-400 transition-colors" data-i18n="nav.pricing">Pricing</a>
                     <a href="blog/blogs.html" class="text-gray-300 hover:text-emerald-400 transition-colors" data-i18n="nav.blog">Blog</a>
                     <a href="about.html" class="text-gray-300 hover:text-emerald-400 transition-colors" data-i18n="nav.about">About</a>
-                    <a href="#" class="text-gray-300 hover:text-emerald-400 transition-colors" data-i18n="nav.contact">Contact</a>
+                    <a href="contact.html" class="text-gray-300 hover:text-emerald-400 transition-colors" data-i18n="nav.contact">Contact</a>
                 </div>
                 
                 <!-- Desktop Actions -->
-                <div class="hidden lg:flex items-center space-x-4">
+                <div id="desktop-actions" class="hidden lg:flex items-center space-x-4">
                     <select id="language-switcher" class="bg-gray-800 text-gray-300 border border-gray-700 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500">
                         <option value="en-US">🇺🇸 English</option>
                         <option value="fr-FR">🇫🇷 Français</option>
@@ -237,7 +237,7 @@
                 </div>
                 
                 <!-- Mobile Menu Button -->
-                <button id="mobile-menu-button" class="lg:hidden p-2 rounded-lg text-gray-300 hover:text-emerald-400 hover:bg-gray-800 transition-colors">
+                <button id="mobile-menu-button" class="p-2 rounded-lg text-gray-300 hover:text-emerald-400 hover:bg-gray-800 transition-colors">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
@@ -245,7 +245,7 @@
             </div>
             
     <!-- Mobile Menu Overlay - Compact height -->
-    <div id="mobile-menu" class="lg:hidden hidden fixed inset-x-0 top-0 z-[100] bg-gray-800 border-b border-gray-600">
+    <div id="mobile-menu" class="hidden fixed inset-x-0 top-0 z-[100] bg-gray-800 border-b border-gray-600">
         <div class="flex flex-col w-full">
             <!-- Mobile Menu Header -->
             <div class="flex items-center justify-between p-4 border-b border-gray-700">
@@ -554,8 +554,53 @@
         // Initialize icons and mobile menu
         document.addEventListener('DOMContentLoaded', function() {
             feather.replace();
+            initializeResponsiveHeader();
             initializeMobileMenu();
         });
+
+        // Responsive Header Functionality
+        function initializeResponsiveHeader() {
+            const desktopNav = document.getElementById('desktop-nav');
+            const desktopActions = document.getElementById('desktop-actions');
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            
+            function checkHeaderOverflow() {
+                const nav = document.querySelector('nav');
+                const navWidth = nav.offsetWidth;
+                const logoWidth = nav.querySelector('a').offsetWidth;
+                const desktopNavWidth = desktopNav ? desktopNav.offsetWidth : 0;
+                const desktopActionsWidth = desktopActions ? desktopActions.offsetWidth : 0;
+                const mobileButtonWidth = mobileMenuButton.offsetWidth;
+                
+                const totalContentWidth = logoWidth + desktopNavWidth + desktopActionsWidth + mobileButtonWidth + 64; // padding
+                
+                // If content overflows or screen is small, hide desktop nav and show mobile button
+                if (totalContentWidth > navWidth || window.innerWidth < 1024) {
+                    if (desktopNav) desktopNav.classList.add('hidden');
+                    if (desktopActions) desktopActions.classList.add('hidden');
+                    mobileMenuButton.classList.remove('hidden');
+                } else {
+                    if (desktopNav) desktopNav.classList.remove('hidden');
+                    if (desktopActions) desktopActions.classList.remove('hidden');
+                    mobileMenuButton.classList.add('hidden');
+                }
+            }
+            
+            // Check on load and resize
+            checkHeaderOverflow();
+            window.addEventListener('resize', checkHeaderOverflow);
+            
+            // Check when language changes (text might be longer)
+            const languageSwitcher = document.getElementById('language-switcher');
+            if (languageSwitcher) {
+                languageSwitcher.addEventListener('change', () => {
+                    setTimeout(checkHeaderOverflow, 100); // Wait for translation
+                });
+            }
+            
+            // Check when translations are loaded
+            document.addEventListener('i18n-loaded', checkHeaderOverflow);
+        }
         
         // Mobile Menu Functionality
         function initializeMobileMenu() {
