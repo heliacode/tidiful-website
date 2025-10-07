@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Data Grid - Tidiful</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+    <script src="assets/js/export-utils.js"></script>
+    <script src="assets/js/header-component.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    
+    <style>
+        body {
+            background: #161616;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #2d2d2d;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #4a4a4a;
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6a6a6a;
+        }
+    </style>
+</head>
+<body class="min-h-screen text-gray-100 antialiased">
+    <!-- Header -->
+    <div id="header-container"></div>
+    
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-8">
+        <!-- Page Header -->
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-gray-100 mb-4">Invoice Data Grid</h1>
+            <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+                Manage and analyze your invoice data extracted from PDF documents. Drag and drop rows and columns to customize your view.
+            </p>
+        </div>
+        
+        <!-- Controls -->
+        <div class="bg-gray-800 rounded-lg p-6 mb-6 border border-gray-700">
+            <div class="flex flex-wrap gap-4 items-center">
+                <!-- Search -->
+                <div class="flex-1 min-w-64">
+                    <input type="text" id="searchInput" placeholder="Search invoices..." 
+                           class="w-full bg-gray-700 text-gray-100 border border-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                </div>
+                
+                <!-- Vendor Filter -->
+                <select id="vendorFilter" class="bg-gray-700 text-gray-100 border border-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                    <option value="">All Vendors</option>
+                </select>
+                
+                <!-- Export Dropdown -->
+                <div class="relative">
+                    <button onclick="toggleExportDropdown()" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg transition-colors flex items-center gap-2">
+                        <i data-feather="download" class="w-4 h-4"></i>
+                        Export
+                        <i data-feather="chevron-down" class="w-4 h-4"></i>
+                    </button>
+                    <div id="exportDropdown" class="absolute right-0 mt-2 w-48 bg-gray-800 rounded-lg shadow-lg border border-gray-700 hidden z-10">
+                        <div class="py-1">
+                            <a href="#" onclick="exportData('csv'); return false;" class="block px-4 py-2 text-gray-100 hover:bg-gray-700">Export as CSV</a>
+                            <a href="#" onclick="exportData('json'); return false;" class="block px-4 py-2 text-gray-100 hover:bg-gray-700">Export as JSON</a>
+                            <a href="#" onclick="exportData('excel'); return false;" class="block px-4 py-2 text-gray-100 hover:bg-gray-700">Export as Excel</a>
+                            <a href="#" onclick="exportData('docx'); return false;" class="block px-4 py-2 text-gray-100 hover:bg-gray-700">Export as Word</a>
+                            <a href="#" onclick="exportData('html'); return false;" class="block px-4 py-2 text-gray-100 hover:bg-gray-700 rounded-b-lg">Export as HTML</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Add Invoice Button -->
+                <button onclick="showAddModal()" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg transition-colors flex items-center gap-2">
+                    <i data-feather="plus" class="w-4 h-4"></i>
+                    Add Invoice
+                </button>
+                
+                <!-- Refresh Button -->
+                <button onclick="loadData()" class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-lg transition-colors flex items-center gap-2">
+                    <i data-feather="refresh-cw" class="w-4 h-4"></i>
+                    Refresh
+                </button>
+            </div>
+        </div>
+        
+        <!-- Data Grid -->
+        <div class="bg-gray-800 rounded-lg border border-gray-700 overflow-hidden">
+            <!-- Grid Header -->
+            <div class="bg-gray-700 px-6 py-4 border-b border-gray-600">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h2 class="text-xl font-semibold text-gray-100">Invoice Records</h2>
+                        <p class="text-sm text-gray-400">Showing <span id="recordCount">0</span> of <span id="totalRecords">0</span> invoices</p>
+                    </div>
+                    <div class="text-sm text-gray-400">
+                        <span id="paginationInfo">Page 1 of 1</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Table Container -->
+            <div class="overflow-x-auto">
+                <table class="w-full" id="dataTable">
+                    <thead class="bg-gray-700">
+                        <tr>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Invoice #</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Date</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Vendor</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Amount</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Tax</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Total</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Category</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody" class="divide-y divide-gray-600">
+                        <!-- Data will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="bg-gray-700 px-6 py-4 border-t border-gray-600">
+                <div class="flex justify-between items-center">
+                    <div class="text-sm text-gray-400">
+                        <span id="paginationInfoBottom">Page 1 of 1</span>
+                    </div>
+                    <div class="flex gap-2" id="paginationControls">
+                        <!-- Pagination buttons will be generated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Invoice Modal -->
+    <div id="addModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-gray-800 rounded-lg border border-gray-700 w-full max-w-2xl">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="text-xl font-semibold text-gray-100">Add New Invoice</h3>
+                        <button onclick="hideAddModal()" class="text-gray-400 hover:text-gray-200">
+                            <i data-feather="x" class="w-6 h-6"></i>
+                        </button>
+                    </div>
+                    
+                    <form id="addForm" class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">Invoice Number</label>
+                                <input type="text" id="invoiceNumber" required 
+                                       class="w-full bg-gray-700 text-gray-100 border border-gray-600 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                                       placeholder="INV-2024-XXX">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">Date</label>
+                                <input type="date" id="invoiceDate" required
+                                       class="w-full bg-gray-700 text-gray-100 border border-gray-600 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">Vendor</label>
+                                <input type="text" id="vendor" required
+                                       class="w-full bg-gray-700 text-gray-100 border border-gray-600 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                                       placeholder="Vendor Name">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">Amount</label>
+                                <input type="number" id="amount" step="0.01" required 
+                                       class="w-full bg-gray-700 text-gray-100 border border-gray-600 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                                       placeholder="0.00">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">Tax Amount</label>
+                                <input type="number" id="taxAmount" step="0.01" 
+                                       class="w-full bg-gray-700 text-gray-100 border border-gray-600 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                                       placeholder="0.00">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">Category</label>
+                                <input type="text" id="category" required
+                                       class="w-full bg-gray-700 text-gray-100 border border-gray-600 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                                       placeholder="Office Supplies">
+                            </div>
+                        </div>
+                        
+                        <div class="flex justify-end gap-3 pt-4">
+                            <button type="button" onclick="hideAddModal()"
+                                    class="px-4 py-2 bg-gray-600 hover:bg-gray-700 text-gray-100 rounded-lg transition-colors">
+                                Cancel
+                            </button>
+                            <button type="submit" 
+                                    class="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg transition-colors">
+                                Add Invoice
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global variables
+        let invoiceData = [];
+        let currentData = [];
+        let currentPage = 1;
+        const recordsPerPage = 10;
+
+        // Make currentData globally accessible for export functions
+        window.currentData = currentData;
+
+        // Load data from JSON file
+        async function loadData() {
+            try {
+                const response = await fetch('fake-invoices.json');
+                if (!response.ok) {
+                    throw new Error('Failed to load data');
+                }
+                const jsonData = await response.json();
+                invoiceData = jsonData.invoices || [];
+                currentData = [...invoiceData];
+                window.currentData = currentData; // Update global reference
+                renderTable();
+                updatePagination();
+                updateRecordCount();
+                populateVendorFilter();
+            } catch (error) {
+                console.error('Error loading data:', error);
+                alert('Error loading data. Please check if fake-invoices.json exists.');
+            }
+        }
+
+        // Render table
+        function renderTable() {
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = '';
+
+            const startIndex = (currentPage - 1) * recordsPerPage;
+            const endIndex = startIndex + recordsPerPage;
+            const pageData = currentData.slice(startIndex, endIndex);
+
+            pageData.forEach(invoice => {
+                const row = document.createElement('tr');
+                row.className = 'hover:bg-gray-700';
+                
+                const totalAmount = (invoice.amount || 0) + (invoice.taxAmount || 0);
+                
+                row.innerHTML = 
+                    '<td class="px-4 py-4 whitespace-nowrap text-sm font-medium text-gray-100">' + (invoice.invoiceNumber || 'N/A') + '</td>' +
+                    '<td class="px-4 py-4 whitespace-nowrap text-sm text-gray-300">' + formatDate(invoice.date) + '</td>' +
+                    '<td class="px-4 py-4 whitespace-nowrap text-sm text-gray-300">' + (invoice.vendor || 'N/A') + '</td>' +
+                    '<td class="px-4 py-4 whitespace-nowrap text-sm font-mono text-emerald-400">$' + (invoice.amount || 0).toFixed(2) + '</td>' +
+                    '<td class="px-4 py-4 whitespace-nowrap text-sm font-mono text-gray-300">$' + (invoice.taxAmount || 0).toFixed(2) + '</td>' +
+                    '<td class="px-4 py-4 whitespace-nowrap text-sm font-mono font-semibold text-emerald-400">$' + totalAmount.toFixed(2) + '</td>' +
+                    '<td class="px-4 py-4 whitespace-nowrap text-sm text-gray-300">' + (invoice.category || 'N/A') + '</td>' +
+                    '<td class="px-4 py-4 whitespace-nowrap text-sm">' +
+                        '<button onclick="viewInvoice(\'' + invoice.invoiceNumber + '\')" class="bg-gray-600 hover:bg-gray-700 text-gray-100 p-1 rounded mr-1" title="View">' +
+                            '<i data-feather="eye" class="w-4 h-4"></i>' +
+                        '</button>' +
+                        '<button onclick="deleteInvoice(\'' + invoice.invoiceNumber + '\')" class="bg-red-600 hover:bg-red-700 text-white p-1 rounded" title="Delete">' +
+                            '<i data-feather="trash-2" class="w-4 h-4"></i>' +
+                        '</button>' +
+                    '</td>';
+                
+                tbody.appendChild(row);
+            });
+            
+            feather.replace();
+        }
+
+        // Format date
+        function formatDate(dateString) {
+            if (!dateString) return 'N/A';
+            const date = new Date(dateString);
+            return date.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric'
+            });
+        }
+
+        // Update pagination
+        function updatePagination() {
+            const totalPages = Math.ceil(currentData.length / recordsPerPage);
+            const paginationControls = document.getElementById('paginationControls');
+            const paginationInfo = document.getElementById('paginationInfo');
+            const paginationInfoBottom = document.getElementById('paginationInfoBottom');
+
+            paginationInfo.textContent = 'Page ' + currentPage + ' of ' + totalPages;
+            paginationInfoBottom.textContent = 'Page ' + currentPage + ' of ' + totalPages;
+            paginationControls.innerHTML = '';
+
+            // Previous button
+            const prevBtn = document.createElement('button');
+            prevBtn.textContent = 'Previous';
+            prevBtn.className = 'px-3 py-1 text-sm rounded ' + (currentPage === 1 ? 'bg-gray-600 text-gray-400 cursor-not-allowed' : 'bg-gray-700 text-gray-200 hover:bg-gray-600');
+            prevBtn.disabled = currentPage === 1;
+            prevBtn.onclick = () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    renderTable();
+                    updatePagination();
+                }
+            };
+            paginationControls.appendChild(prevBtn);
+
+            // Page numbers
+            for (let i = 1; i <= totalPages; i++) {
+                const pageBtn = document.createElement('button');
+                pageBtn.textContent = i;
+                pageBtn.className = 'px-3 py-1 text-sm rounded mx-1 ' + (i === currentPage ? 'bg-emerald-600 text-white' : 'bg-gray-700 text-gray-200 hover:bg-gray-600');
+                pageBtn.onclick = () => {
+                    currentPage = i;
+                    renderTable();
+                    updatePagination();
+                };
+                paginationControls.appendChild(pageBtn);
+            }
+
+            // Next button
+            const nextBtn = document.createElement('button');
+            nextBtn.textContent = 'Next';
+            nextBtn.className = 'px-3 py-1 text-sm rounded ' + (currentPage === totalPages ? 'bg-gray-600 text-gray-400 cursor-not-allowed' : 'bg-gray-700 text-gray-200 hover:bg-gray-600');
+            nextBtn.disabled = currentPage === totalPages;
+            nextBtn.onclick = () => {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    renderTable();
+                    updatePagination();
+                }
+            };
+            paginationControls.appendChild(nextBtn);
+        }
+
+        // Update record count
+        function updateRecordCount() {
+            document.getElementById('recordCount').textContent = currentData.length;
+            document.getElementById('totalRecords').textContent = invoiceData.length;
+        }
+
+        // Populate vendor filter
+        function populateVendorFilter() {
+            const vendorFilter = document.getElementById('vendorFilter');
+            const vendors = [...new Set(invoiceData.map(invoice => invoice.vendor).filter(Boolean))].sort();
+            
+            vendorFilter.innerHTML = '<option value="">All Vendors</option>';
+            vendors.forEach(vendor => {
+                const option = document.createElement('option');
+                option.value = vendor;
+                option.textContent = vendor;
+                vendorFilter.appendChild(option);
+            });
+        }
+
+        // Filter data
+        function filterData() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const vendorFilter = document.getElementById('vendorFilter').value;
+
+            currentData = invoiceData.filter(invoice => {
+                const matchesSearch = !searchTerm || 
+                    (invoice.invoiceNumber && invoice.invoiceNumber.toLowerCase().includes(searchTerm)) ||
+                    (invoice.vendor && invoice.vendor.toLowerCase().includes(searchTerm)) ||
+                    (invoice.category && invoice.category.toLowerCase().includes(searchTerm));
+
+                const matchesVendor = !vendorFilter || invoice.vendor === vendorFilter;
+
+                return matchesSearch && matchesVendor;
+            });
+
+            window.currentData = currentData; // Update global reference
+            currentPage = 1;
+            renderTable();
+            updatePagination();
+            updateRecordCount();
+        }
+
+        // Modal functions
+        function showAddModal() {
+            document.getElementById('addModal').classList.remove('hidden');
+            document.getElementById('invoiceDate').value = new Date().toISOString().split('T')[0];
+            feather.replace();
+        }
+
+        function hideAddModal() {
+            document.getElementById('addModal').classList.add('hidden');
+            document.getElementById('addForm').reset();
+        }
+
+        // Add new invoice
+        function addNewInvoice() {
+            const amount = parseFloat(document.getElementById('amount').value) || 0;
+            const taxAmount = parseFloat(document.getElementById('taxAmount').value) || 0;
+            
+            const newInvoice = {
+                id: Math.max(...invoiceData.map(inv => inv.id), 0) + 1,
+                invoiceNumber: document.getElementById('invoiceNumber').value,
+                date: document.getElementById('invoiceDate').value,
+                vendor: document.getElementById('vendor').value,
+                amount: amount,
+                taxAmount: taxAmount,
+                category: document.getElementById('category').value,
+                currency: 'USD',
+                description: 'Manually added expense'
+            };
+
+            invoiceData.push(newInvoice);
+            currentData.push(newInvoice);
+            window.currentData = currentData; // Update global reference
+            
+            renderTable();
+            updatePagination();
+            updateRecordCount();
+            populateVendorFilter();
+            
+            hideAddModal();
+            alert('Invoice added successfully!');
+        }
+
+        // Delete invoice
+        function deleteInvoice(invoiceNumber) {
+            const invoice = invoiceData.find(inv => inv.invoiceNumber === invoiceNumber);
+            if (!invoice) return;
+            
+            const confirmed = confirm('Are you sure you want to delete invoice ' + invoiceNumber + '?\n\nVendor: ' + invoice.vendor + '\nAmount: $' + (invoice.amount || 0).toFixed(2) + '\n\nThis action cannot be undone.');
+            
+            if (confirmed) {
+                invoiceData = invoiceData.filter(inv => inv.invoiceNumber !== invoiceNumber);
+                currentData = currentData.filter(inv => inv.invoiceNumber !== invoiceNumber);
+                window.currentData = currentData; // Update global reference
+                
+                renderTable();
+                updatePagination();
+                updateRecordCount();
+                populateVendorFilter();
+                
+                alert('Invoice deleted successfully!');
+            }
+        }
+
+        // View invoice details
+        function viewInvoice(invoiceNumber) {
+            const invoice = invoiceData.find(inv => inv.invoiceNumber === invoiceNumber);
+            if (invoice) {
+                const totalAmount = (invoice.amount || 0) + (invoice.taxAmount || 0);
+                const details = 'Invoice Details:\n\n' +
+                    'Invoice #: ' + invoice.invoiceNumber + '\n' +
+                    'Date: ' + formatDate(invoice.date) + '\n' +
+                    'Vendor: ' + invoice.vendor + '\n' +
+                    'Amount: $' + (invoice.amount || 0).toFixed(2) + '\n' +
+                    'Tax: $' + (invoice.taxAmount || 0).toFixed(2) + '\n' +
+                    'Total: $' + totalAmount.toFixed(2) + '\n' +
+                    'Category: ' + invoice.category + '\n' +
+                    'Currency: ' + (invoice.currency || 'USD');
+                alert(details);
+            }
+        }
+
+        // Event listeners
+        document.getElementById('searchInput').addEventListener('input', filterData);
+        document.getElementById('vendorFilter').addEventListener('change', filterData);
+        document.getElementById('addForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            addNewInvoice();
+        });
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize header
+            const headerComponent = new HeaderComponent();
+            headerComponent.insertHeader();
+            
+            // Initialize export dropdown
+            window.exportDropdown.init();
+            
+            // Make formatDate globally accessible
+            window.formatDate = formatDate;
+            
+            // Load data
+            loadData();
+        });
+    </script>
+</body>
+</html>
