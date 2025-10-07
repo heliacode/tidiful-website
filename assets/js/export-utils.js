@@ -288,7 +288,7 @@ class ExportUtils {
      * @param {Function} formatDate - Date formatting function
      */
     exportPDF(data, formatDate) {
-        if (typeof jsPDF === 'undefined') {
+        if (typeof window.jspdf === 'undefined' || typeof window.jspdf.jsPDF === 'undefined') {
             alert('PDF library not loaded. Please refresh the page and try again.');
             return;
         }
