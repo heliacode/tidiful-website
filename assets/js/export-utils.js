@@ -11,7 +11,7 @@ class ExportUtils {
     /**
      * Export data in specified format
      * @param {Array} data - Array of invoice/expense objects
-     * @param {string} format - Export format: 'csv', 'json', 'excel', 'html', 'docx'
+     * @param {string} format - Export format: 'csv', 'json', 'excel', 'html', 'docx', 'pdf', 'qif', 'iif', 'xml'
      * @param {Function} formatDate - Date formatting function
      */
     exportData(data, format, formatDate) {
@@ -30,6 +30,18 @@ class ExportUtils {
                 break;
             case 'docx':
                 this.exportDOCX(data, formatDate);
+                break;
+            case 'pdf':
+                this.exportPDF(data, formatDate);
+                break;
+            case 'qif':
+                this.exportQIF(data, formatDate);
+                break;
+            case 'iif':
+                this.exportIIF(data, formatDate);
+                break;
+            case 'xml':
+                this.exportXML(data, formatDate);
                 break;
             default:
                 console.error('Unknown export format:', format);
@@ -268,6 +280,190 @@ class ExportUtils {
             console.error('DOCX Export Error:', error);
             alert('Error creating Word document. Please check the console for details.');
         }
+    }
+
+    /**
+     * Export data as PDF
+     * @param {Array} data - Array of invoice/expense objects
+     * @param {Function} formatDate - Date formatting function
+     */
+    exportPDF(data, formatDate) {
+        if (typeof jsPDF === 'undefined') {
+            alert('PDF library not loaded. Please refresh the page and try again.');
+            return;
+        }
+
+        try {
+            const totals = this.calculateTotals(data);
+            const today = new Date().toLocaleDateString('en-US', { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            });
+
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+
+            // Title
+            doc.setFontSize(20);
+            doc.setTextColor(46, 125, 50); // Green color
+            doc.text('Expense Report', 105, 20, { align: 'center' });
+
+            // Date
+            doc.setFontSize(12);
+            doc.setTextColor(100, 100, 100);
+            doc.text('Generated on ' + today, 105, 30, { align: 'center' });
+
+            // Summary
+            doc.setFontSize(14);
+            doc.setTextColor(46, 125, 50);
+            doc.text('Summary', 20, 50);
+
+            doc.setFontSize(10);
+            doc.setTextColor(0, 0, 0);
+            doc.text('Total Expenses: $' + totals.grandTotal.toFixed(2), 20, 60);
+            doc.text('Number of Records: ' + totals.totalInvoices, 20, 70);
+
+            // Table
+            doc.setFontSize(14);
+            doc.setTextColor(46, 125, 50);
+            doc.text('Expense Details', 20, 90);
+
+            // Table headers
+            const headers = ['Invoice #', 'Date', 'Vendor', 'Amount', 'Tax', 'Total', 'Category'];
+            const colWidths = [25, 20, 35, 20, 15, 20, 25];
+            let x = 20;
+            
+            doc.setFontSize(8);
+            doc.setTextColor(0, 0, 0);
+            headers.forEach((header, i) => {
+                doc.text(header, x, 100);
+                x += colWidths[i];
+            });
+
+            // Table data
+            let y = 110;
+            data.forEach((invoice, index) => {
+                if (y > 280) { // New page if needed
+                    doc.addPage();
+                    y = 20;
+                }
+                
+                const totalAmount = (invoice.amount || 0) + (invoice.taxAmount || 0);
+                const rowData = [
+                    invoice.invoiceNumber || 'N/A',
+                    formatDate(invoice.date),
+                    invoice.vendor || 'N/A',
+                    '$' + (invoice.amount || 0).toFixed(2),
+                    '$' + (invoice.taxAmount || 0).toFixed(2),
+                    '$' + totalAmount.toFixed(2),
+                    invoice.category || 'N/A'
+                ];
+
+                x = 20;
+                rowData.forEach((cell, i) => {
+                    doc.text(cell, x, y);
+                    x += colWidths[i];
+                });
+                y += 8;
+            });
+
+            // Footer
+            doc.setFontSize(8);
+            doc.setTextColor(100, 100, 100);
+            doc.text('Created with tidiful.com', 105, 290, { align: 'center' });
+
+            // Download
+            doc.save('expense_report_' + this.timestamp + '.pdf');
+
+        } catch (error) {
+            console.error('PDF Export Error:', error);
+            alert('Error creating PDF document. Please check the console for details.');
+        }
+    }
+
+    /**
+     * Export data as QIF (Quicken Interchange Format)
+     * @param {Array} data - Array of invoice/expense objects
+     * @param {Function} formatDate - Date formatting function
+     */
+    exportQIF(data, formatDate) {
+        let qifContent = '!Type:Bank\n';
+        
+        data.forEach(invoice => {
+            const totalAmount = (invoice.amount || 0) + (invoice.taxAmount || 0);
+            qifContent += 'D' + formatDate(invoice.date) + '\n';
+            qifContent += 'T-' + totalAmount.toFixed(2) + '\n'; // Negative for expense
+            qifContent += 'P' + (invoice.vendor || 'N/A') + '\n';
+            qifContent += 'M' + (invoice.category || 'N/A') + '\n';
+            qifContent += '^' + '\n'; // End of transaction
+        });
+
+        this.downloadFile(qifContent, 'text/plain;charset=utf-8', 'expenses_' + this.timestamp + '.qif');
+    }
+
+    /**
+     * Export data as IIF (Intuit Interchange Format)
+     * @param {Array} data - Array of invoice/expense objects
+     * @param {Function} formatDate - Date formatting function
+     */
+    exportIIF(data, formatDate) {
+        let iifContent = '!TRNS\tTRNSTYPE\tDATE\tACCNT\tNAME\tAMOUNT\tMEMO\n';
+        iifContent += '!SPL\tSPLID\tTRNSTYPE\tDATE\tACCNT\tNAME\tAMOUNT\tMEMO\n';
+        iifContent += '!ENDTRNS\n';
+        
+        data.forEach((invoice, index) => {
+            const totalAmount = (invoice.amount || 0) + (invoice.taxAmount || 0);
+            const date = formatDate(invoice.date).replace(/\//g, '');
+            
+            iifContent += 'TRNS\tGENERAL JOURNAL\t' + date + '\tExpenses\t' + 
+                         (invoice.vendor || 'N/A') + '\t-' + totalAmount.toFixed(2) + 
+                         '\t' + (invoice.category || 'N/A') + '\n';
+            iifContent += 'SPL\t' + (index + 1) + '\tGENERAL JOURNAL\t' + date + 
+                         '\tAccounts Payable\t' + (invoice.vendor || 'N/A') + '\t' + 
+                         totalAmount.toFixed(2) + '\t' + (invoice.category || 'N/A') + '\n';
+            iifContent += 'ENDTRNS\n';
+        });
+
+        this.downloadFile(iifContent, 'text/plain;charset=utf-8', 'expenses_' + this.timestamp + '.iif');
+    }
+
+    /**
+     * Export data as XML
+     * @param {Array} data - Array of invoice/expense objects
+     * @param {Function} formatDate - Date formatting function
+     */
+    exportXML(data, formatDate) {
+        const totals = this.calculateTotals(data);
+        const today = new Date().toISOString();
+        
+        let xmlContent = '<?xml version="1.0" encoding="UTF-8"?>\n';
+        xmlContent += '<expenseReport generated="' + today + '">\n';
+        xmlContent += '  <summary>\n';
+        xmlContent += '    <totalExpenses>' + totals.grandTotal.toFixed(2) + '</totalExpenses>\n';
+        xmlContent += '    <totalRecords>' + totals.totalInvoices + '</totalRecords>\n';
+        xmlContent += '  </summary>\n';
+        xmlContent += '  <expenses>\n';
+        
+        data.forEach(invoice => {
+            const totalAmount = (invoice.amount || 0) + (invoice.taxAmount || 0);
+            xmlContent += '    <expense>\n';
+            xmlContent += '      <invoiceNumber>' + (invoice.invoiceNumber || 'N/A') + '</invoiceNumber>\n';
+            xmlContent += '      <date>' + formatDate(invoice.date) + '</date>\n';
+            xmlContent += '      <vendor>' + (invoice.vendor || 'N/A') + '</vendor>\n';
+            xmlContent += '      <amount>' + (invoice.amount || 0).toFixed(2) + '</amount>\n';
+            xmlContent += '      <taxAmount>' + (invoice.taxAmount || 0).toFixed(2) + '</taxAmount>\n';
+            xmlContent += '      <totalAmount>' + totalAmount.toFixed(2) + '</totalAmount>\n';
+            xmlContent += '      <category>' + (invoice.category || 'N/A') + '</category>\n';
+            xmlContent += '      <currency>' + (invoice.currency || 'USD') + '</currency>\n';
+            xmlContent += '    </expense>\n';
+        });
+        
+        xmlContent += '  </expenses>\n';
+        xmlContent += '  <footer>Created with tidiful.com</footer>\n';
+        xmlContent += '</expenseReport>';
+
+        this.downloadFile(xmlContent, 'application/xml;charset=utf-8', 'expenses_' + this.timestamp + '.xml');
     }
 
     /**
