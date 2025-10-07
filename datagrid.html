@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="assets/js/export-utils.js"></script>
     <script src="assets/js/header-component.js"></script>
     <script src="assets/js/i18n.js"></script>
@@ -76,6 +77,10 @@
                             <a href="#" onclick="exportData('json'); return false;" class="block px-4 py-2 text-gray-100 hover:bg-gray-700">Export as JSON</a>
                             <a href="#" onclick="exportData('excel'); return false;" class="block px-4 py-2 text-gray-100 hover:bg-gray-700">Export as Excel</a>
                             <a href="#" onclick="exportData('docx'); return false;" class="block px-4 py-2 text-gray-100 hover:bg-gray-700">Export as Word</a>
+                            <a href="#" onclick="exportData('pdf'); return false;" class="block px-4 py-2 text-gray-100 hover:bg-gray-700">Export as PDF</a>
+                            <a href="#" onclick="exportData('qif'); return false;" class="block px-4 py-2 text-gray-100 hover:bg-gray-700">Export as QIF</a>
+                            <a href="#" onclick="exportData('iif'); return false;" class="block px-4 py-2 text-gray-100 hover:bg-gray-700">Export as IIF</a>
+                            <a href="#" onclick="exportData('xml'); return false;" class="block px-4 py-2 text-gray-100 hover:bg-gray-700">Export as XML</a>
                             <a href="#" onclick="exportData('html'); return false;" class="block px-4 py-2 text-gray-100 hover:bg-gray-700 rounded-b-lg">Export as HTML</a>
                         </div>
                     </div>
