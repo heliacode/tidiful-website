@@ -1,0 +1,779 @@
+{
+  "timestamp": "2025-10-08T15:29:01.036469",
+  "base_url": "https://tidiful.com",
+  "pages_checked": 8,
+  "languages_checked": 5,
+  "results": {
+    "/": {
+      "en-US": {
+        "title": "TidiFul - Convert Invoices to Structured Data",
+        "meta_description": "Instantly convert PDF invoices, receipts, and documents into clean, structured JSON or CSV with our AI-powered extraction engine. Free trial available.",
+        "h1_tags": [
+          "Transform Invoices into <span class=\"text-emerald-400\">Structured Data</span>"
+        ],
+        "hreflang_tags": [
+          [
+            "en",
+            "https://tidiful.com/?lang=en-US"
+          ],
+          [
+            "fr",
+            "https://tidiful.com/?lang=fr-FR"
+          ],
+          [
+            "de",
+            "https://tidiful.com/?lang=de-DE"
+          ],
+          [
+            "es",
+            "https://tidiful.com/?lang=es-ES"
+          ],
+          [
+            "el",
+            "https://tidiful.com/?lang=el-GR"
+          ],
+          [
+            "x-default",
+            "https://tidiful.com/"
+          ]
+        ],
+        "canonical_url": "https://tidiful.com/",
+        "structured_data": 3,
+        "internal_links": 0,
+        "images_with_alt": 4,
+        "page_size": 50074,
+        "load_time": 0.150585
+      },
+      "fr-FR": {
+        "title": "TidiFul - Convert Invoices to Structured Data",
+        "meta_description": "Instantly convert PDF invoices, receipts, and documents into clean, structured JSON or CSV with our AI-powered extraction engine. Free trial available.",
+        "h1_tags": [
+          "Transform Invoices into <span class=\"text-emerald-400\">Structured Data</span>"
+        ],
+        "hreflang_tags": [
+          [
+            "en",
+            "https://tidiful.com/?lang=en-US"
+          ],
+          [
+            "fr",
+            "https://tidiful.com/?lang=fr-FR"
+          ],
+          [
+            "de",
+            "https://tidiful.com/?lang=de-DE"
+          ],
+          [
+            "es",
+            "https://tidiful.com/?lang=es-ES"
+          ],
+          [
+            "el",
+            "https://tidiful.com/?lang=el-GR"
+          ],
+          [
+            "x-default",
+            "https://tidiful.com/"
+          ]
+        ],
+        "canonical_url": "https://tidiful.com/",
+        "structured_data": 3,
+        "internal_links": 0,
+        "images_with_alt": 4,
+        "page_size": 50074,
+        "load_time": 0.065484
+      },
+      "de-DE": {
+        "title": "TidiFul - Convert Invoices to Structured Data",
+        "meta_description": "Instantly convert PDF invoices, receipts, and documents into clean, structured JSON or CSV with our AI-powered extraction engine. Free trial available.",
+        "h1_tags": [
+          "Transform Invoices into <span class=\"text-emerald-400\">Structured Data</span>"
+        ],
+        "hreflang_tags": [
+          [
+            "en",
+            "https://tidiful.com/?lang=en-US"
+          ],
+          [
+            "fr",
+            "https://tidiful.com/?lang=fr-FR"
+          ],
+          [
+            "de",
+            "https://tidiful.com/?lang=de-DE"
+          ],
+          [
+            "es",
+            "https://tidiful.com/?lang=es-ES"
+          ],
+          [
+            "el",
+            "https://tidiful.com/?lang=el-GR"
+          ],
+          [
+            "x-default",
+            "https://tidiful.com/"
+          ]
+        ],
+        "canonical_url": "https://tidiful.com/",
+        "structured_data": 3,
+        "internal_links": 0,
+        "images_with_alt": 4,
+        "page_size": 50074,
+        "load_time": 0.070391
+      },
+      "es-ES": {
+        "title": "TidiFul - Convert Invoices to Structured Data",
+        "meta_description": "Instantly convert PDF invoices, receipts, and documents into clean, structured JSON or CSV with our AI-powered extraction engine. Free trial available.",
+        "h1_tags": [
+          "Transform Invoices into <span class=\"text-emerald-400\">Structured Data</span>"
+        ],
+        "hreflang_tags": [
+          [
+            "en",
+            "https://tidiful.com/?lang=en-US"
+          ],
+          [
+            "fr",
+            "https://tidiful.com/?lang=fr-FR"
+          ],
+          [
+            "de",
+            "https://tidiful.com/?lang=de-DE"
+          ],
+          [
+            "es",
+            "https://tidiful.com/?lang=es-ES"
+          ],
+          [
+            "el",
+            "https://tidiful.com/?lang=el-GR"
+          ],
+          [
+            "x-default",
+            "https://tidiful.com/"
+          ]
+        ],
+        "canonical_url": "https://tidiful.com/",
+        "structured_data": 3,
+        "internal_links": 0,
+        "images_with_alt": 4,
+        "page_size": 50074,
+        "load_time": 0.073589
+      },
+      "el-GR": {
+        "title": "TidiFul - Convert Invoices to Structured Data",
+        "meta_description": "Instantly convert PDF invoices, receipts, and documents into clean, structured JSON or CSV with our AI-powered extraction engine. Free trial available.",
+        "h1_tags": [
+          "Transform Invoices into <span class=\"text-emerald-400\">Structured Data</span>"
+        ],
+        "hreflang_tags": [
+          [
+            "en",
+            "https://tidiful.com/?lang=en-US"
+          ],
+          [
+            "fr",
+            "https://tidiful.com/?lang=fr-FR"
+          ],
+          [
+            "de",
+            "https://tidiful.com/?lang=de-DE"
+          ],
+          [
+            "es",
+            "https://tidiful.com/?lang=es-ES"
+          ],
+          [
+            "el",
+            "https://tidiful.com/?lang=el-GR"
+          ],
+          [
+            "x-default",
+            "https://tidiful.com/"
+          ]
+        ],
+        "canonical_url": "https://tidiful.com/",
+        "structured_data": 3,
+        "internal_links": 0,
+        "images_with_alt": 4,
+        "page_size": 50074,
+        "load_time": 0.069356
+      }
+    },
+    "/pricing.html": {
+      "en-US": {
+        "title": "TidiFul Pricing - Simple, Transparent Pricing",
+        "meta_description": "Simple, transparent pricing for TidiFul's AI document processing. Start with a free trial. Convert PDF invoices to structured data for just $9/month.",
+        "h1_tags": [
+          "Simple, Transparent <span class=\"text-emerald-400\">Pricing</span>"
+        ],
+        "hreflang_tags": [
+          [
+            "en",
+            "https://tidiful.com/pricing.html?lang=en-US"
+          ],
+          [
+            "fr",
+            "https://tidiful.com/pricing.html?lang=fr-FR"
+          ],
+          [
+            "de",
+            "https://tidiful.com/pricing.html?lang=de-DE"
+          ],
+          [
+            "es",
+            "https://tidiful.com/pricing.html?lang=es-ES"
+          ],
+          [
+            "el",
+            "https://tidiful.com/pricing.html?lang=el-GR"
+          ],
+          [
+            "x-default",
+            "https://tidiful.com/pricing.html"
+          ]
+        ],
+        "canonical_url": "https://tidiful.com/pricing.html",
+        "structured_data": 3,
+        "internal_links": 0,
+        "images_with_alt": 3,
+        "page_size": 36478,
+        "load_time": 0.088176
+      },
+      "fr-FR": {
+        "title": "TidiFul Pricing - Simple, Transparent Pricing",
+        "meta_description": "Simple, transparent pricing for TidiFul's AI document processing. Start with a free trial. Convert PDF invoices to structured data for just $9/month.",
+        "h1_tags": [
+          "Simple, Transparent <span class=\"text-emerald-400\">Pricing</span>"
+        ],
+        "hreflang_tags": [
+          [
+            "en",
+            "https://tidiful.com/pricing.html?lang=en-US"
+          ],
+          [
+            "fr",
+            "https://tidiful.com/pricing.html?lang=fr-FR"
+          ],
+          [
+            "de",
+            "https://tidiful.com/pricing.html?lang=de-DE"
+          ],
+          [
+            "es",
+            "https://tidiful.com/pricing.html?lang=es-ES"
+          ],
+          [
+            "el",
+            "https://tidiful.com/pricing.html?lang=el-GR"
+          ],
+          [
+            "x-default",
+            "https://tidiful.com/pricing.html"
+          ]
+        ],
+        "canonical_url": "https://tidiful.com/pricing.html",
+        "structured_data": 3,
+        "internal_links": 0,
+        "images_with_alt": 3,
+        "page_size": 36478,
+        "load_time": 0.081181
+      },
+      "de-DE": {
+        "title": "TidiFul Pricing - Simple, Transparent Pricing",
+        "meta_description": "Simple, transparent pricing for TidiFul's AI document processing. Start with a free trial. Convert PDF invoices to structured data for just $9/month.",
+        "h1_tags": [
+          "Simple, Transparent <span class=\"text-emerald-400\">Pricing</span>"
+        ],
+        "hreflang_tags": [
+          [
+            "en",
+            "https://tidiful.com/pricing.html?lang=en-US"
+          ],
+          [
+            "fr",
+            "https://tidiful.com/pricing.html?lang=fr-FR"
+          ],
+          [
+            "de",
+            "https://tidiful.com/pricing.html?lang=de-DE"
+          ],
+          [
+            "es",
+            "https://tidiful.com/pricing.html?lang=es-ES"
+          ],
+          [
+            "el",
+            "https://tidiful.com/pricing.html?lang=el-GR"
+          ],
+          [
+            "x-default",
+            "https://tidiful.com/pricing.html"
+          ]
+        ],
+        "canonical_url": "https://tidiful.com/pricing.html",
+        "structured_data": 3,
+        "internal_links": 0,
+        "images_with_alt": 3,
+        "page_size": 36478,
+        "load_time": 0.064028
+      },
+      "es-ES": {
+        "title": "TidiFul Pricing - Simple, Transparent Pricing",
+        "meta_description": "Simple, transparent pricing for TidiFul's AI document processing. Start with a free trial. Convert PDF invoices to structured data for just $9/month.",
+        "h1_tags": [
+          "Simple, Transparent <span class=\"text-emerald-400\">Pricing</span>"
+        ],
+        "hreflang_tags": [
+          [
+            "en",
+            "https://tidiful.com/pricing.html?lang=en-US"
+          ],
+          [
+            "fr",
+            "https://tidiful.com/pricing.html?lang=fr-FR"
+          ],
+          [
+            "de",
+            "https://tidiful.com/pricing.html?lang=de-DE"
+          ],
+          [
+            "es",
+            "https://tidiful.com/pricing.html?lang=es-ES"
+          ],
+          [
+            "el",
+            "https://tidiful.com/pricing.html?lang=el-GR"
+          ],
+          [
+            "x-default",
+            "https://tidiful.com/pricing.html"
+          ]
+        ],
+        "canonical_url": "https://tidiful.com/pricing.html",
+        "structured_data": 3,
+        "internal_links": 0,
+        "images_with_alt": 3,
+        "page_size": 36478,
+        "load_time": 0.070231
+      },
+      "el-GR": {
+        "title": "TidiFul Pricing - Simple, Transparent Pricing",
+        "meta_description": "Simple, transparent pricing for TidiFul's AI document processing. Start with a free trial. Convert PDF invoices to structured data for just $9/month.",
+        "h1_tags": [
+          "Simple, Transparent <span class=\"text-emerald-400\">Pricing</span>"
+        ],
+        "hreflang_tags": [
+          [
+            "en",
+            "https://tidiful.com/pricing.html?lang=en-US"
+          ],
+          [
+            "fr",
+            "https://tidiful.com/pricing.html?lang=fr-FR"
+          ],
+          [
+            "de",
+            "https://tidiful.com/pricing.html?lang=de-DE"
+          ],
+          [
+            "es",
+            "https://tidiful.com/pricing.html?lang=es-ES"
+          ],
+          [
+            "el",
+            "https://tidiful.com/pricing.html?lang=el-GR"
+          ],
+          [
+            "x-default",
+            "https://tidiful.com/pricing.html"
+          ]
+        ],
+        "canonical_url": "https://tidiful.com/pricing.html",
+        "structured_data": 3,
+        "internal_links": 0,
+        "images_with_alt": 3,
+        "page_size": 36478,
+        "load_time": 0.069217
+      }
+    },
+    "/blog/blogs.html": {
+      "en-US": {
+        "title": "TidiFul Blog - Latest News & Updates",
+        "meta_description": "Stay updated with the latest news, features, and insights about document processing and AI technology from TidiFul.",
+        "h1_tags": [
+          "TidiFul <span class=\"text-emerald-400\">Blog</span>"
+        ],
+        "hreflang_tags": [],
+        "canonical_url": "https://tidiful.com/blog/blogs.html",
+        "structured_data": 1,
+        "internal_links": 0,
+        "images_with_alt": 4,
+        "page_size": 32301,
+        "load_time": 0.09562
+      },
+      "fr-FR": {
+        "title": "TidiFul Blog - Latest News & Updates",
+        "meta_description": "Stay updated with the latest news, features, and insights about document processing and AI technology from TidiFul.",
+        "h1_tags": [
+          "TidiFul <span class=\"text-emerald-400\">Blog</span>"
+        ],
+        "hreflang_tags": [],
+        "canonical_url": "https://tidiful.com/blog/blogs.html",
+        "structured_data": 1,
+        "internal_links": 0,
+        "images_with_alt": 4,
+        "page_size": 32301,
+        "load_time": 0.070528
+      },
+      "de-DE": {
+        "title": "TidiFul Blog - Latest News & Updates",
+        "meta_description": "Stay updated with the latest news, features, and insights about document processing and AI technology from TidiFul.",
+        "h1_tags": [
+          "TidiFul <span class=\"text-emerald-400\">Blog</span>"
+        ],
+        "hreflang_tags": [],
+        "canonical_url": "https://tidiful.com/blog/blogs.html",
+        "structured_data": 1,
+        "internal_links": 0,
+        "images_with_alt": 4,
+        "page_size": 32301,
+        "load_time": 0.080586
+      },
+      "es-ES": {
+        "title": "TidiFul Blog - Latest News & Updates",
+        "meta_description": "Stay updated with the latest news, features, and insights about document processing and AI technology from TidiFul.",
+        "h1_tags": [
+          "TidiFul <span class=\"text-emerald-400\">Blog</span>"
+        ],
+        "hreflang_tags": [],
+        "canonical_url": "https://tidiful.com/blog/blogs.html",
+        "structured_data": 1,
+        "internal_links": 0,
+        "images_with_alt": 4,
+        "page_size": 32301,
+        "load_time": 0.079368
+      },
+      "el-GR": {
+        "title": "TidiFul Blog - Latest News & Updates",
+        "meta_description": "Stay updated with the latest news, features, and insights about document processing and AI technology from TidiFul.",
+        "h1_tags": [
+          "TidiFul <span class=\"text-emerald-400\">Blog</span>"
+        ],
+        "hreflang_tags": [],
+        "canonical_url": "https://tidiful.com/blog/blogs.html",
+        "structured_data": 1,
+        "internal_links": 0,
+        "images_with_alt": 4,
+        "page_size": 32301,
+        "load_time": 0.068092
+      }
+    },
+    "/blog/posts/image-to-excel-complete-guide.html": {
+      "en-US": {
+        "error": "HTTP 404"
+      },
+      "fr-FR": {
+        "error": "HTTP 404"
+      },
+      "de-DE": {
+        "error": "HTTP 404"
+      },
+      "es-ES": {
+        "error": "HTTP 404"
+      },
+      "el-GR": {
+        "error": "HTTP 404"
+      }
+    },
+    "/blog/posts/invoice-to-excel-complete-guide.html": {
+      "en-US": {
+        "title": "Invoice to Excel: Complete Guide for Business Professionals | TidiFul",
+        "meta_description": "Learn how to convert invoices to Excel format efficiently. Complete guide covering manual methods, automated solutions, and best practices for invoice to Excel conversion.",
+        "h1_tags": [
+          "Invoice to Excel: Complete Guide for Business Professionals"
+        ],
+        "hreflang_tags": [],
+        "canonical_url": "https://tidiful.com/blog/posts/invoice-to-excel-complete-guide.html",
+        "structured_data": 1,
+        "internal_links": 0,
+        "images_with_alt": 3,
+        "page_size": 36867,
+        "load_time": 0.096662
+      },
+      "fr-FR": {
+        "title": "Invoice to Excel: Complete Guide for Business Professionals | TidiFul",
+        "meta_description": "Learn how to convert invoices to Excel format efficiently. Complete guide covering manual methods, automated solutions, and best practices for invoice to Excel conversion.",
+        "h1_tags": [
+          "Invoice to Excel: Complete Guide for Business Professionals"
+        ],
+        "hreflang_tags": [],
+        "canonical_url": "https://tidiful.com/blog/posts/invoice-to-excel-complete-guide.html",
+        "structured_data": 1,
+        "internal_links": 0,
+        "images_with_alt": 3,
+        "page_size": 36867,
+        "load_time": 0.102451
+      },
+      "de-DE": {
+        "title": "Invoice to Excel: Complete Guide for Business Professionals | TidiFul",
+        "meta_description": "Learn how to convert invoices to Excel format efficiently. Complete guide covering manual methods, automated solutions, and best practices for invoice to Excel conversion.",
+        "h1_tags": [
+          "Invoice to Excel: Complete Guide for Business Professionals"
+        ],
+        "hreflang_tags": [],
+        "canonical_url": "https://tidiful.com/blog/posts/invoice-to-excel-complete-guide.html",
+        "structured_data": 1,
+        "internal_links": 0,
+        "images_with_alt": 3,
+        "page_size": 36867,
+        "load_time": 0.075029
+      },
+      "es-ES": {
+        "title": "Invoice to Excel: Complete Guide for Business Professionals | TidiFul",
+        "meta_description": "Learn how to convert invoices to Excel format efficiently. Complete guide covering manual methods, automated solutions, and best practices for invoice to Excel conversion.",
+        "h1_tags": [
+          "Invoice to Excel: Complete Guide for Business Professionals"
+        ],
+        "hreflang_tags": [],
+        "canonical_url": "https://tidiful.com/blog/posts/invoice-to-excel-complete-guide.html",
+        "structured_data": 1,
+        "internal_links": 0,
+        "images_with_alt": 3,
+        "page_size": 36867,
+        "load_time": 0.104825
+      },
+      "el-GR": {
+        "title": "Invoice to Excel: Complete Guide for Business Professionals | TidiFul",
+        "meta_description": "Learn how to convert invoices to Excel format efficiently. Complete guide covering manual methods, automated solutions, and best practices for invoice to Excel conversion.",
+        "h1_tags": [
+          "Invoice to Excel: Complete Guide for Business Professionals"
+        ],
+        "hreflang_tags": [],
+        "canonical_url": "https://tidiful.com/blog/posts/invoice-to-excel-complete-guide.html",
+        "structured_data": 1,
+        "internal_links": 0,
+        "images_with_alt": 3,
+        "page_size": 36867,
+        "load_time": 0.082212
+      }
+    },
+    "/blog/posts/pdf-to-csv-complete-guide.html": {
+      "en-US": {
+        "title": "How to Convert PDF to CSV: The Complete Guide for Business Professionals | TidiFul",
+        "meta_description": "Learn how to convert PDF to CSV efficiently with this complete guide. Discover tools, best practices, and step-by-step methods to extract data from PDF to CSV and see how TidiFul simplifies the process for business professionals.",
+        "h1_tags": [
+          "How to Convert <span class=\"text-gradient\">PDF to CSV</span>: The Complete Guide for Business Professionals"
+        ],
+        "hreflang_tags": [],
+        "canonical_url": "https://tidiful.com/blog/posts/pdf-to-csv-complete-guide.html",
+        "structured_data": 2,
+        "internal_links": 0,
+        "images_with_alt": 3,
+        "page_size": 43146,
+        "load_time": 0.087162
+      },
+      "fr-FR": {
+        "title": "How to Convert PDF to CSV: The Complete Guide for Business Professionals | TidiFul",
+        "meta_description": "Learn how to convert PDF to CSV efficiently with this complete guide. Discover tools, best practices, and step-by-step methods to extract data from PDF to CSV and see how TidiFul simplifies the process for business professionals.",
+        "h1_tags": [
+          "How to Convert <span class=\"text-gradient\">PDF to CSV</span>: The Complete Guide for Business Professionals"
+        ],
+        "hreflang_tags": [],
+        "canonical_url": "https://tidiful.com/blog/posts/pdf-to-csv-complete-guide.html",
+        "structured_data": 2,
+        "internal_links": 0,
+        "images_with_alt": 3,
+        "page_size": 43146,
+        "load_time": 0.080487
+      },
+      "de-DE": {
+        "title": "How to Convert PDF to CSV: The Complete Guide for Business Professionals | TidiFul",
+        "meta_description": "Learn how to convert PDF to CSV efficiently with this complete guide. Discover tools, best practices, and step-by-step methods to extract data from PDF to CSV and see how TidiFul simplifies the process for business professionals.",
+        "h1_tags": [
+          "How to Convert <span class=\"text-gradient\">PDF to CSV</span>: The Complete Guide for Business Professionals"
+        ],
+        "hreflang_tags": [],
+        "canonical_url": "https://tidiful.com/blog/posts/pdf-to-csv-complete-guide.html",
+        "structured_data": 2,
+        "internal_links": 0,
+        "images_with_alt": 3,
+        "page_size": 43146,
+        "load_time": 0.06187
+      },
+      "es-ES": {
+        "title": "How to Convert PDF to CSV: The Complete Guide for Business Professionals | TidiFul",
+        "meta_description": "Learn how to convert PDF to CSV efficiently with this complete guide. Discover tools, best practices, and step-by-step methods to extract data from PDF to CSV and see how TidiFul simplifies the process for business professionals.",
+        "h1_tags": [
+          "How to Convert <span class=\"text-gradient\">PDF to CSV</span>: The Complete Guide for Business Professionals"
+        ],
+        "hreflang_tags": [],
+        "canonical_url": "https://tidiful.com/blog/posts/pdf-to-csv-complete-guide.html",
+        "structured_data": 2,
+        "internal_links": 0,
+        "images_with_alt": 3,
+        "page_size": 43146,
+        "load_time": 0.058519
+      },
+      "el-GR": {
+        "title": "How to Convert PDF to CSV: The Complete Guide for Business Professionals | TidiFul",
+        "meta_description": "Learn how to convert PDF to CSV efficiently with this complete guide. Discover tools, best practices, and step-by-step methods to extract data from PDF to CSV and see how TidiFul simplifies the process for business professionals.",
+        "h1_tags": [
+          "How to Convert <span class=\"text-gradient\">PDF to CSV</span>: The Complete Guide for Business Professionals"
+        ],
+        "hreflang_tags": [],
+        "canonical_url": "https://tidiful.com/blog/posts/pdf-to-csv-complete-guide.html",
+        "structured_data": 2,
+        "internal_links": 0,
+        "images_with_alt": 3,
+        "page_size": 43146,
+        "load_time": 0.06826
+      }
+    },
+    "/blog/posts/what-is-pdf-to-csv-conversion.html": {
+      "en-US": {
+        "title": "What is PDF to CSV Conversion? Complete Guide for Business Professionals | TidiFul",
+        "meta_description": "Learn what PDF to CSV conversion is, how it works, and why businesses need it. Discover the best tools, methods, and benefits of converting PDF documents to structured CSV data.",
+        "h1_tags": [
+          "What is <span class=\"text-gradient\">PDF to CSV Conversion</span>? Complete Guide for Business Professionals"
+        ],
+        "hreflang_tags": [],
+        "canonical_url": "https://tidiful.com/blog/posts/what-is-pdf-to-csv-conversion.html",
+        "structured_data": 2,
+        "internal_links": 0,
+        "images_with_alt": 3,
+        "page_size": 44403,
+        "load_time": 0.11019
+      },
+      "fr-FR": {
+        "title": "What is PDF to CSV Conversion? Complete Guide for Business Professionals | TidiFul",
+        "meta_description": "Learn what PDF to CSV conversion is, how it works, and why businesses need it. Discover the best tools, methods, and benefits of converting PDF documents to structured CSV data.",
+        "h1_tags": [
+          "What is <span class=\"text-gradient\">PDF to CSV Conversion</span>? Complete Guide for Business Professionals"
+        ],
+        "hreflang_tags": [],
+        "canonical_url": "https://tidiful.com/blog/posts/what-is-pdf-to-csv-conversion.html",
+        "structured_data": 2,
+        "internal_links": 0,
+        "images_with_alt": 3,
+        "page_size": 44403,
+        "load_time": 0.066949
+      },
+      "de-DE": {
+        "title": "What is PDF to CSV Conversion? Complete Guide for Business Professionals | TidiFul",
+        "meta_description": "Learn what PDF to CSV conversion is, how it works, and why businesses need it. Discover the best tools, methods, and benefits of converting PDF documents to structured CSV data.",
+        "h1_tags": [
+          "What is <span class=\"text-gradient\">PDF to CSV Conversion</span>? Complete Guide for Business Professionals"
+        ],
+        "hreflang_tags": [],
+        "canonical_url": "https://tidiful.com/blog/posts/what-is-pdf-to-csv-conversion.html",
+        "structured_data": 2,
+        "internal_links": 0,
+        "images_with_alt": 3,
+        "page_size": 44403,
+        "load_time": 0.059692
+      },
+      "es-ES": {
+        "title": "What is PDF to CSV Conversion? Complete Guide for Business Professionals | TidiFul",
+        "meta_description": "Learn what PDF to CSV conversion is, how it works, and why businesses need it. Discover the best tools, methods, and benefits of converting PDF documents to structured CSV data.",
+        "h1_tags": [
+          "What is <span class=\"text-gradient\">PDF to CSV Conversion</span>? Complete Guide for Business Professionals"
+        ],
+        "hreflang_tags": [],
+        "canonical_url": "https://tidiful.com/blog/posts/what-is-pdf-to-csv-conversion.html",
+        "structured_data": 2,
+        "internal_links": 0,
+        "images_with_alt": 3,
+        "page_size": 44403,
+        "load_time": 0.069706
+      },
+      "el-GR": {
+        "title": "What is PDF to CSV Conversion? Complete Guide for Business Professionals | TidiFul",
+        "meta_description": "Learn what PDF to CSV conversion is, how it works, and why businesses need it. Discover the best tools, methods, and benefits of converting PDF documents to structured CSV data.",
+        "h1_tags": [
+          "What is <span class=\"text-gradient\">PDF to CSV Conversion</span>? Complete Guide for Business Professionals"
+        ],
+        "hreflang_tags": [],
+        "canonical_url": "https://tidiful.com/blog/posts/what-is-pdf-to-csv-conversion.html",
+        "structured_data": 2,
+        "internal_links": 0,
+        "images_with_alt": 3,
+        "page_size": 44403,
+        "load_time": 0.068023
+      }
+    },
+    "/blog/posts/how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html": {
+      "en-US": {
+        "title": "How to Scan PDF Documents Like a Pro: A Complete Guide for Business Professionals | TidiFul",
+        "meta_description": "Learn how to scan PDF documents efficiently and accurately. Discover the best tools, workflows, and automation methods to turn paper documents into searchable, structured PDFs using TidiFul.",
+        "h1_tags": [
+          "How to Scan PDF Documents Like a Pro: A Complete Guide for Business Professionals"
+        ],
+        "hreflang_tags": [],
+        "canonical_url": "https://tidiful.com/blog/posts/how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html",
+        "structured_data": 2,
+        "internal_links": 0,
+        "images_with_alt": 3,
+        "page_size": 40060,
+        "load_time": 0.169924
+      },
+      "fr-FR": {
+        "title": "How to Scan PDF Documents Like a Pro: A Complete Guide for Business Professionals | TidiFul",
+        "meta_description": "Learn how to scan PDF documents efficiently and accurately. Discover the best tools, workflows, and automation methods to turn paper documents into searchable, structured PDFs using TidiFul.",
+        "h1_tags": [
+          "How to Scan PDF Documents Like a Pro: A Complete Guide for Business Professionals"
+        ],
+        "hreflang_tags": [],
+        "canonical_url": "https://tidiful.com/blog/posts/how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html",
+        "structured_data": 2,
+        "internal_links": 0,
+        "images_with_alt": 3,
+        "page_size": 40060,
+        "load_time": 0.061792
+      },
+      "de-DE": {
+        "title": "How to Scan PDF Documents Like a Pro: A Complete Guide for Business Professionals | TidiFul",
+        "meta_description": "Learn how to scan PDF documents efficiently and accurately. Discover the best tools, workflows, and automation methods to turn paper documents into searchable, structured PDFs using TidiFul.",
+        "h1_tags": [
+          "How to Scan PDF Documents Like a Pro: A Complete Guide for Business Professionals"
+        ],
+        "hreflang_tags": [],
+        "canonical_url": "https://tidiful.com/blog/posts/how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html",
+        "structured_data": 2,
+        "internal_links": 0,
+        "images_with_alt": 3,
+        "page_size": 40060,
+        "load_time": 0.067552
+      },
+      "es-ES": {
+        "title": "How to Scan PDF Documents Like a Pro: A Complete Guide for Business Professionals | TidiFul",
+        "meta_description": "Learn how to scan PDF documents efficiently and accurately. Discover the best tools, workflows, and automation methods to turn paper documents into searchable, structured PDFs using TidiFul.",
+        "h1_tags": [
+          "How to Scan PDF Documents Like a Pro: A Complete Guide for Business Professionals"
+        ],
+        "hreflang_tags": [],
+        "canonical_url": "https://tidiful.com/blog/posts/how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html",
+        "structured_data": 2,
+        "internal_links": 0,
+        "images_with_alt": 3,
+        "page_size": 40060,
+        "load_time": 0.064667
+      },
+      "el-GR": {
+        "title": "How to Scan PDF Documents Like a Pro: A Complete Guide for Business Professionals | TidiFul",
+        "meta_description": "Learn how to scan PDF documents efficiently and accurately. Discover the best tools, workflows, and automation methods to turn paper documents into searchable, structured PDFs using TidiFul.",
+        "h1_tags": [
+          "How to Scan PDF Documents Like a Pro: A Complete Guide for Business Professionals"
+        ],
+        "hreflang_tags": [],
+        "canonical_url": "https://tidiful.com/blog/posts/how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html",
+        "structured_data": 2,
+        "internal_links": 0,
+        "images_with_alt": 3,
+        "page_size": 40060,
+        "load_time": 0.066221
+      }
+    }
+  }
+}

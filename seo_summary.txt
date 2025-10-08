@@ -1,0 +1,6 @@
+TidiFul SEO Monitoring Summary
+Generated: 2025-10-08 15:29:07
+Pages checked: 8
+Languages: en-US, fr-FR, de-DE, es-ES, el-GR
+
+For detailed results, see seo_report.json

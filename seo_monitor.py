@@ -17,7 +17,11 @@ class SEOMonitor:
             "/",
             "/pricing.html", 
             "/blog/blogs.html",
-            "/blog/posts/reddit-knowledge-work.html"
+            "/blog/posts/image-to-excel-complete-guide.html",
+            "/blog/posts/invoice-to-excel-complete-guide.html",
+            "/blog/posts/pdf-to-csv-complete-guide.html",
+            "/blog/posts/what-is-pdf-to-csv-conversion.html",
+            "/blog/posts/how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html"
         ]
         self.languages = ["en-US", "fr-FR", "de-DE", "es-ES", "el-GR"]
         
