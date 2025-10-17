@@ -124,6 +124,11 @@
   
   
   
+  
+  
+  
+  
+  
   <!-- Blog Posts -->
 
   <!-- Invoice to Excel: Complete Guide for Business Professionals Blog Post - English -->
@@ -152,6 +157,60 @@
     <xhtml:link rel="alternate" hreflang="es-ES" href="blog/https://tidiful.com/blog/static/invoice-to-excel-complete-guide.html?lang=es-ES"/>
     <xhtml:link rel="alternate" hreflang="el-GR" href="blog/https://tidiful.com/blog/static/invoice-to-excel-complete-guide.html?lang=el-GR"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="blog/https://tidiful.com/blog/static/invoice-to-excel-complete-guide.html"/>
+  </url>
+  <!-- Why Invoice Tracking is Critical for Business Success: A Complete Guide Blog Post - English -->
+  <url>
+    <loc>blog/https://tidiful.com/blog/posts/why-invoice-tracking-is-critical-for-business-success-a-complete-guide.html</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="blog/https://tidiful.com/blog/posts/why-invoice-tracking-is-critical-for-business-success-a-complete-guide.html?lang=en-US"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="blog/https://tidiful.com/blog/posts/why-invoice-tracking-is-critical-for-business-success-a-complete-guide.html?lang=fr-FR"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="blog/https://tidiful.com/blog/posts/why-invoice-tracking-is-critical-for-business-success-a-complete-guide.html?lang=de-DE"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="blog/https://tidiful.com/blog/posts/why-invoice-tracking-is-critical-for-business-success-a-complete-guide.html?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="el-GR" href="blog/https://tidiful.com/blog/posts/why-invoice-tracking-is-critical-for-business-success-a-complete-guide.html?lang=el-GR"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="blog/https://tidiful.com/blog/posts/why-invoice-tracking-is-critical-for-business-success-a-complete-guide.html"/>
+  </url>
+
+  <!-- Why Invoice Tracking is Critical for Business Success: A Complete Guide Static - English -->
+  <url>
+    <loc>blog/https://tidiful.com/blog/static/why-invoice-tracking-is-critical-for-business-success-a-complete-guide.html</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="blog/https://tidiful.com/blog/static/why-invoice-tracking-is-critical-for-business-success-a-complete-guide.html?lang=en-US"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="blog/https://tidiful.com/blog/static/why-invoice-tracking-is-critical-for-business-success-a-complete-guide.html?lang=fr-FR"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="blog/https://tidiful.com/blog/static/why-invoice-tracking-is-critical-for-business-success-a-complete-guide.html?lang=de-DE"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="blog/https://tidiful.com/blog/static/why-invoice-tracking-is-critical-for-business-success-a-complete-guide.html?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="el-GR" href="blog/https://tidiful.com/blog/static/why-invoice-tracking-is-critical-for-business-success-a-complete-guide.html?lang=el-GR"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="blog/https://tidiful.com/blog/static/why-invoice-tracking-is-critical-for-business-success-a-complete-guide.html"/>
+  </url>
+  <!-- How Can You Extract Data from Image to Excel Easily? Blog Post - English -->
+  <url>
+    <loc>blog/https://tidiful.com/blog/posts/image-to-excel-complete-guide.html</loc>
+    <lastmod>2025-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="blog/https://tidiful.com/blog/posts/image-to-excel-complete-guide.html?lang=en-US"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="blog/https://tidiful.com/blog/posts/image-to-excel-complete-guide.html?lang=fr-FR"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="blog/https://tidiful.com/blog/posts/image-to-excel-complete-guide.html?lang=de-DE"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="blog/https://tidiful.com/blog/posts/image-to-excel-complete-guide.html?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="el-GR" href="blog/https://tidiful.com/blog/posts/image-to-excel-complete-guide.html?lang=el-GR"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="blog/https://tidiful.com/blog/posts/image-to-excel-complete-guide.html"/>
+  </url>
+
+  <!-- How Can You Extract Data from Image to Excel Easily? Static - English -->
+  <url>
+    <loc>blog/https://tidiful.com/blog/static/image-to-excel-complete-guide.html</loc>
+    <lastmod>2025-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="blog/https://tidiful.com/blog/static/image-to-excel-complete-guide.html?lang=en-US"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="blog/https://tidiful.com/blog/static/image-to-excel-complete-guide.html?lang=fr-FR"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="blog/https://tidiful.com/blog/static/image-to-excel-complete-guide.html?lang=de-DE"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="blog/https://tidiful.com/blog/static/image-to-excel-complete-guide.html?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="el-GR" href="blog/https://tidiful.com/blog/static/image-to-excel-complete-guide.html?lang=el-GR"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="blog/https://tidiful.com/blog/static/image-to-excel-complete-guide.html"/>
   </url>
   <!-- How to Convert PDF to CSV: The Complete Guide for Business Professionals Blog Post - English -->
   <url>
@@ -233,33 +292,6 @@
     <xhtml:link rel="alternate" hreflang="es-ES" href="blog/https://tidiful.com/blog/static/how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html?lang=es-ES"/>
     <xhtml:link rel="alternate" hreflang="el-GR" href="blog/https://tidiful.com/blog/static/how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html?lang=el-GR"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="blog/https://tidiful.com/blog/static/how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html"/>
-  </url>
-  <!-- How Can You Extract Data from Image to Excel Easily? Blog Post - English -->
-  <url>
-    <loc>blog/https://tidiful.com/blog/posts/image-to-excel-complete-guide.html</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="blog/https://tidiful.com/blog/posts/image-to-excel-complete-guide.html?lang=en-US"/>
-    <xhtml:link rel="alternate" hreflang="fr-FR" href="blog/https://tidiful.com/blog/posts/image-to-excel-complete-guide.html?lang=fr-FR"/>
-    <xhtml:link rel="alternate" hreflang="de-DE" href="blog/https://tidiful.com/blog/posts/image-to-excel-complete-guide.html?lang=de-DE"/>
-    <xhtml:link rel="alternate" hreflang="es-ES" href="blog/https://tidiful.com/blog/posts/image-to-excel-complete-guide.html?lang=es-ES"/>
-    <xhtml:link rel="alternate" hreflang="el-GR" href="blog/https://tidiful.com/blog/posts/image-to-excel-complete-guide.html?lang=el-GR"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="blog/https://tidiful.com/blog/posts/image-to-excel-complete-guide.html"/>
-  </url>
-
-  <!-- How Can You Extract Data from Image to Excel Easily? Static - English -->
-  <url>
-    <loc>blog/https://tidiful.com/blog/static/image-to-excel-complete-guide.html</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="blog/https://tidiful.com/blog/static/image-to-excel-complete-guide.html?lang=en-US"/>
-    <xhtml:link rel="alternate" hreflang="fr-FR" href="blog/https://tidiful.com/blog/static/image-to-excel-complete-guide.html?lang=fr-FR"/>
-    <xhtml:link rel="alternate" hreflang="de-DE" href="blog/https://tidiful.com/blog/static/image-to-excel-complete-guide.html?lang=de-DE"/>
-    <xhtml:link rel="alternate" hreflang="es-ES" href="blog/https://tidiful.com/blog/static/image-to-excel-complete-guide.html?lang=es-ES"/>
-    <xhtml:link rel="alternate" hreflang="el-GR" href="blog/https://tidiful.com/blog/static/image-to-excel-complete-guide.html?lang=el-GR"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="blog/https://tidiful.com/blog/static/image-to-excel-complete-guide.html"/>
   </url>
 
 </urlset>

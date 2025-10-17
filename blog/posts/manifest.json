@@ -8,6 +8,20 @@
       "url": "blog/posts/invoice-to-excel-complete-guide.html"
     },
     {
+      "filename": "why-invoice-tracking-is-critical-for-business-success-a-complete-guide.html",
+      "title": "Why Invoice Tracking is Critical for Business Success: A Complete Guide",
+      "date": "2025-10-17",
+      "excerpt": "Discover why invoice tracking is critical for business success. Learn best practices, tools, and strategies for efficient invoice management and cash flow optimization.",
+      "url": "blog/posts/why-invoice-tracking-is-critical-for-business-success-a-complete-guide.html"
+    },
+    {
+      "filename": "image-to-excel-complete-guide.html",
+      "title": "How Can You Extract Data from Image to Excel Easily?",
+      "date": "2025-10-08",
+      "excerpt": "Learn how to extract data from images to Excel easily and reliably. Discover the best tools, methods, and automation solutions for converting image data to Excel spreadsheets with TidiFul.",
+      "url": "blog/posts/image-to-excel-complete-guide.html"
+    },
+    {
       "filename": "pdf-to-csv-complete-guide.html",
       "title": "How to Convert PDF to CSV: The Complete Guide for Business Professionals",
       "date": "2025-09-12",
@@ -27,15 +41,8 @@
       "date": "2025-06-15",
       "excerpt": "Learn how to scan PDF documents efficiently and accurately. Discover the best tools, workflows, and automation methods to turn paper documents into searchable, structured PDFs using TidiFul.",
       "url": "blog/posts/how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html"
-    },
-    {
-      "filename": "image-to-excel-complete-guide.html",
-      "title": "How Can You Extract Data from Image to Excel Easily?",
-      "date": "2025-01-15",
-      "excerpt": "Learn how to extract data from images to Excel easily and reliably. Discover the best tools, methods, and automation solutions for converting image data to Excel spreadsheets with TidiFul.",
-      "url": "blog/posts/image-to-excel-complete-guide.html"
     }
   ],
-  "lastUpdated": "2025-10-08T19:37:47.381630",
-  "totalPosts": 5
+  "lastUpdated": "2025-10-17T12:51:24.295699",
+  "totalPosts": 6
 }
