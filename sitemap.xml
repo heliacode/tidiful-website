@@ -129,6 +129,7 @@
   
   
   
+  
   <!-- Blog Posts -->
 
   <!-- Invoice to Excel: Complete Guide for Business Professionals Blog Post - English -->
@@ -184,6 +185,33 @@
     <xhtml:link rel="alternate" hreflang="es-ES" href="blog/https://tidiful.com/blog/static/why-invoice-tracking-is-critical-for-business-success-a-complete-guide.html?lang=es-ES"/>
     <xhtml:link rel="alternate" hreflang="el-GR" href="blog/https://tidiful.com/blog/static/why-invoice-tracking-is-critical-for-business-success-a-complete-guide.html?lang=el-GR"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="blog/https://tidiful.com/blog/static/why-invoice-tracking-is-critical-for-business-success-a-complete-guide.html"/>
+  </url>
+  <!-- PDF to DOCX Conversion: The Ultimate Guide for Invoice Management Blog Post - English -->
+  <url>
+    <loc>blog/https://tidiful.com/blog/posts/pdf-to-docx-conversion-the-ultimate-guide-for-invoice-management.html</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="blog/https://tidiful.com/blog/posts/pdf-to-docx-conversion-the-ultimate-guide-for-invoice-management.html?lang=en-US"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="blog/https://tidiful.com/blog/posts/pdf-to-docx-conversion-the-ultimate-guide-for-invoice-management.html?lang=fr-FR"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="blog/https://tidiful.com/blog/posts/pdf-to-docx-conversion-the-ultimate-guide-for-invoice-management.html?lang=de-DE"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="blog/https://tidiful.com/blog/posts/pdf-to-docx-conversion-the-ultimate-guide-for-invoice-management.html?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="el-GR" href="blog/https://tidiful.com/blog/posts/pdf-to-docx-conversion-the-ultimate-guide-for-invoice-management.html?lang=el-GR"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="blog/https://tidiful.com/blog/posts/pdf-to-docx-conversion-the-ultimate-guide-for-invoice-management.html"/>
+  </url>
+
+  <!-- PDF to DOCX Conversion: The Ultimate Guide for Invoice Management Static - English -->
+  <url>
+    <loc>blog/https://tidiful.com/blog/static/pdf-to-docx-conversion-the-ultimate-guide-for-invoice-management.html</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="blog/https://tidiful.com/blog/static/pdf-to-docx-conversion-the-ultimate-guide-for-invoice-management.html?lang=en-US"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="blog/https://tidiful.com/blog/static/pdf-to-docx-conversion-the-ultimate-guide-for-invoice-management.html?lang=fr-FR"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="blog/https://tidiful.com/blog/static/pdf-to-docx-conversion-the-ultimate-guide-for-invoice-management.html?lang=de-DE"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="blog/https://tidiful.com/blog/static/pdf-to-docx-conversion-the-ultimate-guide-for-invoice-management.html?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="el-GR" href="blog/https://tidiful.com/blog/static/pdf-to-docx-conversion-the-ultimate-guide-for-invoice-management.html?lang=el-GR"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="blog/https://tidiful.com/blog/static/pdf-to-docx-conversion-the-ultimate-guide-for-invoice-management.html"/>
   </url>
   <!-- How Can You Extract Data from Image to Excel Easily? Blog Post - English -->
   <url>
