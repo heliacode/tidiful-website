@@ -1,18 +1,18 @@
 {
   "posts": [
     {
-      "filename": "adobe-acrobat-alternatives-pdf-creation-complete-guide.html",
-      "title": "Adobe Acrobat Alternatives for PDF Creation: Complete Guide for Business Professionals",
-      "date": "2025-11-09",
-      "excerpt": "Discover the best Adobe Acrobat alternatives for PDF creation. Compare free and paid options, features, and pricing to find the right PDF tool for your business needs.",
-      "url": "blog/posts/adobe-acrobat-alternatives-pdf-creation-complete-guide.html"
-    },
-    {
       "filename": "pdf-data-extraction-complete-guide.html",
       "title": "PDF Data Extraction: Complete Guide for Business Professionals",
       "date": "2025-11-09",
       "excerpt": "Learn how to extract data from PDFs efficiently with this complete guide. Discover tools, methods, and best practices for PDF data extraction to streamline your business workflows.",
       "url": "blog/posts/pdf-data-extraction-complete-guide.html"
+    },
+    {
+      "filename": "adobe-acrobat-alternatives-pdf-creation-complete-guide.html",
+      "title": "Adobe Acrobat Alternatives for PDF Creation: Complete Guide for Business Professionals",
+      "date": "2025-11-09",
+      "excerpt": "Discover the best Adobe Acrobat alternatives for PDF creation. Compare free and paid options, features, and pricing to find the right PDF tool for your business needs.",
+      "url": "blog/posts/adobe-acrobat-alternatives-pdf-creation-complete-guide.html"
     },
     {
       "filename": "invoice-to-excel-complete-guide.html",
@@ -64,6 +64,6 @@
       "url": "blog/posts/how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html"
     }
   ],
-  "lastUpdated": "2025-11-09T19:57:59.803822",
+  "lastUpdated": "2025-11-10T00:58:27.550952",
   "totalPosts": 9
 }
