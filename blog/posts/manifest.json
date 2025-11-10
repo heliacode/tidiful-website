@@ -1,6 +1,20 @@
 {
   "posts": [
     {
+      "filename": "adobe-acrobat-alternatives-pdf-creation-complete-guide.html",
+      "title": "Adobe Acrobat Alternatives for PDF Creation: Complete Guide for Business Professionals",
+      "date": "2025-11-09",
+      "excerpt": "Discover the best Adobe Acrobat alternatives for PDF creation. Compare free and paid options, features, and pricing to find the right PDF tool for your business needs.",
+      "url": "blog/posts/adobe-acrobat-alternatives-pdf-creation-complete-guide.html"
+    },
+    {
+      "filename": "pdf-data-extraction-complete-guide.html",
+      "title": "PDF Data Extraction: Complete Guide for Business Professionals",
+      "date": "2025-11-09",
+      "excerpt": "Learn how to extract data from PDFs efficiently with this complete guide. Discover tools, methods, and best practices for PDF data extraction to streamline your business workflows.",
+      "url": "blog/posts/pdf-data-extraction-complete-guide.html"
+    },
+    {
       "filename": "invoice-to-excel-complete-guide.html",
       "title": "Invoice to Excel: Complete Guide for Business Professionals",
       "date": "2025-10-28",
@@ -8,18 +22,18 @@
       "url": "blog/posts/invoice-to-excel-complete-guide.html"
     },
     {
-      "filename": "why-invoice-tracking-is-critical-for-business-success-a-complete-guide.html",
-      "title": "Why Invoice Tracking is Critical for Business Success: A Complete Guide",
-      "date": "2025-10-17",
-      "excerpt": "Discover why invoice tracking is critical for business success. Learn best practices, tools, and strategies for efficient invoice management and cash flow optimization.",
-      "url": "blog/posts/why-invoice-tracking-is-critical-for-business-success-a-complete-guide.html"
-    },
-    {
       "filename": "pdf-to-docx-conversion-the-ultimate-guide-for-invoice-management.html",
       "title": "PDF to DOCX Conversion: The Ultimate Guide for Invoice Management",
       "date": "2025-10-17",
       "excerpt": "Master PDF to DOCX conversion for invoice management. Learn step-by-step methods, tools, and best practices to convert PDF invoices to editable DOCX format effortlessly with TidiFul.",
       "url": "blog/posts/pdf-to-docx-conversion-the-ultimate-guide-for-invoice-management.html"
+    },
+    {
+      "filename": "why-invoice-tracking-is-critical-for-business-success-a-complete-guide.html",
+      "title": "Why Invoice Tracking is Critical for Business Success: A Complete Guide",
+      "date": "2025-10-17",
+      "excerpt": "Discover why invoice tracking is critical for business success. Learn best practices, tools, and strategies for efficient invoice management and cash flow optimization.",
+      "url": "blog/posts/why-invoice-tracking-is-critical-for-business-success-a-complete-guide.html"
     },
     {
       "filename": "image-to-excel-complete-guide.html",
@@ -50,6 +64,6 @@
       "url": "blog/posts/how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html"
     }
   ],
-  "lastUpdated": "2025-10-18T05:31:49.215100",
-  "totalPosts": 7
+  "lastUpdated": "2025-11-09T19:57:59.803822",
+  "totalPosts": 9
 }

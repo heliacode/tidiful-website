@@ -269,7 +269,7 @@ def create_blog_post():
                         <option value="es-ES">🇪🇸 Español</option>
                         <option value="el-GR">🇬🇷 Ελληνικά</option>
                     </select>
-                    <a href="../../login.html" class="px-4 py-2 rounded-lg border border-emerald-500 text-emerald-400 hover:bg-emerald-900 transition-colors" data-i18n="nav.createAccountLogin">
+                    <a href="https://app.tidiful.com" class="px-4 py-2 rounded-lg border border-emerald-500 text-emerald-400 hover:bg-emerald-900 transition-colors" data-i18n="nav.createAccountLogin">
                         Create Account / Login
                     </a>
                 </div>
@@ -320,7 +320,7 @@ def create_blog_post():
                         <option value="es-ES">🇪🇸 Español</option>
                         <option value="el-GR">🇬🇷 Ελληνικά</option>
                     </select>
-                    <a href="../../login.html" class="block w-full text-center px-4 py-2 rounded-lg border border-emerald-500 text-emerald-400 hover:bg-emerald-900 transition-colors" data-i18n="nav.createAccountLogin">
+                    <a href="https://app.tidiful.com" class="block w-full text-center px-4 py-2 rounded-lg border border-emerald-500 text-emerald-400 hover:bg-emerald-900 transition-colors" data-i18n="nav.createAccountLogin">
                         Create Account / Login
                     </a>
                 </div>

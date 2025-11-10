@@ -49,9 +49,13 @@
     <link rel="alternate" hreflang="el" href="https://tidiful.com/?lang=el-GR">
     <link rel="alternate" hreflang="x-default" href="https://tidiful.com/">
     
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/images/leaf_png_128x128.png">
-    <link rel="apple-touch-icon" href="assets/images/leaf_png_256x256.png">
+    <!-- Favicon - Multiple formats for maximum compatibility -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/leaf_png_128x128.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="assets/images/leaf_png_128x128.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="assets/images/leaf_png_256x256.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/leaf_png_256x256.png">
+    <link rel="shortcut icon" href="/favicon.ico">
     
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -275,7 +279,7 @@
                         <option value="es-ES">🇪🇸 Español</option>
                         <option value="el-GR">🇬🇷 Ελληνικά</option>
                     </select>
-                        <a href="login.html" class="px-4 py-2 rounded-lg border border-emerald-500 text-emerald-400 hover:bg-emerald-900 transition-colors" data-i18n="nav.createAccountLogin">
+                        <a href="https://app.tidiful.com" class="px-4 py-2 rounded-lg border border-emerald-500 text-emerald-400 hover:bg-emerald-900 transition-colors" data-i18n="nav.createAccountLogin">
                             Create Account / Login
                         </a>
                 </div>
@@ -326,7 +330,7 @@
                     <option value="es-ES">🇪🇸 Español</option>
                     <option value="el-GR">🇬🇷 Ελληνικά</option>
                 </select>
-                    <a href="login.html" class="block w-full text-center px-4 py-2 rounded-lg border border-emerald-500 text-emerald-400 hover:bg-emerald-900 transition-colors" data-i18n="nav.createAccountLogin">
+                    <a href="https://app.tidiful.com" class="block w-full text-center px-4 py-2 rounded-lg border border-emerald-500 text-emerald-400 hover:bg-emerald-900 transition-colors" data-i18n="nav.createAccountLogin">
                         Create Account / Login
                     </a>
             </div>
@@ -572,9 +576,9 @@ Instantly convert PDF invoices, receipts, and documents into clean, structured J
                 <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-100" data-i18n="cta.title">Ready to streamline your document processing?</h2>
                 <p class="text-xl text-gray-300 mb-8" data-i18n="cta.subtitle">Join thousands of businesses that use TidiFul to automate their data extraction workflows.</p>
                 <div class="flex justify-center">
-                    <button class="px-8 py-3 bg-emerald-600 hover:bg-emerald-500 rounded-lg text-lg font-medium transition-colors text-white" data-i18n="cta.button">
+                    <a href="https://app.tidiful.com" class="px-8 py-3 bg-emerald-600 hover:bg-emerald-500 rounded-lg text-lg font-medium transition-colors text-white inline-block" data-i18n="cta.button">
                         Start Free Trial
-                    </button>
+                    </a>
                 </div>
 </div>
         </div>

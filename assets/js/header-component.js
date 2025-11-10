@@ -118,7 +118,7 @@ class HeaderComponent {
             pricingPath: `${depth}pricing.html`,
             blogPath: `${depth}blog/blogs.html`,
             aboutPath: `${depth}about.html`,
-            loginPath: `${depth}login.html`
+            loginPath: `https://app.tidiful.com`
         };
     }
 

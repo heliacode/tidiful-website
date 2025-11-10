@@ -11,6 +11,9 @@ Disallow: /admin/
 Disallow: /private/
 Disallow: /temp/
 
+# Favicon location (helps search engines find it)
+Allow: /favicon.ico
+
 # Sitemap location
 Sitemap: https://tidiful.com/sitemap.xml
 
