@@ -1,13 +1,6 @@
 {
   "posts": [
     {
-      "filename": "image-to-csv-complete-guide.html",
-      "title": "Image to CSV: Complete Guide for Data Extraction",
-      "date": "2025-11-18",
-      "excerpt": "Learn how to convert images to CSV format efficiently. Complete guide covering OCR methods, tools, and best practices for extracting data from images to CSV.",
-      "url": "blog/posts/image-to-csv-complete-guide.html"
-    },
-    {
       "filename": "how-to-automate-invoice-processing-with-api-integration-complete-guide.html",
       "title": "How to Automate Invoice Processing with API Integration: Complete Guide",
       "date": "2025-11-18",
@@ -22,18 +15,11 @@
       "url": "blog/posts/how-to-manage-your-invoices-like-a-pro-professional-invoice-management-guide.html"
     },
     {
-      "filename": "which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html",
-      "title": "Which Companies Offer Reliable PDF to CSV Conversion Tools?",
+      "filename": "image-to-csv-complete-guide.html",
+      "title": "Image to CSV: Complete Guide for Data Extraction",
       "date": "2025-11-18",
-      "excerpt": "Discover reliable companies offering PDF to CSV conversion tools. Compare TidiFul, Adobe, Tabula, and other solutions for accurate, secure document processing.",
-      "url": "blog/posts/which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html"
-    },
-    {
-      "filename": "tidiful-to-acomba-seamless-accounting-integration-guide.html",
-      "title": "Tidiful to Acomba Integration Guide",
-      "date": "2025-11-18",
-      "excerpt": "Learn how to integrate Tidiful with Acomba accounting software. Complete guide covering CSV export formats, import workflows, and best practices.",
-      "url": "blog/posts/tidiful-to-acomba-seamless-accounting-integration-guide.html"
+      "excerpt": "Learn how to convert images to CSV format efficiently. Complete guide covering OCR methods, tools, and best practices for extracting data from images to CSV.",
+      "url": "blog/posts/image-to-csv-complete-guide.html"
     },
     {
       "filename": "invoice-to-pdf-complete-guide.html",
@@ -43,11 +29,18 @@
       "url": "blog/posts/invoice-to-pdf-complete-guide.html"
     },
     {
-      "filename": "pdf-data-extraction-complete-guide.html",
-      "title": "PDF Data Extraction: Complete Guide for Business Professionals",
-      "date": "2025-11-09",
-      "excerpt": "Learn how to extract data from PDFs efficiently with this complete guide. Discover tools, methods, and best practices for PDF data extraction to streamline your business workflows.",
-      "url": "blog/posts/pdf-data-extraction-complete-guide.html"
+      "filename": "tidiful-to-acomba-seamless-accounting-integration-guide.html",
+      "title": "Tidiful to Acomba Integration Guide",
+      "date": "2025-11-18",
+      "excerpt": "Learn how to integrate Tidiful with Acomba accounting software. Complete guide covering CSV export formats, import workflows, and best practices.",
+      "url": "blog/posts/tidiful-to-acomba-seamless-accounting-integration-guide.html"
+    },
+    {
+      "filename": "which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html",
+      "title": "Which Companies Offer Reliable PDF to CSV Conversion Tools?",
+      "date": "2025-11-18",
+      "excerpt": "Discover reliable companies offering PDF to CSV conversion tools. Compare TidiFul, Adobe, Tabula, and other solutions for accurate, secure document processing.",
+      "url": "blog/posts/which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html"
     },
     {
       "filename": "adobe-acrobat-alternatives-pdf-creation-complete-guide.html",
@@ -55,6 +48,13 @@
       "date": "2025-11-09",
       "excerpt": "Discover the best Adobe Acrobat alternatives for PDF creation. Compare free and paid options, features, and pricing to find the right PDF tool for your business needs.",
       "url": "blog/posts/adobe-acrobat-alternatives-pdf-creation-complete-guide.html"
+    },
+    {
+      "filename": "pdf-data-extraction-complete-guide.html",
+      "title": "PDF Data Extraction: Complete Guide for Business Professionals",
+      "date": "2025-11-09",
+      "excerpt": "Learn how to extract data from PDFs efficiently with this complete guide. Discover tools, methods, and best practices for PDF data extraction to streamline your business workflows.",
+      "url": "blog/posts/pdf-data-extraction-complete-guide.html"
     },
     {
       "filename": "invoice-to-excel-complete-guide.html",
@@ -106,6 +106,6 @@
       "url": "blog/posts/how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html"
     }
   ],
-  "lastUpdated": "2025-11-18T22:28:50.916425",
+  "lastUpdated": "2025-11-18T17:31:18.859070",
   "totalPosts": 15
 }
