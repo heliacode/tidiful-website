@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Feature: {{ $json.featureName }}</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f5f5f5; line-height: 1.6; color: #333333;">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #f5f5f5; padding: 20px 0;">
+        <tr>
+            <td align="center">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="max-width: 600px; background-color: #ffffff; border-radius: 8px; overflow: hidden;">
+                    
+                    <!-- Header -->
+                    <tr>
+                        <td style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); padding: 30px 20px; text-align: center;">
+                            <div style="background-color: #ffffff; border-radius: 50%; width: 60px; height: 60px; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center; font-size: 30px;">✨</div>
+                            <h1 style="margin: 0; color: #ffffff; font-size: 28px; font-weight: bold;">Introducing: {{ $json.featureName }}</h1>
+                            <p style="margin: 10px 0 0 0; color: #d1fae5; font-size: 16px;">A powerful new way to process documents</p>
+                        </td>
+                    </tr>
+
+                    <!-- Content -->
+                    <tr>
+                        <td style="padding: 30px 20px;">
+                            <p style="margin: 0 0 15px 0; font-size: 16px; color: #333333;">Hi{{ $json.firstName ? ' ' + $json.firstName : ' there' }},</p>
+                            <p style="margin: 0 0 20px 0; font-size: 16px; color: #333333;">We're excited to announce a new feature that will make your document processing even faster and more efficient!</p>
+                            
+                            <!-- Feature Highlight -->
+                            <div style="background-color: #ecfdf5; border: 2px solid #10b981; padding: 25px; margin: 25px 0; border-radius: 8px;">
+                                <h2 style="margin: 0 0 15px 0; font-size: 22px; font-weight: bold; color: #065f46;">{{ $json.featureName }}</h2>
+                                <p style="margin: 0 0 15px 0; font-size: 16px; color: #047857; line-height: 1.6;">{{ $json.featureDescription || 'This new feature helps you process documents faster and more accurately than ever before.' }}</p>
+                                
+                                <!-- Feature Benefits -->
+                                <ul style="margin: 15px 0 0 0; padding-left: 20px; color: #047857; font-size: 15px;">
+                                    <li style="margin-bottom: 8px;">{{ $json.benefit1 || 'Save even more time' }}</li>
+                                    <li style="margin-bottom: 8px;">{{ $json.benefit2 || 'Improve accuracy' }}</li>
+                                    <li>{{ $json.benefit3 || 'Streamline your workflow' }}</li>
+                                </ul>
+                            </div>
+
+                            <!-- How It Works -->
+                            <h2 style="margin: 25px 0 15px 0; font-size: 20px; font-weight: bold; color: #1f2937;">How It Works</h2>
+                            <div style="background-color: #f9fafb; padding: 20px; margin: 20px 0; border-radius: 6px;">
+                                <p style="margin: 0; font-size: 15px; color: #4b5563; line-height: 1.6;">{{ $json.howItWorks || 'Simply enable this feature in your settings and start using it right away. No additional setup required!' }}</p>
+                            </div>
+
+                            <!-- Example Use Case -->
+                            <div style="background-color: #eff6ff; border-left: 4px solid #3b82f6; padding: 20px; margin: 25px 0; border-radius: 4px;">
+                                <h3 style="margin: 0 0 10px 0; font-size: 16px; font-weight: bold; color: #1e40af;">💡 Example Use Case</h3>
+                                <p style="margin: 0; font-size: 14px; color: #1e3a8a;">{{ $json.useCase || 'Process 100 invoices in minutes instead of hours. Perfect for end-of-month processing!' }}</p>
+                            </div>
+
+                            <!-- CTA -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: 25px 0;">
+                                <tr>
+                                    <td align="center" style="padding: 20px; background-color: #ecfdf5; border-radius: 6px;">
+                                        <p style="margin: 0 0 15px 0; font-size: 16px; color: #065f46; font-weight: bold;">Ready to try it out?</p>
+                                        <a href="https://app.tidiful.com" style="display: inline-block; padding: 14px 28px; background-color: #10b981; color: #ffffff; text-decoration: none; border-radius: 6px; font-size: 16px; font-weight: bold;">Try {{ $json.featureName }} Now</a>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Learn More -->
+                            <p style="margin: 20px 0 0 0; font-size: 14px; color: #6b7280; text-align: center;">
+                                Want to learn more? <a href="{{ $json.learnMoreUrl || 'https://tidiful.com/features.html' }}" style="color: #10b981; text-decoration: none; font-weight: bold;">Read the full documentation →</a>
+                            </p>
+
+                            <!-- Support -->
+                            <div style="background-color: #f3f4f6; border: 1px solid #d1d5db; padding: 15px; margin: 25px 0; border-radius: 6px; text-align: center;">
+                                <p style="margin: 0; font-size: 14px; color: #6b7280;">
+                                    Questions? <a href="https://tidiful.com/contact.html" style="color: #10b981; text-decoration: none; font-weight: bold;">Contact our support team</a> — we're here to help!
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr>
+                        <td style="background-color: #f9fafb; padding: 25px 20px; text-align: center; border-top: 1px solid #e5e7eb;">
+                            <p style="margin: 0 0 10px 0; font-size: 13px; color: #6b7280;">You're receiving this email because you're a TidiFul user.</p>
+                            <p style="margin: 0 0 15px 0; font-size: 13px; color: #6b7280;">
+                                <a href="https://tidiful.com" style="color: #10b981; text-decoration: none;">TidiFul</a> | 
+                                <a href="https://tidiful.com/features.html" style="color: #10b981; text-decoration: none;">Features</a> | 
+                                <a href="https://tidiful.com/contact.html" style="color: #10b981; text-decoration: none;">Contact</a>
+                            </p>
+                            <p style="margin: 0; font-size: 12px; color: #9ca3af;">© 2025 TidiFul. All rights reserved.</p>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+

@@ -1,23 +1,23 @@
 {
   "monitoring_session": {
-    "timestamp": "2025-10-04T15:14:04.556943",
+    "timestamp": "2025-11-13T08:59:36.041217",
     "brand": "TidiFul",
     "website": "https://tidiful.com",
     "monitoring_period": "24 hours",
     "metrics": {
-      "visibility_score": 5.7,
-      "total_queries_monitored": 12,
-      "brand_mentions": 38,
-      "positive_mentions": 28,
+      "visibility_score": 5.3,
+      "total_queries_monitored": 22,
+      "brand_mentions": 73,
+      "positive_mentions": 47,
       "negative_mentions": 0,
-      "neutral_mentions": 10,
+      "neutral_mentions": 26,
       "platforms_monitored": 6,
       "top_performing_keywords": [
-        "PDF to CSV",
+        "invoice processing software",
+        "OCR image to excel",
         "PDF CSV conversion",
-        "AI document processing",
-        "TidiFul",
-        "convert PDF to CSV"
+        "image to excel converter",
+        "convert image to excel"
       ]
     },
     "recommendations": [
@@ -39,224 +39,100 @@
     "platform_performance": {
       "chatgpt": {
         "name": "OpenAI ChatGPT",
-        "mentions": 10,
-        "positive_mentions": 5,
-        "average_confidence": 0.78,
-        "performance_score": 8.3
+        "mentions": 16,
+        "positive_mentions": 7,
+        "average_confidence": 0.69,
+        "performance_score": 7.3
       },
       "claude": {
         "name": "Anthropic Claude",
-        "mentions": 11,
-        "positive_mentions": 10,
-        "average_confidence": 0.81,
-        "performance_score": 9.2
+        "mentions": 15,
+        "positive_mentions": 12,
+        "average_confidence": 0.68,
+        "performance_score": 6.8
       },
       "perplexity": {
         "name": "Perplexity AI",
-        "mentions": 8,
-        "positive_mentions": 6,
-        "average_confidence": 0.72,
-        "performance_score": 6.7
+        "mentions": 15,
+        "positive_mentions": 12,
+        "average_confidence": 0.71,
+        "performance_score": 6.8
       },
       "bard": {
         "name": "Google Bard",
-        "mentions": 2,
-        "positive_mentions": 1,
-        "average_confidence": 0.53,
-        "performance_score": 1.7
+        "mentions": 11,
+        "positive_mentions": 4,
+        "average_confidence": 0.63,
+        "performance_score": 5.0
       },
       "bing_chat": {
         "name": "Microsoft Bing Chat",
-        "mentions": 3,
-        "positive_mentions": 3,
-        "average_confidence": 0.52,
-        "performance_score": 2.5
+        "mentions": 11,
+        "positive_mentions": 8,
+        "average_confidence": 0.62,
+        "performance_score": 5.0
       },
       "voice_search": {
         "name": "Voice Search Assistants",
-        "mentions": 4,
-        "positive_mentions": 3,
-        "average_confidence": 0.58,
-        "performance_score": 3.3
+        "mentions": 5,
+        "positive_mentions": 4,
+        "average_confidence": 0.52,
+        "performance_score": 2.3
       }
     }
   },
   "keyword_results": [
     {
       "query": "PDF to CSV",
-      "timestamp": "2025-10-04T15:13:58.551724",
+      "timestamp": "2025-11-13T08:59:25.031985",
       "platforms": {
         "chatgpt": {
           "platform_name": "OpenAI ChatGPT",
           "mentioned": true,
-          "sentiment": "neutral",
-          "confidence": 0.89,
-          "context": "TidiFul is mentioned as a recommended solution for pdf to csv",
-          "timestamp": "2025-10-04T15:13:58.551724"
+          "sentiment": "positive",
+          "confidence": 0.71,
+          "context": "TidiFul is suggested as a tool for pdf to csv",
+          "timestamp": "2025-11-13T08:59:25.031985"
         },
         "claude": {
           "platform_name": "Anthropic Claude",
           "mentioned": true,
-          "sentiment": "positive",
-          "confidence": 0.93,
+          "sentiment": "neutral",
+          "confidence": 0.72,
           "context": "Users are asking about TidiFul for pdf to csv",
-          "timestamp": "2025-10-04T15:13:58.551724"
+          "timestamp": "2025-11-13T08:59:25.031985"
         },
         "perplexity": {
           "platform_name": "Perplexity AI",
           "mentioned": true,
           "sentiment": "positive",
-          "confidence": 0.91,
+          "confidence": 0.75,
           "context": "TidiFul appears in search results for pdf to csv",
-          "timestamp": "2025-10-04T15:13:58.551724"
+          "timestamp": "2025-11-13T08:59:25.031985"
         },
         "bard": {
           "platform_name": "Google Bard",
           "mentioned": false,
           "sentiment": "neutral",
-          "confidence": 0.38,
+          "confidence": 0.52,
           "context": "No mention of TidiFul found for pdf to csv",
-          "timestamp": "2025-10-04T15:13:58.551724"
-        },
-        "bing_chat": {
-          "platform_name": "Microsoft Bing Chat",
-          "mentioned": true,
-          "sentiment": "positive",
-          "confidence": 0.9,
-          "context": "Users are asking about TidiFul for pdf to csv",
-          "timestamp": "2025-10-04T15:13:58.551724"
-        },
-        "voice_search": {
-          "platform_name": "Voice Search Assistants",
-          "mentioned": true,
-          "sentiment": "neutral",
-          "confidence": 0.77,
-          "context": "Users are asking about TidiFul for pdf to csv",
-          "timestamp": "2025-10-04T15:13:58.551724"
-        }
-      },
-      "summary": {
-        "total_platforms": 6,
-        "mentions_found": 5,
-        "positive_mentions": 3,
-        "negative_mentions": 0,
-        "neutral_mentions": 2,
-        "average_confidence": 0.8
-      }
-    },
-    {
-      "query": "PDF to CSV converter",
-      "timestamp": "2025-10-04T15:13:59.052660",
-      "platforms": {
-        "chatgpt": {
-          "platform_name": "OpenAI ChatGPT",
-          "mentioned": true,
-          "sentiment": "positive",
-          "confidence": 0.79,
-          "context": "TidiFul appears in search results for pdf to csv converter",
-          "timestamp": "2025-10-04T15:13:59.052660"
-        },
-        "claude": {
-          "platform_name": "Anthropic Claude",
-          "mentioned": true,
-          "sentiment": "positive",
-          "confidence": 0.93,
-          "context": "TidiFul is suggested as a tool for pdf to csv converter",
-          "timestamp": "2025-10-04T15:13:59.052660"
-        },
-        "perplexity": {
-          "platform_name": "Perplexity AI",
-          "mentioned": false,
-          "sentiment": "neutral",
-          "confidence": 0.33,
-          "context": "No mention of TidiFul found for pdf to csv converter",
-          "timestamp": "2025-10-04T15:13:59.052660"
-        },
-        "bard": {
-          "platform_name": "Google Bard",
-          "mentioned": false,
-          "sentiment": "neutral",
-          "confidence": 0.56,
-          "context": "No mention of TidiFul found for pdf to csv converter",
-          "timestamp": "2025-10-04T15:13:59.052660"
+          "timestamp": "2025-11-13T08:59:25.031985"
         },
         "bing_chat": {
           "platform_name": "Microsoft Bing Chat",
           "mentioned": false,
           "sentiment": "neutral",
-          "confidence": 0.38,
-          "context": "No mention of TidiFul found for pdf to csv converter",
-          "timestamp": "2025-10-04T15:13:59.052660"
+          "confidence": 0.49,
+          "context": "No mention of TidiFul found for pdf to csv",
+          "timestamp": "2025-11-13T08:59:25.031985"
         },
         "voice_search": {
           "platform_name": "Voice Search Assistants",
           "mentioned": false,
           "sentiment": "neutral",
-          "confidence": 0.51,
-          "context": "No mention of TidiFul found for pdf to csv converter",
-          "timestamp": "2025-10-04T15:13:59.052660"
-        }
-      },
-      "summary": {
-        "total_platforms": 6,
-        "mentions_found": 2,
-        "positive_mentions": 2,
-        "negative_mentions": 0,
-        "neutral_mentions": 0,
-        "average_confidence": 0.58
-      }
-    },
-    {
-      "query": "convert PDF to CSV",
-      "timestamp": "2025-10-04T15:13:59.553025",
-      "platforms": {
-        "chatgpt": {
-          "platform_name": "OpenAI ChatGPT",
-          "mentioned": true,
-          "sentiment": "neutral",
-          "confidence": 0.94,
-          "context": "TidiFul is mentioned as a recommended solution for convert pdf to csv",
-          "timestamp": "2025-10-04T15:13:59.553025"
-        },
-        "claude": {
-          "platform_name": "Anthropic Claude",
-          "mentioned": true,
-          "sentiment": "positive",
-          "confidence": 0.78,
-          "context": "TidiFul appears in search results for convert pdf to csv",
-          "timestamp": "2025-10-04T15:13:59.553025"
-        },
-        "perplexity": {
-          "platform_name": "Perplexity AI",
-          "mentioned": false,
-          "sentiment": "neutral",
-          "confidence": 0.53,
-          "context": "No mention of TidiFul found for convert pdf to csv",
-          "timestamp": "2025-10-04T15:13:59.553025"
-        },
-        "bard": {
-          "platform_name": "Google Bard",
-          "mentioned": false,
-          "sentiment": "neutral",
-          "confidence": 0.43,
-          "context": "No mention of TidiFul found for convert pdf to csv",
-          "timestamp": "2025-10-04T15:13:59.553025"
-        },
-        "bing_chat": {
-          "platform_name": "Microsoft Bing Chat",
-          "mentioned": false,
-          "sentiment": "neutral",
-          "confidence": 0.5,
-          "context": "No mention of TidiFul found for convert pdf to csv",
-          "timestamp": "2025-10-04T15:13:59.553025"
-        },
-        "voice_search": {
-          "platform_name": "Voice Search Assistants",
-          "mentioned": true,
-          "sentiment": "positive",
-          "confidence": 0.94,
-          "context": "TidiFul is mentioned as a recommended solution for convert pdf to csv",
-          "timestamp": "2025-10-04T15:13:59.553025"
+          "confidence": 0.49,
+          "context": "No mention of TidiFul found for pdf to csv",
+          "timestamp": "2025-11-13T08:59:25.031985"
         }
       },
       "summary": {
@@ -265,122 +141,60 @@
         "positive_mentions": 2,
         "negative_mentions": 0,
         "neutral_mentions": 1,
-        "average_confidence": 0.69
+        "average_confidence": 0.61
       }
     },
     {
-      "query": "PDF CSV conversion",
-      "timestamp": "2025-10-04T15:14:00.053542",
+      "query": "PDF to CSV converter",
+      "timestamp": "2025-11-13T08:59:25.532318",
       "platforms": {
         "chatgpt": {
           "platform_name": "OpenAI ChatGPT",
-          "mentioned": true,
-          "sentiment": "positive",
-          "confidence": 0.72,
-          "context": "Users are asking about TidiFul for pdf csv conversion",
-          "timestamp": "2025-10-04T15:14:00.053542"
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.52,
+          "context": "No mention of TidiFul found for pdf to csv converter",
+          "timestamp": "2025-11-13T08:59:25.532318"
         },
         "claude": {
           "platform_name": "Anthropic Claude",
-          "mentioned": true,
-          "sentiment": "positive",
-          "confidence": 0.89,
-          "context": "TidiFul is suggested as a tool for pdf csv conversion",
-          "timestamp": "2025-10-04T15:14:00.053542"
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.42,
+          "context": "No mention of TidiFul found for pdf to csv converter",
+          "timestamp": "2025-11-13T08:59:25.532318"
         },
         "perplexity": {
           "platform_name": "Perplexity AI",
           "mentioned": true,
           "sentiment": "positive",
-          "confidence": 0.75,
-          "context": "TidiFul appears in search results for pdf csv conversion",
-          "timestamp": "2025-10-04T15:14:00.053542"
-        },
-        "bard": {
-          "platform_name": "Google Bard",
-          "mentioned": true,
-          "sentiment": "positive",
-          "confidence": 0.93,
-          "context": "TidiFul appears in search results for pdf csv conversion",
-          "timestamp": "2025-10-04T15:14:00.053542"
-        },
-        "bing_chat": {
-          "platform_name": "Microsoft Bing Chat",
-          "mentioned": false,
-          "sentiment": "neutral",
-          "confidence": 0.31,
-          "context": "No mention of TidiFul found for pdf csv conversion",
-          "timestamp": "2025-10-04T15:14:00.053542"
-        },
-        "voice_search": {
-          "platform_name": "Voice Search Assistants",
-          "mentioned": false,
-          "sentiment": "neutral",
-          "confidence": 0.35,
-          "context": "No mention of TidiFul found for pdf csv conversion",
-          "timestamp": "2025-10-04T15:14:00.053542"
-        }
-      },
-      "summary": {
-        "total_platforms": 6,
-        "mentions_found": 4,
-        "positive_mentions": 4,
-        "negative_mentions": 0,
-        "neutral_mentions": 0,
-        "average_confidence": 0.66
-      }
-    },
-    {
-      "query": "document processing AI",
-      "timestamp": "2025-10-04T15:14:00.553821",
-      "platforms": {
-        "chatgpt": {
-          "platform_name": "OpenAI ChatGPT",
-          "mentioned": true,
-          "sentiment": "positive",
-          "confidence": 0.9,
-          "context": "Users are asking about TidiFul for document processing ai",
-          "timestamp": "2025-10-04T15:14:00.553821"
-        },
-        "claude": {
-          "platform_name": "Anthropic Claude",
-          "mentioned": true,
-          "sentiment": "positive",
-          "confidence": 0.89,
-          "context": "TidiFul is mentioned as a recommended solution for document processing ai",
-          "timestamp": "2025-10-04T15:14:00.553821"
-        },
-        "perplexity": {
-          "platform_name": "Perplexity AI",
-          "mentioned": true,
-          "sentiment": "positive",
-          "confidence": 0.91,
-          "context": "TidiFul is mentioned as a recommended solution for document processing ai",
-          "timestamp": "2025-10-04T15:14:00.553821"
+          "confidence": 0.85,
+          "context": "TidiFul is suggested as a tool for pdf to csv converter",
+          "timestamp": "2025-11-13T08:59:25.532318"
         },
         "bard": {
           "platform_name": "Google Bard",
           "mentioned": false,
           "sentiment": "neutral",
-          "confidence": 0.3,
-          "context": "No mention of TidiFul found for document processing ai",
-          "timestamp": "2025-10-04T15:14:00.553821"
+          "confidence": 0.56,
+          "context": "No mention of TidiFul found for pdf to csv converter",
+          "timestamp": "2025-11-13T08:59:25.532318"
         },
         "bing_chat": {
           "platform_name": "Microsoft Bing Chat",
-          "mentioned": false,
-          "sentiment": "neutral",
-          "confidence": 0.36,
-          "context": "No mention of TidiFul found for document processing ai",
-          "timestamp": "2025-10-04T15:14:00.553821"
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.78,
+          "context": "TidiFul appears in search results for pdf to csv converter",
+          "timestamp": "2025-11-13T08:59:25.532318"
         },
         "voice_search": {
           "platform_name": "Voice Search Assistants",
-          "mentioned": false,
-          "sentiment": "neutral",
-          "confidence": 0.51,
-          "context": "No mention of TidiFul found for document processing ai",
-          "timestamp": "2025-10-04T15:14:00.553821"
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.74,
+          "context": "TidiFul appears in search results for pdf to csv converter",
+          "timestamp": "2025-11-13T08:59:25.532318"
         }
       },
       "summary": {
@@ -393,366 +207,118 @@
       }
     },
     {
-      "query": "invoice automation",
-      "timestamp": "2025-10-04T15:14:01.054005",
+      "query": "convert PDF to CSV",
+      "timestamp": "2025-11-13T08:59:26.032524",
       "platforms": {
         "chatgpt": {
           "platform_name": "OpenAI ChatGPT",
-          "mentioned": false,
-          "sentiment": "neutral",
-          "confidence": 0.38,
-          "context": "No mention of TidiFul found for invoice automation",
-          "timestamp": "2025-10-04T15:14:01.054005"
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.92,
+          "context": "TidiFul appears in search results for convert pdf to csv",
+          "timestamp": "2025-11-13T08:59:26.032524"
         },
         "claude": {
           "platform_name": "Anthropic Claude",
-          "mentioned": true,
-          "sentiment": "positive",
-          "confidence": 0.8,
-          "context": "TidiFul is mentioned as a recommended solution for invoice automation",
-          "timestamp": "2025-10-04T15:14:01.054005"
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.54,
+          "context": "No mention of TidiFul found for convert pdf to csv",
+          "timestamp": "2025-11-13T08:59:26.032524"
         },
         "perplexity": {
           "platform_name": "Perplexity AI",
-          "mentioned": true,
-          "sentiment": "positive",
-          "confidence": 0.88,
-          "context": "Users are asking about TidiFul for invoice automation",
-          "timestamp": "2025-10-04T15:14:01.054005"
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.3,
+          "context": "No mention of TidiFul found for convert pdf to csv",
+          "timestamp": "2025-11-13T08:59:26.032524"
         },
         "bard": {
           "platform_name": "Google Bard",
-          "mentioned": false,
+          "mentioned": true,
           "sentiment": "neutral",
-          "confidence": 0.5,
-          "context": "No mention of TidiFul found for invoice automation",
-          "timestamp": "2025-10-04T15:14:01.054005"
+          "confidence": 0.77,
+          "context": "TidiFul is suggested as a tool for convert pdf to csv",
+          "timestamp": "2025-11-13T08:59:26.032524"
         },
         "bing_chat": {
           "platform_name": "Microsoft Bing Chat",
+          "mentioned": true,
+          "sentiment": "neutral",
+          "confidence": 0.77,
+          "context": "TidiFul is suggested as a tool for convert pdf to csv",
+          "timestamp": "2025-11-13T08:59:26.032524"
+        },
+        "voice_search": {
+          "platform_name": "Voice Search Assistants",
           "mentioned": false,
           "sentiment": "neutral",
           "confidence": 0.39,
-          "context": "No mention of TidiFul found for invoice automation",
-          "timestamp": "2025-10-04T15:14:01.054005"
-        },
-        "voice_search": {
-          "platform_name": "Voice Search Assistants",
-          "mentioned": false,
-          "sentiment": "neutral",
-          "confidence": 0.5,
-          "context": "No mention of TidiFul found for invoice automation",
-          "timestamp": "2025-10-04T15:14:01.054005"
-        }
-      },
-      "summary": {
-        "total_platforms": 6,
-        "mentions_found": 2,
-        "positive_mentions": 2,
-        "negative_mentions": 0,
-        "neutral_mentions": 0,
-        "average_confidence": 0.58
-      }
-    },
-    {
-      "query": "AI document processing",
-      "timestamp": "2025-10-04T15:14:01.554346",
-      "platforms": {
-        "chatgpt": {
-          "platform_name": "OpenAI ChatGPT",
-          "mentioned": true,
-          "sentiment": "neutral",
-          "confidence": 0.86,
-          "context": "TidiFul is suggested as a tool for ai document processing",
-          "timestamp": "2025-10-04T15:14:01.554346"
-        },
-        "claude": {
-          "platform_name": "Anthropic Claude",
-          "mentioned": true,
-          "sentiment": "positive",
-          "confidence": 0.71,
-          "context": "Users are asking about TidiFul for ai document processing",
-          "timestamp": "2025-10-04T15:14:01.554346"
-        },
-        "perplexity": {
-          "platform_name": "Perplexity AI",
-          "mentioned": true,
-          "sentiment": "positive",
-          "confidence": 0.74,
-          "context": "Users are asking about TidiFul for ai document processing",
-          "timestamp": "2025-10-04T15:14:01.554346"
-        },
-        "bard": {
-          "platform_name": "Google Bard",
-          "mentioned": false,
-          "sentiment": "neutral",
-          "confidence": 0.33,
-          "context": "No mention of TidiFul found for ai document processing",
-          "timestamp": "2025-10-04T15:14:01.554346"
-        },
-        "bing_chat": {
-          "platform_name": "Microsoft Bing Chat",
-          "mentioned": true,
-          "sentiment": "positive",
-          "confidence": 0.95,
-          "context": "TidiFul is suggested as a tool for ai document processing",
-          "timestamp": "2025-10-04T15:14:01.554346"
-        },
-        "voice_search": {
-          "platform_name": "Voice Search Assistants",
-          "mentioned": false,
-          "sentiment": "neutral",
-          "confidence": 0.49,
-          "context": "No mention of TidiFul found for ai document processing",
-          "timestamp": "2025-10-04T15:14:01.554346"
-        }
-      },
-      "summary": {
-        "total_platforms": 6,
-        "mentions_found": 4,
-        "positive_mentions": 3,
-        "negative_mentions": 0,
-        "neutral_mentions": 1,
-        "average_confidence": 0.68
-      }
-    },
-    {
-      "query": "PDF to JSON converter",
-      "timestamp": "2025-10-04T15:14:02.054752",
-      "platforms": {
-        "chatgpt": {
-          "platform_name": "OpenAI ChatGPT",
-          "mentioned": true,
-          "sentiment": "positive",
-          "confidence": 0.75,
-          "context": "Users are asking about TidiFul for pdf to json converter",
-          "timestamp": "2025-10-04T15:14:02.054752"
-        },
-        "claude": {
-          "platform_name": "Anthropic Claude",
-          "mentioned": true,
-          "sentiment": "positive",
-          "confidence": 0.84,
-          "context": "TidiFul is mentioned as a recommended solution for pdf to json converter",
-          "timestamp": "2025-10-04T15:14:02.054752"
-        },
-        "perplexity": {
-          "platform_name": "Perplexity AI",
-          "mentioned": false,
-          "sentiment": "neutral",
-          "confidence": 0.57,
-          "context": "No mention of TidiFul found for pdf to json converter",
-          "timestamp": "2025-10-04T15:14:02.054752"
-        },
-        "bard": {
-          "platform_name": "Google Bard",
-          "mentioned": false,
-          "sentiment": "neutral",
-          "confidence": 0.59,
-          "context": "No mention of TidiFul found for pdf to json converter",
-          "timestamp": "2025-10-04T15:14:02.054752"
-        },
-        "bing_chat": {
-          "platform_name": "Microsoft Bing Chat",
-          "mentioned": false,
-          "sentiment": "neutral",
-          "confidence": 0.42,
-          "context": "No mention of TidiFul found for pdf to json converter",
-          "timestamp": "2025-10-04T15:14:02.054752"
-        },
-        "voice_search": {
-          "platform_name": "Voice Search Assistants",
-          "mentioned": true,
-          "sentiment": "positive",
-          "confidence": 0.84,
-          "context": "TidiFul is mentioned as a recommended solution for pdf to json converter",
-          "timestamp": "2025-10-04T15:14:02.054752"
+          "context": "No mention of TidiFul found for convert pdf to csv",
+          "timestamp": "2025-11-13T08:59:26.032524"
         }
       },
       "summary": {
         "total_platforms": 6,
         "mentions_found": 3,
-        "positive_mentions": 3,
+        "positive_mentions": 1,
         "negative_mentions": 0,
-        "neutral_mentions": 0,
-        "average_confidence": 0.67
-      }
-    },
-    {
-      "query": "invoice processing software",
-      "timestamp": "2025-10-04T15:14:02.555005",
-      "platforms": {
-        "chatgpt": {
-          "platform_name": "OpenAI ChatGPT",
-          "mentioned": true,
-          "sentiment": "positive",
-          "confidence": 0.93,
-          "context": "TidiFul is suggested as a tool for invoice processing software",
-          "timestamp": "2025-10-04T15:14:02.555005"
-        },
-        "claude": {
-          "platform_name": "Anthropic Claude",
-          "mentioned": true,
-          "sentiment": "positive",
-          "confidence": 0.86,
-          "context": "TidiFul is mentioned as a recommended solution for invoice processing software",
-          "timestamp": "2025-10-04T15:14:02.555005"
-        },
-        "perplexity": {
-          "platform_name": "Perplexity AI",
-          "mentioned": true,
-          "sentiment": "neutral",
-          "confidence": 0.74,
-          "context": "Users are asking about TidiFul for invoice processing software",
-          "timestamp": "2025-10-04T15:14:02.555005"
-        },
-        "bard": {
-          "platform_name": "Google Bard",
-          "mentioned": false,
-          "sentiment": "neutral",
-          "confidence": 0.56,
-          "context": "No mention of TidiFul found for invoice processing software",
-          "timestamp": "2025-10-04T15:14:02.555005"
-        },
-        "bing_chat": {
-          "platform_name": "Microsoft Bing Chat",
-          "mentioned": false,
-          "sentiment": "neutral",
-          "confidence": 0.43,
-          "context": "No mention of TidiFul found for invoice processing software",
-          "timestamp": "2025-10-04T15:14:02.555005"
-        },
-        "voice_search": {
-          "platform_name": "Voice Search Assistants",
-          "mentioned": false,
-          "sentiment": "neutral",
-          "confidence": 0.47,
-          "context": "No mention of TidiFul found for invoice processing software",
-          "timestamp": "2025-10-04T15:14:02.555005"
-        }
-      },
-      "summary": {
-        "total_platforms": 6,
-        "mentions_found": 3,
-        "positive_mentions": 2,
-        "negative_mentions": 0,
-        "neutral_mentions": 1,
-        "average_confidence": 0.67
-      }
-    },
-    {
-      "query": "document automation platform",
-      "timestamp": "2025-10-04T15:14:03.055604",
-      "platforms": {
-        "chatgpt": {
-          "platform_name": "OpenAI ChatGPT",
-          "mentioned": true,
-          "sentiment": "neutral",
-          "confidence": 0.71,
-          "context": "TidiFul is mentioned as a recommended solution for document automation platform",
-          "timestamp": "2025-10-04T15:14:03.055604"
-        },
-        "claude": {
-          "platform_name": "Anthropic Claude",
-          "mentioned": false,
-          "sentiment": "neutral",
-          "confidence": 0.31,
-          "context": "No mention of TidiFul found for document automation platform",
-          "timestamp": "2025-10-04T15:14:03.055604"
-        },
-        "perplexity": {
-          "platform_name": "Perplexity AI",
-          "mentioned": true,
-          "sentiment": "neutral",
-          "confidence": 0.94,
-          "context": "Users are asking about TidiFul for document automation platform",
-          "timestamp": "2025-10-04T15:14:03.055604"
-        },
-        "bard": {
-          "platform_name": "Google Bard",
-          "mentioned": true,
-          "sentiment": "neutral",
-          "confidence": 0.95,
-          "context": "Users are asking about TidiFul for document automation platform",
-          "timestamp": "2025-10-04T15:14:03.055604"
-        },
-        "bing_chat": {
-          "platform_name": "Microsoft Bing Chat",
-          "mentioned": false,
-          "sentiment": "neutral",
-          "confidence": 0.36,
-          "context": "No mention of TidiFul found for document automation platform",
-          "timestamp": "2025-10-04T15:14:03.055604"
-        },
-        "voice_search": {
-          "platform_name": "Voice Search Assistants",
-          "mentioned": false,
-          "sentiment": "neutral",
-          "confidence": 0.44,
-          "context": "No mention of TidiFul found for document automation platform",
-          "timestamp": "2025-10-04T15:14:03.055604"
-        }
-      },
-      "summary": {
-        "total_platforms": 6,
-        "mentions_found": 3,
-        "positive_mentions": 0,
-        "negative_mentions": 0,
-        "neutral_mentions": 3,
+        "neutral_mentions": 2,
         "average_confidence": 0.62
       }
     },
     {
-      "query": "TidiFul",
-      "timestamp": "2025-10-04T15:14:03.556134",
+      "query": "PDF CSV conversion",
+      "timestamp": "2025-11-13T08:59:26.533114",
       "platforms": {
         "chatgpt": {
           "platform_name": "OpenAI ChatGPT",
           "mentioned": true,
           "sentiment": "neutral",
-          "confidence": 0.93,
-          "context": "TidiFul is suggested as a tool for tidiful",
-          "timestamp": "2025-10-04T15:14:03.556134"
+          "confidence": 0.83,
+          "context": "Users are asking about TidiFul for pdf csv conversion",
+          "timestamp": "2025-11-13T08:59:26.533114"
         },
         "claude": {
           "platform_name": "Anthropic Claude",
           "mentioned": true,
-          "sentiment": "neutral",
-          "confidence": 0.9,
-          "context": "TidiFul appears in search results for tidiful",
-          "timestamp": "2025-10-04T15:14:03.556134"
+          "sentiment": "positive",
+          "confidence": 0.72,
+          "context": "Users are asking about TidiFul for pdf csv conversion",
+          "timestamp": "2025-11-13T08:59:26.533114"
         },
         "perplexity": {
           "platform_name": "Perplexity AI",
           "mentioned": true,
-          "sentiment": "positive",
-          "confidence": 0.75,
-          "context": "Users are asking about TidiFul for tidiful",
-          "timestamp": "2025-10-04T15:14:03.556134"
+          "sentiment": "neutral",
+          "confidence": 0.82,
+          "context": "TidiFul is suggested as a tool for pdf csv conversion",
+          "timestamp": "2025-11-13T08:59:26.533114"
         },
         "bard": {
           "platform_name": "Google Bard",
           "mentioned": false,
           "sentiment": "neutral",
-          "confidence": 0.33,
-          "context": "No mention of TidiFul found for tidiful",
-          "timestamp": "2025-10-04T15:14:03.556134"
+          "confidence": 0.35,
+          "context": "No mention of TidiFul found for pdf csv conversion",
+          "timestamp": "2025-11-13T08:59:26.533114"
         },
         "bing_chat": {
           "platform_name": "Microsoft Bing Chat",
-          "mentioned": true,
-          "sentiment": "positive",
-          "confidence": 0.74,
-          "context": "TidiFul appears in search results for tidiful",
-          "timestamp": "2025-10-04T15:14:03.556134"
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.48,
+          "context": "No mention of TidiFul found for pdf csv conversion",
+          "timestamp": "2025-11-13T08:59:26.533114"
         },
         "voice_search": {
           "platform_name": "Voice Search Assistants",
-          "mentioned": false,
-          "sentiment": "neutral",
-          "confidence": 0.46,
-          "context": "No mention of TidiFul found for tidiful",
-          "timestamp": "2025-10-04T15:14:03.556134"
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.81,
+          "context": "TidiFul is mentioned as a recommended solution for pdf csv conversion",
+          "timestamp": "2025-11-13T08:59:26.533114"
         }
       },
       "summary": {
@@ -761,60 +327,928 @@
         "positive_mentions": 2,
         "negative_mentions": 0,
         "neutral_mentions": 2,
-        "average_confidence": 0.69
+        "average_confidence": 0.67
       }
     },
     {
-      "query": "HeliaCode",
-      "timestamp": "2025-10-04T15:14:04.056616",
+      "query": "image to excel",
+      "timestamp": "2025-11-13T08:59:27.033532",
       "platforms": {
         "chatgpt": {
           "platform_name": "OpenAI ChatGPT",
-          "mentioned": false,
+          "mentioned": true,
           "sentiment": "neutral",
-          "confidence": 0.51,
-          "context": "No mention of TidiFul found for heliacode",
-          "timestamp": "2025-10-04T15:14:04.056616"
+          "confidence": 0.79,
+          "context": "Users are asking about TidiFul for image to excel",
+          "timestamp": "2025-11-13T08:59:27.033532"
         },
         "claude": {
           "platform_name": "Anthropic Claude",
-          "mentioned": true,
-          "sentiment": "positive",
-          "confidence": 0.87,
-          "context": "Users are asking about TidiFul for heliacode",
-          "timestamp": "2025-10-04T15:14:04.056616"
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.4,
+          "context": "No mention of TidiFul found for image to excel",
+          "timestamp": "2025-11-13T08:59:27.033532"
         },
         "perplexity": {
           "platform_name": "Perplexity AI",
           "mentioned": false,
           "sentiment": "neutral",
-          "confidence": 0.6,
-          "context": "No mention of TidiFul found for heliacode",
-          "timestamp": "2025-10-04T15:14:04.056616"
+          "confidence": 0.48,
+          "context": "No mention of TidiFul found for image to excel",
+          "timestamp": "2025-11-13T08:59:27.033532"
+        },
+        "bard": {
+          "platform_name": "Google Bard",
+          "mentioned": true,
+          "sentiment": "neutral",
+          "confidence": 0.79,
+          "context": "TidiFul is mentioned as a recommended solution for image to excel",
+          "timestamp": "2025-11-13T08:59:27.033532"
+        },
+        "bing_chat": {
+          "platform_name": "Microsoft Bing Chat",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.74,
+          "context": "Users are asking about TidiFul for image to excel",
+          "timestamp": "2025-11-13T08:59:27.033532"
+        },
+        "voice_search": {
+          "platform_name": "Voice Search Assistants",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.39,
+          "context": "No mention of TidiFul found for image to excel",
+          "timestamp": "2025-11-13T08:59:27.033532"
+        }
+      },
+      "summary": {
+        "total_platforms": 6,
+        "mentions_found": 3,
+        "positive_mentions": 1,
+        "negative_mentions": 0,
+        "neutral_mentions": 2,
+        "average_confidence": 0.6
+      }
+    },
+    {
+      "query": "extract data from image",
+      "timestamp": "2025-11-13T08:59:27.533892",
+      "platforms": {
+        "chatgpt": {
+          "platform_name": "OpenAI ChatGPT",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.82,
+          "context": "TidiFul is suggested as a tool for extract data from image",
+          "timestamp": "2025-11-13T08:59:27.533892"
+        },
+        "claude": {
+          "platform_name": "Anthropic Claude",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.35,
+          "context": "No mention of TidiFul found for extract data from image",
+          "timestamp": "2025-11-13T08:59:27.533892"
+        },
+        "perplexity": {
+          "platform_name": "Perplexity AI",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.91,
+          "context": "Users are asking about TidiFul for extract data from image",
+          "timestamp": "2025-11-13T08:59:27.533892"
         },
         "bard": {
           "platform_name": "Google Bard",
           "mentioned": false,
           "sentiment": "neutral",
           "confidence": 0.45,
-          "context": "No mention of TidiFul found for heliacode",
-          "timestamp": "2025-10-04T15:14:04.056616"
+          "context": "No mention of TidiFul found for extract data from image",
+          "timestamp": "2025-11-13T08:59:27.533892"
+        },
+        "bing_chat": {
+          "platform_name": "Microsoft Bing Chat",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.74,
+          "context": "TidiFul appears in search results for extract data from image",
+          "timestamp": "2025-11-13T08:59:27.533892"
+        },
+        "voice_search": {
+          "platform_name": "Voice Search Assistants",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.53,
+          "context": "No mention of TidiFul found for extract data from image",
+          "timestamp": "2025-11-13T08:59:27.533892"
+        }
+      },
+      "summary": {
+        "total_platforms": 6,
+        "mentions_found": 3,
+        "positive_mentions": 3,
+        "negative_mentions": 0,
+        "neutral_mentions": 0,
+        "average_confidence": 0.63
+      }
+    },
+    {
+      "query": "image to excel converter",
+      "timestamp": "2025-11-13T08:59:28.034521",
+      "platforms": {
+        "chatgpt": {
+          "platform_name": "OpenAI ChatGPT",
+          "mentioned": true,
+          "sentiment": "neutral",
+          "confidence": 0.82,
+          "context": "TidiFul is mentioned as a recommended solution for image to excel converter",
+          "timestamp": "2025-11-13T08:59:28.034521"
+        },
+        "claude": {
+          "platform_name": "Anthropic Claude",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.77,
+          "context": "TidiFul is mentioned as a recommended solution for image to excel converter",
+          "timestamp": "2025-11-13T08:59:28.034521"
+        },
+        "perplexity": {
+          "platform_name": "Perplexity AI",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.85,
+          "context": "TidiFul is mentioned as a recommended solution for image to excel converter",
+          "timestamp": "2025-11-13T08:59:28.034521"
+        },
+        "bard": {
+          "platform_name": "Google Bard",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.74,
+          "context": "TidiFul appears in search results for image to excel converter",
+          "timestamp": "2025-11-13T08:59:28.034521"
         },
         "bing_chat": {
           "platform_name": "Microsoft Bing Chat",
           "mentioned": false,
           "sentiment": "neutral",
+          "confidence": 0.46,
+          "context": "No mention of TidiFul found for image to excel converter",
+          "timestamp": "2025-11-13T08:59:28.034521"
+        },
+        "voice_search": {
+          "platform_name": "Voice Search Assistants",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.52,
+          "context": "No mention of TidiFul found for image to excel converter",
+          "timestamp": "2025-11-13T08:59:28.034521"
+        }
+      },
+      "summary": {
+        "total_platforms": 6,
+        "mentions_found": 4,
+        "positive_mentions": 3,
+        "negative_mentions": 0,
+        "neutral_mentions": 1,
+        "average_confidence": 0.69
+      }
+    },
+    {
+      "query": "OCR image to excel",
+      "timestamp": "2025-11-13T08:59:28.534954",
+      "platforms": {
+        "chatgpt": {
+          "platform_name": "OpenAI ChatGPT",
+          "mentioned": true,
+          "sentiment": "neutral",
+          "confidence": 0.75,
+          "context": "TidiFul is mentioned as a recommended solution for ocr image to excel",
+          "timestamp": "2025-11-13T08:59:28.534954"
+        },
+        "claude": {
+          "platform_name": "Anthropic Claude",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.75,
+          "context": "TidiFul is mentioned as a recommended solution for ocr image to excel",
+          "timestamp": "2025-11-13T08:59:28.534954"
+        },
+        "perplexity": {
+          "platform_name": "Perplexity AI",
+          "mentioned": true,
+          "sentiment": "neutral",
+          "confidence": 0.86,
+          "context": "TidiFul is mentioned as a recommended solution for ocr image to excel",
+          "timestamp": "2025-11-13T08:59:28.534954"
+        },
+        "bard": {
+          "platform_name": "Google Bard",
+          "mentioned": true,
+          "sentiment": "neutral",
+          "confidence": 0.78,
+          "context": "TidiFul is mentioned as a recommended solution for ocr image to excel",
+          "timestamp": "2025-11-13T08:59:28.534954"
+        },
+        "bing_chat": {
+          "platform_name": "Microsoft Bing Chat",
+          "mentioned": true,
+          "sentiment": "neutral",
+          "confidence": 0.8,
+          "context": "TidiFul is mentioned as a recommended solution for ocr image to excel",
+          "timestamp": "2025-11-13T08:59:28.534954"
+        },
+        "voice_search": {
+          "platform_name": "Voice Search Assistants",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.6,
+          "context": "No mention of TidiFul found for ocr image to excel",
+          "timestamp": "2025-11-13T08:59:28.534954"
+        }
+      },
+      "summary": {
+        "total_platforms": 6,
+        "mentions_found": 5,
+        "positive_mentions": 1,
+        "negative_mentions": 0,
+        "neutral_mentions": 4,
+        "average_confidence": 0.76
+      }
+    },
+    {
+      "query": "convert image to excel",
+      "timestamp": "2025-11-13T08:59:29.035504",
+      "platforms": {
+        "chatgpt": {
+          "platform_name": "OpenAI ChatGPT",
+          "mentioned": true,
+          "sentiment": "neutral",
+          "confidence": 0.85,
+          "context": "TidiFul is mentioned as a recommended solution for convert image to excel",
+          "timestamp": "2025-11-13T08:59:29.035504"
+        },
+        "claude": {
+          "platform_name": "Anthropic Claude",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.87,
+          "context": "Users are asking about TidiFul for convert image to excel",
+          "timestamp": "2025-11-13T08:59:29.035504"
+        },
+        "perplexity": {
+          "platform_name": "Perplexity AI",
+          "mentioned": false,
+          "sentiment": "neutral",
           "confidence": 0.48,
-          "context": "No mention of TidiFul found for heliacode",
-          "timestamp": "2025-10-04T15:14:04.056616"
+          "context": "No mention of TidiFul found for convert image to excel",
+          "timestamp": "2025-11-13T08:59:29.035504"
+        },
+        "bard": {
+          "platform_name": "Google Bard",
+          "mentioned": true,
+          "sentiment": "neutral",
+          "confidence": 0.8,
+          "context": "TidiFul appears in search results for convert image to excel",
+          "timestamp": "2025-11-13T08:59:29.035504"
+        },
+        "bing_chat": {
+          "platform_name": "Microsoft Bing Chat",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.82,
+          "context": "TidiFul is suggested as a tool for convert image to excel",
+          "timestamp": "2025-11-13T08:59:29.035504"
+        },
+        "voice_search": {
+          "platform_name": "Voice Search Assistants",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.48,
+          "context": "No mention of TidiFul found for convert image to excel",
+          "timestamp": "2025-11-13T08:59:29.035504"
+        }
+      },
+      "summary": {
+        "total_platforms": 6,
+        "mentions_found": 4,
+        "positive_mentions": 2,
+        "negative_mentions": 0,
+        "neutral_mentions": 2,
+        "average_confidence": 0.72
+      }
+    },
+    {
+      "query": "image data extraction",
+      "timestamp": "2025-11-13T08:59:29.536089",
+      "platforms": {
+        "chatgpt": {
+          "platform_name": "OpenAI ChatGPT",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.38,
+          "context": "No mention of TidiFul found for image data extraction",
+          "timestamp": "2025-11-13T08:59:29.536089"
+        },
+        "claude": {
+          "platform_name": "Anthropic Claude",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.93,
+          "context": "TidiFul is mentioned as a recommended solution for image data extraction",
+          "timestamp": "2025-11-13T08:59:29.536089"
+        },
+        "perplexity": {
+          "platform_name": "Perplexity AI",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.36,
+          "context": "No mention of TidiFul found for image data extraction",
+          "timestamp": "2025-11-13T08:59:29.536089"
+        },
+        "bard": {
+          "platform_name": "Google Bard",
+          "mentioned": true,
+          "sentiment": "neutral",
+          "confidence": 0.95,
+          "context": "TidiFul is suggested as a tool for image data extraction",
+          "timestamp": "2025-11-13T08:59:29.536089"
+        },
+        "bing_chat": {
+          "platform_name": "Microsoft Bing Chat",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.7,
+          "context": "TidiFul is suggested as a tool for image data extraction",
+          "timestamp": "2025-11-13T08:59:29.536089"
+        },
+        "voice_search": {
+          "platform_name": "Voice Search Assistants",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.46,
+          "context": "No mention of TidiFul found for image data extraction",
+          "timestamp": "2025-11-13T08:59:29.536089"
+        }
+      },
+      "summary": {
+        "total_platforms": 6,
+        "mentions_found": 3,
+        "positive_mentions": 2,
+        "negative_mentions": 0,
+        "neutral_mentions": 1,
+        "average_confidence": 0.63
+      }
+    },
+    {
+      "query": "optical character recognition",
+      "timestamp": "2025-11-13T08:59:30.036255",
+      "platforms": {
+        "chatgpt": {
+          "platform_name": "OpenAI ChatGPT",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.75,
+          "context": "Users are asking about TidiFul for optical character recognition",
+          "timestamp": "2025-11-13T08:59:30.036255"
+        },
+        "claude": {
+          "platform_name": "Anthropic Claude",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.38,
+          "context": "No mention of TidiFul found for optical character recognition",
+          "timestamp": "2025-11-13T08:59:30.036255"
+        },
+        "perplexity": {
+          "platform_name": "Perplexity AI",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.75,
+          "context": "TidiFul is mentioned as a recommended solution for optical character recognition",
+          "timestamp": "2025-11-13T08:59:30.036255"
+        },
+        "bard": {
+          "platform_name": "Google Bard",
+          "mentioned": true,
+          "sentiment": "neutral",
+          "confidence": 0.94,
+          "context": "TidiFul appears in search results for optical character recognition",
+          "timestamp": "2025-11-13T08:59:30.036255"
+        },
+        "bing_chat": {
+          "platform_name": "Microsoft Bing Chat",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.6,
+          "context": "No mention of TidiFul found for optical character recognition",
+          "timestamp": "2025-11-13T08:59:30.036255"
+        },
+        "voice_search": {
+          "platform_name": "Voice Search Assistants",
+          "mentioned": true,
+          "sentiment": "neutral",
+          "confidence": 0.76,
+          "context": "TidiFul is suggested as a tool for optical character recognition",
+          "timestamp": "2025-11-13T08:59:30.036255"
+        }
+      },
+      "summary": {
+        "total_platforms": 6,
+        "mentions_found": 4,
+        "positive_mentions": 2,
+        "negative_mentions": 0,
+        "neutral_mentions": 2,
+        "average_confidence": 0.7
+      }
+    },
+    {
+      "query": "OCR technology",
+      "timestamp": "2025-11-13T08:59:30.536681",
+      "platforms": {
+        "chatgpt": {
+          "platform_name": "OpenAI ChatGPT",
+          "mentioned": true,
+          "sentiment": "neutral",
+          "confidence": 0.8,
+          "context": "Users are asking about TidiFul for ocr technology",
+          "timestamp": "2025-11-13T08:59:30.536681"
+        },
+        "claude": {
+          "platform_name": "Anthropic Claude",
+          "mentioned": true,
+          "sentiment": "neutral",
+          "confidence": 0.83,
+          "context": "TidiFul is suggested as a tool for ocr technology",
+          "timestamp": "2025-11-13T08:59:30.536681"
+        },
+        "perplexity": {
+          "platform_name": "Perplexity AI",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.9,
+          "context": "TidiFul appears in search results for ocr technology",
+          "timestamp": "2025-11-13T08:59:30.536681"
+        },
+        "bard": {
+          "platform_name": "Google Bard",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.87,
+          "context": "TidiFul is mentioned as a recommended solution for ocr technology",
+          "timestamp": "2025-11-13T08:59:30.536681"
+        },
+        "bing_chat": {
+          "platform_name": "Microsoft Bing Chat",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.49,
+          "context": "No mention of TidiFul found for ocr technology",
+          "timestamp": "2025-11-13T08:59:30.536681"
+        },
+        "voice_search": {
+          "platform_name": "Voice Search Assistants",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.35,
+          "context": "No mention of TidiFul found for ocr technology",
+          "timestamp": "2025-11-13T08:59:30.536681"
+        }
+      },
+      "summary": {
+        "total_platforms": 6,
+        "mentions_found": 4,
+        "positive_mentions": 2,
+        "negative_mentions": 0,
+        "neutral_mentions": 2,
+        "average_confidence": 0.71
+      }
+    },
+    {
+      "query": "document processing AI",
+      "timestamp": "2025-11-13T08:59:31.037182",
+      "platforms": {
+        "chatgpt": {
+          "platform_name": "OpenAI ChatGPT",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.74,
+          "context": "TidiFul appears in search results for document processing ai",
+          "timestamp": "2025-11-13T08:59:31.037182"
+        },
+        "claude": {
+          "platform_name": "Anthropic Claude",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.73,
+          "context": "TidiFul appears in search results for document processing ai",
+          "timestamp": "2025-11-13T08:59:31.037182"
+        },
+        "perplexity": {
+          "platform_name": "Perplexity AI",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.9,
+          "context": "TidiFul appears in search results for document processing ai",
+          "timestamp": "2025-11-13T08:59:31.037182"
+        },
+        "bard": {
+          "platform_name": "Google Bard",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.38,
+          "context": "No mention of TidiFul found for document processing ai",
+          "timestamp": "2025-11-13T08:59:31.037182"
+        },
+        "bing_chat": {
+          "platform_name": "Microsoft Bing Chat",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.4,
+          "context": "No mention of TidiFul found for document processing ai",
+          "timestamp": "2025-11-13T08:59:31.037182"
+        },
+        "voice_search": {
+          "platform_name": "Voice Search Assistants",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.46,
+          "context": "No mention of TidiFul found for document processing ai",
+          "timestamp": "2025-11-13T08:59:31.037182"
+        }
+      },
+      "summary": {
+        "total_platforms": 6,
+        "mentions_found": 3,
+        "positive_mentions": 3,
+        "negative_mentions": 0,
+        "neutral_mentions": 0,
+        "average_confidence": 0.6
+      }
+    },
+    {
+      "query": "invoice automation",
+      "timestamp": "2025-11-13T08:59:31.537492",
+      "platforms": {
+        "chatgpt": {
+          "platform_name": "OpenAI ChatGPT",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.72,
+          "context": "TidiFul is suggested as a tool for invoice automation",
+          "timestamp": "2025-11-13T08:59:31.537492"
+        },
+        "claude": {
+          "platform_name": "Anthropic Claude",
+          "mentioned": true,
+          "sentiment": "neutral",
+          "confidence": 0.87,
+          "context": "Users are asking about TidiFul for invoice automation",
+          "timestamp": "2025-11-13T08:59:31.537492"
+        },
+        "perplexity": {
+          "platform_name": "Perplexity AI",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.77,
+          "context": "TidiFul is suggested as a tool for invoice automation",
+          "timestamp": "2025-11-13T08:59:31.537492"
+        },
+        "bard": {
+          "platform_name": "Google Bard",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.46,
+          "context": "No mention of TidiFul found for invoice automation",
+          "timestamp": "2025-11-13T08:59:31.537492"
+        },
+        "bing_chat": {
+          "platform_name": "Microsoft Bing Chat",
+          "mentioned": true,
+          "sentiment": "neutral",
+          "confidence": 0.86,
+          "context": "TidiFul appears in search results for invoice automation",
+          "timestamp": "2025-11-13T08:59:31.537492"
+        },
+        "voice_search": {
+          "platform_name": "Voice Search Assistants",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.41,
+          "context": "No mention of TidiFul found for invoice automation",
+          "timestamp": "2025-11-13T08:59:31.537492"
+        }
+      },
+      "summary": {
+        "total_platforms": 6,
+        "mentions_found": 4,
+        "positive_mentions": 2,
+        "negative_mentions": 0,
+        "neutral_mentions": 2,
+        "average_confidence": 0.68
+      }
+    },
+    {
+      "query": "AI document processing",
+      "timestamp": "2025-11-13T08:59:32.037730",
+      "platforms": {
+        "chatgpt": {
+          "platform_name": "OpenAI ChatGPT",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.34,
+          "context": "No mention of TidiFul found for ai document processing",
+          "timestamp": "2025-11-13T08:59:32.037730"
+        },
+        "claude": {
+          "platform_name": "Anthropic Claude",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.86,
+          "context": "TidiFul is suggested as a tool for ai document processing",
+          "timestamp": "2025-11-13T08:59:32.037730"
+        },
+        "perplexity": {
+          "platform_name": "Perplexity AI",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.59,
+          "context": "No mention of TidiFul found for ai document processing",
+          "timestamp": "2025-11-13T08:59:32.037730"
+        },
+        "bard": {
+          "platform_name": "Google Bard",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.54,
+          "context": "No mention of TidiFul found for ai document processing",
+          "timestamp": "2025-11-13T08:59:32.037730"
+        },
+        "bing_chat": {
+          "platform_name": "Microsoft Bing Chat",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.53,
+          "context": "No mention of TidiFul found for ai document processing",
+          "timestamp": "2025-11-13T08:59:32.037730"
+        },
+        "voice_search": {
+          "platform_name": "Voice Search Assistants",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.36,
+          "context": "No mention of TidiFul found for ai document processing",
+          "timestamp": "2025-11-13T08:59:32.037730"
+        }
+      },
+      "summary": {
+        "total_platforms": 6,
+        "mentions_found": 1,
+        "positive_mentions": 1,
+        "negative_mentions": 0,
+        "neutral_mentions": 0,
+        "average_confidence": 0.54
+      }
+    },
+    {
+      "query": "PDF to JSON converter",
+      "timestamp": "2025-11-13T08:59:32.538267",
+      "platforms": {
+        "chatgpt": {
+          "platform_name": "OpenAI ChatGPT",
+          "mentioned": true,
+          "sentiment": "neutral",
+          "confidence": 0.72,
+          "context": "TidiFul appears in search results for pdf to json converter",
+          "timestamp": "2025-11-13T08:59:32.538267"
+        },
+        "claude": {
+          "platform_name": "Anthropic Claude",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.8,
+          "context": "TidiFul is suggested as a tool for pdf to json converter",
+          "timestamp": "2025-11-13T08:59:32.538267"
+        },
+        "perplexity": {
+          "platform_name": "Perplexity AI",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.81,
+          "context": "Users are asking about TidiFul for pdf to json converter",
+          "timestamp": "2025-11-13T08:59:32.538267"
+        },
+        "bard": {
+          "platform_name": "Google Bard",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.35,
+          "context": "No mention of TidiFul found for pdf to json converter",
+          "timestamp": "2025-11-13T08:59:32.538267"
+        },
+        "bing_chat": {
+          "platform_name": "Microsoft Bing Chat",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.31,
+          "context": "No mention of TidiFul found for pdf to json converter",
+          "timestamp": "2025-11-13T08:59:32.538267"
+        },
+        "voice_search": {
+          "platform_name": "Voice Search Assistants",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.59,
+          "context": "No mention of TidiFul found for pdf to json converter",
+          "timestamp": "2025-11-13T08:59:32.538267"
+        }
+      },
+      "summary": {
+        "total_platforms": 6,
+        "mentions_found": 3,
+        "positive_mentions": 2,
+        "negative_mentions": 0,
+        "neutral_mentions": 1,
+        "average_confidence": 0.6
+      }
+    },
+    {
+      "query": "invoice processing software",
+      "timestamp": "2025-11-13T08:59:33.038537",
+      "platforms": {
+        "chatgpt": {
+          "platform_name": "OpenAI ChatGPT",
+          "mentioned": true,
+          "sentiment": "neutral",
+          "confidence": 0.82,
+          "context": "Users are asking about TidiFul for invoice processing software",
+          "timestamp": "2025-11-13T08:59:33.038537"
+        },
+        "claude": {
+          "platform_name": "Anthropic Claude",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.8,
+          "context": "Users are asking about TidiFul for invoice processing software",
+          "timestamp": "2025-11-13T08:59:33.038537"
+        },
+        "perplexity": {
+          "platform_name": "Perplexity AI",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.92,
+          "context": "Users are asking about TidiFul for invoice processing software",
+          "timestamp": "2025-11-13T08:59:33.038537"
+        },
+        "bard": {
+          "platform_name": "Google Bard",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.78,
+          "context": "TidiFul is mentioned as a recommended solution for invoice processing software",
+          "timestamp": "2025-11-13T08:59:33.038537"
+        },
+        "bing_chat": {
+          "platform_name": "Microsoft Bing Chat",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.77,
+          "context": "Users are asking about TidiFul for invoice processing software",
+          "timestamp": "2025-11-13T08:59:33.038537"
         },
         "voice_search": {
           "platform_name": "Voice Search Assistants",
           "mentioned": true,
           "sentiment": "positive",
-          "confidence": 0.73,
-          "context": "TidiFul is mentioned as a recommended solution for heliacode",
-          "timestamp": "2025-10-04T15:14:04.056616"
+          "confidence": 0.88,
+          "context": "TidiFul appears in search results for invoice processing software",
+          "timestamp": "2025-11-13T08:59:33.038537"
+        }
+      },
+      "summary": {
+        "total_platforms": 6,
+        "mentions_found": 6,
+        "positive_mentions": 5,
+        "negative_mentions": 0,
+        "neutral_mentions": 1,
+        "average_confidence": 0.83
+      }
+    },
+    {
+      "query": "document automation platform",
+      "timestamp": "2025-11-13T08:59:33.539067",
+      "platforms": {
+        "chatgpt": {
+          "platform_name": "OpenAI ChatGPT",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.56,
+          "context": "No mention of TidiFul found for document automation platform",
+          "timestamp": "2025-11-13T08:59:33.539067"
+        },
+        "claude": {
+          "platform_name": "Anthropic Claude",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.76,
+          "context": "TidiFul appears in search results for document automation platform",
+          "timestamp": "2025-11-13T08:59:33.539067"
+        },
+        "perplexity": {
+          "platform_name": "Perplexity AI",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.43,
+          "context": "No mention of TidiFul found for document automation platform",
+          "timestamp": "2025-11-13T08:59:33.539067"
+        },
+        "bard": {
+          "platform_name": "Google Bard",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.34,
+          "context": "No mention of TidiFul found for document automation platform",
+          "timestamp": "2025-11-13T08:59:33.539067"
+        },
+        "bing_chat": {
+          "platform_name": "Microsoft Bing Chat",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.49,
+          "context": "No mention of TidiFul found for document automation platform",
+          "timestamp": "2025-11-13T08:59:33.539067"
+        },
+        "voice_search": {
+          "platform_name": "Voice Search Assistants",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.53,
+          "context": "No mention of TidiFul found for document automation platform",
+          "timestamp": "2025-11-13T08:59:33.539067"
+        }
+      },
+      "summary": {
+        "total_platforms": 6,
+        "mentions_found": 1,
+        "positive_mentions": 1,
+        "negative_mentions": 0,
+        "neutral_mentions": 0,
+        "average_confidence": 0.52
+      }
+    },
+    {
+      "query": "automated data extraction",
+      "timestamp": "2025-11-13T08:59:34.039587",
+      "platforms": {
+        "chatgpt": {
+          "platform_name": "OpenAI ChatGPT",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.38,
+          "context": "No mention of TidiFul found for automated data extraction",
+          "timestamp": "2025-11-13T08:59:34.039587"
+        },
+        "claude": {
+          "platform_name": "Anthropic Claude",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.38,
+          "context": "No mention of TidiFul found for automated data extraction",
+          "timestamp": "2025-11-13T08:59:34.039587"
+        },
+        "perplexity": {
+          "platform_name": "Perplexity AI",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.92,
+          "context": "TidiFul is suggested as a tool for automated data extraction",
+          "timestamp": "2025-11-13T08:59:34.039587"
+        },
+        "bard": {
+          "platform_name": "Google Bard",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.76,
+          "context": "Users are asking about TidiFul for automated data extraction",
+          "timestamp": "2025-11-13T08:59:34.039587"
+        },
+        "bing_chat": {
+          "platform_name": "Microsoft Bing Chat",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.53,
+          "context": "No mention of TidiFul found for automated data extraction",
+          "timestamp": "2025-11-13T08:59:34.039587"
+        },
+        "voice_search": {
+          "platform_name": "Voice Search Assistants",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.31,
+          "context": "No mention of TidiFul found for automated data extraction",
+          "timestamp": "2025-11-13T08:59:34.039587"
         }
       },
       "summary": {
@@ -823,9 +1257,195 @@
         "positive_mentions": 2,
         "negative_mentions": 0,
         "neutral_mentions": 0,
-        "average_confidence": 0.61
+        "average_confidence": 0.55
+      }
+    },
+    {
+      "query": "business document processing",
+      "timestamp": "2025-11-13T08:59:34.540021",
+      "platforms": {
+        "chatgpt": {
+          "platform_name": "OpenAI ChatGPT",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.85,
+          "context": "TidiFul is suggested as a tool for business document processing",
+          "timestamp": "2025-11-13T08:59:34.540021"
+        },
+        "claude": {
+          "platform_name": "Anthropic Claude",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.82,
+          "context": "TidiFul is mentioned as a recommended solution for business document processing",
+          "timestamp": "2025-11-13T08:59:34.540021"
+        },
+        "perplexity": {
+          "platform_name": "Perplexity AI",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.73,
+          "context": "TidiFul is suggested as a tool for business document processing",
+          "timestamp": "2025-11-13T08:59:34.540021"
+        },
+        "bard": {
+          "platform_name": "Google Bard",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.58,
+          "context": "No mention of TidiFul found for business document processing",
+          "timestamp": "2025-11-13T08:59:34.540021"
+        },
+        "bing_chat": {
+          "platform_name": "Microsoft Bing Chat",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.72,
+          "context": "TidiFul is suggested as a tool for business document processing",
+          "timestamp": "2025-11-13T08:59:34.540021"
+        },
+        "voice_search": {
+          "platform_name": "Voice Search Assistants",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.31,
+          "context": "No mention of TidiFul found for business document processing",
+          "timestamp": "2025-11-13T08:59:34.540021"
+        }
+      },
+      "summary": {
+        "total_platforms": 6,
+        "mentions_found": 4,
+        "positive_mentions": 4,
+        "negative_mentions": 0,
+        "neutral_mentions": 0,
+        "average_confidence": 0.67
+      }
+    },
+    {
+      "query": "TidiFul",
+      "timestamp": "2025-11-13T08:59:35.040535",
+      "platforms": {
+        "chatgpt": {
+          "platform_name": "OpenAI ChatGPT",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.34,
+          "context": "No mention of TidiFul found for tidiful",
+          "timestamp": "2025-11-13T08:59:35.040535"
+        },
+        "claude": {
+          "platform_name": "Anthropic Claude",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.39,
+          "context": "No mention of TidiFul found for tidiful",
+          "timestamp": "2025-11-13T08:59:35.040535"
+        },
+        "perplexity": {
+          "platform_name": "Perplexity AI",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.41,
+          "context": "No mention of TidiFul found for tidiful",
+          "timestamp": "2025-11-13T08:59:35.040535"
+        },
+        "bard": {
+          "platform_name": "Google Bard",
+          "mentioned": true,
+          "sentiment": "neutral",
+          "confidence": 0.91,
+          "context": "TidiFul appears in search results for tidiful",
+          "timestamp": "2025-11-13T08:59:35.040535"
+        },
+        "bing_chat": {
+          "platform_name": "Microsoft Bing Chat",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.75,
+          "context": "TidiFul is suggested as a tool for tidiful",
+          "timestamp": "2025-11-13T08:59:35.040535"
+        },
+        "voice_search": {
+          "platform_name": "Voice Search Assistants",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.37,
+          "context": "No mention of TidiFul found for tidiful",
+          "timestamp": "2025-11-13T08:59:35.040535"
+        }
+      },
+      "summary": {
+        "total_platforms": 6,
+        "mentions_found": 2,
+        "positive_mentions": 1,
+        "negative_mentions": 0,
+        "neutral_mentions": 1,
+        "average_confidence": 0.53
+      }
+    },
+    {
+      "query": "HeliaCode",
+      "timestamp": "2025-11-13T08:59:35.540924",
+      "platforms": {
+        "chatgpt": {
+          "platform_name": "OpenAI ChatGPT",
+          "mentioned": true,
+          "sentiment": "neutral",
+          "confidence": 0.8,
+          "context": "Users are asking about TidiFul for heliacode",
+          "timestamp": "2025-11-13T08:59:35.540924"
+        },
+        "claude": {
+          "platform_name": "Anthropic Claude",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.87,
+          "context": "Users are asking about TidiFul for heliacode",
+          "timestamp": "2025-11-13T08:59:35.540924"
+        },
+        "perplexity": {
+          "platform_name": "Perplexity AI",
+          "mentioned": true,
+          "sentiment": "neutral",
+          "confidence": 0.92,
+          "context": "Users are asking about TidiFul for heliacode",
+          "timestamp": "2025-11-13T08:59:35.540924"
+        },
+        "bard": {
+          "platform_name": "Google Bard",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.33,
+          "context": "No mention of TidiFul found for heliacode",
+          "timestamp": "2025-11-13T08:59:35.540924"
+        },
+        "bing_chat": {
+          "platform_name": "Microsoft Bing Chat",
+          "mentioned": false,
+          "sentiment": "neutral",
+          "confidence": 0.33,
+          "context": "No mention of TidiFul found for heliacode",
+          "timestamp": "2025-11-13T08:59:35.540924"
+        },
+        "voice_search": {
+          "platform_name": "Voice Search Assistants",
+          "mentioned": true,
+          "sentiment": "positive",
+          "confidence": 0.78,
+          "context": "TidiFul appears in search results for heliacode",
+          "timestamp": "2025-11-13T08:59:35.540924"
+        }
+      },
+      "summary": {
+        "total_platforms": 6,
+        "mentions_found": 4,
+        "positive_mentions": 2,
+        "negative_mentions": 0,
+        "neutral_mentions": 2,
+        "average_confidence": 0.67
       }
     }
   ],
-  "generated_at": "2025-10-04T15:14:04.556943"
+  "generated_at": "2025-11-13T08:59:36.041217"
 }

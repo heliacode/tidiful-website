@@ -299,7 +299,17 @@ class BlogAutomation:
             
             # Add main blog posts
             for post in posts:
-                url = post['url'].replace('posts/', 'https://tidiful.com/blog/posts/')
+                # Handle URL - it might be 'blog/posts/...' or already a full URL
+                url_path = post['url']
+                if url_path.startswith('http'):
+                    url = url_path
+                elif url_path.startswith('blog/'):
+                    url = f"https://tidiful.com/{url_path}"
+                elif url_path.startswith('posts/'):
+                    url = f"https://tidiful.com/blog/{url_path}"
+                else:
+                    url = f"https://tidiful.com/blog/posts/{url_path}"
+                
                 static_url = url.replace('/posts/', '/static/')
                 
                 # Main post entry

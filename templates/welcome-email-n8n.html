@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to TidiFul</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f5f5f5; line-height: 1.6; color: #333333;">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #f5f5f5; padding: 20px 0;">
+        <tr>
+            <td align="center">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="max-width: 600px; background-color: #ffffff; border-radius: 8px; overflow: hidden;">
+                    
+                    <!-- Header -->
+                    <tr>
+                        <td style="background-color: #10b981; padding: 30px 20px; text-align: center;">
+                            <h1 style="margin: 0; color: #ffffff; font-size: 28px; font-weight: bold;">Welcome to TidiFul{{ $json.firstName ? ', ' + $json.firstName : '' }}!</h1>
+                            <p style="margin: 10px 0 0 0; color: #d1fae5; font-size: 16px;">You're all set to transform your document processing</p>
+                        </td>
+                    </tr>
+
+                    <!-- Content -->
+                    <tr>
+                        <td style="padding: 30px 20px;">
+                            <p style="margin: 0 0 15px 0; font-size: 16px; color: #333333;">Hi{{ $json.firstName ? ' ' + $json.firstName : ' there' }},</p>
+                            <p style="margin: 0 0 15px 0; font-size: 16px; color: #333333;">We're thrilled to have you join the TidiFul community! You've just taken the first step toward automating your document processing and saving countless hours of manual data entry.</p>
+                            <p style="margin: 0 0 25px 0; font-size: 16px; color: #333333;">With TidiFul's AI-powered technology, you can now convert PDF invoices, receipts, and documents into clean, structured data in seconds—not hours. Our platform achieves 99%+ accuracy and processes documents in 3-5 seconds on average.</p>
+                            
+                            <!-- CTA -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td align="center" style="padding: 20px 0;">
+                                        <a href="https://app.tidiful.com" style="display: inline-block; padding: 14px 28px; background-color: #10b981; color: #ffffff; text-decoration: none; border-radius: 6px; font-size: 16px; font-weight: bold;">Get Started Now</a>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Quick Start -->
+                            <div style="background-color: #ecfdf5; border-left: 4px solid #10b981; padding: 15px; margin: 25px 0; border-radius: 4px;">
+                                <h2 style="margin: 0 0 10px 0; font-size: 18px; font-weight: bold; color: #065f46;">Quick Start Guide</h2>
+                                <ol style="margin: 0; padding-left: 20px; color: #047857; font-size: 14px;">
+                                    <li style="margin-bottom: 8px;">Upload your first PDF invoice or receipt</li>
+                                    <li style="margin-bottom: 8px;">Watch TidiFul's AI extract data automatically</li>
+                                    <li style="margin-bottom: 8px;">Download your structured data in JSON, CSV, or Excel format</li>
+                                    <li>Integrate with your existing systems via API (optional)</li>
+                                </ol>
+                            </div>
+
+                            <!-- Features -->
+                            <h2 style="margin: 25px 0 15px 0; font-size: 20px; font-weight: bold; color: #1f2937;">What You Can Do with TidiFul</h2>
+                            <ul style="margin: 0 0 25px 0; padding-left: 20px; color: #333333; font-size: 15px;">
+                                <li style="margin-bottom: 10px;"><strong style="color: #10b981;">Lightning Fast:</strong> Process documents in seconds with our optimized AI engine</li>
+                                <li style="margin-bottom: 10px;"><strong style="color: #10b981;">Multiple Formats:</strong> Export to JSON, CSV, XML, or Excel</li>
+                                <li style="margin-bottom: 10px;"><strong style="color: #10b981;">Secure & Private:</strong> Your documents are processed securely and never stored without permission</li>
+                                <li><strong style="color: #10b981;">Multilingual:</strong> Supports English, French, German, Spanish, and Greek</li>
+                            </ul>
+
+                            <!-- Resources -->
+                            <h2 style="margin: 25px 0 15px 0; font-size: 20px; font-weight: bold; color: #1f2937;">Helpful Resources</h2>
+                            <p style="margin: 0 0 15px 0; font-size: 15px; color: #4b5563;">We've created comprehensive guides to help you make the most of TidiFul:</p>
+                            
+                            <ul style="margin: 0 0 20px 0; padding-left: 20px; color: #333333; font-size: 14px;">
+                                <li style="margin-bottom: 12px;">
+                                    <a href="https://tidiful.com/blog/posts/invoice-to-excel-complete-guide.html" style="color: #10b981; text-decoration: none; font-weight: bold;">Invoice to Excel: Complete Guide</a><br>
+                                    <span style="color: #6b7280; font-size: 13px;">Learn how to convert invoices to Excel format efficiently</span>
+                                </li>
+                                <li style="margin-bottom: 12px;">
+                                    <a href="https://tidiful.com/blog/posts/pdf-to-csv-complete-guide.html" style="color: #10b981; text-decoration: none; font-weight: bold;">PDF to CSV: Complete Guide</a><br>
+                                    <span style="color: #6b7280; font-size: 13px;">Discover tools and methods to extract data from PDF to CSV</span>
+                                </li>
+                                <li style="margin-bottom: 12px;">
+                                    <a href="https://tidiful.com/blog/posts/image-to-excel-complete-guide.html" style="color: #10b981; text-decoration: none; font-weight: bold;">Image to Excel: Complete Guide</a><br>
+                                    <span style="color: #6b7280; font-size: 13px;">Extract data from images to Excel easily and reliably</span>
+                                </li>
+                                <li style="margin-bottom: 12px;">
+                                    <a href="https://tidiful.com/blog/posts/pdf-data-extraction-complete-guide.html" style="color: #10b981; text-decoration: none; font-weight: bold;">PDF Data Extraction: Complete Guide</a><br>
+                                    <span style="color: #6b7280; font-size: 13px;">Master PDF data extraction with best practices</span>
+                                </li>
+                                <li style="margin-bottom: 12px;">
+                                    <a href="https://tidiful.com/blog/posts/how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html" style="color: #10b981; text-decoration: none; font-weight: bold;">How to Scan PDF Documents Like a Pro</a><br>
+                                    <span style="color: #6b7280; font-size: 13px;">Turn paper documents into searchable PDFs</span>
+                                </li>
+                                <li style="margin-bottom: 12px;">
+                                    <a href="https://tidiful.com/blog/posts/pdf-to-docx-conversion-the-ultimate-guide-for-invoice-management.html" style="color: #10b981; text-decoration: none; font-weight: bold;">PDF to DOCX Conversion Guide</a><br>
+                                    <span style="color: #6b7280; font-size: 13px;">Convert PDF invoices to editable DOCX format</span>
+                                </li>
+                                <li style="margin-bottom: 12px;">
+                                    <a href="https://tidiful.com/blog/posts/why-invoice-tracking-is-critical-for-business-success-a-complete-guide.html" style="color: #10b981; text-decoration: none; font-weight: bold;">Why Invoice Tracking is Critical</a><br>
+                                    <span style="color: #6b7280; font-size: 13px;">Best practices for invoice management</span>
+                                </li>
+                                <li style="margin-bottom: 12px;">
+                                    <a href="https://tidiful.com/blog/posts/what-is-pdf-to-csv-conversion.html" style="color: #10b981; text-decoration: none; font-weight: bold;">What is PDF to CSV Conversion?</a><br>
+                                    <span style="color: #6b7280; font-size: 13px;">Learn the fundamentals of PDF to CSV conversion</span>
+                                </li>
+                                <li>
+                                    <a href="https://tidiful.com/blog/posts/adobe-acrobat-alternatives-pdf-creation-complete-guide.html" style="color: #10b981; text-decoration: none; font-weight: bold;">Adobe Acrobat Alternatives</a><br>
+                                    <span style="color: #6b7280; font-size: 13px;">Compare PDF creation tools for your business</span>
+                                </li>
+                            </ul>
+
+                            <p style="margin: 0 0 20px 0; text-align: center;">
+                                <a href="https://tidiful.com/blog/blogs.html" style="color: #10b981; text-decoration: none; font-weight: bold; font-size: 14px;">View All Blog Posts →</a>
+                            </p>
+
+                            <!-- Additional Links -->
+                            <h2 style="margin: 25px 0 15px 0; font-size: 20px; font-weight: bold; color: #1f2937;">Additional Resources</h2>
+                            <p style="margin: 0 0 10px 0; font-size: 14px;">
+                                <a href="https://tidiful.com/features.html" style="color: #10b981; text-decoration: none;">Explore All Features →</a>
+                            </p>
+                            <p style="margin: 0 0 10px 0; font-size: 14px;">
+                                <a href="https://tidiful.com/pricing.html" style="color: #10b981; text-decoration: none;">View Pricing Plans →</a>
+                            </p>
+                            <p style="margin: 0 0 10px 0; font-size: 14px;">
+                                <a href="https://tidiful.com/about.html" style="color: #10b981; text-decoration: none;">Learn About TidiFul →</a>
+                            </p>
+                            <p style="margin: 0 0 25px 0; font-size: 14px;">
+                                <a href="https://tidiful.com/contact.html" style="color: #10b981; text-decoration: none;">Contact Support →</a>
+                            </p>
+
+                            <!-- Support -->
+                            <div style="background-color: #fef3c7; border-left: 4px solid #f59e0b; padding: 15px; margin: 25px 0; border-radius: 4px;">
+                                <h3 style="margin: 0 0 8px 0; font-size: 16px; font-weight: bold; color: #92400e;">Need Help?</h3>
+                                <p style="margin: 0 0 8px 0; font-size: 14px; color: #78350f;">Our support team is here to help! If you have any questions, don't hesitate to reach out.</p>
+                                <p style="margin: 0; font-size: 14px;">
+                                    <a href="https://tidiful.com/contact.html" style="color: #d97706; text-decoration: none; font-weight: bold;">Contact Support →</a>
+                                </p>
+                            </div>
+
+                            <!-- Final CTA -->
+                            <p style="margin: 25px 0 15px 0; font-size: 16px; color: #333333; font-weight: bold; text-align: center;">Ready to transform your document processing?</p>
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
+                                <tr>
+                                    <td>
+                                        <a href="https://app.tidiful.com" style="display: inline-block; padding: 14px 28px; background-color: #10b981; color: #ffffff; text-decoration: none; border-radius: 6px; font-size: 16px; font-weight: bold;">Start Processing Documents</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr>
+                        <td style="background-color: #f9fafb; padding: 25px 20px; text-align: center; border-top: 1px solid #e5e7eb;">
+                            <p style="margin: 0 0 10px 0; font-size: 13px; color: #6b7280;">You're receiving this email because you signed up for TidiFul.</p>
+                            <p style="margin: 0 0 15px 0; font-size: 13px; color: #6b7280;">
+                                <a href="https://tidiful.com" style="color: #10b981; text-decoration: none;">TidiFul</a> | 
+                                <a href="https://tidiful.com/about.html" style="color: #10b981; text-decoration: none;">About</a> | 
+                                <a href="https://tidiful.com/contact.html" style="color: #10b981; text-decoration: none;">Contact</a> | 
+                                <a href="https://tidiful.com/eula.html" style="color: #10b981; text-decoration: none;">EULA</a>
+                            </p>
+                            <p style="margin: 0; font-size: 12px; color: #9ca3af;">© 2025 TidiFul. All rights reserved.</p>
+                            <p style="margin: 8px 0 0 0; font-size: 12px; color: #9ca3af;">Transforming documents into structured data with AI-powered precision.</p>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+

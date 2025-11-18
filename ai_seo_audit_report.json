@@ -1,0 +1,223 @@
+{
+  "audit_date": "T:\\Repos\\tidiful-website",
+  "total_posts": 12,
+  "average_score": 55.0,
+  "results": [
+    {
+      "filename": "adobe-acrobat-alternatives-pdf-creation-complete-guide.html",
+      "issues": [
+        "Missing FAQPage schema",
+        "Missing BlogPosting schema"
+      ],
+      "warnings": [
+        "Missing HowTo schema (recommended for guides)",
+        "Only 1 question-based headings (recommended: 3+)",
+        "Missing Organization schema",
+        "Meta description length: 167 chars (recommended: 150-160)"
+      ],
+      "passed": [
+        "FAQ content found",
+        "Conversational language found"
+      ],
+      "score": 50
+    },
+    {
+      "filename": "how-to-automate-invoice-processing-with-api-integration-complete-guide.html",
+      "issues": [
+        "Missing FAQPage schema",
+        "Missing BlogPosting schema"
+      ],
+      "warnings": [
+        "Missing HowTo schema (recommended for guides)",
+        "Missing Organization schema",
+        "Meta description length: 180 chars (recommended: 150-160)"
+      ],
+      "passed": [
+        "FAQ content found",
+        "Found 9 question-based headings",
+        "Conversational language found"
+      ],
+      "score": 56
+    },
+    {
+      "filename": "how-to-manage-your-invoices-like-a-pro-professional-invoice-management-guide.html",
+      "issues": [
+        "Missing FAQPage schema",
+        "Missing BlogPosting schema"
+      ],
+      "warnings": [
+        "Missing HowTo schema (recommended for guides)",
+        "Missing Organization schema",
+        "Meta description length: 200 chars (recommended: 150-160)"
+      ],
+      "passed": [
+        "FAQ content found",
+        "Found 6 question-based headings",
+        "Conversational language found"
+      ],
+      "score": 56
+    },
+    {
+      "filename": "how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html",
+      "issues": [
+        "Missing FAQPage schema",
+        "Missing BlogPosting schema"
+      ],
+      "warnings": [
+        "Missing HowTo schema (recommended for guides)",
+        "Missing Organization schema",
+        "Meta description length: 190 chars (recommended: 150-160)"
+      ],
+      "passed": [
+        "FAQ content found",
+        "Found 8 question-based headings",
+        "Conversational language found"
+      ],
+      "score": 56
+    },
+    {
+      "filename": "image-to-excel-complete-guide.html",
+      "issues": [
+        "Missing FAQPage schema",
+        "Missing BlogPosting schema"
+      ],
+      "warnings": [
+        "Missing HowTo schema (recommended for guides)",
+        "Missing Organization schema",
+        "Meta description length: 188 chars (recommended: 150-160)"
+      ],
+      "passed": [
+        "FAQ content found",
+        "Found 4 question-based headings",
+        "Conversational language found"
+      ],
+      "score": 56
+    },
+    {
+      "filename": "invoice-to-excel-complete-guide.html",
+      "issues": [
+        "Missing FAQPage schema",
+        "Missing BlogPosting schema"
+      ],
+      "warnings": [
+        "Missing HowTo schema (recommended for guides)",
+        "No FAQ section in content",
+        "Missing Organization schema",
+        "Meta description length: 171 chars (recommended: 150-160)"
+      ],
+      "passed": [
+        "Found 3 question-based headings",
+        "Conversational language found"
+      ],
+      "score": 50
+    },
+    {
+      "filename": "pdf-data-extraction-complete-guide.html",
+      "issues": [
+        "Missing FAQPage schema",
+        "Missing BlogPosting schema"
+      ],
+      "warnings": [
+        "Missing HowTo schema (recommended for guides)",
+        "Missing Organization schema",
+        "Meta description length: 180 chars (recommended: 150-160)"
+      ],
+      "passed": [
+        "FAQ content found",
+        "Found 3 question-based headings",
+        "Conversational language found"
+      ],
+      "score": 56
+    },
+    {
+      "filename": "pdf-to-csv-complete-guide.html",
+      "issues": [
+        "Missing FAQPage schema",
+        "Missing BlogPosting schema"
+      ],
+      "warnings": [
+        "Missing HowTo schema (recommended for guides)",
+        "Missing Organization schema",
+        "Meta description length: 229 chars (recommended: 150-160)"
+      ],
+      "passed": [
+        "FAQ content found",
+        "Found 6 question-based headings",
+        "Conversational language found"
+      ],
+      "score": 56
+    },
+    {
+      "filename": "pdf-to-docx-conversion-the-ultimate-guide-for-invoice-management.html",
+      "issues": [
+        "Missing FAQPage schema",
+        "Missing BlogPosting schema"
+      ],
+      "warnings": [
+        "Missing HowTo schema (recommended for guides)",
+        "Missing Organization schema",
+        "Meta description length: 182 chars (recommended: 150-160)"
+      ],
+      "passed": [
+        "FAQ content found",
+        "Found 3 question-based headings",
+        "Conversational language found"
+      ],
+      "score": 56
+    },
+    {
+      "filename": "tidiful-to-acomba-seamless-accounting-integration-guide.html",
+      "issues": [
+        "Missing FAQPage schema",
+        "Missing BlogPosting schema"
+      ],
+      "warnings": [
+        "Missing HowTo schema (recommended for guides)",
+        "Missing Organization schema",
+        "Meta description length: 145 chars (recommended: 150-160)"
+      ],
+      "passed": [
+        "FAQ content found",
+        "Found 9 question-based headings",
+        "Conversational language found"
+      ],
+      "score": 56
+    },
+    {
+      "filename": "what-is-pdf-to-csv-conversion.html",
+      "issues": [
+        "Missing FAQPage schema",
+        "Missing BlogPosting schema"
+      ],
+      "warnings": [
+        "Missing HowTo schema (recommended for guides)",
+        "Missing Organization schema",
+        "Meta description length: 177 chars (recommended: 150-160)"
+      ],
+      "passed": [
+        "FAQ content found",
+        "Found 9 question-based headings",
+        "Conversational language found"
+      ],
+      "score": 56
+    },
+    {
+      "filename": "why-invoice-tracking-is-critical-for-business-success-a-complete-guide.html",
+      "issues": [
+        "Missing FAQPage schema",
+        "Missing BlogPosting schema"
+      ],
+      "warnings": [
+        "Missing HowTo schema (recommended for guides)",
+        "Missing Organization schema",
+        "Meta description length: 168 chars (recommended: 150-160)"
+      ],
+      "passed": [
+        "FAQ content found",
+        "Found 5 question-based headings",
+        "Conversational language found"
+      ],
+      "score": 56
+    }
+  ]
+}
