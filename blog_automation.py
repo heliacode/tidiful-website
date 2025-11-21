@@ -115,11 +115,25 @@ class BlogAutomation:
                 content = f.read()
             
             # Extract just the article content (between <main> tags or similar)
-            article_match = re.search(r'<main[^>]*>(.*?)</main>', content, re.DOTALL)
-            if not article_match:
-                article_match = re.search(r'<article[^>]*>(.*?)</article>', content, re.DOTALL)
+            # Try to find all article tags and get the one with the actual content
+            article_matches = list(re.finditer(r'<article[^>]*>(.*?)</article>', content, re.DOTALL))
             
-            article_content = article_match.group(1) if article_match else content
+            if article_matches:
+                # If there are multiple article tags, use the last one (usually the content)
+                # Or find the one that contains the prose class (content section)
+                article_content = None
+                for match in reversed(article_matches):  # Check from last to first
+                    if 'prose' in match.group(0) or len(match.group(1)) > 500:  # Content article is usually longer
+                        article_content = match.group(1)
+                        break
+                
+                # If no match found with prose, use the last (longest) article
+                if not article_content:
+                    article_content = article_matches[-1].group(1)
+            else:
+                # Fallback: try main tag
+                main_match = re.search(r'<main[^>]*>(.*?)</main>', content, re.DOTALL)
+                article_content = main_match.group(1) if main_match else content
             
             # Generate static HTML
             static_html = f"""<!DOCTYPE html>

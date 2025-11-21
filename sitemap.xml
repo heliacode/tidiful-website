@@ -138,8 +138,36 @@
   
   
   
+  
   <!-- Blog Posts -->
 
+  <!-- AI Document Capture: Complete Guide for Business Automation Blog Post - English -->
+  <url>
+    <loc>https://tidiful.com/blog/posts/ai-document-capture-complete-guide.html</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/posts/ai-document-capture-complete-guide.html?lang=en-US"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/posts/ai-document-capture-complete-guide.html?lang=fr-FR"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/posts/ai-document-capture-complete-guide.html?lang=de-DE"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/posts/ai-document-capture-complete-guide.html?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/posts/ai-document-capture-complete-guide.html?lang=el-GR"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/posts/ai-document-capture-complete-guide.html"/>
+  </url>
+
+  <!-- AI Document Capture: Complete Guide for Business Automation Static - English -->
+  <url>
+    <loc>https://tidiful.com/blog/static/ai-document-capture-complete-guide.html</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/static/ai-document-capture-complete-guide.html?lang=en-US"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/static/ai-document-capture-complete-guide.html?lang=fr-FR"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/static/ai-document-capture-complete-guide.html?lang=de-DE"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/static/ai-document-capture-complete-guide.html?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/static/ai-document-capture-complete-guide.html?lang=el-GR"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/static/ai-document-capture-complete-guide.html"/>
+  </url>
   <!-- How to Automate Invoice Processing with API Integration: Complete Guide Blog Post - English -->
   <url>
     <loc>https://tidiful.com/blog/posts/how-to-automate-invoice-processing-with-api-integration-complete-guide.html</loc>
@@ -220,6 +248,33 @@
     <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/static/image-to-csv-complete-guide.html?lang=es-ES"/>
     <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/static/image-to-csv-complete-guide.html?lang=el-GR"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/static/image-to-csv-complete-guide.html"/>
+  </url>
+  <!-- Invoice Scanning Business Central: Intelligent Document Capture Guide Blog Post - English -->
+  <url>
+    <loc>https://tidiful.com/blog/posts/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/posts/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html?lang=en-US"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/posts/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html?lang=fr-FR"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/posts/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html?lang=de-DE"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/posts/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/posts/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html?lang=el-GR"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/posts/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html"/>
+  </url>
+
+  <!-- Invoice Scanning Business Central: Intelligent Document Capture Guide Static - English -->
+  <url>
+    <loc>https://tidiful.com/blog/static/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/static/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html?lang=en-US"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/static/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html?lang=fr-FR"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/static/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html?lang=de-DE"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/static/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/static/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html?lang=el-GR"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/static/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html"/>
   </url>
   <!-- Invoice to PDF: Complete Guide Blog Post - English -->
   <url>
@@ -518,7 +573,7 @@
     <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/static/what-is-pdf-to-csv-conversion.html?lang=el-GR"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/static/what-is-pdf-to-csv-conversion.html"/>
   </url>
-  <!-- How to Scan PDF Documents Like a Pro: A Complete Guide for Business Professionals Blog Post - English -->
+  <!-- How to Scan PDF: Complete Guide Blog Post - English -->
   <url>
     <loc>https://tidiful.com/blog/posts/how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html</loc>
     <lastmod>2025-06-15</lastmod>
@@ -532,7 +587,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/posts/how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html"/>
   </url>
 
-  <!-- How to Scan PDF Documents Like a Pro: A Complete Guide for Business Professionals Static - English -->
+  <!-- How to Scan PDF: Complete Guide Static - English -->
   <url>
     <loc>https://tidiful.com/blog/static/how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html</loc>
     <lastmod>2025-06-15</lastmod>

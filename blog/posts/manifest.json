@@ -1,6 +1,13 @@
 {
   "posts": [
     {
+      "filename": "ai-document-capture-complete-guide.html",
+      "title": "AI Document Capture: Complete Guide for Business Automation",
+      "date": "2025-11-18",
+      "excerpt": "Learn how AI document capture transforms business document processing. Complete guide covering AI OCR, automated data extraction, machine learning, and implementation best practices.",
+      "url": "blog/posts/ai-document-capture-complete-guide.html"
+    },
+    {
       "filename": "how-to-automate-invoice-processing-with-api-integration-complete-guide.html",
       "title": "How to Automate Invoice Processing with API Integration: Complete Guide",
       "date": "2025-11-18",
@@ -20,6 +27,13 @@
       "date": "2025-11-18",
       "excerpt": "Learn how to convert images to CSV format efficiently. Complete guide covering OCR methods, tools, and best practices for extracting data from images to CSV.",
       "url": "blog/posts/image-to-csv-complete-guide.html"
+    },
+    {
+      "filename": "invoice-scanning-business-central-intelligent-document-capture-complete-guide.html",
+      "title": "Invoice Scanning Business Central: Intelligent Document Capture Guide",
+      "date": "2025-11-18",
+      "excerpt": "Learn how to implement invoice scanning for Business Central with intelligent document capture. Complete guide covering document capture solutions, OCR, automation, and integration best practices.",
+      "url": "blog/posts/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html"
     },
     {
       "filename": "invoice-to-pdf-complete-guide.html",
@@ -100,12 +114,12 @@
     },
     {
       "filename": "how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html",
-      "title": "How to Scan PDF Documents Like a Pro: A Complete Guide for Business Professionals",
+      "title": "How to Scan PDF: Complete Guide",
       "date": "2025-06-15",
-      "excerpt": "Learn how to scan PDF documents efficiently and accurately. Discover the best tools, workflows, and automation methods to turn paper documents into searchable, structured PDFs using TidiFul.",
+      "excerpt": "Learn how to scan PDF documents efficiently. Complete guide covering desktop scanners, mobile apps, OCR, and best practices for scanning PDFs.",
       "url": "blog/posts/how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html"
     }
   ],
-  "lastUpdated": "2025-11-18T17:31:18.859070",
-  "totalPosts": 15
+  "lastUpdated": "2025-11-20T14:15:46.164195",
+  "totalPosts": 17
 }
