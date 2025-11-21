@@ -139,9 +139,10 @@
   
   
   
+  
   <!-- Blog Posts -->
 
-  <!-- AI Document Capture: Complete Guide for Business Automation Blog Post - English -->
+  <!-- AI Document Capture: Complete Guide Blog Post - English -->
   <url>
     <loc>https://tidiful.com/blog/posts/ai-document-capture-complete-guide.html</loc>
     <lastmod>2025-11-18</lastmod>
@@ -155,7 +156,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/posts/ai-document-capture-complete-guide.html"/>
   </url>
 
-  <!-- AI Document Capture: Complete Guide for Business Automation Static - English -->
+  <!-- AI Document Capture: Complete Guide Static - English -->
   <url>
     <loc>https://tidiful.com/blog/static/ai-document-capture-complete-guide.html</loc>
     <lastmod>2025-11-18</lastmod>
@@ -167,6 +168,60 @@
     <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/static/ai-document-capture-complete-guide.html?lang=es-ES"/>
     <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/static/ai-document-capture-complete-guide.html?lang=el-GR"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/static/ai-document-capture-complete-guide.html"/>
+  </url>
+  <!-- Invoice Scanning Business Central: Complete Guide Blog Post - English -->
+  <url>
+    <loc>https://tidiful.com/blog/posts/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/posts/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html?lang=en-US"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/posts/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html?lang=fr-FR"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/posts/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html?lang=de-DE"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/posts/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/posts/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html?lang=el-GR"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/posts/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html"/>
+  </url>
+
+  <!-- Invoice Scanning Business Central: Complete Guide Static - English -->
+  <url>
+    <loc>https://tidiful.com/blog/static/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/static/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html?lang=en-US"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/static/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html?lang=fr-FR"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/static/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html?lang=de-DE"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/static/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/static/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html?lang=el-GR"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/static/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html"/>
+  </url>
+  <!-- Image to CSV: Complete Guide for Data Extraction Blog Post - English -->
+  <url>
+    <loc>https://tidiful.com/blog/posts/image-to-csv-complete-guide.html</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/posts/image-to-csv-complete-guide.html?lang=en-US"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/posts/image-to-csv-complete-guide.html?lang=fr-FR"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/posts/image-to-csv-complete-guide.html?lang=de-DE"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/posts/image-to-csv-complete-guide.html?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/posts/image-to-csv-complete-guide.html?lang=el-GR"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/posts/image-to-csv-complete-guide.html"/>
+  </url>
+
+  <!-- Image to CSV: Complete Guide for Data Extraction Static - English -->
+  <url>
+    <loc>https://tidiful.com/blog/static/image-to-csv-complete-guide.html</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/static/image-to-csv-complete-guide.html?lang=en-US"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/static/image-to-csv-complete-guide.html?lang=fr-FR"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/static/image-to-csv-complete-guide.html?lang=de-DE"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/static/image-to-csv-complete-guide.html?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/static/image-to-csv-complete-guide.html?lang=el-GR"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/static/image-to-csv-complete-guide.html"/>
   </url>
   <!-- How to Automate Invoice Processing with API Integration: Complete Guide Blog Post - English -->
   <url>
@@ -222,86 +277,32 @@
     <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/static/how-to-manage-your-invoices-like-a-pro-professional-invoice-management-guide.html?lang=el-GR"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/static/how-to-manage-your-invoices-like-a-pro-professional-invoice-management-guide.html"/>
   </url>
-  <!-- Image to CSV: Complete Guide for Data Extraction Blog Post - English -->
+  <!-- Which Companies Offer Reliable PDF to CSV Conversion Tools? Blog Post - English -->
   <url>
-    <loc>https://tidiful.com/blog/posts/image-to-csv-complete-guide.html</loc>
+    <loc>https://tidiful.com/blog/posts/which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html</loc>
     <lastmod>2025-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/posts/image-to-csv-complete-guide.html?lang=en-US"/>
-    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/posts/image-to-csv-complete-guide.html?lang=fr-FR"/>
-    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/posts/image-to-csv-complete-guide.html?lang=de-DE"/>
-    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/posts/image-to-csv-complete-guide.html?lang=es-ES"/>
-    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/posts/image-to-csv-complete-guide.html?lang=el-GR"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/posts/image-to-csv-complete-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/posts/which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html?lang=en-US"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/posts/which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html?lang=fr-FR"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/posts/which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html?lang=de-DE"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/posts/which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/posts/which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html?lang=el-GR"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/posts/which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html"/>
   </url>
 
-  <!-- Image to CSV: Complete Guide for Data Extraction Static - English -->
+  <!-- Which Companies Offer Reliable PDF to CSV Conversion Tools? Static - English -->
   <url>
-    <loc>https://tidiful.com/blog/static/image-to-csv-complete-guide.html</loc>
+    <loc>https://tidiful.com/blog/static/which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html</loc>
     <lastmod>2025-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/static/image-to-csv-complete-guide.html?lang=en-US"/>
-    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/static/image-to-csv-complete-guide.html?lang=fr-FR"/>
-    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/static/image-to-csv-complete-guide.html?lang=de-DE"/>
-    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/static/image-to-csv-complete-guide.html?lang=es-ES"/>
-    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/static/image-to-csv-complete-guide.html?lang=el-GR"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/static/image-to-csv-complete-guide.html"/>
-  </url>
-  <!-- Invoice Scanning Business Central: Intelligent Document Capture Guide Blog Post - English -->
-  <url>
-    <loc>https://tidiful.com/blog/posts/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html</loc>
-    <lastmod>2025-11-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/posts/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html?lang=en-US"/>
-    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/posts/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html?lang=fr-FR"/>
-    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/posts/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html?lang=de-DE"/>
-    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/posts/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html?lang=es-ES"/>
-    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/posts/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html?lang=el-GR"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/posts/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html"/>
-  </url>
-
-  <!-- Invoice Scanning Business Central: Intelligent Document Capture Guide Static - English -->
-  <url>
-    <loc>https://tidiful.com/blog/static/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html</loc>
-    <lastmod>2025-11-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/static/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html?lang=en-US"/>
-    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/static/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html?lang=fr-FR"/>
-    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/static/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html?lang=de-DE"/>
-    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/static/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html?lang=es-ES"/>
-    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/static/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html?lang=el-GR"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/static/invoice-scanning-business-central-intelligent-document-capture-complete-guide.html"/>
-  </url>
-  <!-- Invoice to PDF: Complete Guide Blog Post - English -->
-  <url>
-    <loc>https://tidiful.com/blog/posts/invoice-to-pdf-complete-guide.html</loc>
-    <lastmod>2025-11-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/posts/invoice-to-pdf-complete-guide.html?lang=en-US"/>
-    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/posts/invoice-to-pdf-complete-guide.html?lang=fr-FR"/>
-    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/posts/invoice-to-pdf-complete-guide.html?lang=de-DE"/>
-    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/posts/invoice-to-pdf-complete-guide.html?lang=es-ES"/>
-    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/posts/invoice-to-pdf-complete-guide.html?lang=el-GR"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/posts/invoice-to-pdf-complete-guide.html"/>
-  </url>
-
-  <!-- Invoice to PDF: Complete Guide Static - English -->
-  <url>
-    <loc>https://tidiful.com/blog/static/invoice-to-pdf-complete-guide.html</loc>
-    <lastmod>2025-11-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/static/invoice-to-pdf-complete-guide.html?lang=en-US"/>
-    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/static/invoice-to-pdf-complete-guide.html?lang=fr-FR"/>
-    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/static/invoice-to-pdf-complete-guide.html?lang=de-DE"/>
-    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/static/invoice-to-pdf-complete-guide.html?lang=es-ES"/>
-    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/static/invoice-to-pdf-complete-guide.html?lang=el-GR"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/static/invoice-to-pdf-complete-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/static/which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html?lang=en-US"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/static/which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html?lang=fr-FR"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/static/which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html?lang=de-DE"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/static/which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/static/which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html?lang=el-GR"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/static/which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html"/>
   </url>
   <!-- Tidiful to Acomba Integration Guide Blog Post - English -->
   <url>
@@ -330,59 +331,32 @@
     <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/static/tidiful-to-acomba-seamless-accounting-integration-guide.html?lang=el-GR"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/static/tidiful-to-acomba-seamless-accounting-integration-guide.html"/>
   </url>
-  <!-- Which Companies Offer Reliable PDF to CSV Conversion Tools? Blog Post - English -->
+  <!-- Invoice to PDF: Complete Guide Blog Post - English -->
   <url>
-    <loc>https://tidiful.com/blog/posts/which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html</loc>
+    <loc>https://tidiful.com/blog/posts/invoice-to-pdf-complete-guide.html</loc>
     <lastmod>2025-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/posts/which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html?lang=en-US"/>
-    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/posts/which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html?lang=fr-FR"/>
-    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/posts/which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html?lang=de-DE"/>
-    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/posts/which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html?lang=es-ES"/>
-    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/posts/which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html?lang=el-GR"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/posts/which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/posts/invoice-to-pdf-complete-guide.html?lang=en-US"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/posts/invoice-to-pdf-complete-guide.html?lang=fr-FR"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/posts/invoice-to-pdf-complete-guide.html?lang=de-DE"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/posts/invoice-to-pdf-complete-guide.html?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/posts/invoice-to-pdf-complete-guide.html?lang=el-GR"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/posts/invoice-to-pdf-complete-guide.html"/>
   </url>
 
-  <!-- Which Companies Offer Reliable PDF to CSV Conversion Tools? Static - English -->
+  <!-- Invoice to PDF: Complete Guide Static - English -->
   <url>
-    <loc>https://tidiful.com/blog/static/which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html</loc>
+    <loc>https://tidiful.com/blog/static/invoice-to-pdf-complete-guide.html</loc>
     <lastmod>2025-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/static/which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html?lang=en-US"/>
-    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/static/which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html?lang=fr-FR"/>
-    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/static/which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html?lang=de-DE"/>
-    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/static/which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html?lang=es-ES"/>
-    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/static/which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html?lang=el-GR"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/static/which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html"/>
-  </url>
-  <!-- Adobe Acrobat Alternatives for PDF Creation: Complete Guide for Business Professionals Blog Post - English -->
-  <url>
-    <loc>https://tidiful.com/blog/posts/adobe-acrobat-alternatives-pdf-creation-complete-guide.html</loc>
-    <lastmod>2025-11-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/posts/adobe-acrobat-alternatives-pdf-creation-complete-guide.html?lang=en-US"/>
-    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/posts/adobe-acrobat-alternatives-pdf-creation-complete-guide.html?lang=fr-FR"/>
-    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/posts/adobe-acrobat-alternatives-pdf-creation-complete-guide.html?lang=de-DE"/>
-    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/posts/adobe-acrobat-alternatives-pdf-creation-complete-guide.html?lang=es-ES"/>
-    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/posts/adobe-acrobat-alternatives-pdf-creation-complete-guide.html?lang=el-GR"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/posts/adobe-acrobat-alternatives-pdf-creation-complete-guide.html"/>
-  </url>
-
-  <!-- Adobe Acrobat Alternatives for PDF Creation: Complete Guide for Business Professionals Static - English -->
-  <url>
-    <loc>https://tidiful.com/blog/static/adobe-acrobat-alternatives-pdf-creation-complete-guide.html</loc>
-    <lastmod>2025-11-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/static/adobe-acrobat-alternatives-pdf-creation-complete-guide.html?lang=en-US"/>
-    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/static/adobe-acrobat-alternatives-pdf-creation-complete-guide.html?lang=fr-FR"/>
-    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/static/adobe-acrobat-alternatives-pdf-creation-complete-guide.html?lang=de-DE"/>
-    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/static/adobe-acrobat-alternatives-pdf-creation-complete-guide.html?lang=es-ES"/>
-    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/static/adobe-acrobat-alternatives-pdf-creation-complete-guide.html?lang=el-GR"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/static/adobe-acrobat-alternatives-pdf-creation-complete-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/static/invoice-to-pdf-complete-guide.html?lang=en-US"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/static/invoice-to-pdf-complete-guide.html?lang=fr-FR"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/static/invoice-to-pdf-complete-guide.html?lang=de-DE"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/static/invoice-to-pdf-complete-guide.html?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/static/invoice-to-pdf-complete-guide.html?lang=el-GR"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/static/invoice-to-pdf-complete-guide.html"/>
   </url>
   <!-- PDF Data Extraction: Complete Guide for Business Professionals Blog Post - English -->
   <url>
@@ -410,6 +384,33 @@
     <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/static/pdf-data-extraction-complete-guide.html?lang=es-ES"/>
     <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/static/pdf-data-extraction-complete-guide.html?lang=el-GR"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/static/pdf-data-extraction-complete-guide.html"/>
+  </url>
+  <!-- Adobe Acrobat Alternatives for PDF Creation: Complete Guide for Business Professionals Blog Post - English -->
+  <url>
+    <loc>https://tidiful.com/blog/posts/adobe-acrobat-alternatives-pdf-creation-complete-guide.html</loc>
+    <lastmod>2025-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/posts/adobe-acrobat-alternatives-pdf-creation-complete-guide.html?lang=en-US"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/posts/adobe-acrobat-alternatives-pdf-creation-complete-guide.html?lang=fr-FR"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/posts/adobe-acrobat-alternatives-pdf-creation-complete-guide.html?lang=de-DE"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/posts/adobe-acrobat-alternatives-pdf-creation-complete-guide.html?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/posts/adobe-acrobat-alternatives-pdf-creation-complete-guide.html?lang=el-GR"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/posts/adobe-acrobat-alternatives-pdf-creation-complete-guide.html"/>
+  </url>
+
+  <!-- Adobe Acrobat Alternatives for PDF Creation: Complete Guide for Business Professionals Static - English -->
+  <url>
+    <loc>https://tidiful.com/blog/static/adobe-acrobat-alternatives-pdf-creation-complete-guide.html</loc>
+    <lastmod>2025-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://tidiful.com/blog/static/adobe-acrobat-alternatives-pdf-creation-complete-guide.html?lang=en-US"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://tidiful.com/blog/static/adobe-acrobat-alternatives-pdf-creation-complete-guide.html?lang=fr-FR"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://tidiful.com/blog/static/adobe-acrobat-alternatives-pdf-creation-complete-guide.html?lang=de-DE"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://tidiful.com/blog/static/adobe-acrobat-alternatives-pdf-creation-complete-guide.html?lang=es-ES"/>
+    <xhtml:link rel="alternate" hreflang="el-GR" href="https://tidiful.com/blog/static/adobe-acrobat-alternatives-pdf-creation-complete-guide.html?lang=el-GR"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/static/adobe-acrobat-alternatives-pdf-creation-complete-guide.html"/>
   </url>
   <!-- Invoice to Excel: Complete Guide for Business Professionals Blog Post - English -->
   <url>
