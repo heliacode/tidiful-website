@@ -211,7 +211,6 @@
       "features": [
         "All Starter features",
         "Priority Support",
-        "API Access", 
         "Custom Exports"
       ],
       "button": "Get Started"
@@ -328,7 +327,7 @@
       "content1": "TidiFul provides AI-powered document processing services that convert PDF documents into structured data formats including JSON, CSV, XML, and XLSX. Our services include:",
       "list1": "Automated document analysis and data extraction",
       "list2": "Multi-format output generation",
-      "list3": "API access for integration with third-party systems",
+      "list3": "Multiple export formats (JSON, CSV, XML, Excel)",
       "list4": "Secure cloud-based processing",
       "list5": "Multilingual document support"
     },
