@@ -700,47 +700,31 @@ Instantly convert PDF invoices, receipts, and documents into clean, structured J
                 uploadArea.classList.remove('dragover');
             }
             
-            // Handle file drop
+            // Handle file drop - redirect to pricing page
             uploadArea.addEventListener('drop', handleDrop, false);
             
             function handleDrop(e) {
                 const dt = e.dataTransfer;
                 const files = dt.files;
-                handleFiles(files);
+                // Redirect to pricing page when user drops a file
+                window.location.href = 'pricing.html';
             }
             
-            // Handle file input change
+            // Handle file input change - redirect to pricing page
             fileInput.addEventListener('change', function() {
-                handleFiles(this.files);
+                // Redirect to pricing page when user selects a file
+                window.location.href = 'pricing.html';
             });
             
-            // Process the uploaded files
-            function handleFiles(files) {
-                if (files.length > 0) {
-                    const file = files[0];
-                    if (file.type === 'application/pdf') {
-                        // Show processing state
-                        uploadArea.classList.add('hidden');
-                        processing.classList.remove('hidden');
-                        
-                        // Simulate processing delay
-                        setTimeout(() => {
-                            processing.classList.add('hidden');
-                            results.classList.remove('hidden');
-                            
-                            // Animate result cards
-                            const resultCards = document.querySelectorAll('.result-card');
-                            resultCards.forEach((card, index) => {
-                                setTimeout(() => {
-                                    card.classList.add('show');
-                                }, 150 * index);
-                            });
-                        }, 2500);
-                    } else {
-                        alert('Please upload a PDF file.');
-                    }
+            // Make upload area clickable to redirect to pricing page
+            uploadArea.addEventListener('click', function(e) {
+                // Don't redirect if clicking on the browse button (it will trigger file input)
+                if (e.target.closest('label')) {
+                    return;
                 }
-            }
+                // Redirect to pricing page when clicking on upload area
+                window.location.href = 'pricing.html';
+            });
             // Reset button functionality
             resetButton.addEventListener('click', function() {
                 results.classList.add('hidden');
