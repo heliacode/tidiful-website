@@ -291,6 +291,21 @@
             color: #ffffff !important;
         }
     </style>
+    
+    <!-- Apollo.io Website Tracker -->
+    <script>
+    (function initApollo() {
+      var n = Math.random().toString(36).substring(7);
+      var o = document.createElement("script");
+      o.src = "https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache=" + n;
+      o.async = !0;
+      o.defer = !0;
+      o.onload = function() {
+        window.trackingFunctions.onLoad({appId: "693ef21394a25c00110aea2c"});
+      };
+      document.head.appendChild(o);
+    })();
+    </script>
 </head>
 <body class="min-h-screen text-gray-100 antialiased">
     <!-- Navigation -->
@@ -398,7 +413,7 @@
                 <!-- Article Header -->
                 <header class="mb-12">
                     <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-100">
-                        Receipt Processing and Expense Management: Complete Guide
+                        <span class="text-gradient">Receipt Processing and Expense Management</span>: Complete Guide
                     </h1>
                     <div class="flex items-center space-x-4 text-gray-400 mb-6">
                         <span class="flex items-center">

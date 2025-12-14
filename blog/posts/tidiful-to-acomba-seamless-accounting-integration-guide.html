@@ -271,6 +271,12 @@
         .highlight { background: #065f46; padding: 20px; border-radius: 8px; border-left: 4px solid #10b981; margin: 20px 0; }
         .step-box { background: #1f2937; padding: 20px; border-radius: 8px; border: 1px solid #374151; margin: 20px 0; }
         .highlight-box { background: linear-gradient(135deg, #065f46 0%, #047857 100%); padding: 30px; border-radius: 12px; margin: 30px 0; }
+        .text-gradient {
+            background: linear-gradient(135deg, #10b981, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
     
                 /* CTA Button Styles - Override prose styles */
         .cta-button-primary,
@@ -416,7 +422,7 @@
             <div class="max-w-4xl mx-auto">
                 <div class="text-center mb-12">
                     <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-100">
-                        Tidiful to Acomba: Seamless Accounting Integration Guide
+                        <span class="text-gradient">Tidiful to Acomba</span>: Seamless Accounting Integration Guide
                     </h1>
                     <p class="text-xl text-gray-300 mb-6 max-w-3xl mx-auto">
                         Discover how to effortlessly integrate your Tidiful invoice data with Acomba accounting software. This comprehensive guide covers everything you need to know about exporting invoices to Acomba-compatible formats.
