@@ -273,12 +273,19 @@ class BlogAutomation:
             # Extract filenames for JavaScript
             filenames = [post['filename'] for post in posts]
             
-            # Update the commonPosts array
+            # Update the commonPosts array - match multiline pattern
             old_pattern = r'const commonPosts = \[(.*?)\];'
             new_posts = ',\n                '.join([f"'{filename}'" for filename in filenames])
             new_content = f'const commonPosts = [\n                {new_posts}\n                // Add new post filenames here when you create them\n            ];'
             
+            # Try with DOTALL flag first
             updated_content = re.sub(old_pattern, new_content, content, flags=re.DOTALL)
+            
+            # If that didn't work, try a more specific pattern
+            if updated_content == content:
+                # Match the exact format with comments
+                old_pattern2 = r'const commonPosts = \[[\s\S]*?// Add new post filenames here when you create them[\s\S]*?\];'
+                updated_content = re.sub(old_pattern2, new_content, content)
             
             if updated_content != content:
                 with open(self.blogs_html, 'w', encoding='utf-8') as f:

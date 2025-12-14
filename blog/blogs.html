@@ -434,28 +434,40 @@
         async function getPostFiles() {
             // Try to fetch a posts manifest file first
             try {
-                const response = await fetch('posts/manifest.json');
+                const response = await fetch('posts/manifest.json', {
+                    method: 'GET',
+                    headers: {
+                        'Accept': 'application/json',
+                    },
+                    cache: 'no-cache'
+                });
                 if (response.ok) {
                     const manifest = await response.json();
-                    return manifest.posts;
+                    if (manifest.posts && Array.isArray(manifest.posts) && manifest.posts.length > 0) {
+                        console.log(`Loaded ${manifest.posts.length} posts from manifest.json`);
+                        return manifest.posts;
+                    }
+                } else {
+                    console.warn(`Manifest fetch returned status ${response.status}, using fallback`);
                 }
             } catch (error) {
-                console.log('No manifest file found, using fallback');
+                console.warn('Could not load manifest.json, using fallback list:', error);
             }
             
             // Fallback: try to discover posts by attempting to load common filenames
+            // This list is automatically updated by blog_automation.py
             const commonPosts = [
                 'receipt-processing-and-expense-management-complete-guide.html',
                 'ai-document-capture-complete-guide.html',
-                'invoice-scanning-business-central-intelligent-document-capture-complete-guide.html',
-                'image-to-csv-complete-guide.html',
                 'how-to-automate-invoice-processing-with-api-integration-complete-guide.html',
                 'how-to-manage-your-invoices-like-a-pro-professional-invoice-management-guide.html',
-                'which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html',
-                'tidiful-to-acomba-seamless-accounting-integration-guide.html',
+                'image-to-csv-complete-guide.html',
+                'invoice-scanning-business-central-intelligent-document-capture-complete-guide.html',
                 'invoice-to-pdf-complete-guide.html',
-                'pdf-data-extraction-complete-guide.html',
+                'tidiful-to-acomba-seamless-accounting-integration-guide.html',
+                'which-companies-offer-reliable-pdf-to-csv-conversion-tools-complete-guide.html',
                 'adobe-acrobat-alternatives-pdf-creation-complete-guide.html',
+                'pdf-data-extraction-complete-guide.html',
                 'invoice-to-excel-complete-guide.html',
                 'pdf-to-docx-conversion-the-ultimate-guide-for-invoice-management.html',
                 'why-invoice-tracking-is-critical-for-business-success-a-complete-guide.html',
@@ -463,37 +475,48 @@
                 'pdf-to-csv-complete-guide.html',
                 'what-is-pdf-to-csv-conversion.html',
                 'how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html',
-                'pdf-to-json-complete-guide.html',
-                'free-adobe-acrobat-alternatives-complete-guide.html'
+                'free-adobe-acrobat-alternatives-complete-guide.html',
+                'pdf-to-json-complete-guide.html'
                 // Add new post filenames here when you create them
             ];
             
             const discoveredPosts = [];
+            console.log(`Using fallback: attempting to load ${commonPosts.length} posts`);
             
             for (const filename of commonPosts) {
                 try {
-                    const response = await fetch(`posts/${filename}`);
+                    const response = await fetch(`posts/${filename}`, {
+                        method: 'GET',
+                        cache: 'no-cache'
+                    });
                     if (response.ok) {
                         const html = await response.text();
                         const parser = new DOMParser();
                         const doc = parser.parseFromString(html, 'text/html');
                         
                         const title = doc.querySelector('title')?.textContent || 'Untitled';
-                        const date = doc.querySelector('meta[name="date"]')?.getAttribute('content') || new Date().toISOString().split('T')[0];
-                        const excerpt = doc.querySelector('meta[name="excerpt"]')?.getAttribute('content') || 'No excerpt available';
+                        const date = doc.querySelector('meta[name="date"]')?.getAttribute('content') || 
+                                   doc.querySelector('meta[property="article:published_time"]')?.getAttribute('content')?.substring(0, 10) ||
+                                   new Date().toISOString().split('T')[0];
+                        const excerpt = doc.querySelector('meta[name="excerpt"]')?.getAttribute('content') || 
+                                      doc.querySelector('meta[name="description"]')?.getAttribute('content') ||
+                                      'No excerpt available';
                         
                         discoveredPosts.push({
                             filename,
                             date,
-                            title: title.replace(' - TidiFul Blog', ''),
+                            title: title.replace(' - TidiFul Blog', '').replace(' | TidiFul', ''),
                             excerpt
                         });
+                    } else {
+                        console.warn(`Failed to load ${filename}: HTTP ${response.status}`);
                     }
                 } catch (error) {
-                    console.log(`Could not load ${filename}`);
+                    console.warn(`Could not load ${filename}:`, error);
                 }
             }
             
+            console.log(`Successfully loaded ${discoveredPosts.length} posts from fallback`);
             return discoveredPosts;
         }
 
