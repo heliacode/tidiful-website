@@ -1,6 +1,13 @@
 {
   "posts": [
     {
+      "filename": "purchase-order-processing-and-automation-complete-guide.html",
+      "title": "Purchase Order Processing and Automation: Complete Guide",
+      "date": "2025-12-14",
+      "excerpt": "Learn how to automate purchase order processing with this complete guide. Discover PO automation tools, workflows, and best practices for streamlining procurement and reducing manual data entry.",
+      "url": "blog/posts/purchase-order-processing-and-automation-complete-guide.html"
+    },
+    {
       "filename": "receipt-processing-and-expense-management-complete-guide.html",
       "title": "Receipt Processing and Expense Management: Complete Guide",
       "date": "2025-12-14",
@@ -141,6 +148,6 @@
       "url": "blog/posts/pdf-to-json-complete-guide.html"
     }
   ],
-  "lastUpdated": "2025-12-14T11:09:53.590847",
-  "totalPosts": 20
+  "lastUpdated": "2025-12-14T11:25:22.298884",
+  "totalPosts": 21
 }

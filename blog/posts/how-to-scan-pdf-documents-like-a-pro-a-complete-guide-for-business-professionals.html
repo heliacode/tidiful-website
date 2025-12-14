@@ -20,6 +20,14 @@
     <meta name="excerpt" content="Learn how to scan PDF documents efficiently. Complete guide covering desktop scanners, mobile apps, OCR, and best practices for scanning PDFs with step-by-step instructions.">
     <link rel="canonical" href="https://tidiful.com/blog/posts/how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html">
     
+    <!-- Hreflang Tags -->
+    <link rel="alternate" hreflang="en" href="https://tidiful.com/blog/posts/how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html?lang=en-US">
+    <link rel="alternate" hreflang="fr" href="https://tidiful.com/blog/posts/how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html?lang=fr-FR">
+    <link rel="alternate" hreflang="de" href="https://tidiful.com/blog/posts/how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html?lang=de-DE">
+    <link rel="alternate" hreflang="es" href="https://tidiful.com/blog/posts/how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html?lang=es-ES">
+    <link rel="alternate" hreflang="el" href="https://tidiful.com/blog/posts/how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html?lang=el-GR">
+    <link rel="alternate" hreflang="x-default" href="https://tidiful.com/blog/posts/how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html">
+    
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
     <meta property="og:title" content="How to Scan PDF: Complete Guide">
@@ -65,11 +73,14 @@
         },
         "datePublished": "2025-06-15",
         "dateModified": "2025-11-18",
-        "mainEntityOfPage": {
+        "inLanguage": "en-US",
+                "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://tidiful.com/blog/posts/how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html"
         },
-        "keywords": "how to scan pdf, scan PDF, PDF scanning, how to scan pdf documents, scan pdf guide, PDF scanner, document scanning, OCR scanning"
+        "wordCount": "2500",
+        "timeRequired": "PT10M",
+                "keywords": "how to scan pdf, scan PDF, PDF scanning, how to scan pdf documents, scan pdf guide, PDF scanner, document scanning, OCR scanning"
     }
     </script>
     
@@ -165,7 +176,35 @@
     }
     </script>
     
-    <link rel="icon" type="image/png" href="../../assets/images/leaf_png_128x128.png">
+        <!-- Breadcrumb Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://tidiful.com/index.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://tidiful.com/blog/blogs.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "How to Scan PDF: Complete Guide",
+                "item": "https://tidiful.com/blog/posts/how-to-scan-pdf-documents-like-a-pro-a-complete-guide-for-business-professionals.html"
+            }
+        ]
+    }
+    </script>
+    
+<link rel="icon" type="image/png" href="../../assets/images/leaf_png_128x128.png">
     <link rel="apple-touch-icon" href="../../assets/images/leaf_png_256x256.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather-icons.min.js"></script>
@@ -273,6 +312,41 @@
         .prose a:hover {
             color: #34d399;
             text-decoration: underline;
+        }
+    
+                /* CTA Button Styles - Override prose styles */
+        .cta-button-primary,
+        .prose .cta-button-primary {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #059669 !important; /* emerald-600 */
+            color: #ffffff !important;
+            font-weight: 600 !important;
+            border-radius: 0.5rem;
+            transition: all 0.2s ease;
+            text-decoration: none !important;
+        }
+        .cta-button-primary:hover,
+        .prose .cta-button-primary:hover {
+            background-color: #10b981 !important; /* emerald-500 */
+            color: #ffffff !important;
+        }
+        .cta-button-secondary,
+        .prose .cta-button-secondary {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #374151 !important; /* gray-700 */
+            color: #ffffff !important;
+            font-weight: 600 !important;
+            border-radius: 0.5rem;
+            border: 1px solid #4b5563 !important; /* gray-600 */
+            transition: all 0.2s ease;
+            text-decoration: none !important;
+        }
+        .cta-button-secondary:hover,
+        .prose .cta-button-secondary:hover {
+            background-color: #4b5563 !important; /* gray-600 */
+            color: #ffffff !important;
         }
     </style>
 </head>
@@ -415,7 +489,7 @@
                     <div class="bg-emerald-900/20 border border-emerald-500/30 rounded-lg p-6 my-8">
                         <h3 class="text-emerald-400 font-semibold mb-3">🚀 Ready to Automate?</h3>
                         <p class="text-gray-300 mb-4">Scan your documents today and automate data extraction with TidiFul.</p>
-                        <a href="https://app.tidiful.com" class="inline-block px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-medium rounded-lg transition-colors">
+                        <a href="https://app.tidiful.com" class="inline-block px-6 py-3 cta-button-primary">
                             Try TidiFul Free
                         </a>
                     </div>
@@ -510,7 +584,7 @@
                     <div class="bg-emerald-900/20 border border-emerald-500/30 rounded-lg p-6 my-8">
                         <h3 class="text-emerald-400 font-semibold mb-3">⚡ Automation Ready</h3>
                         <p class="text-gray-300 mb-4">Turn scanned PDFs into business-ready data instantly with TidiFul.</p>
-                        <a href="https://app.tidiful.com" class="inline-block px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-medium rounded-lg transition-colors">
+                        <a href="https://app.tidiful.com" class="inline-block px-6 py-3 cta-button-primary">
                             Start Free Trial
                         </a>
                     </div>
@@ -606,7 +680,7 @@
                     <div class="bg-emerald-900/20 border border-emerald-500/30 rounded-lg p-6 my-8">
                         <h3 class="text-emerald-400 font-semibold mb-3">🎯 Ready to Get Started?</h3>
                         <p class="text-gray-300 mb-4">Start your free trial on TidiFul.com today.</p>
-                        <a href="https://app.tidiful.com" class="inline-block px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-medium rounded-lg transition-colors">
+                        <a href="https://app.tidiful.com" class="inline-block px-6 py-3 cta-button-primary">
                             Try TidiFul Free
                         </a>
                     </div>

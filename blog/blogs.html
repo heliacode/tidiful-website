@@ -389,6 +389,12 @@
             const emptyEl = document.getElementById('empty');
             const postsContainer = document.getElementById('blog-posts');
 
+            if (!postsContainer) {
+                console.error('Blog posts container not found!');
+                return;
+            }
+
+            console.log('Starting to load blog posts...');
             try {
                 // Get list of post files
                 const posts = await getPostFiles();
@@ -400,26 +406,37 @@
                 }
 
                 // Sort posts by date (newest first)
-                posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+                posts.sort((a, b) => {
+                    const dateA = new Date(a.date);
+                    const dateB = new Date(b.date);
+                    return dateB - dateA;
+                });
+                
+                console.log(`Processing ${posts.length} posts for display`);
 
-                // Load each post
+                // Create post elements directly from manifest data (no need to fetch full HTML for listing)
                 const postElements = [];
+                
                 for (const post of posts) {
                     try {
-                        const postContent = await loadPostContent(post.filename);
-                        const postElement = createPostElement(post, postContent);
+                        // Use manifest data directly - it already has title, date, and excerpt
+                        const postElement = createPostElementFromManifest(post);
                         postElements.push(postElement);
                     } catch (err) {
-                        console.warn(`Failed to load post ${post.filename}:`, err);
+                        console.error(`❌ Failed to create element for post ${post.filename}:`, err);
                     }
                 }
+                
+                console.log(`Created ${postElements.length} post elements from manifest`);
 
                 // Display posts
                 if (postElements.length > 0) {
                     postsContainer.innerHTML = '';
                     postElements.forEach(element => postsContainer.appendChild(element));
                     loadingEl.classList.add('hidden');
+                    console.log(`✅ Successfully displayed ${postElements.length} blog posts`);
                 } else {
+                    console.warn('No posts were successfully created');
                     loadingEl.classList.add('hidden');
                     emptyEl.classList.remove('hidden');
                 }
@@ -444,11 +461,13 @@
                 if (response.ok) {
                     const manifest = await response.json();
                     if (manifest.posts && Array.isArray(manifest.posts) && manifest.posts.length > 0) {
-                        console.log(`Loaded ${manifest.posts.length} posts from manifest.json`);
+                        console.log(`✅ Loaded ${manifest.posts.length} posts from manifest.json`);
                         return manifest.posts;
+                    } else {
+                        console.warn('Manifest.json exists but has no posts or invalid format');
                     }
                 } else {
-                    console.warn(`Manifest fetch returned status ${response.status}, using fallback`);
+                    console.warn(`⚠️ Manifest fetch returned status ${response.status}, using fallback`);
                 }
             } catch (error) {
                 console.warn('Could not load manifest.json, using fallback list:', error);
@@ -457,6 +476,7 @@
             // Fallback: try to discover posts by attempting to load common filenames
             // This list is automatically updated by blog_automation.py
             const commonPosts = [
+                'purchase-order-processing-and-automation-complete-guide.html',
                 'receipt-processing-and-expense-management-complete-guide.html',
                 'ai-document-capture-complete-guide.html',
                 'how-to-automate-invoice-processing-with-api-integration-complete-guide.html',
@@ -528,15 +548,38 @@
                 }
                 const html = await response.text();
                 
+                if (!html || html.length === 0) {
+                    throw new Error('Empty response received');
+                }
+                
                 // Extract metadata and content from the HTML
                 const parser = new DOMParser();
                 const doc = parser.parseFromString(html, 'text/html');
                 
+                // Check for parsing errors
+                const parserError = doc.querySelector('parsererror');
+                if (parserError) {
+                    throw new Error('HTML parsing error: ' + parserError.textContent);
+                }
+                
+                const title = doc.querySelector('title')?.textContent || 'Untitled';
+                const mainContent = doc.querySelector('main')?.innerHTML;
+                const bodyContent = doc.body?.innerHTML;
+                const content = mainContent || bodyContent || '';
+                
+                if (!content) {
+                    throw new Error('No content found in post');
+                }
+                
                 return {
-                    title: doc.querySelector('title')?.textContent || 'Untitled',
-                    content: doc.querySelector('main')?.innerHTML || doc.body.innerHTML,
-                    date: doc.querySelector('meta[name="date"]')?.getAttribute('content') || new Date().toISOString().split('T')[0],
-                    excerpt: doc.querySelector('meta[name="excerpt"]')?.getAttribute('content') || 'No excerpt available'
+                    title: title,
+                    content: content,
+                    date: doc.querySelector('meta[name="date"]')?.getAttribute('content') || 
+                          doc.querySelector('meta[property="article:published_time"]')?.getAttribute('content')?.substring(0, 10) ||
+                          new Date().toISOString().split('T')[0],
+                    excerpt: doc.querySelector('meta[name="excerpt"]')?.getAttribute('content') || 
+                            doc.querySelector('meta[name="description"]')?.getAttribute('content') ||
+                            'No excerpt available'
                 };
             } catch (error) {
                 console.error(`Error loading post ${filename}:`, error);
@@ -544,12 +587,12 @@
             }
         }
 
-        function createPostElement(post, content) {
+        function createPostElementFromManifest(post) {
             const postDiv = document.createElement('div');
             postDiv.className = 'blog-card bg-gray-800 rounded-2xl p-6';
             
-            // Extract excerpt from content or use meta excerpt
-            const excerpt = content.excerpt || extractExcerpt(content.content);
+            // Use excerpt from manifest, or fallback
+            const excerpt = post.excerpt || 'No excerpt available';
             
             postDiv.innerHTML = `
                 <div class="flex items-start space-x-4 mb-6">
@@ -560,8 +603,8 @@
                             <span class="text-xs text-gray-500">•</span>
                             <span class="text-sm text-emerald-400">TidiFul</span>
                         </div>
-                        <h2 class="text-xl font-semibold text-gray-100 mb-3 leading-tight">${post.title}</h2>
-                        <p class="text-gray-300 text-sm leading-relaxed line-clamp-3">${excerpt}</p>
+                        <h2 class="text-xl font-semibold text-gray-100 mb-3 leading-tight">${escapeHtml(post.title)}</h2>
+                        <p class="text-gray-300 text-sm leading-relaxed line-clamp-3">${escapeHtml(excerpt)}</p>
                     </div>
                 </div>
                 <div class="flex items-center justify-between pt-4 border-t border-gray-700">
@@ -580,6 +623,12 @@
             feather.replace(postDiv);
             
             return postDiv;
+        }
+        
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
         }
 
         function extractExcerpt(content) {
